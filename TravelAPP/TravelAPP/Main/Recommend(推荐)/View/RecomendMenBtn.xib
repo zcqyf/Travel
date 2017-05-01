@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecomendMenBtn">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iuo-IK-JnV">
+                    <rect key="frame" x="5" y="5" width="190" height="150.5"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据暂无数据暂无数据暂无数据暂无数据暂无数据暂无数据暂无数据" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="745-ZY-BUS">
+                    <rect key="frame" x="5" y="185.5" width="195" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西班牙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1d-C2-lc9">
+                    <rect key="frame" x="5" y="160.5" width="195" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="m8X-bJ-my4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaB-nD-zeQ">
+                    <rect key="frame" x="10" y="124.5" width="37.5" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="tTo-gl-Z31"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="745-ZY-BUS" firstAttribute="top" secondItem="M1d-C2-lc9" secondAttribute="bottom" constant="5" id="3pg-md-Jmu"/>
+                <constraint firstItem="LaB-nD-zeQ" firstAttribute="leading" secondItem="iuo-IK-JnV" secondAttribute="leading" constant="5" id="Afz-kX-Zag"/>
+                <constraint firstItem="M1d-C2-lc9" firstAttribute="top" secondItem="iuo-IK-JnV" secondAttribute="bottom" constant="5" id="F6A-tZ-Zu4"/>
+                <constraint firstItem="745-ZY-BUS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="K9f-Jy-cgR"/>
+                <constraint firstItem="LaB-nD-zeQ" firstAttribute="bottom" secondItem="iuo-IK-JnV" secondAttribute="bottom" constant="-10" id="LFJ-do-d7I"/>
+                <constraint firstAttribute="trailing" secondItem="iuo-IK-JnV" secondAttribute="trailing" constant="5" id="MI3-6b-qMl"/>
+                <constraint firstAttribute="bottom" secondItem="745-ZY-BUS" secondAttribute="bottom" constant="10" id="Tp4-Cx-fXX"/>
+                <constraint firstItem="M1d-C2-lc9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="UCf-b5-RhY"/>
+                <constraint firstAttribute="trailing" secondItem="745-ZY-BUS" secondAttribute="trailing" id="aGy-mj-aK2"/>
+                <constraint firstAttribute="trailing" secondItem="M1d-C2-lc9" secondAttribute="trailing" id="bgC-Df-goc"/>
+                <constraint firstItem="iuo-IK-JnV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="gqH-IM-AQc"/>
+                <constraint firstItem="iuo-IK-JnV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="lTH-nI-eQn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorLabel" destination="LaB-nD-zeQ" id="Rpw-UD-v0a"/>
+                <outlet property="myContentLabel" destination="Tp4-Cx-fXX" id="yUz-sp-umu"/>
+                <outlet property="myImageView" destination="iuo-IK-JnV" id="vg3-YB-UQW"/>
+                <outlet property="myTitleLabel" destination="M1d-C2-lc9" id="hDq-aC-jwC"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="-165.5"/>
+        </view>
+    </objects>
+</document>

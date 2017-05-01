@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TopScrollView.h
 //  TravelAPP
 //
-//  Created by qing on 2017/5/1.
+//  Created by Gene_Ye on 2017/4/29.
 //  Copyright © 2017年 qing. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TopScrollView : UIView
 
 @end
-

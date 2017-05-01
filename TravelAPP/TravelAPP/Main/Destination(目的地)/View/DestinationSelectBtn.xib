@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DestinationSelectBtn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是区域" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUH-md-Hnq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-uX-Ts6">
+                    <rect key="frame" x="0.0" y="178" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="97l-vd-8Hs"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhX-fj-IjM">
+                    <rect key="frame" x="375" y="0.0" width="0.0" height="178"/>
+                    <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="jyW-rQ-U4l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GhX-fj-IjM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6OV-0P-xXv"/>
+                <constraint firstAttribute="trailing" secondItem="a7x-uX-Ts6" secondAttribute="trailing" id="6zG-0X-O2s"/>
+                <constraint firstAttribute="bottom" secondItem="a7x-uX-Ts6" secondAttribute="bottom" id="8d5-fZ-ZzI"/>
+                <constraint firstAttribute="trailing" secondItem="EUH-md-Hnq" secondAttribute="trailing" id="E0c-Aa-F07"/>
+                <constraint firstItem="a7x-uX-Ts6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TNB-C4-cN3"/>
+                <constraint firstItem="a7x-uX-Ts6" firstAttribute="top" secondItem="GhX-fj-IjM" secondAttribute="bottom" id="Xtt-hZ-IpC"/>
+                <constraint firstItem="EUH-md-Hnq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dzf-4m-rvr"/>
+                <constraint firstAttribute="trailing" secondItem="GhX-fj-IjM" secondAttribute="trailing" id="fn1-Pn-4B6"/>
+                <constraint firstAttribute="bottom" secondItem="EUH-md-Hnq" secondAttribute="bottom" id="hKh-Dl-PcR"/>
+                <constraint firstItem="EUH-md-Hnq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rFu-4Q-PXk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myTitle" destination="EUH-md-Hnq" id="0kj-ee-OjM"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-189.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  TravelAPP
+//
+//  Created by Gene_Ye on 2017/4/28.
+//  Copyright © 2017年 qing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define SCREEN_W [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_H [[UIScreen mainScreen] bounds].size.height
+
+/*颜色*/
+#define GYColorA(r,g,b,a) [UIColor colorWithRed:(r/255.0) green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define GYColor(r,g,b) GYColorA((r),(g),(b),255)
+#define GYColorRandom GYColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+#define GYGrayColor(v) GYColor((v),(v),(v))
+#define GYCommonBgColor GYColor(255, 88, 51)
+
+#import "UIView+UIViewExtension.h"
+
+
+#endif /* PrefixHeader_pch */

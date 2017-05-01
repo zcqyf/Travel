@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MMGuangGaoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-Fj-Dvj">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="166"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是广告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztf-fq-nQP">
+                        <rect key="frame" x="5" y="140" width="226" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="oCN-PW-PL8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ztf-fq-nQP" secondAttribute="bottom" constant="5" id="2yW-I1-xi3"/>
+                <constraint firstItem="b7E-Fj-Dvj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GSe-Bq-g9S"/>
+                <constraint firstAttribute="bottom" secondItem="b7E-Fj-Dvj" secondAttribute="bottom" id="SHg-nA-gCw"/>
+                <constraint firstItem="ztf-fq-nQP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="iOO-OS-AvI"/>
+                <constraint firstAttribute="trailing" secondItem="ztf-fq-nQP" secondAttribute="trailing" constant="5" id="iaA-Qj-e1V"/>
+                <constraint firstItem="b7E-Fj-Dvj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wgI-QE-ERO"/>
+                <constraint firstAttribute="trailing" secondItem="b7E-Fj-Dvj" secondAttribute="trailing" id="x7c-0g-KHI"/>
+            </constraints>
+            <size key="customSize" width="236" height="166"/>
+            <connections>
+                <outlet property="myImageView" destination="b7E-Fj-Dvj" id="IUM-mX-E7n"/>
+                <outlet property="myTitleLabel" destination="ztf-fq-nQP" id="03T-Lf-gbr"/>
+            </connections>
+            <point key="canvasLocation" x="-99" y="9"/>
+        </collectionViewCell>
+    </objects>
+</document>
