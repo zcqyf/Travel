@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
+		268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */; };
+		268AEAF21EB6B2BA00A659A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAF11EB6B2BA00A659A1 /* ViewController.m */; };
+		268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF31EB6B2BA00A659A1 /* Main.storyboard */; };
+		268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF61EB6B2BA00A659A1 /* Assets.xcassets */; };
+		268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF81EB6B2BA00A659A1 /* LaunchScreen.storyboard */; };
+		268AEB051EB6B2BA00A659A1 /* TravelAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEB041EB6B2BA00A659A1 /* TravelAPPTests.m */; };
+		268AEB101EB6B2BA00A659A1 /* TravelAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEB0F1EB6B2BA00A659A1 /* TravelAPPUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268AEB011EB6B2BA00A659A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268AEADF1EB6B2BA00A659A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268AEAE61EB6B2BA00A659A1;
+			remoteInfo = TravelAPP;
+		};
+		268AEB0C1EB6B2BA00A659A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268AEADF1EB6B2BA00A659A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268AEAE61EB6B2BA00A659A1;
+			remoteInfo = TravelAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268AEAEB1EB6B2BA00A659A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		268AEAF01EB6B2BA00A659A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		268AEAF11EB6B2BA00A659A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		268AEAF41EB6B2BA00A659A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		268AEAF61EB6B2BA00A659A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268AEAF91EB6B2BA00A659A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		268AEAFB1EB6B2BA00A659A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268AEB001EB6B2BA00A659A1 /* TravelAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268AEB041EB6B2BA00A659A1 /* TravelAPPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelAPPTests.m; sourceTree = "<group>"; };
+		268AEB061EB6B2BA00A659A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268AEB0B1EB6B2BA00A659A1 /* TravelAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268AEB0F1EB6B2BA00A659A1 /* TravelAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelAPPUITests.m; sourceTree = "<group>"; };
+		268AEB111EB6B2BA00A659A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268AEAE41EB6B2BA00A659A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEAFD1EB6B2BA00A659A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEB081EB6B2BA00A659A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268AEADE1EB6B2BA00A659A1 = {
+			isa = PBXGroup;
+			children = (
+				268AEAE91EB6B2BA00A659A1 /* TravelAPP */,
+				268AEB031EB6B2BA00A659A1 /* TravelAPPTests */,
+				268AEB0E1EB6B2BA00A659A1 /* TravelAPPUITests */,
+				268AEAE81EB6B2BA00A659A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		268AEAE81EB6B2BA00A659A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */,
+				268AEB001EB6B2BA00A659A1 /* TravelAPPTests.xctest */,
+				268AEB0B1EB6B2BA00A659A1 /* TravelAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268AEAE91EB6B2BA00A659A1 /* TravelAPP */ = {
+			isa = PBXGroup;
+			children = (
+				268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */,
+				268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */,
+				268AEAF01EB6B2BA00A659A1 /* ViewController.h */,
+				268AEAF11EB6B2BA00A659A1 /* ViewController.m */,
+				268AEAF31EB6B2BA00A659A1 /* Main.storyboard */,
+				268AEAF61EB6B2BA00A659A1 /* Assets.xcassets */,
+				268AEAF81EB6B2BA00A659A1 /* LaunchScreen.storyboard */,
+				268AEAFB1EB6B2BA00A659A1 /* Info.plist */,
+				268AEAEA1EB6B2BA00A659A1 /* Supporting Files */,
+			);
+			path = TravelAPP;
+			sourceTree = "<group>";
+		};
+		268AEAEA1EB6B2BA00A659A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268AEAEB1EB6B2BA00A659A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268AEB031EB6B2BA00A659A1 /* TravelAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				268AEB041EB6B2BA00A659A1 /* TravelAPPTests.m */,
+				268AEB061EB6B2BA00A659A1 /* Info.plist */,
+			);
+			path = TravelAPPTests;
+			sourceTree = "<group>";
+		};
+		268AEB0E1EB6B2BA00A659A1 /* TravelAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				268AEB0F1EB6B2BA00A659A1 /* TravelAPPUITests.m */,
+				268AEB111EB6B2BA00A659A1 /* Info.plist */,
+			);
+			path = TravelAPPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268AEAE61EB6B2BA00A659A1 /* TravelAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268AEB141EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPP" */;
+			buildPhases = (
+				268AEAE31EB6B2BA00A659A1 /* Sources */,
+				268AEAE41EB6B2BA00A659A1 /* Frameworks */,
+				268AEAE51EB6B2BA00A659A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelAPP;
+			productName = TravelAPP;
+			productReference = 268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		268AEAFF1EB6B2BA00A659A1 /* TravelAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268AEB171EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPPTests" */;
+			buildPhases = (
+				268AEAFC1EB6B2BA00A659A1 /* Sources */,
+				268AEAFD1EB6B2BA00A659A1 /* Frameworks */,
+				268AEAFE1EB6B2BA00A659A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268AEB021EB6B2BA00A659A1 /* PBXTargetDependency */,
+			);
+			name = TravelAPPTests;
+			productName = TravelAPPTests;
+			productReference = 268AEB001EB6B2BA00A659A1 /* TravelAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		268AEB0A1EB6B2BA00A659A1 /* TravelAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268AEB1A1EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPPUITests" */;
+			buildPhases = (
+				268AEB071EB6B2BA00A659A1 /* Sources */,
+				268AEB081EB6B2BA00A659A1 /* Frameworks */,
+				268AEB091EB6B2BA00A659A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268AEB0D1EB6B2BA00A659A1 /* PBXTargetDependency */,
+			);
+			name = TravelAPPUITests;
+			productName = TravelAPPUITests;
+			productReference = 268AEB0B1EB6B2BA00A659A1 /* TravelAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268AEADF1EB6B2BA00A659A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = qing;
+				TargetAttributes = {
+					268AEAE61EB6B2BA00A659A1 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					268AEAFF1EB6B2BA00A659A1 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 268AEAE61EB6B2BA00A659A1;
+					};
+					268AEB0A1EB6B2BA00A659A1 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 268AEAE61EB6B2BA00A659A1;
+					};
+				};
+			};
+			buildConfigurationList = 268AEAE21EB6B2BA00A659A1 /* Build configuration list for PBXProject "TravelAPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268AEADE1EB6B2BA00A659A1;
+			productRefGroup = 268AEAE81EB6B2BA00A659A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268AEAE61EB6B2BA00A659A1 /* TravelAPP */,
+				268AEAFF1EB6B2BA00A659A1 /* TravelAPPTests */,
+				268AEB0A1EB6B2BA00A659A1 /* TravelAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268AEAE51EB6B2BA00A659A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
+				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
+				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEAFE1EB6B2BA00A659A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEB091EB6B2BA00A659A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268AEAE31EB6B2BA00A659A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268AEAF21EB6B2BA00A659A1 /* ViewController.m in Sources */,
+				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
+				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEAFC1EB6B2BA00A659A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268AEB051EB6B2BA00A659A1 /* TravelAPPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268AEB071EB6B2BA00A659A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268AEB101EB6B2BA00A659A1 /* TravelAPPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268AEB021EB6B2BA00A659A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268AEAE61EB6B2BA00A659A1 /* TravelAPP */;
+			targetProxy = 268AEB011EB6B2BA00A659A1 /* PBXContainerItemProxy */;
+		};
+		268AEB0D1EB6B2BA00A659A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268AEAE61EB6B2BA00A659A1 /* TravelAPP */;
+			targetProxy = 268AEB0C1EB6B2BA00A659A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		268AEAF31EB6B2BA00A659A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268AEAF41EB6B2BA00A659A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		268AEAF81EB6B2BA00A659A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268AEAF91EB6B2BA00A659A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		268AEB121EB6B2BA00A659A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		268AEB131EB6B2BA00A659A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		268AEB151EB6B2BA00A659A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TravelAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		268AEB161EB6B2BA00A659A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TravelAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		268AEB181EB6B2BA00A659A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravelAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelAPP.app/TravelAPP";
+			};
+			name = Debug;
+		};
+		268AEB191EB6B2BA00A659A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravelAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelAPP.app/TravelAPP";
+			};
+			name = Release;
+		};
+		268AEB1B1EB6B2BA00A659A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TravelAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravelAPP;
+			};
+			name = Debug;
+		};
+		268AEB1C1EB6B2BA00A659A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TravelAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.becheer.TravelAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravelAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268AEAE21EB6B2BA00A659A1 /* Build configuration list for PBXProject "TravelAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268AEB121EB6B2BA00A659A1 /* Debug */,
+				268AEB131EB6B2BA00A659A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268AEB141EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268AEB151EB6B2BA00A659A1 /* Debug */,
+				268AEB161EB6B2BA00A659A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268AEB171EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268AEB181EB6B2BA00A659A1 /* Debug */,
+				268AEB191EB6B2BA00A659A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268AEB1A1EB6B2BA00A659A1 /* Build configuration list for PBXNativeTarget "TravelAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268AEB1B1EB6B2BA00A659A1 /* Debug */,
+				268AEB1C1EB6B2BA00A659A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 268AEADF1EB6B2BA00A659A1 /* Project object */;
+}
