@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MMRecommendCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-FY-HMG">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="269"/>
+                        <color key="backgroundColor" red="0.070432815080000002" green="0.47058823529999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LEO-FY-HMG" secondAttribute="height" multiplier="15:15" id="imc-tI-h9L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青马大桥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq8-nh-397">
+                        <rect key="frame" x="10" y="279" width="66" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Gsf-5L-D7I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="¥1999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw8-nA-2fu">
+                        <rect key="frame" x="86" y="279" width="175" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="N0Z-Gn-ZaL"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="pcy-Ea-93x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111111111人去过" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yz-ja-KdF">
+                        <rect key="frame" x="162.5" y="308" width="98.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GlD-IH-dEr"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="kyp-rD-4wi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LEO-FY-HMG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="33I-ht-YIL"/>
+                <constraint firstAttribute="trailing" secondItem="4yz-ja-KdF" secondAttribute="trailing" constant="8" id="AaD-9z-NkJ"/>
+                <constraint firstItem="dw8-nA-2fu" firstAttribute="top" secondItem="LEO-FY-HMG" secondAttribute="bottom" constant="10" id="F0J-a7-GVa"/>
+                <constraint firstItem="Hq8-nh-397" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JFf-1h-qLB"/>
+                <constraint firstItem="4yz-ja-KdF" firstAttribute="top" secondItem="dw8-nA-2fu" secondAttribute="bottom" constant="8" id="PF4-wG-1iB"/>
+                <constraint firstAttribute="trailing" secondItem="dw8-nA-2fu" secondAttribute="trailing" constant="8" id="W7f-8w-UUM"/>
+                <constraint firstItem="LEO-FY-HMG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WFE-D4-YaI"/>
+                <constraint firstAttribute="trailing" secondItem="LEO-FY-HMG" secondAttribute="trailing" id="boV-HV-7G4"/>
+                <constraint firstItem="dw8-nA-2fu" firstAttribute="leading" secondItem="Hq8-nh-397" secondAttribute="trailing" constant="10" id="d3z-PC-8F3"/>
+                <constraint firstItem="dw8-nA-2fu" firstAttribute="centerY" secondItem="Hq8-nh-397" secondAttribute="centerY" id="uMo-Vw-QNF"/>
+            </constraints>
+            <size key="customSize" width="269" height="360"/>
+            <point key="canvasLocation" x="-73.5" y="127"/>
+        </collectionViewCell>
+    </objects>
+</document>

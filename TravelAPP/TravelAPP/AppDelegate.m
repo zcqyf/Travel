@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [_window makeKeyAndVisible];
+    _window.rootViewController = [[TabBarViewController alloc] init];
+    //设置tabBarItem样式
+    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
+    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     return YES;
 }
 
