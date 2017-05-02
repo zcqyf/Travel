@@ -71,9 +71,12 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
+        
         RecomendScrollTableViewCell *cell = [RecomendScrollTableViewCell initCustomScrollViwCellWithTableView:tableView WithStyle:1];
         cell.delegate = self;
+        
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         return cell;
     }else if (indexPath.section == 1){
         RecomendScrollTableViewCell *cell = [RecomendScrollTableViewCell initCustomScrollViwCellWithTableView:tableView WithStyle:2];
