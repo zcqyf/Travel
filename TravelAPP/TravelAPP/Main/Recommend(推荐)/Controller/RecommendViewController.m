@@ -12,8 +12,10 @@
 #import "RecomendHeaderView.h"
 #import "RecomendGongGaoTableViewCell.h"
 #import "TravelTableViewCell.h"
+#import "TravelLineViewController.h"
+#import "MenRecommendViewController.h"
 
-@interface RecommendViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface RecommendViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate , RecomendScrollTableViewCellDelegate>
 
 @property (nonatomic, strong)UITableView *tableView;
 
@@ -70,13 +72,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         RecomendScrollTableViewCell *cell = [RecomendScrollTableViewCell initCustomScrollViwCellWithTableView:tableView WithStyle:1];
-        
-        cell.selectionStyle = false;
+        cell.delegate = self;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (indexPath.section == 1){
         RecomendScrollTableViewCell *cell = [RecomendScrollTableViewCell initCustomScrollViwCellWithTableView:tableView WithStyle:2];
-        
-        cell.selectionStyle = false;
+        cell.delegate = self;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (indexPath.section == 2){
         RecomendGongGaoTableViewCell *cell = [RecomendGongGaoTableViewCell initCustomCellWithTableView:tableView];
@@ -84,6 +86,7 @@
         return cell;
     }else{
         TravelTableViewCell *cell = [TravelTableViewCell initCustomCellViewTableView:tableView];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     
@@ -132,7 +135,35 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"11");
+    [self.view endEditing:YES];
+    
+}
+
+#pragma mark ---RecomendScrollTableViewCellDelegate
+
+- (void)clickHotRecommendBtnAction:(UIButton *)sender {
+    
+    if (sender.tag/100 == 1) {
+        TravelLineViewController *vc = [[TravelLineViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+ 
+    }
+    if (sender.tag/100 == 2){
+        MenRecommendViewController *vc = [[MenRecommendViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+   
+
+}
+
+#pragma mark ---UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat sectionHeaderHeight = 40;
+    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
 }
 
 - (void)didReceiveMemoryWarning {

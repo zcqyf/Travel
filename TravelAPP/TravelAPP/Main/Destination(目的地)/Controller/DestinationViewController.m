@@ -51,7 +51,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _currentBtnTag = 100;
-    self.view.backgroundColor = [UIColor redColor];
+
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"DestinationCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"CELL"];
@@ -100,6 +100,9 @@
         label.textColor = [UIColor blackColor];
         
         if (sender.tag != _currentBtnTag) {
+            UILabel *label = [sender viewWithTag:1000];
+            label.textColor = [UIColor cyanColor];
+        }else{
             UILabel *label = [sender viewWithTag:1000];
             label.textColor = [UIColor cyanColor];
         }

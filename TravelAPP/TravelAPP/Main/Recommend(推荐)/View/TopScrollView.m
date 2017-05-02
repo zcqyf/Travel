@@ -11,7 +11,9 @@
 @implementation TopScrollView
 
 - (instancetype)initWithFrame:(CGRect)frame {
+    
     if (self = [super initWithFrame:frame]) {
+        
         self.backgroundColor = [UIColor blackColor];
     }
     return self;

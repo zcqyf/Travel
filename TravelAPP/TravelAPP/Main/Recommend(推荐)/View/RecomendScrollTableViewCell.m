@@ -72,7 +72,7 @@
 
 - (void)clickBtnAction:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(clickHotRecommendBtnAction:)]) {
-        NSLog(@"You touch me!");
+        [self.delegate clickHotRecommendBtnAction:sender];
     }
 }
 
