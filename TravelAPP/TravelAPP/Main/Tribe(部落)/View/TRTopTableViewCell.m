@@ -105,7 +105,8 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
    if ([self.data[@"type"] isEqualToString:@"channel"]) {
-       return CGSizeMake(self.RL_Width/5, self.RL_Height);
+       NSArray *array = self.data[@"dataSource"];
+       return CGSizeMake(self.RL_Width/array.count, self.RL_Height);
    } else {
        return CGSizeMake(160, self.RL_Height - 20);
    }

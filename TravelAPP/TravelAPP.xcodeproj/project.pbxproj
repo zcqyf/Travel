@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
 		268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */; };
 		268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF31EB6B2BA00A659A1 /* Main.storyboard */; };
@@ -111,6 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTopTableViewCell.h; sourceTree = "<group>"; };
+		262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTopTableViewCell.m; sourceTree = "<group>"; };
 		268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AEAEB1EB6B2BA00A659A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -297,6 +300,15 @@
 				6796B65DD1EBC4C79BAF2EDC /* Pods-TravelAPP.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		262426DB1EBA1F1B006FD687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */,
+				262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		268AEADE1EB6B2BA00A659A1 = {
@@ -610,8 +622,8 @@
 		269CA8911EB6B8AF0096AF1E /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				262426DB1EBA1F1B006FD687 /* View */,
 				269CA8EA1EB6BEB30096AF1E /* Model */,
-				269CA8EB1EB6BEB30096AF1E /* View */,
 				269CA8921EB6B8AF0096AF1E /* Controller */,
 			);
 			path = "Mine(我的)";
@@ -743,13 +755,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		269CA8EB1EB6BEB30096AF1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		269CA8EC1EB6BEC00096AF1E /* Model */ = {
@@ -1007,6 +1012,7 @@
 				268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */,
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
+				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				B0436C481EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
