@@ -763,7 +763,7 @@
 				TargetAttributes = {
 					268AEAE61EB6B2BA00A659A1 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = GVY5LY9NZL;
+						DevelopmentTeam = 8BJPD4K3M6;
 						ProvisioningStyle = Automatic;
 					};
 					268AEAFF1EB6B2BA00A659A1 = {
@@ -1091,7 +1091,7 @@
 			baseConfigurationReference = 455157458777861E2F425C3E /* Pods-TravelAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GVY5LY9NZL;
+				DEVELOPMENT_TEAM = 8BJPD4K3M6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1106,7 +1106,7 @@
 			baseConfigurationReference = 6796B65DD1EBC4C79BAF2EDC /* Pods-TravelAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GVY5LY9NZL;
+				DEVELOPMENT_TEAM = 8BJPD4K3M6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
