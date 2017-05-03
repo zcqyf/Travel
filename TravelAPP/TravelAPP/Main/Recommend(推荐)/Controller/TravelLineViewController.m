@@ -11,6 +11,7 @@
 #import "TravelLineDetialTableViewCell.h"
 #import "TLDescriptionTableViewCell.h"
 #import "TLGuangGaoTableViewCell.h"
+#import "BookingViewController.h"
 
 @interface TravelLineViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -102,6 +103,15 @@
         
     }
     return 0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section != 0) {
+        if (indexPath.row != 0 && indexPath.row != 1) {
+            BookingViewController *vc = [[BookingViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:true];
+        }
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
