@@ -12,8 +12,12 @@
 #import "DestinationViewController.h"
 #import "MallViewController.h"
 #import "TribeViewController.h"
+#import "MineViewController.h"
+#import <Masonry.h>
 
-@interface TabBarViewController ()
+@interface TabBarViewController ()<UITabBarDelegate>
+
+@property (nonatomic,strong)UIButton *mineBtn;
 
 @end
 
@@ -21,8 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupViewControllers];
+    [self setupUI];
+}
+
+- (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setupViewControllers];
+    [self setupMineViewController];
 }
 
 - (void)setupViewControllers {
@@ -31,6 +40,7 @@
     [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"start1"];
     [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"start1"];
     [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"start1"];
+    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"start1"];
 }
 
 - (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName {
@@ -41,6 +51,34 @@
     vc.title = title;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
+}
+
+- (void)setupMineViewController {
+    [self.view addSubview:self.mineBtn];
+    [_mineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(40);
+        make.right.equalTo(self.view).offset(-10);
+        make.bottom.equalTo(self.view).offset(-59);
+    }];
+}
+
+- (UIButton *)mineBtn {
+    if (!_mineBtn) {
+        _mineBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _mineBtn.tag = 5;
+        [_mineBtn setImage:[UIImage imageNamed:@"mine"] forState:UIControlStateNormal];
+        [_mineBtn addTarget:self action:@selector(clickMineBtn:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _mineBtn;
+}
+
+- (void)clickMineBtn:(UIButton *)sender {
+    [self setSelectedIndex:sender.tag];
+}
+
+#pragma tabBar delegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    
 }
 
 - (void)didReceiveMemoryWarning {
