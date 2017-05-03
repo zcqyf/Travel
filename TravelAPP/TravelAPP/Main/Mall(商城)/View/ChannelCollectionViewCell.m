@@ -45,7 +45,7 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.minimumLineSpacing = 0;
         layout.minimumInteritemSpacing = 0;
-//        layout.itemSize = CGSizeMake(self.frame.size.width/5, self.frame.size.height/2);
+        layout.itemSize = CGSizeMake(self.frame.size.width/5, self.frame.size.height/2);
         //        layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width/5, 100);
         _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];//CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200)
         _collectionView.backgroundColor = [UIColor whiteColor];
@@ -91,13 +91,9 @@
 //    
 //}
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.data.count <= 5) {
-        return CGSizeMake(self.RL_Width/5, self.RL_Height);
-    } else {
-        return CGSizeMake(self.RL_Width/5, self.RL_Height/2);
-    }
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    return CGSizeMake(self.frame.size.width/5, self.frame.size.height/2);
+//}
 
 
 
