@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262A71F51EB87A2F00E55300 /* TribeTitleSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A71F41EB87A2F00E55300 /* TribeTitleSelectView.m */; };
+		262A71F81EB87B6D00E55300 /* TRTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A71F71EB87B6D00E55300 /* TRTopTableViewCell.m */; };
+		262A71FB1EB87C1900E55300 /* TOTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A71FA1EB87C1900E55300 /* TOTopTableViewCell.m */; };
+		262A71FE1EB87C4400E55300 /* TribeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A71FD1EB87C4400E55300 /* TribeTableViewCell.m */; };
+		262A72011EB87CEF00E55300 /* MineInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A72001EB87CEF00E55300 /* MineInfoTableViewCell.m */; };
+		262A72041EB87D2E00E55300 /* MineSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A72031EB87D2E00E55300 /* MineSelectTableViewCell.m */; };
 		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
 		268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */; };
 		268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF31EB6B2BA00A659A1 /* Main.storyboard */; };
@@ -14,6 +20,11 @@
 		268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF81EB6B2BA00A659A1 /* LaunchScreen.storyboard */; };
 		268AEB051EB6B2BA00A659A1 /* TravelAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEB041EB6B2BA00A659A1 /* TravelAPPTests.m */; };
 		268AEB101EB6B2BA00A659A1 /* TravelAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEB0F1EB6B2BA00A659A1 /* TravelAPPUITests.m */; };
+		268BA8721EB889C00002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA8711EB889C00002B3C3 /* InsideTRTopCollectionViewCell.m */; };
+		268BA8751EB8B5DC0002B3C3 /* TribeDLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA8741EB8B5DC0002B3C3 /* TribeDLView.m */; };
+		268BA8781EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA8771EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.m */; };
+		268BA87B1EB8D4C30002B3C3 /* TRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA87A1EB8D4C30002B3C3 /* TRDetailViewController.m */; };
+		268BA87E1EB8D4CE0002B3C3 /* TODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA87D1EB8D4CE0002B3C3 /* TODetailViewController.m */; };
 		269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8471EB6B8AF0096AF1E /* UIView+UIViewExtension.m */; };
 		269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA84A1EB6B8AF0096AF1E /* AFNetWorking_Request.m */; };
 		269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA84D1EB6B8AF0096AF1E /* RLScrollPic.m */; };
@@ -83,6 +94,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		262A71F31EB87A2F00E55300 /* TribeTitleSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribeTitleSelectView.h; sourceTree = "<group>"; };
+		262A71F41EB87A2F00E55300 /* TribeTitleSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribeTitleSelectView.m; sourceTree = "<group>"; };
+		262A71F61EB87B6D00E55300 /* TRTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTopTableViewCell.h; sourceTree = "<group>"; };
+		262A71F71EB87B6D00E55300 /* TRTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTopTableViewCell.m; sourceTree = "<group>"; };
+		262A71F91EB87C1900E55300 /* TOTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTopTableViewCell.h; sourceTree = "<group>"; };
+		262A71FA1EB87C1900E55300 /* TOTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTopTableViewCell.m; sourceTree = "<group>"; };
+		262A71FC1EB87C4400E55300 /* TribeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribeTableViewCell.h; sourceTree = "<group>"; };
+		262A71FD1EB87C4400E55300 /* TribeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribeTableViewCell.m; sourceTree = "<group>"; };
+		262A71FF1EB87CEF00E55300 /* MineInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineInfoTableViewCell.h; sourceTree = "<group>"; };
+		262A72001EB87CEF00E55300 /* MineInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineInfoTableViewCell.m; sourceTree = "<group>"; };
+		262A72021EB87D2E00E55300 /* MineSelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSelectTableViewCell.h; sourceTree = "<group>"; };
+		262A72031EB87D2E00E55300 /* MineSelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSelectTableViewCell.m; sourceTree = "<group>"; };
 		268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AEAEB1EB6B2BA00A659A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +120,16 @@
 		268AEB0B1EB6B2BA00A659A1 /* TravelAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AEB0F1EB6B2BA00A659A1 /* TravelAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelAPPUITests.m; sourceTree = "<group>"; };
 		268AEB111EB6B2BA00A659A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268BA8701EB889C00002B3C3 /* InsideTRTopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsideTRTopCollectionViewCell.h; sourceTree = "<group>"; };
+		268BA8711EB889C00002B3C3 /* InsideTRTopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsideTRTopCollectionViewCell.m; sourceTree = "<group>"; };
+		268BA8731EB8B5DC0002B3C3 /* TribeDLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribeDLView.h; sourceTree = "<group>"; };
+		268BA8741EB8B5DC0002B3C3 /* TribeDLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribeDLView.m; sourceTree = "<group>"; };
+		268BA8761EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsideTribeImageCollectionViewCell.h; sourceTree = "<group>"; };
+		268BA8771EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsideTribeImageCollectionViewCell.m; sourceTree = "<group>"; };
+		268BA8791EB8D4C30002B3C3 /* TRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDetailViewController.h; sourceTree = "<group>"; };
+		268BA87A1EB8D4C30002B3C3 /* TRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDetailViewController.m; sourceTree = "<group>"; };
+		268BA87C1EB8D4CE0002B3C3 /* TODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODetailViewController.h; sourceTree = "<group>"; };
+		268BA87D1EB8D4CE0002B3C3 /* TODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODetailViewController.m; sourceTree = "<group>"; };
 		269CA8461EB6B8AF0096AF1E /* UIView+UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewExtension.h"; sourceTree = "<group>"; };
 		269CA8471EB6B8AF0096AF1E /* UIView+UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewExtension.m"; sourceTree = "<group>"; };
 		269CA8491EB6B8AF0096AF1E /* AFNetWorking_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetWorking_Request.h; sourceTree = "<group>"; };
@@ -581,6 +614,10 @@
 			children = (
 				269CA8B11EB6B8AF0096AF1E /* TribeViewController.h */,
 				269CA8B21EB6B8AF0096AF1E /* TribeViewController.m */,
+				268BA8791EB8D4C30002B3C3 /* TRDetailViewController.h */,
+				268BA87A1EB8D4C30002B3C3 /* TRDetailViewController.m */,
+				268BA87C1EB8D4CE0002B3C3 /* TODetailViewController.h */,
+				268BA87D1EB8D4CE0002B3C3 /* TODetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -617,6 +654,10 @@
 		269CA8EB1EB6BEB30096AF1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				262A71FF1EB87CEF00E55300 /* MineInfoTableViewCell.h */,
+				262A72001EB87CEF00E55300 /* MineInfoTableViewCell.m */,
+				262A72021EB87D2E00E55300 /* MineSelectTableViewCell.h */,
+				262A72031EB87D2E00E55300 /* MineSelectTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,6 +672,20 @@
 		269CA8ED1EB6BEC00096AF1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				262A71F31EB87A2F00E55300 /* TribeTitleSelectView.h */,
+				262A71F41EB87A2F00E55300 /* TribeTitleSelectView.m */,
+				262A71F61EB87B6D00E55300 /* TRTopTableViewCell.h */,
+				262A71F71EB87B6D00E55300 /* TRTopTableViewCell.m */,
+				268BA8701EB889C00002B3C3 /* InsideTRTopCollectionViewCell.h */,
+				268BA8711EB889C00002B3C3 /* InsideTRTopCollectionViewCell.m */,
+				262A71F91EB87C1900E55300 /* TOTopTableViewCell.h */,
+				262A71FA1EB87C1900E55300 /* TOTopTableViewCell.m */,
+				262A71FC1EB87C4400E55300 /* TribeTableViewCell.h */,
+				262A71FD1EB87C4400E55300 /* TribeTableViewCell.m */,
+				268BA8761EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.h */,
+				268BA8771EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.m */,
+				268BA8731EB8B5DC0002B3C3 /* TribeDLView.h */,
+				268BA8741EB8B5DC0002B3C3 /* TribeDLView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,14 +897,18 @@
 				269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */,
 				269CA8E31EB6B8AF0096AF1E /* TravelTableViewCell.m in Sources */,
 				269CA8D81EB6B8AF0096AF1E /* HotRecommendBtn.m in Sources */,
+				262A72041EB87D2E00E55300 /* MineSelectTableViewCell.m in Sources */,
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
+				262A71F51EB87A2F00E55300 /* TribeTitleSelectView.m in Sources */,
 				269CA8C71EB6B8AF0096AF1E /* DiscountCollectionViewCell.m in Sources */,
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				269CA8CE1EB6B8AF0096AF1E /* SeasonHotCollectionViewCell.m in Sources */,
+				268BA8721EB889C00002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
 				269CA8CF1EB6B8AF0096AF1E /* MemberMallViewController.m in Sources */,
 				269CA8BE1EB6B8AF0096AF1E /* DestinationCollectionViewCell.m in Sources */,
 				269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */,
+				262A71FB1EB87C1900E55300 /* TOTopTableViewCell.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
 				269CA8DA1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
@@ -862,7 +921,10 @@
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
+				268BA8781EB8BC9D0002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
+				268BA87B1EB8D4C30002B3C3 /* TRDetailViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
+				262A72011EB87CEF00E55300 /* MineInfoTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
 				269CA8C01EB6B8AF0096AF1E /* DestinationLeftSelectView.m in Sources */,
@@ -870,10 +932,14 @@
 				269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */,
 				269CA8C61EB6B8AF0096AF1E /* ChannelCollectionViewCell.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
+				262A71FE1EB87C4400E55300 /* TribeTableViewCell.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
+				268BA87E1EB8D4CE0002B3C3 /* TODetailViewController.m in Sources */,
+				268BA8751EB8B5DC0002B3C3 /* TribeDLView.m in Sources */,
 				269CA8DC1EB6B8AF0096AF1E /* RecomendHeaderView.m in Sources */,
 				269CA8D01EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
+				262A71F81EB87B6D00E55300 /* TRTopTableViewCell.m in Sources */,
 				269CA8E01EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m in Sources */,
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
