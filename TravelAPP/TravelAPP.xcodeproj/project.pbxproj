@@ -68,6 +68,8 @@
 		B0436C281EB8748B0079730A /* MenRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C271EB8748B0079730A /* MenRecommendViewController.m */; };
 		B0436C2C1EB884890079730A /* TravelLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */; };
 		B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */; };
+		B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */; };
+		B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +204,9 @@
 		B0436C291EB884890079730A /* TravelLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineTableViewCell.h; sourceTree = "<group>"; };
 		B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineTableViewCell.m; sourceTree = "<group>"; };
 		B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineDetialTableViewCell.h; sourceTree = "<group>"; };
+		B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineDetialTableViewCell.m; sourceTree = "<group>"; };
+		B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineDetialTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +593,9 @@
 				B0436C291EB884890079730A /* TravelLineTableViewCell.h */,
 				B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */,
 				B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */,
+				B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */,
+				B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */,
+				B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -787,6 +795,7 @@
 				B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
+				B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
 				269CA8DD1EB6B8AF0096AF1E /* RecomendHeaderView.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
@@ -901,6 +910,7 @@
 				269CA8C61EB6B8AF0096AF1E /* ChannelCollectionViewCell.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
+				B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */,
 				B0436C251EB870780079730A /* TravelLineViewController.m in Sources */,
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
 				269CA8DC1EB6B8AF0096AF1E /* RecomendHeaderView.m in Sources */,

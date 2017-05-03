@@ -8,6 +8,7 @@
 
 #import "TravelLineViewController.h"
 #import "TravelLineTableViewCell.h"
+#import "TravelLineDetialTableViewCell.h"
 
 @interface TravelLineViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -41,7 +42,7 @@
 #pragma mark ---UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -56,6 +57,11 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
+    if (indexPath.section == 1) {
+        TravelLineDetialTableViewCell *cell = [TravelLineDetialTableViewCell initCustomCellWithTabelView:tableView];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
     
     return [[UITableViewCell alloc] init];
 }
@@ -64,7 +70,14 @@
     if (indexPath.section == 0) {
         return 250;
     }
+    if (indexPath.section == 1) {
+        return 130;
+    }
     return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 5;
 }
 
 - (void)didReceiveMemoryWarning {
