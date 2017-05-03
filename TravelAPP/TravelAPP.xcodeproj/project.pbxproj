@@ -70,6 +70,10 @@
 		B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */; };
 		B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */; };
 		B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */; };
+		B0436C361EB96FE10079730A /* TLDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */; };
+		B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */; };
+		B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */; };
+		B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +211,12 @@
 		B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineDetialTableViewCell.h; sourceTree = "<group>"; };
 		B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineDetialTableViewCell.m; sourceTree = "<group>"; };
 		B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineDetialTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C331EB96FE10079730A /* TLDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C381EB971F60079730A /* TLGuangGaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGuangGaoTableViewCell.h; sourceTree = "<group>"; };
+		B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGuangGaoTableViewCell.m; sourceTree = "<group>"; };
+		B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLGuangGaoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -596,6 +606,12 @@
 				B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */,
 				B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */,
 				B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */,
+				B0436C331EB96FE10079730A /* TLDescriptionTableViewCell.h */,
+				B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */,
+				B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */,
+				B0436C381EB971F60079730A /* TLGuangGaoTableViewCell.h */,
+				B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */,
+				B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -793,12 +809,14 @@
 				B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */,
 				269CA8BF1EB6B8AF0096AF1E /* DestinationCollectionViewCell.xib in Resources */,
 				B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */,
+				B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
 				B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
 				269CA8DD1EB6B8AF0096AF1E /* RecomendHeaderView.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
+				B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */,
 				269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
@@ -889,10 +907,12 @@
 				269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
 				269CA8DA1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m in Sources */,
+				B0436C361EB96FE10079730A /* TLDescriptionTableViewCell.m in Sources */,
 				B0436C2C1EB884890079730A /* TravelLineTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
 				269CA8D71EB6B8AF0096AF1E /* RecommendViewController.m in Sources */,
 				269CA8DE1EB6B8AF0096AF1E /* RecomendMenBtn.m in Sources */,
+				B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */,
 				B0436C281EB8748B0079730A /* MenRecommendViewController.m in Sources */,
 				269CA8E21EB6B8AF0096AF1E /* TopScrollView.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,

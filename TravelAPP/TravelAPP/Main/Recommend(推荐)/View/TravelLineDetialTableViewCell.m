@@ -16,7 +16,7 @@
 }
 
 + (instancetype)initCustomCellWithTabelView:(UITableView *)tableView {
-    static NSString *identifier = @"Cell";
+    static NSString *identifier = @"TravelLineDetialTableViewCell";
     
     TravelLineDetialTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {

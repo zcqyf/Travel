@@ -9,6 +9,8 @@
 #import "TravelLineViewController.h"
 #import "TravelLineTableViewCell.h"
 #import "TravelLineDetialTableViewCell.h"
+#import "TLDescriptionTableViewCell.h"
+#import "TLGuangGaoTableViewCell.h"
 
 @interface TravelLineViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -20,7 +22,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H+ 49) style:UITableViewStylePlain];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -28,6 +30,9 @@
     return _tableView;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.tabBarController.tabBar.hidden = true;
+}
 
 
 
@@ -42,11 +47,13 @@
 #pragma mark ---UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    if (section != 0) {
+        return 5;
+    }
     return 1;
 }
 
@@ -57,10 +64,22 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
-    if (indexPath.section == 1) {
-        TravelLineDetialTableViewCell *cell = [TravelLineDetialTableViewCell initCustomCellWithTabelView:tableView];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
+    else {
+        
+        if (indexPath.row == 0) {
+            TravelLineDetialTableViewCell *cell = [TravelLineDetialTableViewCell initCustomCellWithTabelView:tableView];
+            cell.selectionStyle = false;
+            return cell;
+        }else if (indexPath.row == 1) {
+            TLDescriptionTableViewCell *cell = [TLDescriptionTableViewCell initCustomCellWithTableView:tableView];
+            cell.selectionStyle = false;
+            return cell;
+        }else {
+            TLGuangGaoTableViewCell *cell = [TLGuangGaoTableViewCell initCustomViewWithTableView:tableView];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            return cell;
+        }
+        
     }
     
     return [[UITableViewCell alloc] init];
@@ -69,9 +88,18 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         return 250;
-    }
-    if (indexPath.section == 1) {
-        return 130;
+    }else {
+        switch (indexPath.row) {
+            case 0:
+                return 130;
+            
+            case 1:
+                return 100;
+                
+            default:
+                return 80;
+        }
+        
     }
     return 0;
 }
