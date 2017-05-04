@@ -92,6 +92,7 @@
     
     if (indexPath.section == 0) {
         TLBookingJieShaoTableViewCell *cell = [TLBookingJieShaoTableViewCell initCustomCellWithTableView:tableView];
+        cell.selectionStyle = false;
         return cell;
     }
     if (indexPath.section == 1) {

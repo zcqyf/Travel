@@ -91,6 +91,9 @@
 		B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C471EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib */; };
 		B0436C4D1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */; };
 		B0436C4E1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */; };
+		B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */; };
+		B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */; };
+		B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C811EBB18CE0079730A /* GYCalendarView.m */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -265,6 +268,11 @@
 		B0436C4A1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingDetialJieShaoTableViewCell.h; sourceTree = "<group>"; };
 		B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingDetialJieShaoTableViewCell.m; sourceTree = "<group>"; };
 		B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingDetialJieShaoTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C7D1EBB18CE0079730A /* CalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarCollectionViewCell.h; path = ../CalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarCollectionViewCell.m; path = ../CalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCollectionViewCell.xib; path = ../CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
+		B0436C801EBB18CE0079730A /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYCalendarView.h; path = ../GYCalendarView.h; sourceTree = "<group>"; };
+		B0436C811EBB18CE0079730A /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYCalendarView.m; path = ../GYCalendarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +450,7 @@
 		269CA84B1EB6B8AF0096AF1E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B0436C851EBB18F20079730A /* CalendarView */,
 				269CA84C1EB6B8AF0096AF1E /* RLScrollPic.h */,
 				269CA84D1EB6B8AF0096AF1E /* RLScrollPic.m */,
 				269CA84E1EB6B8AF0096AF1E /* SegementController */,
@@ -764,6 +773,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B0436C851EBB18F20079730A /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				B0436C7D1EBB18CE0079730A /* CalendarCollectionViewCell.h */,
+				B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */,
+				B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */,
+				B0436C801EBB18CE0079730A /* GYCalendarView.h */,
+				B0436C811EBB18CE0079730A /* GYCalendarView.m */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
 		FD9113399ED24EFF1DEC0A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,6 +919,7 @@
 				269CA8DD1EB6B8AF0096AF1E /* RecomendHeaderView.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */,
+				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
 				269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
@@ -986,6 +1008,7 @@
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				268BA8AF1EB99A740002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
+				B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */,
 				269CA8CE1EB6B8AF0096AF1E /* SeasonHotCollectionViewCell.m in Sources */,
 				B0436C3F1EB9B1040079730A /* BookingViewController.m in Sources */,
 				268BA8AD1EB99A740002B3C3 /* TRDetailViewController.m in Sources */,
@@ -1006,6 +1029,7 @@
 				269CA8E21EB6B8AF0096AF1E /* TopScrollView.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
+				B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */,
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
