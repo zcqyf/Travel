@@ -28,13 +28,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="单行输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiT-zP-Drg">
-                        <rect key="frame" x="90" y="6" width="215" height="30"/>
+                        <rect key="frame" x="90" y="6" width="190" height="30"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-0U-sXt">
-                        <rect key="frame" x="90" y="6" width="215" height="30"/>
+                        <rect key="frame" x="90" y="6" width="190" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal" title="身份证">
                             <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,14 +42,14 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="fiT-zP-Drg" secondAttribute="trailing" constant="15" id="CCh-G4-qUH"/>
+                    <constraint firstAttribute="trailing" secondItem="fiT-zP-Drg" secondAttribute="trailing" constant="40" id="CCh-G4-qUH"/>
                     <constraint firstItem="2cd-0U-sXt" firstAttribute="height" secondItem="fiT-zP-Drg" secondAttribute="height" id="CYX-8H-n9v"/>
                     <constraint firstItem="fwq-Zi-f28" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Cgq-wf-Lem"/>
                     <constraint firstItem="fiT-zP-Drg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F0y-re-jIh"/>
                     <constraint firstItem="2cd-0U-sXt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LE1-Mm-bi6"/>
                     <constraint firstItem="2cd-0U-sXt" firstAttribute="width" secondItem="fiT-zP-Drg" secondAttribute="width" id="hDT-qN-KTI"/>
                     <constraint firstItem="fwq-Zi-f28" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jD4-Ck-1Rp"/>
-                    <constraint firstAttribute="trailing" secondItem="2cd-0U-sXt" secondAttribute="trailing" constant="15" id="lbw-2n-K3B"/>
+                    <constraint firstAttribute="trailing" secondItem="2cd-0U-sXt" secondAttribute="trailing" constant="40" id="lbw-2n-K3B"/>
                     <constraint firstItem="fiT-zP-Drg" firstAttribute="leading" secondItem="fwq-Zi-f28" secondAttribute="trailing" constant="15" id="zkb-3J-N9P"/>
                 </constraints>
             </tableViewCellContentView>

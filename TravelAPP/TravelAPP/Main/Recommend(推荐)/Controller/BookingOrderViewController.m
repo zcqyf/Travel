@@ -10,6 +10,7 @@
 #import "BookingOrderHeaderTableViewCell.h"
 #import "BookingOrderDetialTableViewCell.h"
 #import "BookingRemarkTableViewCell.h"
+#import "BookingPayTypeTableViewCell.h"
 
 @interface BookingOrderViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,7 +40,7 @@
 #pragma mark --- UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -52,6 +53,9 @@
     if (section == 2) {
         return 1;
     }
+    if (section == 3) {
+        return 3;
+    }
     return 0;
 }
 
@@ -59,6 +63,7 @@
     
     if (indexPath.section == 0) {
         BookingOrderHeaderTableViewCell *cell = [BookingOrderHeaderTableViewCell initCustomCellWithTableView:tableView];
+        cell.selectionStyle = false;
         return cell;
     }
     if (indexPath.section == 1) {
@@ -102,6 +107,24 @@
         return cell;
     }
     
+    if (indexPath.section == 3) {
+        BookingPayTypeTableViewCell *cell = [BookingPayTypeTableViewCell initCustomCellWithTableView:tableView];
+        cell.selectionStyle = false;
+        switch (indexPath.row) {
+            case 0:
+                cell.myTitleLabel.text = @"微信支付";
+                return cell;
+            case 1:
+                cell.myTitleLabel.text = @"支付宝";
+                return cell;
+            case 2:
+                cell.myTitleLabel.text = @"余额支付";
+                return cell;
+            default:
+                break;
+        }
+    }
+    
     return [[UITableViewCell alloc] init];
 }
 
@@ -114,6 +137,9 @@
     }
     if (indexPath.section == 2) {
         return 100;
+    }
+    if (indexPath.section == 3) {
+        return 49;
     }
     return 0;
 }

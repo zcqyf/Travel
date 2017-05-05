@@ -128,6 +128,8 @@
 		B0436CA41EBCCD130079730A /* BookingOrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */; };
 		B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */; };
 		B0436CA91EBCD3350079730A /* BookingRemarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */; };
+		B0436CAD1EBCD8C80079730A /* BookingPayTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */; };
+		B0436CAE1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -360,6 +362,9 @@
 		B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingRemarkTableViewCell.h; sourceTree = "<group>"; };
 		B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingRemarkTableViewCell.m; sourceTree = "<group>"; };
 		B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingRemarkTableViewCell.xib; sourceTree = "<group>"; };
+		B0436CAA1EBCD8C80079730A /* BookingPayTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPayTypeTableViewCell.h; sourceTree = "<group>"; };
+		B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPayTypeTableViewCell.m; sourceTree = "<group>"; };
+		B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingPayTypeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -863,6 +868,9 @@
 				B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */,
 				B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */,
 				B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */,
+				B0436CAA1EBCD8C80079730A /* BookingPayTypeTableViewCell.h */,
+				B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */,
+				B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1066,7 +1074,7 @@
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
 				B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */,
-				26FC79341EBCC9A800F66B69 /* GLDMapCollectionViewCell.xib in Resources */,
+				B0436CAE1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib in Resources */,
 				B0436C8D1EBB8B960079730A /* TLBookingTextTableViewCell.xib in Resources */,
 				B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
@@ -1224,6 +1232,7 @@
 				268BA8AE1EB99A740002B3C3 /* TribeViewController.m in Sources */,
 				B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */,
 				B0436C251EB870780079730A /* TravelLineViewController.m in Sources */,
+				B0436CAD1EBCD8C80079730A /* BookingPayTypeTableViewCell.m in Sources */,
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
 				269CA8DC1EB6B8AF0096AF1E /* RecomendHeaderView.m in Sources */,
 				268BA8B31EB99A740002B3C3 /* TribeTableViewCell.m in Sources */,
