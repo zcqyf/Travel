@@ -15,6 +15,8 @@
 @property (nonatomic,strong)UILabel *title;
 @property (nonatomic,strong)UILabel *content;
 
+@property (nonatomic,strong)UIView *bottomLine;
+
 @end
 
 @implementation DiscountCollectionViewCell
@@ -33,6 +35,7 @@
     [self addSubview:self.imgView];
     [self addSubview:self.title];
     [self addSubview:self.content];
+    [self addSubview:self.bottomLine];
     [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self);
         make.left.equalTo(self).offset(10);
@@ -50,6 +53,10 @@
         make.top.equalTo(_title.mas_bottom).offset(10);
         make.left.equalTo(_title.mas_left);
         make.right.equalTo(_title.mas_right);
+    }];
+    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self);
+        make.height.mas_equalTo(0.5);
     }];
     
 }
@@ -92,6 +99,13 @@
     return _content;
 }
 
+- (UIView *)bottomLine {
+    if (!_bottomLine) {
+        _bottomLine = [[UIView alloc] init];
+        _bottomLine.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _bottomLine;
+}
 
 @end
 

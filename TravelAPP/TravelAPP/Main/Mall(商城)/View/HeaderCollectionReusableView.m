@@ -13,6 +13,8 @@
 
 @property (nonatomic,strong)UILabel *label;
 
+@property (nonatomic,strong)UIView *bottomLine;
+
 @end
 
 @implementation HeaderCollectionReusableView
@@ -29,8 +31,14 @@
 - (void)setupUI {
     self.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.label];
+    [self addSubview:self.bottomLine];
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.bottom.right.equalTo(self);
+        make.top.left.right.equalTo(self);
+        make.bottom.equalTo(_bottomLine.mas_top).offset(0);
+    }];
+    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self);
+        make.height.mas_equalTo(0.5);
     }];
 }
 
@@ -47,6 +55,14 @@
         _label.textAlignment = NSTextAlignmentCenter;
     }
     return _label;
+}
+
+- (UIView *)bottomLine {
+    if (!_bottomLine) {
+        _bottomLine = [[UIView alloc] init];
+        _bottomLine.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _bottomLine;
 }
 
 

@@ -21,7 +21,7 @@
 @property (nonatomic,strong)UILabel *nameLabel;
 @property (nonatomic,strong)UILabel *distanceLabel;
 
-
+@property (nonatomic,strong)UIView *bottomLine;
 
 @end
 
@@ -47,6 +47,7 @@
     [self addSubview:self.countLabel];
     [self addSubview:self.nameLabel];
     [self addSubview:self.distanceLabel];
+    [self addSubview:self.bottomLine];
     
     [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self);
@@ -93,6 +94,10 @@
         make.bottom.equalTo(_imageView.mas_bottom);
         make.right.equalTo(self).offset(-10);
         make.width.mas_equalTo(80);
+    }];
+    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self);
+        make.height.mas_equalTo(0.5);
     }];
 }
 
@@ -187,6 +192,13 @@
     return _distanceLabel;
 }
 
+- (UIView *)bottomLine {
+    if (!_bottomLine) {
+        _bottomLine = [[UIView alloc] init];
+        _bottomLine.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _bottomLine;
+}
 
 
 

@@ -9,12 +9,14 @@
 #import "MallViewController.h"
 #import "ImageSliderCollectionViewCell.h"
 #import "ChannelCollectionViewCell.h"
-#import "ActivityCollectionViewCell.h"
 #import "DiscountCollectionViewCell.h"
 #import "SeasonHotCollectionViewCell.h"
 #import "GuessLikeCollectionViewCell.h"
 #import "HeaderCollectionReusableView.h"
 #import "BlankCollectionReusableView.h"
+#import "InsideActivityCollectionViewCell.h"
+#import "ActivityPurchaseViewController.h"
+
 
 @interface MallViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -46,12 +48,13 @@
         layout.minimumLineSpacing = 0;
         layout.minimumInteritemSpacing = 0;
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-        _collectionView.backgroundColor = [[UIColor alloc] initWithRed:0.96 green:0.96 blue:0.96 alpha:1.0];
+        _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
+//        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+        [_collectionView registerClass:[InsideActivityCollectionViewCell class] forCellWithReuseIdentifier:@"InsideActivityCollectionViewCell"];
         [_collectionView registerClass:[ImageSliderCollectionViewCell class] forCellWithReuseIdentifier:@"ImageSliderCollectionViewCell"];
         [_collectionView registerClass:[ChannelCollectionViewCell class] forCellWithReuseIdentifier:@"ChannelCollectionViewCell"];
-        [_collectionView registerClass:[ActivityCollectionViewCell class] forCellWithReuseIdentifier:@"ActivityCollectionViewCell"];
         [_collectionView registerClass:[DiscountCollectionViewCell class] forCellWithReuseIdentifier:@"DiscountCollectionViewCell"];
         [_collectionView registerClass:[SeasonHotCollectionViewCell class] forCellWithReuseIdentifier:@"SeasonHotCollectionViewCell"];
         [_collectionView registerClass:[GuessLikeCollectionViewCell class] forCellWithReuseIdentifier:@"GuessLikeCollectionViewCell"];
@@ -113,7 +116,7 @@
     if (section == 0) {
         return 2;
     } else if (section == 1) {
-        return 1;
+        return self.activities.count;
     } else if (section == 2) {
         return 2;
     } else if (section == 3) {
@@ -135,8 +138,14 @@
             return cell;
         }
     } else if (indexPath.section == 1) {
-        ActivityCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ActivityCollectionViewCell" forIndexPath:indexPath];
-        cell.data = self.activities;
+        
+        InsideActivityCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"InsideActivityCollectionViewCell" forIndexPath:indexPath];
+        cell.layer.cornerRadius = 5.0;
+        cell.layer.masksToBounds = YES;
+        cell.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        cell.layer.borderWidth = 0.5;
+        cell.data = self.activities[indexPath.row];
+        
         return cell;
     } else if (indexPath.section == 2 ) {
         DiscountCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DiscountCollectionViewCell" forIndexPath:indexPath];
@@ -171,8 +180,14 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1) {
+        ActivityPurchaseViewController *vc = [ActivityPurchaseViewController new];
+        vc.title = self.activities[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
 }
+
 
 #pragma collectionView layout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
@@ -187,7 +202,7 @@
     if (section == 4) {
         return CGSizeZero;
     } else {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 10);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 8);
     }
 }
 
@@ -196,20 +211,45 @@
         if (indexPath.row == 0) {
             return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
         } else {    
-         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200 - 60);
+         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 140);
         }
     } else if (indexPath.section == 1) {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
+//        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 160);
+        
+        return CGSizeMake((SCREEN_W-24)/2, (160-24)/2);
+        
     } else if (indexPath.section == 2) {
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 150);
     } else if (indexPath.section == 3) {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 400 - 30);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 370);
     } else {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 150 - 20);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 130);
     }
 }
 
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    if (section == 1) {
+        return 8;
+    } else {
+        return 0;
+    }
+}
 
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    if (section == 1) {
+        return 8;
+    } else {
+        return 0;
+    }
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    if (section == 1) {
+        return UIEdgeInsetsMake(8, 8, 8, 8);
+    } else {
+        return UIEdgeInsetsMake(0, 0, 0, 0);
+    }
+}
 
 
 - (void)didReceiveMemoryWarning {
