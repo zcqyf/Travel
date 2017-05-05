@@ -11,7 +11,7 @@
 #import "TLBookingSelectdateTableViewCell.h"
 #import "TLBookingDetialJieShaoTableViewCell.h"
 #import "TravelLineDetialTableViewCell.h"
-
+#import "BookingPriceDateViewController.h"
 @interface BookingViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *tableView;
@@ -70,7 +70,8 @@
         NSLog(@"收藏");
     }
     if (sender.tag == 112) {
-        NSLog(@"立即预约");
+        BookingPriceDateViewController *vc = [[BookingPriceDateViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
     }
 }
 

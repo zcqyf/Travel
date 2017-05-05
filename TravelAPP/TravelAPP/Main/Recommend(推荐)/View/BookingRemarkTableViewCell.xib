@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="BookingRemarkTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-Ot-bbS">
+                        <rect key="frame" x="80" y="8" width="232" height="122"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注留言:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CS-es-08c">
+                        <rect key="frame" x="8" y="8" width="64" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="T96-A6-8oU"/>
+                            <constraint firstAttribute="width" constant="64" id="kZt-8e-0DL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meR-bh-JXz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="a7E-kd-JBZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="meR-bh-JXz" secondAttribute="trailing" id="7Sd-cB-QlQ"/>
+                    <constraint firstAttribute="bottom" secondItem="JMw-Ot-bbS" secondAttribute="bottom" constant="8" id="8Gz-Nt-j5z"/>
+                    <constraint firstItem="8CS-es-08c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mb4-ft-vOZ"/>
+                    <constraint firstItem="JMw-Ot-bbS" firstAttribute="leading" secondItem="8CS-es-08c" secondAttribute="trailing" constant="8" id="Xnw-Cn-wki"/>
+                    <constraint firstAttribute="trailing" secondItem="JMw-Ot-bbS" secondAttribute="trailing" constant="8" id="Yor-zD-RDM"/>
+                    <constraint firstItem="JMw-Ot-bbS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="k47-Np-Ih5"/>
+                    <constraint firstItem="meR-bh-JXz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tqH-WP-AK7"/>
+                    <constraint firstItem="8CS-es-08c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vvK-V0-qbn"/>
+                    <constraint firstItem="meR-bh-JXz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yNs-HK-3V5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myTextView" destination="JMw-Ot-bbS" id="uPt-j6-glY"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="101.5"/>
+        </tableViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2dp-Fl-zjO">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+</document>
