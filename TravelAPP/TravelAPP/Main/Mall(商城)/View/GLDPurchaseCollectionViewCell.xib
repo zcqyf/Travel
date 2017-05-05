@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GLDPurchaseCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIz-qM-FtA">
+                        <rect key="frame" x="8" y="8" width="103" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="S1b-5t-cib"/>
+                            <constraint firstAttribute="width" constant="103" id="Tem-Y5-b6m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【梦幻童话】香港迪士尼一日、门票（可定今日+无需打印）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmZ-aG-iYS" userLabel="title">
+                        <rect key="frame" x="119" y="8" width="248" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="MKo-sL-Sdw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥458元起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdj-Ol-IGW" userLabel="price">
+                        <rect key="frame" x="119" y="75" width="68" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="3uD-Qg-uCc"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="h4g-ma-UJE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售5000件" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9up-kX-6Uf" userLabel="count">
+                        <rect key="frame" x="281" y="78" width="86" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="86" id="H7w-er-Ynm"/>
+                            <constraint firstAttribute="height" constant="21" id="S75-lc-Lgi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pmZ-aG-iYS" secondAttribute="trailing" constant="8" id="0R2-Lf-hfE"/>
+                <constraint firstAttribute="bottom" secondItem="kdj-Ol-IGW" secondAttribute="bottom" constant="20" id="7OS-d4-HdM"/>
+                <constraint firstItem="UIz-qM-FtA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="8dO-tb-BBg"/>
+                <constraint firstItem="UIz-qM-FtA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="CEV-a0-kg4"/>
+                <constraint firstAttribute="trailing" secondItem="9up-kX-6Uf" secondAttribute="trailing" constant="8" id="H3Q-5o-EOD"/>
+                <constraint firstItem="kdj-Ol-IGW" firstAttribute="leading" secondItem="UIz-qM-FtA" secondAttribute="trailing" constant="8" id="O4l-MY-zmh"/>
+                <constraint firstItem="pmZ-aG-iYS" firstAttribute="leading" secondItem="UIz-qM-FtA" secondAttribute="trailing" constant="8" id="UTS-lT-yxF"/>
+                <constraint firstItem="pmZ-aG-iYS" firstAttribute="top" secondItem="UIz-qM-FtA" secondAttribute="top" id="VsA-0E-2ij"/>
+                <constraint firstItem="9up-kX-6Uf" firstAttribute="bottom" secondItem="kdj-Ol-IGW" secondAttribute="bottom" id="dPx-mX-h9M"/>
+            </constraints>
+            <size key="customSize" width="199" height="89"/>
+            <point key="canvasLocation" x="171.5" y="-63.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
