@@ -114,6 +114,20 @@
 		B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */; };
 		B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */; };
 		B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C811EBB18CE0079730A /* GYCalendarView.m */; };
+		B0436C881EBB1B7C0079730A /* BookingPriceDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */; };
+		B0436C8C1EBB8B960079730A /* TLBookingTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */; };
+		B0436C8D1EBB8B960079730A /* TLBookingTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */; };
+		B0436C911EBC12480079730A /* TLBookingTicketTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */; };
+		B0436C921EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */; };
+		B0436C961EBC4DE50079730A /* TLCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */; };
+		B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */; };
+		B0436C9A1EBCC6980079730A /* BookingOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C991EBCC6980079730A /* BookingOrderViewController.m */; };
+		B0436C9E1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */; };
+		B0436C9F1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */; };
+		B0436CA31EBCCD130079730A /* BookingOrderDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */; };
+		B0436CA41EBCCD130079730A /* BookingOrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */; };
+		B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */; };
+		B0436CA91EBCD3350079730A /* BookingRemarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -324,6 +338,28 @@
 		B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCollectionViewCell.xib; path = ../CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 		B0436C801EBB18CE0079730A /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYCalendarView.h; path = ../GYCalendarView.h; sourceTree = "<group>"; };
 		B0436C811EBB18CE0079730A /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYCalendarView.m; path = ../GYCalendarView.m; sourceTree = "<group>"; };
+		B0436C861EBB1B7C0079730A /* BookingPriceDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPriceDateViewController.h; sourceTree = "<group>"; };
+		B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPriceDateViewController.m; sourceTree = "<group>"; };
+		B0436C891EBB8B960079730A /* TLBookingTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTextTableViewCell.h; sourceTree = "<group>"; };
+		B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTextTableViewCell.m; sourceTree = "<group>"; };
+		B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTextTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C8E1EBC12480079730A /* TLBookingTicketTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTicketTypeTableViewCell.h; sourceTree = "<group>"; };
+		B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTicketTypeTableViewCell.m; sourceTree = "<group>"; };
+		B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTicketTypeTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C931EBC4DE50079730A /* TLCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCalendarTableViewCell.h; sourceTree = "<group>"; };
+		B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCalendarTableViewCell.m; sourceTree = "<group>"; };
+		B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLCalendarTableViewCell.xib; sourceTree = "<group>"; };
+		B0436C981EBCC6970079730A /* BookingOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderViewController.h; sourceTree = "<group>"; };
+		B0436C991EBCC6980079730A /* BookingOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderViewController.m; sourceTree = "<group>"; };
+		B0436C9B1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderHeaderTableViewCell.h; sourceTree = "<group>"; };
+		B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderHeaderTableViewCell.m; sourceTree = "<group>"; };
+		B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		B0436CA01EBCCD130079730A /* BookingOrderDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderDetialTableViewCell.h; sourceTree = "<group>"; };
+		B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderDetialTableViewCell.m; sourceTree = "<group>"; };
+		B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderDetialTableViewCell.xib; sourceTree = "<group>"; };
+		B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingRemarkTableViewCell.h; sourceTree = "<group>"; };
+		B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingRemarkTableViewCell.m; sourceTree = "<group>"; };
+		B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingRemarkTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -750,6 +786,10 @@
 				B0436C271EB8748B0079730A /* MenRecommendViewController.m */,
 				B0436C3D1EB9B1040079730A /* BookingViewController.h */,
 				B0436C3E1EB9B1040079730A /* BookingViewController.m */,
+				B0436C861EBB1B7C0079730A /* BookingPriceDateViewController.h */,
+				B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */,
+				B0436C981EBCC6970079730A /* BookingOrderViewController.h */,
+				B0436C991EBCC6980079730A /* BookingOrderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -805,6 +845,24 @@
 				B0436C4A1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.h */,
 				B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */,
 				B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */,
+				B0436C891EBB8B960079730A /* TLBookingTextTableViewCell.h */,
+				B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */,
+				B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */,
+				B0436C8E1EBC12480079730A /* TLBookingTicketTypeTableViewCell.h */,
+				B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */,
+				B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */,
+				B0436C931EBC4DE50079730A /* TLCalendarTableViewCell.h */,
+				B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */,
+				B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */,
+				B0436C9B1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.h */,
+				B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */,
+				B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */,
+				B0436CA01EBCCD130079730A /* BookingOrderDetialTableViewCell.h */,
+				B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */,
+				B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */,
+				B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */,
+				B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */,
+				B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -986,6 +1044,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FC79411EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib in Resources */,
+				B0436C9F1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib in Resources */,
 				B0436C4E1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
 				269CA8D91EB6B8AF0096AF1E /* HotRecommendBtn.xib in Resources */,
 				269CA8E41EB6B8AF0096AF1E /* TravelTableViewCell.xib in Resources */,
@@ -993,6 +1052,7 @@
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
 				B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */,
 				269CA8BF1EB6B8AF0096AF1E /* DestinationCollectionViewCell.xib in Resources */,
+				B0436CA41EBCCD130079730A /* BookingOrderDetialTableViewCell.xib in Resources */,
 				B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */,
 				B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
@@ -1007,6 +1067,8 @@
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
 				B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */,
 				26FC79341EBCC9A800F66B69 /* GLDMapCollectionViewCell.xib in Resources */,
+				B0436C8D1EBB8B960079730A /* TLBookingTextTableViewCell.xib in Resources */,
+				B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
 				269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */,
@@ -1015,6 +1077,10 @@
 				269CA8DB1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib in Resources */,
 				B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */,
 				26FC79221EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.xib in Resources */,
+				B0436C921EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib in Resources */,
+				269CA8DB1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib in Resources */,
+				B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */,
+				B0436CA91EBCD3350079730A /* BookingRemarkTableViewCell.xib in Resources */,
 				269CA8D51EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib in Resources */,
 				26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */,
 			);
@@ -1092,6 +1158,7 @@
 				269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */,
 				269CA8E31EB6B8AF0096AF1E /* TravelTableViewCell.m in Sources */,
 				269CA8D81EB6B8AF0096AF1E /* HotRecommendBtn.m in Sources */,
+				B0436C9E1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m in Sources */,
 				268BA8B11EB99A740002B3C3 /* TOTopTableViewCell.m in Sources */,
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
 				26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */,
@@ -1099,6 +1166,7 @@
 				26FC79331EBCC9A800F66B69 /* GLDMapCollectionViewCell.m in Sources */,
 				B0436C4D1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
+				B0436C8C1EBB8B960079730A /* TLBookingTextTableViewCell.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				268BA8AF1EB99A740002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
 				B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */,
@@ -1109,6 +1177,7 @@
 				268BA8B51EB99A740002B3C3 /* TRTopTableViewCell.m in Sources */,
 				269CA8BE1EB6B8AF0096AF1E /* DestinationCollectionViewCell.m in Sources */,
 				26FC79211EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.m in Sources */,
+				B0436CA31EBCCD130079730A /* BookingOrderDetialTableViewCell.m in Sources */,
 				269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
 				269CA8DA1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m in Sources */,
@@ -1117,11 +1186,13 @@
 				B0436C2C1EB884890079730A /* TravelLineTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
 				269CA8D71EB6B8AF0096AF1E /* RecommendViewController.m in Sources */,
+				B0436C881EBB1B7C0079730A /* BookingPriceDateViewController.m in Sources */,
 				269CA8DE1EB6B8AF0096AF1E /* RecomendMenBtn.m in Sources */,
 				268BA8B21EB99A740002B3C3 /* TribeDLView.m in Sources */,
 				B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */,
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
 				B0436C281EB8748B0079730A /* MenRecommendViewController.m in Sources */,
+				B0436C9A1EBCC6980079730A /* BookingOrderViewController.m in Sources */,
 				269CA8E21EB6B8AF0096AF1E /* TopScrollView.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
@@ -1134,9 +1205,11 @@
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
+				B0436C961EBC4DE50079730A /* TLCalendarTableViewCell.m in Sources */,
 				B0436C481EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
+				B0436C911EBC12480079730A /* TLBookingTicketTypeTableViewCell.m in Sources */,
 				269CA8C01EB6B8AF0096AF1E /* DestinationLeftSelectView.m in Sources */,
 				269CA8C91EB6B8AF0096AF1E /* HeaderCollectionReusableView.m in Sources */,
 				26FC79401EBCCA3000F66B69 /* GLDCommentCollectionViewCell.m in Sources */,
@@ -1158,6 +1231,7 @@
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				269CA8E01EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m in Sources */,
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
+				B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
 				26277F641EBB72F00049C5F7 /* ActivityPurchaseViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,

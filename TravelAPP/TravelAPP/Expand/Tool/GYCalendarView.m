@@ -62,7 +62,7 @@
         if (day == 7) {
             day = 0;
         }
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(day * itemWidth, 0, itemWidth, titleViewHeight)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_W-self.frame.size.width)/2+day * itemWidth, 0, itemWidth, titleViewHeight)];
         label.text = [dayDic objectForKey:[NSString stringWithFormat:@"%d",i]];
         label.textAlignment = NSTextAlignmentCenter;
         [label setFont:[UIFont systemFontOfSize:13.0]];
@@ -70,15 +70,15 @@
         [self addSubview:label];
     }
     
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0, titleViewHeight-1, self.frame.size.width, 0.5)];
-    colorView.backgroundColor = [UIColor cyanColor];
+    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_W-self.frame.size.width)/2, titleViewHeight-1, self.frame.size.width, 0.5)];
+    colorView.backgroundColor = [UIColor redColor];
     [self addSubview:colorView];
 }
 
 - (void)setupCollectionWithFrame: (CGRect)frame {
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 30, frame.size.width, itemWidth*6.0) collectionViewLayout:flowLayout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake((SCREEN_W-frame.size.width)/2, 30, frame.size.width, itemWidth*6.0) collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.backgroundColor = [UIColor whiteColor];
@@ -110,7 +110,7 @@
     if (indexPath.row >= [self firstWeekdayInThisMonth:self.date] ) {
         cell.myTitleLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row-[self firstWeekdayInThisMonth:self.date] + 1];
         if (dayInt == (long)indexPath.row-[self firstWeekdayInThisMonth:self.date] + 1) {
-            cell.myTitleLabel.backgroundColor = [UIColor cyanColor];
+            cell.myTitleLabel.backgroundColor = [UIColor redColor];
         }
     }
     return cell;
