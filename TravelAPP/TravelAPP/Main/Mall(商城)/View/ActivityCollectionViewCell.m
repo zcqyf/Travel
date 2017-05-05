@@ -75,6 +75,11 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    
+    if ([self.delegate respondsToSelector:@selector(clickedAt:title:)]) {
+        [_delegate clickedAt:indexPath title:@"天天特惠"];
+    }
 }
 
 #pragma collectionView layout

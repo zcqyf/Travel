@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ActivityCollectionViewCellDelegate <NSObject>
+
+- (void)clickedAt: (NSIndexPath *)indexPath title:(NSString *)title;
+
+@end
+
 @interface ActivityCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic,strong)NSArray *data;
+
+@property (nonatomic,weak)id<ActivityCollectionViewCellDelegate> delegate;
 
 @end
