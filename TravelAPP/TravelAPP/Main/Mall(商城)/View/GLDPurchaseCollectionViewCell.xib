@@ -20,6 +20,7 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIz-qM-FtA">
                         <rect key="frame" x="8" y="8" width="103" height="103"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="103" id="S1b-5t-cib"/>
                             <constraint firstAttribute="width" constant="103" id="Tem-Y5-b6m"/>

@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GLDCommentCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-kg-rT5">
@@ -45,10 +45,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-rT-kM5">
-                        <rect key="frame" x="321" y="18" width="46" height="30"/>
+                        <rect key="frame" x="337" y="18" width="30" height="30"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="46" id="d2q-17-Xor"/>
+                            <constraint firstAttribute="width" constant="30" id="d2q-17-Xor"/>
                             <constraint firstAttribute="height" constant="30" id="mZn-kZ-s3T"/>
                         </constraints>
                     </button>
@@ -62,10 +62,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4z-2V-O8o" userLabel="customView">
+                        <rect key="frame" x="8" y="94" width="291" height="80"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="wdN-g7-q8A"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="r4z-2V-O8o" firstAttribute="top" secondItem="uMf-LI-YfZ" secondAttribute="bottom" constant="5" id="0VF-oL-vmd"/>
                 <constraint firstItem="Ku0-rT-kM5" firstAttribute="centerY" secondItem="J5V-kg-rT5" secondAttribute="centerY" id="4L7-0z-1MY"/>
+                <constraint firstItem="r4z-2V-O8o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="GZA-JF-heB"/>
+                <constraint firstAttribute="trailing" secondItem="r4z-2V-O8o" secondAttribute="trailing" constant="76" id="Giu-a5-Bjd"/>
                 <constraint firstAttribute="trailing" secondItem="uMf-LI-YfZ" secondAttribute="trailing" id="L9d-Q1-0nP"/>
                 <constraint firstItem="ac0-nH-zgz" firstAttribute="top" secondItem="B02-88-9U7" secondAttribute="bottom" constant="5" id="M3u-cV-nJd"/>
                 <constraint firstItem="B02-88-9U7" firstAttribute="leading" secondItem="J5V-kg-rT5" secondAttribute="trailing" constant="5" id="TSi-Vf-O8o"/>
@@ -77,8 +87,11 @@
                 <constraint firstItem="B02-88-9U7" firstAttribute="top" secondItem="J5V-kg-rT5" secondAttribute="top" id="rne-St-Ibm"/>
                 <constraint firstItem="ac0-nH-zgz" firstAttribute="leading" secondItem="B02-88-9U7" secondAttribute="leading" id="sH3-d9-CqO"/>
             </constraints>
-            <size key="customSize" width="216" height="103"/>
-            <point key="canvasLocation" x="102.5" y="-7.5"/>
+            <size key="customSize" width="216" height="188"/>
+            <connections>
+                <outlet property="customViewHeight" destination="wdN-g7-q8A" id="xOR-NL-FDh"/>
+            </connections>
+            <point key="canvasLocation" x="-315" y="-21"/>
         </collectionViewCell>
     </objects>
 </document>

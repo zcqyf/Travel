@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 
+
 @interface GLDetailViewController : BaseViewController
+
 
 @end

@@ -16,7 +16,7 @@
 #import "BlankCollectionReusableView.h"
 #import "InsideActivityCollectionViewCell.h"
 #import "ActivityPurchaseViewController.h"
-
+#import "GLDetailViewController.h"
 
 @interface MallViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -183,6 +183,12 @@
     if (indexPath.section == 1) {
         ActivityPurchaseViewController *vc = [ActivityPurchaseViewController new];
         vc.title = self.activities[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.section ==  4) {// TODO判断条件有待改善
+        GLDetailViewController *vc = [GLDetailViewController new];
+//        TestViewController *vc = [TestViewController new];
+        vc.title = @"香港迪士尼乐园";
         [self.navigationController pushViewController:vc animated:YES];
     }
     

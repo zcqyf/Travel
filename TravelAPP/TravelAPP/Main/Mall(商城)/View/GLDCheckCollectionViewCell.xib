@@ -11,28 +11,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GLDCheckCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="153" height="59"/>
+            <rect key="frame" x="0.0" y="0.0" width="206" height="46"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="153" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="206" height="46"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看全部折扣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc8-Aq-Flh">
-                        <rect key="frame" x="0.0" y="0.0" width="153" height="59"/>
+                        <rect key="frame" x="0.0" y="0.5" width="206" height="45.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLW-MV-fcg">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="nR4-8P-vDn"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="rc8-Aq-Flh" secondAttribute="bottom" id="4Wc-kh-TVa"/>
+                <constraint firstAttribute="trailing" secondItem="YLW-MV-fcg" secondAttribute="trailing" id="7GX-bZ-cRz"/>
+                <constraint firstItem="YLW-MV-fcg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cal-NV-1qi"/>
                 <constraint firstAttribute="trailing" secondItem="rc8-Aq-Flh" secondAttribute="trailing" id="YV9-5h-g3d"/>
                 <constraint firstItem="rc8-Aq-Flh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cAF-ed-C0j"/>
-                <constraint firstItem="rc8-Aq-Flh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oHA-Uj-plU"/>
+                <constraint firstItem="rc8-Aq-Flh" firstAttribute="top" secondItem="YLW-MV-fcg" secondAttribute="bottom" id="f4h-EC-zQh"/>
+                <constraint firstItem="YLW-MV-fcg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j5R-YQ-LuM"/>
             </constraints>
-            <size key="customSize" width="153" height="59"/>
-            <point key="canvasLocation" x="-1.5" y="58.5"/>
+            <size key="customSize" width="206" height="46"/>
+            <point key="canvasLocation" x="-169" y="77"/>
         </collectionViewCell>
     </objects>
 </document>

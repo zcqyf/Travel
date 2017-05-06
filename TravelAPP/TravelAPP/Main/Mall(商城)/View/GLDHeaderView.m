@@ -1,14 +1,14 @@
 //
-//  GLDMapCollectionViewCell.m
+//  GLDHeaderView.m
 //  TravelAPP
 //
-//  Created by qing on 2017/5/5.
+//  Created by qing on 2017/5/6.
 //  Copyright © 2017年 qing. All rights reserved.
 //
 
-#import "GLDMapCollectionViewCell.h"
+#import "GLDHeaderView.h"
 
-@implementation GLDMapCollectionViewCell
+@implementation GLDHeaderView
 
 - (void)awakeFromNib {
     [super awakeFromNib];

@@ -8,6 +8,13 @@
 
 #import "GLDCommentCollectionViewCell.h"
 
+@interface GLDCommentCollectionViewCell()
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *customViewHeight;
+
+
+@end
+
 @implementation GLDCommentCollectionViewCell
 
 - (void)awakeFromNib {
