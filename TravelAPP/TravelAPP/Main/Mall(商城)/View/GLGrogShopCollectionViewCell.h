@@ -10,4 +10,6 @@
 
 @interface GLGrogShopCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic,strong)UINavigationController *navigationController;
+
 @end

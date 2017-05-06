@@ -1,5 +1,5 @@
 //
-//  ActivityPurchaseViewController.h
+//  GrogShopViewController.h
 //  TravelAPP
 //
 //  Created by qing on 2017/5/6.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ActivityPurchaseViewController : BaseViewController
+@interface GrogShopViewController : BaseViewController
 
 @end

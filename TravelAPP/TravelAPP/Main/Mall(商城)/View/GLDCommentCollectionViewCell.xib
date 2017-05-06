@@ -69,11 +69,19 @@
                             <constraint firstAttribute="height" constant="80" id="wdN-g7-q8A"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8r1-ak-ln8">
+                        <rect key="frame" x="0.0" y="187.5" width="375" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="twZ-ac-uhs"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="r4z-2V-O8o" firstAttribute="top" secondItem="uMf-LI-YfZ" secondAttribute="bottom" constant="5" id="0VF-oL-vmd"/>
                 <constraint firstItem="Ku0-rT-kM5" firstAttribute="centerY" secondItem="J5V-kg-rT5" secondAttribute="centerY" id="4L7-0z-1MY"/>
+                <constraint firstAttribute="trailing" secondItem="8r1-ak-ln8" secondAttribute="trailing" id="Aza-N6-B3t"/>
                 <constraint firstItem="r4z-2V-O8o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="GZA-JF-heB"/>
                 <constraint firstAttribute="trailing" secondItem="r4z-2V-O8o" secondAttribute="trailing" constant="76" id="Giu-a5-Bjd"/>
                 <constraint firstAttribute="trailing" secondItem="uMf-LI-YfZ" secondAttribute="trailing" id="L9d-Q1-0nP"/>
@@ -84,6 +92,8 @@
                 <constraint firstItem="uMf-LI-YfZ" firstAttribute="top" secondItem="J5V-kg-rT5" secondAttribute="bottom" constant="10" id="Z9S-YC-m4H"/>
                 <constraint firstItem="J5V-kg-rT5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="aDG-py-cVc"/>
                 <constraint firstAttribute="trailing" secondItem="Ku0-rT-kM5" secondAttribute="trailing" constant="8" id="geA-wn-nQa"/>
+                <constraint firstItem="8r1-ak-ln8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="j3a-fh-oBi"/>
+                <constraint firstAttribute="bottom" secondItem="8r1-ak-ln8" secondAttribute="bottom" id="lxL-8x-vX0"/>
                 <constraint firstItem="B02-88-9U7" firstAttribute="top" secondItem="J5V-kg-rT5" secondAttribute="top" id="rne-St-Ibm"/>
                 <constraint firstItem="ac0-nH-zgz" firstAttribute="leading" secondItem="B02-88-9U7" secondAttribute="leading" id="sH3-d9-CqO"/>
             </constraints>
@@ -91,7 +101,7 @@
             <connections>
                 <outlet property="customViewHeight" destination="wdN-g7-q8A" id="xOR-NL-FDh"/>
             </connections>
-            <point key="canvasLocation" x="-315" y="-21"/>
+            <point key="canvasLocation" x="-475.5" y="-5"/>
         </collectionViewCell>
     </objects>
 </document>

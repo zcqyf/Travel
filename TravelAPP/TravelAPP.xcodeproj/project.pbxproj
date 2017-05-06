@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
-		26277F641EBB72F00049C5F7 /* ActivityPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F631EBB72F00049C5F7 /* ActivityPurchaseViewController.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
 		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
@@ -85,6 +84,16 @@
 		26BA3C141EBD08F10048F72E /* GLRecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BA3C121EBD08F10048F72E /* GLRecommendCollectionViewCell.xib */; };
 		26BA3C1D1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BA3C1B1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m */; };
 		26BA3C1E1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BA3C1C1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib */; };
+		26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9691EBDA071009AF788 /* GrogShopViewController.m */; };
+		26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */; };
+		26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */; };
+		26ECD9741EBDA7E7009AF788 /* GSTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD9721EBDA7E7009AF788 /* GSTopTableViewCell.xib */; };
+		26ECD9781EBDA7F5009AF788 /* GSPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9761EBDA7F5009AF788 /* GSPriceTableViewCell.m */; };
+		26ECD9791EBDA7F5009AF788 /* GSPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD9771EBDA7F5009AF788 /* GSPriceTableViewCell.xib */; };
+		26ECD97D1EBDA802009AF788 /* GSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD97B1EBDA802009AF788 /* GSTableViewCell.m */; };
+		26ECD97E1EBDA802009AF788 /* GSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD97C1EBDA802009AF788 /* GSTableViewCell.xib */; };
+		26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9801EBDA826009AF788 /* GSBottomSelectView.m */; };
+		26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD9821EBDA84A009AF788 /* GSBottomSelectView.xib */; };
 		26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC79171EBCC46900F66B69 /* GLDetailViewController.m */; };
 		26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC791A1EBCC88200F66B69 /* GLDTopCollectionViewCell.m */; };
 		26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC791B1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib */; };
@@ -161,8 +170,6 @@
 /* Begin PBXFileReference section */
 		262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTopTableViewCell.h; sourceTree = "<group>"; };
 		262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTopTableViewCell.m; sourceTree = "<group>"; };
-		26277F621EBB72F00049C5F7 /* ActivityPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseViewController.h; sourceTree = "<group>"; };
-		26277F631EBB72F00049C5F7 /* ActivityPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPurchaseViewController.m; sourceTree = "<group>"; };
 		26277F681EBB74360049C5F7 /* ActivityPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseTableViewCell.h; sourceTree = "<group>"; };
 		26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPurchaseTableViewCell.m; sourceTree = "<group>"; };
 		26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPurchaseTableViewCell.xib; sourceTree = "<group>"; };
@@ -299,6 +306,22 @@
 		26BA3C1A1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGrogShopCollectionViewCell.h; sourceTree = "<group>"; };
 		26BA3C1B1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGrogShopCollectionViewCell.m; sourceTree = "<group>"; };
 		26BA3C1C1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLGrogShopCollectionViewCell.xib; sourceTree = "<group>"; };
+		26ECD9681EBDA071009AF788 /* GrogShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogShopViewController.h; sourceTree = "<group>"; };
+		26ECD9691EBDA071009AF788 /* GrogShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogShopViewController.m; sourceTree = "<group>"; };
+		26ECD96B1EBDA0BD009AF788 /* ActivityPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseViewController.h; sourceTree = "<group>"; };
+		26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPurchaseViewController.m; sourceTree = "<group>"; };
+		26ECD9701EBDA7E7009AF788 /* GSTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTopTableViewCell.h; sourceTree = "<group>"; };
+		26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTopTableViewCell.m; sourceTree = "<group>"; };
+		26ECD9721EBDA7E7009AF788 /* GSTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSTopTableViewCell.xib; sourceTree = "<group>"; };
+		26ECD9751EBDA7F5009AF788 /* GSPriceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPriceTableViewCell.h; sourceTree = "<group>"; };
+		26ECD9761EBDA7F5009AF788 /* GSPriceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPriceTableViewCell.m; sourceTree = "<group>"; };
+		26ECD9771EBDA7F5009AF788 /* GSPriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSPriceTableViewCell.xib; sourceTree = "<group>"; };
+		26ECD97A1EBDA802009AF788 /* GSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewCell.h; sourceTree = "<group>"; };
+		26ECD97B1EBDA802009AF788 /* GSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewCell.m; sourceTree = "<group>"; };
+		26ECD97C1EBDA802009AF788 /* GSTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSTableViewCell.xib; sourceTree = "<group>"; };
+		26ECD97F1EBDA826009AF788 /* GSBottomSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBottomSelectView.h; sourceTree = "<group>"; };
+		26ECD9801EBDA826009AF788 /* GSBottomSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBottomSelectView.m; sourceTree = "<group>"; };
+		26ECD9821EBDA84A009AF788 /* GSBottomSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSBottomSelectView.xib; sourceTree = "<group>"; };
 		26FC79161EBCC46900F66B69 /* GLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDetailViewController.h; sourceTree = "<group>"; };
 		26FC79171EBCC46900F66B69 /* GLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDetailViewController.m; sourceTree = "<group>"; };
 		26FC79191EBCC88200F66B69 /* GLDTopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDTopCollectionViewCell.h; sourceTree = "<group>"; };
@@ -662,10 +685,12 @@
 			children = (
 				269CA8691EB6B8AF0096AF1E /* MallViewController.h */,
 				269CA86A1EB6B8AF0096AF1E /* MallViewController.m */,
-				26277F621EBB72F00049C5F7 /* ActivityPurchaseViewController.h */,
-				26277F631EBB72F00049C5F7 /* ActivityPurchaseViewController.m */,
+				26ECD96B1EBDA0BD009AF788 /* ActivityPurchaseViewController.h */,
+				26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */,
 				26FC79161EBCC46900F66B69 /* GLDetailViewController.h */,
 				26FC79171EBCC46900F66B69 /* GLDetailViewController.m */,
+				26ECD9681EBDA071009AF788 /* GrogShopViewController.h */,
+				26ECD9691EBDA071009AF788 /* GrogShopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -734,6 +759,18 @@
 				26BA3C061EBCF5060048F72E /* GLDHeaderView.h */,
 				26BA3C071EBCF5060048F72E /* GLDHeaderView.m */,
 				26BA3C081EBCF5060048F72E /* GLDHeaderView.xib */,
+				26ECD9701EBDA7E7009AF788 /* GSTopTableViewCell.h */,
+				26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */,
+				26ECD9721EBDA7E7009AF788 /* GSTopTableViewCell.xib */,
+				26ECD9751EBDA7F5009AF788 /* GSPriceTableViewCell.h */,
+				26ECD9761EBDA7F5009AF788 /* GSPriceTableViewCell.m */,
+				26ECD9771EBDA7F5009AF788 /* GSPriceTableViewCell.xib */,
+				26ECD97A1EBDA802009AF788 /* GSTableViewCell.h */,
+				26ECD97B1EBDA802009AF788 /* GSTableViewCell.m */,
+				26ECD97C1EBDA802009AF788 /* GSTableViewCell.xib */,
+				26ECD97F1EBDA826009AF788 /* GSBottomSelectView.h */,
+				26ECD9801EBDA826009AF788 /* GSBottomSelectView.m */,
+				26ECD9821EBDA84A009AF788 /* GSBottomSelectView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1084,11 +1121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FC79411EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib in Resources */,
+				26ECD9741EBDA7E7009AF788 /* GSTopTableViewCell.xib in Resources */,
 				26BA3C0F1EBD05DE0048F72E /* GLMapCollectionViewCell.xib in Resources */,
 				26BA3C141EBD08F10048F72E /* GLRecommendCollectionViewCell.xib in Resources */,
 				B0436C9F1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib in Resources */,
 				B0436C4E1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
 				269CA8D91EB6B8AF0096AF1E /* HotRecommendBtn.xib in Resources */,
+				26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */,
 				269CA8E41EB6B8AF0096AF1E /* TravelTableViewCell.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
@@ -1099,6 +1138,7 @@
 				B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */,
+				26ECD97E1EBDA802009AF788 /* GSTableViewCell.xib in Resources */,
 				26BA3C1E1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
 				B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */,
@@ -1115,6 +1155,7 @@
 				B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
 				269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */,
+				26ECD9791EBDA7F5009AF788 /* GSPriceTableViewCell.xib in Resources */,
 				269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
 				26FC792F1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.xib in Resources */,
@@ -1209,6 +1250,7 @@
 				26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */,
 				269CA8C71EB6B8AF0096AF1E /* DiscountCollectionViewCell.m in Sources */,
 				B0436C4D1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
+				26ECD97D1EBDA802009AF788 /* GSTableViewCell.m in Sources */,
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
 				B0436C8C1EBB8B960079730A /* TLBookingTextTableViewCell.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
@@ -1234,6 +1276,7 @@
 				269CA8D71EB6B8AF0096AF1E /* RecommendViewController.m in Sources */,
 				B0436C881EBB1B7C0079730A /* BookingPriceDateViewController.m in Sources */,
 				269CA8DE1EB6B8AF0096AF1E /* RecomendMenBtn.m in Sources */,
+				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
 				268BA8B21EB99A740002B3C3 /* TribeDLView.m in Sources */,
 				B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */,
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
@@ -1253,7 +1296,9 @@
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				B0436C961EBC4DE50079730A /* TLCalendarTableViewCell.m in Sources */,
+				26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */,
 				B0436C481EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m in Sources */,
+				26ECD9781EBDA7F5009AF788 /* GSPriceTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
 				B0436C911EBC12480079730A /* TLBookingTicketTypeTableViewCell.m in Sources */,
@@ -1269,7 +1314,9 @@
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
 				26BA3C091EBCF5060048F72E /* GLDHeaderView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
+				26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */,
 				26BA3C041EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m in Sources */,
+				26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */,
 				268BA8AE1EB99A740002B3C3 /* TribeViewController.m in Sources */,
 				B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */,
 				B0436C251EB870780079730A /* TravelLineViewController.m in Sources */,
@@ -1283,7 +1330,6 @@
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
 				B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
-				26277F641EBB72F00049C5F7 /* ActivityPurchaseViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,
 				26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */,
 			);

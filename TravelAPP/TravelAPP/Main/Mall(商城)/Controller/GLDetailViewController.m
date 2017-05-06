@@ -28,6 +28,10 @@
 
 @implementation GLDetailViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.tabBarController.tabBar.hidden = true;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
@@ -126,7 +130,7 @@
         return cell;
     } else if (indexPath.section == 6) {
         GLGrogShopCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GLGrogShopCollectionViewCell" forIndexPath:indexPath];
-        
+        cell.navigationController = self.navigationController;
         return cell;
     } else {
         GLRecommendCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GLRecommendCollectionViewCell" forIndexPath:indexPath];
@@ -144,13 +148,15 @@
         return header;
     } else {
         UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
-        footer.backgroundColor = [UIColor orangeColor];
+        footer.backgroundColor = [UIColor lightGrayColor];
         
         return footer;
     }
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%@", indexPath);
+    
     
 }
 

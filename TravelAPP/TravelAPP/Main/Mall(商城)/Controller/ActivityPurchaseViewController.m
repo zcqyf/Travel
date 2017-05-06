@@ -17,6 +17,10 @@
 
 @implementation ActivityPurchaseViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.tabBarController.tabBar.hidden = true;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];

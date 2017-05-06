@@ -8,6 +8,7 @@
 
 #import "GLGrogShopCollectionViewCell.h"
 #import "GLDGrogshopCollectionViewCell.h"
+#import "GrogShopViewController.h"
 
 @interface GLGrogShopCollectionViewCell()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -48,7 +49,10 @@
 
 #pragma collectionView delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+//    GLDGrogshopCollectionViewCell *cell = (GLDGrogshopCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    GrogShopViewController *vc = [GrogShopViewController new];
+    vc.title = @"迪士尼乐园酒店";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
