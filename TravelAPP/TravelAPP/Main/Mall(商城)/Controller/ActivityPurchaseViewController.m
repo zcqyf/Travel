@@ -8,6 +8,7 @@
 
 #import "ActivityPurchaseViewController.h"
 #import "ActivityPurchaseTableViewCell.h"
+#import <Masonry.h>
 
 @interface ActivityPurchaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -17,17 +18,19 @@
 
 @implementation ActivityPurchaseViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    self.tabBarController.tabBar.hidden = true;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
 }
 
 - (void)setupUI {
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(64);
+        make.left.right.equalTo(self.view);
+        make.bottom.equalTo(self.view);
+    }];
 }
 
 - (UITableView *)tableView {
@@ -35,7 +38,8 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.tableFooterView = [UIView new];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 8)];
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, -8, 0);
         [_tableView registerNib:[UINib nibWithNibName:@"ActivityPurchaseTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ActivityPurchaseTableViewCell"];
     }
     return _tableView;

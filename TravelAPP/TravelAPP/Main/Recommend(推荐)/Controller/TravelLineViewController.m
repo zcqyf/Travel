@@ -31,12 +31,6 @@
     return _tableView;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    self.tabBarController.tabBar.hidden = true;
-}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView ];

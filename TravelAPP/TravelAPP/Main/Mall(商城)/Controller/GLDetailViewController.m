@@ -17,20 +17,17 @@
 #import "GLMapCollectionViewCell.h"
 #import "GLRecommendCollectionViewCell.h"
 #import "GLGrogShopCollectionViewCell.h"
-
+#import "GLBottomCommentView.h"
+#import <Masonry.h>
 
 @interface GLDetailViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong)UICollectionView *collectionView;
-
+@property (nonatomic,strong)GLBottomCommentView *bottomView;
 
 @end
 
 @implementation GLDetailViewController
-
-- (void)viewWillAppear:(BOOL)animated {
-    self.tabBarController.tabBar.hidden = true;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,7 +35,18 @@
 }
 
 - (void)setupUI {
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.bottomView];
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(64);
+        make.left.right.equalTo(self.view);
+        make.bottom.equalTo(_bottomView.mas_top);
+    }];
+    [_bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self.view);
+        make.height.mas_equalTo(50);
+    }];
 }
 
 - (UICollectionView *)collectionView {
@@ -61,10 +69,15 @@
         
         [_collectionView registerNib:[UINib nibWithNibName:@"GLDHeaderView" bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"GLDHeaderView"];
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
-        
-        
     }
     return _collectionView;
+}
+
+- (GLBottomCommentView *)bottomView {
+    if (!_bottomView) {
+        _bottomView = [[NSBundle mainBundle] loadNibNamed:@"GLBottomCommentView" owner:nil options:nil].firstObject;
+    }
+    return _bottomView;
 }
 
 #pragma collectionView dataSource

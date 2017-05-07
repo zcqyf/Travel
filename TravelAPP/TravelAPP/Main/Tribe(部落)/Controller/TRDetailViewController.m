@@ -43,7 +43,8 @@
         _tableView.backgroundColor = [[UIColor alloc] initWithRed:0.96 green:0.96 blue:0.96 alpha:1.0];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.tableFooterView = [UIView new];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 8)];
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, -8, 0);
         [_tableView registerClass:[TRTopTableViewCell class] forCellReuseIdentifier:@"TRTopTableViewCell"];
         [_tableView registerClass:[TribeTableViewCell class] forCellReuseIdentifier:@"TribeTableViewCell"];
     }

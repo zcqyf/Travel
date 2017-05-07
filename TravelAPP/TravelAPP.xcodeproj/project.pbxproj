@@ -71,6 +71,8 @@
 		260439A11EBF4E6D00D44C99 /* TravelLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439601EBF4E6D00D44C99 /* TravelLineTableViewCell.xib */; };
 		260439A21EBF4E6D00D44C99 /* TravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */; };
 		260439A31EBF4E6D00D44C99 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */; };
+		260439A91EBF5D4300D44C99 /* GLBottomCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439A81EBF5D4300D44C99 /* GLBottomCommentView.m */; };
+		260439AB1EBF5D4E00D44C99 /* GLBottomCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439AA1EBF5D4E00D44C99 /* GLBottomCommentView.xib */; };
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
@@ -285,6 +287,9 @@
 		260439611EBF4E6D00D44C99 /* TravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelTableViewCell.h; sourceTree = "<group>"; };
 		260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelTableViewCell.m; sourceTree = "<group>"; };
 		260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
+		260439A71EBF5D4300D44C99 /* GLBottomCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBottomCommentView.h; sourceTree = "<group>"; };
+		260439A81EBF5D4300D44C99 /* GLBottomCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBottomCommentView.m; sourceTree = "<group>"; };
+		260439AA1EBF5D4E00D44C99 /* GLBottomCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBottomCommentView.xib; sourceTree = "<group>"; };
 		262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTopTableViewCell.h; sourceTree = "<group>"; };
 		262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTopTableViewCell.m; sourceTree = "<group>"; };
 		26277F681EBB74360049C5F7 /* ActivityPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseTableViewCell.h; sourceTree = "<group>"; };
@@ -948,6 +953,9 @@
 				26BA3C061EBCF5060048F72E /* GLDHeaderView.h */,
 				26BA3C071EBCF5060048F72E /* GLDHeaderView.m */,
 				26BA3C081EBCF5060048F72E /* GLDHeaderView.xib */,
+				260439A71EBF5D4300D44C99 /* GLBottomCommentView.h */,
+				260439A81EBF5D4300D44C99 /* GLBottomCommentView.m */,
+				260439AA1EBF5D4E00D44C99 /* GLBottomCommentView.xib */,
 				26ECD9701EBDA7E7009AF788 /* GSTopTableViewCell.h */,
 				26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */,
 				26ECD9721EBDA7E7009AF788 /* GSTopTableViewCell.xib */,
@@ -1251,6 +1259,7 @@
 				260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
+				260439AB1EBF5D4E00D44C99 /* GLBottomCommentView.xib in Resources */,
 				26FC792A1EBCC93600F66B69 /* GLDCheckCollectionViewCell.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
@@ -1418,6 +1427,7 @@
 				26FC79291EBCC93600F66B69 /* GLDCheckCollectionViewCell.m in Sources */,
 				26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */,
 				269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */,
+				260439A91EBF5D4300D44C99 /* GLBottomCommentView.m in Sources */,
 				260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */,
 				260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */,
 				2604398F1EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m in Sources */,

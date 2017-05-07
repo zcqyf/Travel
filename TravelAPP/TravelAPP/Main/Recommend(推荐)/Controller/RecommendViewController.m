@@ -50,10 +50,6 @@
     return _tableView;
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    self.tabBarController.tabBar.hidden = NO;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;

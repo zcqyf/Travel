@@ -22,10 +22,6 @@
 
 @implementation GrogShopViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    self.tabBarController.tabBar.hidden = true;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
@@ -51,12 +47,9 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-//        _tableView.
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableFooterView = [UIView new];
-        
-//        tableView.tableFooterView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Tools.WIDTH, height: 15))
-//        tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: -15, right: 0)
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 8)];
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, -8, 0);
         
         [_tableView registerNib:[UINib nibWithNibName:@"GSTopTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GSTopTableViewCell"];
         [_tableView registerNib:[UINib nibWithNibName:@"GSPriceTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GSPriceTableViewCell"];

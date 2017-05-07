@@ -19,7 +19,20 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-zm-T8J">
                         <rect key="frame" x="0.0" y="0.0" width="118" height="76"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N5-uo-3Ad">
+                                <rect key="frame" x="44.5" y="30" width="29" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3N5-uo-3Ad" firstAttribute="centerY" secondItem="UpJ-zm-T8J" secondAttribute="centerY" id="dh6-SB-gMs"/>
+                            <constraint firstItem="3N5-uo-3Ad" firstAttribute="centerX" secondItem="UpJ-zm-T8J" secondAttribute="centerX" id="ukg-Mw-HGs"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -30,7 +43,7 @@
                 <constraint firstAttribute="trailing" secondItem="UpJ-zm-T8J" secondAttribute="trailing" id="o5n-23-qVx"/>
             </constraints>
             <size key="customSize" width="118" height="76"/>
-            <point key="canvasLocation" x="-59" y="-17"/>
+            <point key="canvasLocation" x="-263" y="-28"/>
         </collectionViewCell>
     </objects>
 </document>

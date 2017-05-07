@@ -14,8 +14,9 @@
 #import "TribeViewController.h"
 #import "MineViewController.h"
 #import <Masonry.h>
+//#import "BaseNavigationController.h"
 
-@interface TabBarViewController ()<UITabBarDelegate>
+@interface TabBarViewController ()<UITabBarDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic,strong)UIButton *mineBtn;
 
@@ -50,6 +51,7 @@
 //    vc.tabBarItem.selectedImage = [UIImage imageNamed:imageName];//待改进
     vc.title = title;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.delegate = self;
     [self addChildViewController:nav];
 }
 
@@ -79,7 +81,23 @@
 #pragma tabBar delegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     
+    
+    
+    
 }
+
+#pragma navigation delegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if ([viewController isKindOfClass:[MemberMallViewController class]] || [viewController isKindOfClass:[RecommendViewController class]] || [viewController isKindOfClass:[DestinationViewController class]] || [viewController isKindOfClass:[MallViewController class]] || [viewController isKindOfClass:[TribeViewController class]] || [viewController isKindOfClass:[MineViewController class]]) {// TODO 与 == 的区别
+        [self.tabBar setHidden:NO];
+        [self.mineBtn setHidden:NO];
+    } else {
+        [self.tabBar setHidden:YES];
+        [self.mineBtn setHidden:YES];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
