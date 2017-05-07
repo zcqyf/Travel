@@ -9,6 +9,7 @@
 #import "RecomendScrollTableViewCell.h"
 #import "HotRecommendBtn.h"
 #import "RecomendMenBtn.h"
+#import "RecommendWanFaBtn.h"
 
 @implementation RecomendScrollTableViewCell
 
@@ -27,7 +28,17 @@
         
         cell.backgroundColor = [UIColor cyanColor];
         
-        [cell createScrollViewWithItemFrame:CGSizeMake(200, 200) ItemCount:6 Style:style];
+        CGSize cellSize;
+        if (style == 1) {
+            cellSize = CGSizeMake(200, 200);
+        }else if (style == 2){
+            cellSize = CGSizeMake(200, 200);
+        }else if (style == 3) {
+            cellSize = CGSizeMake(300, 300);
+        }
+        
+        
+        [cell createScrollViewWithItemFrame:cellSize ItemCount:6 Style:style];
     }
     return cell;
 }
@@ -54,12 +65,22 @@
             
             [scrollView addSubview:btn];
         }
-    }else {
+    }else if (style == 2){
         for (int i = 0; i < count; i++) {
             
             RecomendMenBtn *btn = [RecomendMenBtn initCustomBtnWithFrame:CGRectMake(btnWidth * i, 0, btnWidth, btnHeight)];
             
             btn.tag = 200+i;
+            [btn addTarget:self action:@selector(clickBtnAction:) forControlEvents:UIControlEventTouchDown];
+            
+            [scrollView addSubview:btn];
+        }
+    }else if (style == 3) {
+        for (int i = 0; i < count; i++) {
+            
+            RecommendWanFaBtn *btn = [RecommendWanFaBtn initCustomBtnWithFrame:CGRectMake(btnWidth * i, 0, btnWidth, btnHeight)];
+            
+            btn.tag = 300+i;
             [btn addTarget:self action:@selector(clickBtnAction:) forControlEvents:UIControlEventTouchDown];
             
             [scrollView addSubview:btn];
