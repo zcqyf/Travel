@@ -7,6 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260438FC1EBF4E6D00D44C99 /* BookingOrderViewController.m */; };
+		260439651EBF4E6D00D44C99 /* BookingPriceDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260438FE1EBF4E6D00D44C99 /* BookingPriceDateViewController.m */; };
+		260439661EBF4E6D00D44C99 /* BookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439001EBF4E6D00D44C99 /* BookingViewController.m */; };
+		260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439021EBF4E6D00D44C99 /* ConsultationViewController.m */; };
+		260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439041EBF4E6D00D44C99 /* MenRecommendViewController.m */; };
+		260439691EBF4E6D00D44C99 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439061EBF4E6D00D44C99 /* RecommendViewController.m */; };
+		2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439081EBF4E6D00D44C99 /* TravelLineViewController.m */; };
+		2604396B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604390B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m */; };
+		2604396C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604390C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib */; };
+		2604396D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604390E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m */; };
+		2604396E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604390F1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib */; };
+		2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439111EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m */; };
+		260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439121EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib */; };
+		260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439141EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m */; };
+		260439721EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439151EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib */; };
+		260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439171EBF4E6D00D44C99 /* HotRecommendBtn.m */; };
+		260439741EBF4E6D00D44C99 /* HotRecommendBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439181EBF4E6D00D44C99 /* HotRecommendBtn.xib */; };
+		260439751EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604391B1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m */; };
+		260439761EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604391C1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib */; };
+		260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604391E1EBF4E6D00D44C99 /* ConsultiontextFeildCell.m */; };
+		260439781EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604391F1EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib */; };
+		260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439211EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m */; };
+		2604397A1EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439221EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib */; };
+		2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439241EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m */; };
+		2604397C1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439251EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib */; };
+		2604397D1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439271EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m */; };
+		2604397E1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439281EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib */; };
+		2604397F1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604392A1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m */; };
+		260439801EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604392B1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib */; };
+		260439811EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604392D1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m */; };
+		260439821EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604392E1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib */; };
+		260439831EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439301EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m */; };
+		260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439311EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib */; };
+		260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439341EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m */; };
+		260439861EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439351EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib */; };
+		260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439371EBF4E6D00D44C99 /* RecomendHeaderView.m */; };
+		260439881EBF4E6D00D44C99 /* RecomendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439381EBF4E6D00D44C99 /* RecomendHeaderView.xib */; };
+		260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604393A1EBF4E6D00D44C99 /* RecomendMenBtn.m */; };
+		2604398A1EBF4E6D00D44C99 /* RecomendMenBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604393B1EBF4E6D00D44C99 /* RecomendMenBtn.xib */; };
+		2604398B1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604393D1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m */; };
+		2604398C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604393E1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib */; };
+		2604398D1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439411EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m */; };
+		2604398E1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439421EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib */; };
+		2604398F1EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439441EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m */; };
+		260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439451EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib */; };
+		260439911EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439471EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m */; };
+		260439921EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439481EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib */; };
+		260439931EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604394A1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m */; };
+		260439941EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604394B1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib */; };
+		260439951EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604394D1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m */; };
+		260439961EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604394E1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib */; };
+		260439971EBF4E6D00D44C99 /* TLCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439501EBF4E6D00D44C99 /* TLCalendarTableViewCell.m */; };
+		260439981EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439511EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib */; };
+		260439991EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439531EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m */; };
+		2604399A1EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439541EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib */; };
+		2604399B1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439561EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m */; };
+		2604399C1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439571EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib */; };
+		2604399D1EBF4E6D00D44C99 /* TopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439591EBF4E6D00D44C99 /* TopScrollView.m */; };
+		2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604395C1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m */; };
+		2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604395D1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib */; };
+		260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604395F1EBF4E6D00D44C99 /* TravelLineTableViewCell.m */; };
+		260439A11EBF4E6D00D44C99 /* TravelLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439601EBF4E6D00D44C99 /* TravelLineTableViewCell.xib */; };
+		260439A21EBF4E6D00D44C99 /* TravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */; };
+		260439A31EBF4E6D00D44C99 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */; };
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
@@ -59,20 +123,6 @@
 		269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA88F1EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m */; };
 		269CA8D51EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8901EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib */; };
 		269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8941EB6B8AF0096AF1E /* MineViewController.m */; };
-		269CA8D71EB6B8AF0096AF1E /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8981EB6B8AF0096AF1E /* RecommendViewController.m */; };
-		269CA8D81EB6B8AF0096AF1E /* HotRecommendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA89C1EB6B8AF0096AF1E /* HotRecommendBtn.m */; };
-		269CA8D91EB6B8AF0096AF1E /* HotRecommendBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA89D1EB6B8AF0096AF1E /* HotRecommendBtn.xib */; };
-		269CA8DA1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA89F1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m */; };
-		269CA8DB1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8A01EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib */; };
-		269CA8DC1EB6B8AF0096AF1E /* RecomendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8A21EB6B8AF0096AF1E /* RecomendHeaderView.m */; };
-		269CA8DD1EB6B8AF0096AF1E /* RecomendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8A31EB6B8AF0096AF1E /* RecomendHeaderView.xib */; };
-		269CA8DE1EB6B8AF0096AF1E /* RecomendMenBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8A51EB6B8AF0096AF1E /* RecomendMenBtn.m */; };
-		269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8A61EB6B8AF0096AF1E /* RecomendMenBtn.xib */; };
-		269CA8E01EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8A81EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m */; };
-		269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8A91EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib */; };
-		269CA8E21EB6B8AF0096AF1E /* TopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8AB1EB6B8AF0096AF1E /* TopScrollView.m */; };
-		269CA8E31EB6B8AF0096AF1E /* TravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8AD1EB6B8AF0096AF1E /* TravelTableViewCell.m */; };
-		269CA8E41EB6B8AF0096AF1E /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269CA8AE1EB6B8AF0096AF1E /* TravelTableViewCell.xib */; };
 		269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8E71EB6BE2F0096AF1E /* TabBarViewController.m */; };
 		26BA3C041EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BA3C021EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m */; };
 		26BA3C051EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BA3C031EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib */; };
@@ -111,42 +161,9 @@
 		26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC79441EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib */; };
 		B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */; };
 		B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */; };
-		B0436C251EB870780079730A /* TravelLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C241EB870780079730A /* TravelLineViewController.m */; };
-		B0436C281EB8748B0079730A /* MenRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C271EB8748B0079730A /* MenRecommendViewController.m */; };
-		B0436C2C1EB884890079730A /* TravelLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */; };
-		B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */; };
-		B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */; };
-		B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */; };
-		B0436C361EB96FE10079730A /* TLDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */; };
-		B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */; };
-		B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */; };
-		B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */; };
-		B0436C3F1EB9B1040079730A /* BookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C3E1EB9B1040079730A /* BookingViewController.m */; };
-		B0436C431EB9B3290079730A /* TLBookingJieShaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C411EB9B3290079730A /* TLBookingJieShaoTableViewCell.m */; };
-		B0436C441EB9B3290079730A /* TLBookingJieShaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C421EB9B3290079730A /* TLBookingJieShaoTableViewCell.xib */; };
-		B0436C481EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C461EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m */; };
-		B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C471EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib */; };
-		B0436C4D1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */; };
-		B0436C4E1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */; };
 		B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */; };
 		B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */; };
 		B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C811EBB18CE0079730A /* GYCalendarView.m */; };
-		B0436C881EBB1B7C0079730A /* BookingPriceDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */; };
-		B0436C8C1EBB8B960079730A /* TLBookingTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */; };
-		B0436C8D1EBB8B960079730A /* TLBookingTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */; };
-		B0436C911EBC12480079730A /* TLBookingTicketTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */; };
-		B0436C921EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */; };
-		B0436C961EBC4DE50079730A /* TLCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */; };
-		B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */; };
-		B0436C9A1EBCC6980079730A /* BookingOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C991EBCC6980079730A /* BookingOrderViewController.m */; };
-		B0436C9E1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */; };
-		B0436C9F1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */; };
-		B0436CA31EBCCD130079730A /* BookingOrderDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */; };
-		B0436CA41EBCCD130079730A /* BookingOrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */; };
-		B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */; };
-		B0436CA91EBCD3350079730A /* BookingRemarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */; };
-		B0436CAD1EBCD8C80079730A /* BookingPayTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */; };
-		B0436CAE1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +185,106 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260438FB1EBF4E6D00D44C99 /* BookingOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderViewController.h; sourceTree = "<group>"; };
+		260438FC1EBF4E6D00D44C99 /* BookingOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderViewController.m; sourceTree = "<group>"; };
+		260438FD1EBF4E6D00D44C99 /* BookingPriceDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPriceDateViewController.h; sourceTree = "<group>"; };
+		260438FE1EBF4E6D00D44C99 /* BookingPriceDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPriceDateViewController.m; sourceTree = "<group>"; };
+		260438FF1EBF4E6D00D44C99 /* BookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingViewController.h; sourceTree = "<group>"; };
+		260439001EBF4E6D00D44C99 /* BookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingViewController.m; sourceTree = "<group>"; };
+		260439011EBF4E6D00D44C99 /* ConsultationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultationViewController.h; sourceTree = "<group>"; };
+		260439021EBF4E6D00D44C99 /* ConsultationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultationViewController.m; sourceTree = "<group>"; };
+		260439031EBF4E6D00D44C99 /* MenRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenRecommendViewController.h; sourceTree = "<group>"; };
+		260439041EBF4E6D00D44C99 /* MenRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenRecommendViewController.m; sourceTree = "<group>"; };
+		260439051EBF4E6D00D44C99 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		260439061EBF4E6D00D44C99 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		260439071EBF4E6D00D44C99 /* TravelLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineViewController.h; sourceTree = "<group>"; };
+		260439081EBF4E6D00D44C99 /* TravelLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineViewController.m; sourceTree = "<group>"; };
+		2604390A1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderDetialTableViewCell.h; sourceTree = "<group>"; };
+		2604390B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderDetialTableViewCell.m; sourceTree = "<group>"; };
+		2604390C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderDetialTableViewCell.xib; sourceTree = "<group>"; };
+		2604390D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderHeaderTableViewCell.h; sourceTree = "<group>"; };
+		2604390E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderHeaderTableViewCell.m; sourceTree = "<group>"; };
+		2604390F1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		260439101EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPayTypeTableViewCell.h; sourceTree = "<group>"; };
+		260439111EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPayTypeTableViewCell.m; sourceTree = "<group>"; };
+		260439121EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingPayTypeTableViewCell.xib; sourceTree = "<group>"; };
+		260439131EBF4E6D00D44C99 /* BookingRemarkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingRemarkTableViewCell.h; sourceTree = "<group>"; };
+		260439141EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingRemarkTableViewCell.m; sourceTree = "<group>"; };
+		260439151EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingRemarkTableViewCell.xib; sourceTree = "<group>"; };
+		260439161EBF4E6D00D44C99 /* HotRecommendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotRecommendBtn.h; sourceTree = "<group>"; };
+		260439171EBF4E6D00D44C99 /* HotRecommendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotRecommendBtn.m; sourceTree = "<group>"; };
+		260439181EBF4E6D00D44C99 /* HotRecommendBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotRecommendBtn.xib; sourceTree = "<group>"; };
+		2604391A1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultionHeaderTableViewCell.h; sourceTree = "<group>"; };
+		2604391B1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultionHeaderTableViewCell.m; sourceTree = "<group>"; };
+		2604391C1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultionHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		2604391D1EBF4E6D00D44C99 /* ConsultiontextFeildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultiontextFeildCell.h; sourceTree = "<group>"; };
+		2604391E1EBF4E6D00D44C99 /* ConsultiontextFeildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultiontextFeildCell.m; sourceTree = "<group>"; };
+		2604391F1EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultiontextFeildCell.xib; sourceTree = "<group>"; };
+		260439201EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultionTitleTableViewCell.h; sourceTree = "<group>"; };
+		260439211EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultionTitleTableViewCell.m; sourceTree = "<group>"; };
+		260439221EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultionTitleTableViewCell.xib; sourceTree = "<group>"; };
+		260439231EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultionWanFaTableViewCell.h; sourceTree = "<group>"; };
+		260439241EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultionWanFaTableViewCell.m; sourceTree = "<group>"; };
+		260439251EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultionWanFaTableViewCell.xib; sourceTree = "<group>"; };
+		260439261EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaoYouTypeTableViewCell.h; sourceTree = "<group>"; };
+		260439271EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaoYouTypeTableViewCell.m; sourceTree = "<group>"; };
+		260439281EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaoYouTypeTableViewCell.xib; sourceTree = "<group>"; };
+		260439291EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenRecommendDetialTableViewCell.h; sourceTree = "<group>"; };
+		2604392A1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenRecommendDetialTableViewCell.m; sourceTree = "<group>"; };
+		2604392B1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenRecommendDetialTableViewCell.xib; sourceTree = "<group>"; };
+		2604392C1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenRecommendHeaderTableViewCell.h; sourceTree = "<group>"; };
+		2604392D1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenRecommendHeaderTableViewCell.m; sourceTree = "<group>"; };
+		2604392E1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenRecommendHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		2604392F1EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenRecommendWanFaTableViewCell.h; sourceTree = "<group>"; };
+		260439301EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenRecommendWanFaTableViewCell.m; sourceTree = "<group>"; };
+		260439311EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenRecommendWanFaTableViewCell.xib; sourceTree = "<group>"; };
+		260439331EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendGongGaoTableViewCell.h; sourceTree = "<group>"; };
+		260439341EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendGongGaoTableViewCell.m; sourceTree = "<group>"; };
+		260439351EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendGongGaoTableViewCell.xib; sourceTree = "<group>"; };
+		260439361EBF4E6D00D44C99 /* RecomendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendHeaderView.h; sourceTree = "<group>"; };
+		260439371EBF4E6D00D44C99 /* RecomendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendHeaderView.m; sourceTree = "<group>"; };
+		260439381EBF4E6D00D44C99 /* RecomendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendHeaderView.xib; sourceTree = "<group>"; };
+		260439391EBF4E6D00D44C99 /* RecomendMenBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendMenBtn.h; sourceTree = "<group>"; };
+		2604393A1EBF4E6D00D44C99 /* RecomendMenBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendMenBtn.m; sourceTree = "<group>"; };
+		2604393B1EBF4E6D00D44C99 /* RecomendMenBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendMenBtn.xib; sourceTree = "<group>"; };
+		2604393C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendScrollTableViewCell.h; sourceTree = "<group>"; };
+		2604393D1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendScrollTableViewCell.m; sourceTree = "<group>"; };
+		2604393E1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendScrollTableViewCell.xib; sourceTree = "<group>"; };
+		260439401EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingDetialJieShaoTableViewCell.h; sourceTree = "<group>"; };
+		260439411EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingDetialJieShaoTableViewCell.m; sourceTree = "<group>"; };
+		260439421EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingDetialJieShaoTableViewCell.xib; sourceTree = "<group>"; };
+		260439431EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingJieShaoTableViewCell.h; sourceTree = "<group>"; };
+		260439441EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingJieShaoTableViewCell.m; sourceTree = "<group>"; };
+		260439451EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingJieShaoTableViewCell.xib; sourceTree = "<group>"; };
+		260439461EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingSelectdateTableViewCell.h; sourceTree = "<group>"; };
+		260439471EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingSelectdateTableViewCell.m; sourceTree = "<group>"; };
+		260439481EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingSelectdateTableViewCell.xib; sourceTree = "<group>"; };
+		260439491EBF4E6D00D44C99 /* TLBookingTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTextTableViewCell.h; sourceTree = "<group>"; };
+		2604394A1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTextTableViewCell.m; sourceTree = "<group>"; };
+		2604394B1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTextTableViewCell.xib; sourceTree = "<group>"; };
+		2604394C1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTicketTypeTableViewCell.h; sourceTree = "<group>"; };
+		2604394D1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTicketTypeTableViewCell.m; sourceTree = "<group>"; };
+		2604394E1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTicketTypeTableViewCell.xib; sourceTree = "<group>"; };
+		2604394F1EBF4E6D00D44C99 /* TLCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCalendarTableViewCell.h; sourceTree = "<group>"; };
+		260439501EBF4E6D00D44C99 /* TLCalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCalendarTableViewCell.m; sourceTree = "<group>"; };
+		260439511EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLCalendarTableViewCell.xib; sourceTree = "<group>"; };
+		260439521EBF4E6D00D44C99 /* TLDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		260439531EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		260439541EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		260439551EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGuangGaoTableViewCell.h; sourceTree = "<group>"; };
+		260439561EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGuangGaoTableViewCell.m; sourceTree = "<group>"; };
+		260439571EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLGuangGaoTableViewCell.xib; sourceTree = "<group>"; };
+		260439581EBF4E6D00D44C99 /* TopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScrollView.h; sourceTree = "<group>"; };
+		260439591EBF4E6D00D44C99 /* TopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScrollView.m; sourceTree = "<group>"; };
+		2604395B1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineDetialTableViewCell.h; sourceTree = "<group>"; };
+		2604395C1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineDetialTableViewCell.m; sourceTree = "<group>"; };
+		2604395D1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineDetialTableViewCell.xib; sourceTree = "<group>"; };
+		2604395E1EBF4E6D00D44C99 /* TravelLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineTableViewCell.h; sourceTree = "<group>"; };
+		2604395F1EBF4E6D00D44C99 /* TravelLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineTableViewCell.m; sourceTree = "<group>"; };
+		260439601EBF4E6D00D44C99 /* TravelLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineTableViewCell.xib; sourceTree = "<group>"; };
+		260439611EBF4E6D00D44C99 /* TravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelTableViewCell.h; sourceTree = "<group>"; };
+		260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelTableViewCell.m; sourceTree = "<group>"; };
+		260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 		262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTopTableViewCell.h; sourceTree = "<group>"; };
 		262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTopTableViewCell.m; sourceTree = "<group>"; };
 		26277F681EBB74360049C5F7 /* ActivityPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseTableViewCell.h; sourceTree = "<group>"; };
@@ -266,28 +383,6 @@
 		269CA8901EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMRecommendCollectionViewCell.xib; sourceTree = "<group>"; };
 		269CA8931EB6B8AF0096AF1E /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		269CA8941EB6B8AF0096AF1E /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		269CA8971EB6B8AF0096AF1E /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
-		269CA8981EB6B8AF0096AF1E /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
-		269CA89B1EB6B8AF0096AF1E /* HotRecommendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotRecommendBtn.h; sourceTree = "<group>"; };
-		269CA89C1EB6B8AF0096AF1E /* HotRecommendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotRecommendBtn.m; sourceTree = "<group>"; };
-		269CA89D1EB6B8AF0096AF1E /* HotRecommendBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotRecommendBtn.xib; sourceTree = "<group>"; };
-		269CA89E1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendGongGaoTableViewCell.h; sourceTree = "<group>"; };
-		269CA89F1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendGongGaoTableViewCell.m; sourceTree = "<group>"; };
-		269CA8A01EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendGongGaoTableViewCell.xib; sourceTree = "<group>"; };
-		269CA8A11EB6B8AF0096AF1E /* RecomendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendHeaderView.h; sourceTree = "<group>"; };
-		269CA8A21EB6B8AF0096AF1E /* RecomendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendHeaderView.m; sourceTree = "<group>"; };
-		269CA8A31EB6B8AF0096AF1E /* RecomendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendHeaderView.xib; sourceTree = "<group>"; };
-		269CA8A41EB6B8AF0096AF1E /* RecomendMenBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendMenBtn.h; sourceTree = "<group>"; };
-		269CA8A51EB6B8AF0096AF1E /* RecomendMenBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendMenBtn.m; sourceTree = "<group>"; };
-		269CA8A61EB6B8AF0096AF1E /* RecomendMenBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendMenBtn.xib; sourceTree = "<group>"; };
-		269CA8A71EB6B8AF0096AF1E /* RecomendScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendScrollTableViewCell.h; sourceTree = "<group>"; };
-		269CA8A81EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendScrollTableViewCell.m; sourceTree = "<group>"; };
-		269CA8A91EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendScrollTableViewCell.xib; sourceTree = "<group>"; };
-		269CA8AA1EB6B8AF0096AF1E /* TopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScrollView.h; sourceTree = "<group>"; };
-		269CA8AB1EB6B8AF0096AF1E /* TopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScrollView.m; sourceTree = "<group>"; };
-		269CA8AC1EB6B8AF0096AF1E /* TravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelTableViewCell.h; sourceTree = "<group>"; };
-		269CA8AD1EB6B8AF0096AF1E /* TravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelTableViewCell.m; sourceTree = "<group>"; };
-		269CA8AE1EB6B8AF0096AF1E /* TravelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 		269CA8B31EB6B8AF0096AF1E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		269CA8E61EB6BE2F0096AF1E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		269CA8E71EB6BE2F0096AF1E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
@@ -351,63 +446,11 @@
 		B0436C1E1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTopSrollViewCollectionViewCell.h; sourceTree = "<group>"; };
 		B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTopSrollViewCollectionViewCell.m; sourceTree = "<group>"; };
 		B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMTopSrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
-		B0436C231EB870780079730A /* TravelLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineViewController.h; sourceTree = "<group>"; };
-		B0436C241EB870780079730A /* TravelLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineViewController.m; sourceTree = "<group>"; };
-		B0436C261EB8748B0079730A /* MenRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenRecommendViewController.h; sourceTree = "<group>"; };
-		B0436C271EB8748B0079730A /* MenRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenRecommendViewController.m; sourceTree = "<group>"; };
-		B0436C291EB884890079730A /* TravelLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineTableViewCell.h; sourceTree = "<group>"; };
-		B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineTableViewCell.m; sourceTree = "<group>"; };
-		B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelLineDetialTableViewCell.h; sourceTree = "<group>"; };
-		B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelLineDetialTableViewCell.m; sourceTree = "<group>"; };
-		B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelLineDetialTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C331EB96FE10079730A /* TLDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDescriptionTableViewCell.h; sourceTree = "<group>"; };
-		B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDescriptionTableViewCell.m; sourceTree = "<group>"; };
-		B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLDescriptionTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C381EB971F60079730A /* TLGuangGaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGuangGaoTableViewCell.h; sourceTree = "<group>"; };
-		B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGuangGaoTableViewCell.m; sourceTree = "<group>"; };
-		B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLGuangGaoTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C3D1EB9B1040079730A /* BookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingViewController.h; sourceTree = "<group>"; };
-		B0436C3E1EB9B1040079730A /* BookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingViewController.m; sourceTree = "<group>"; };
-		B0436C401EB9B3280079730A /* TLBookingJieShaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingJieShaoTableViewCell.h; sourceTree = "<group>"; };
-		B0436C411EB9B3290079730A /* TLBookingJieShaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingJieShaoTableViewCell.m; sourceTree = "<group>"; };
-		B0436C421EB9B3290079730A /* TLBookingJieShaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingJieShaoTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C451EB9BACE0079730A /* TLBookingSelectdateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingSelectdateTableViewCell.h; sourceTree = "<group>"; };
-		B0436C461EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingSelectdateTableViewCell.m; sourceTree = "<group>"; };
-		B0436C471EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingSelectdateTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C4A1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingDetialJieShaoTableViewCell.h; sourceTree = "<group>"; };
-		B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingDetialJieShaoTableViewCell.m; sourceTree = "<group>"; };
-		B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingDetialJieShaoTableViewCell.xib; sourceTree = "<group>"; };
 		B0436C7D1EBB18CE0079730A /* CalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarCollectionViewCell.h; path = ../CalendarCollectionViewCell.h; sourceTree = "<group>"; };
 		B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarCollectionViewCell.m; path = ../CalendarCollectionViewCell.m; sourceTree = "<group>"; };
 		B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCollectionViewCell.xib; path = ../CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 		B0436C801EBB18CE0079730A /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYCalendarView.h; path = ../GYCalendarView.h; sourceTree = "<group>"; };
 		B0436C811EBB18CE0079730A /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYCalendarView.m; path = ../GYCalendarView.m; sourceTree = "<group>"; };
-		B0436C861EBB1B7C0079730A /* BookingPriceDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPriceDateViewController.h; sourceTree = "<group>"; };
-		B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPriceDateViewController.m; sourceTree = "<group>"; };
-		B0436C891EBB8B960079730A /* TLBookingTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTextTableViewCell.h; sourceTree = "<group>"; };
-		B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTextTableViewCell.m; sourceTree = "<group>"; };
-		B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTextTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C8E1EBC12480079730A /* TLBookingTicketTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBookingTicketTypeTableViewCell.h; sourceTree = "<group>"; };
-		B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBookingTicketTypeTableViewCell.m; sourceTree = "<group>"; };
-		B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLBookingTicketTypeTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C931EBC4DE50079730A /* TLCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCalendarTableViewCell.h; sourceTree = "<group>"; };
-		B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCalendarTableViewCell.m; sourceTree = "<group>"; };
-		B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLCalendarTableViewCell.xib; sourceTree = "<group>"; };
-		B0436C981EBCC6970079730A /* BookingOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderViewController.h; sourceTree = "<group>"; };
-		B0436C991EBCC6980079730A /* BookingOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderViewController.m; sourceTree = "<group>"; };
-		B0436C9B1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderHeaderTableViewCell.h; sourceTree = "<group>"; };
-		B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderHeaderTableViewCell.m; sourceTree = "<group>"; };
-		B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		B0436CA01EBCCD130079730A /* BookingOrderDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingOrderDetialTableViewCell.h; sourceTree = "<group>"; };
-		B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingOrderDetialTableViewCell.m; sourceTree = "<group>"; };
-		B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingOrderDetialTableViewCell.xib; sourceTree = "<group>"; };
-		B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingRemarkTableViewCell.h; sourceTree = "<group>"; };
-		B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingRemarkTableViewCell.m; sourceTree = "<group>"; };
-		B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingRemarkTableViewCell.xib; sourceTree = "<group>"; };
-		B0436CAA1EBCD8C80079730A /* BookingPayTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingPayTypeTableViewCell.h; sourceTree = "<group>"; };
-		B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingPayTypeTableViewCell.m; sourceTree = "<group>"; };
-		B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingPayTypeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +486,152 @@
 				6796B65DD1EBC4C79BAF2EDC /* Pods-TravelAPP.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		260438FA1EBF4E6D00D44C99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				260438FB1EBF4E6D00D44C99 /* BookingOrderViewController.h */,
+				260438FC1EBF4E6D00D44C99 /* BookingOrderViewController.m */,
+				260438FD1EBF4E6D00D44C99 /* BookingPriceDateViewController.h */,
+				260438FE1EBF4E6D00D44C99 /* BookingPriceDateViewController.m */,
+				260438FF1EBF4E6D00D44C99 /* BookingViewController.h */,
+				260439001EBF4E6D00D44C99 /* BookingViewController.m */,
+				260439011EBF4E6D00D44C99 /* ConsultationViewController.h */,
+				260439021EBF4E6D00D44C99 /* ConsultationViewController.m */,
+				260439031EBF4E6D00D44C99 /* MenRecommendViewController.h */,
+				260439041EBF4E6D00D44C99 /* MenRecommendViewController.m */,
+				260439051EBF4E6D00D44C99 /* RecommendViewController.h */,
+				260439061EBF4E6D00D44C99 /* RecommendViewController.m */,
+				260439071EBF4E6D00D44C99 /* TravelLineViewController.h */,
+				260439081EBF4E6D00D44C99 /* TravelLineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		260439091EBF4E6D00D44C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2604390A1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.h */,
+				2604390B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m */,
+				2604390C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib */,
+				2604390D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.h */,
+				2604390E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m */,
+				2604390F1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib */,
+				260439101EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.h */,
+				260439111EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m */,
+				260439121EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib */,
+				260439131EBF4E6D00D44C99 /* BookingRemarkTableViewCell.h */,
+				260439141EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m */,
+				260439151EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib */,
+				260439161EBF4E6D00D44C99 /* HotRecommendBtn.h */,
+				260439171EBF4E6D00D44C99 /* HotRecommendBtn.m */,
+				260439181EBF4E6D00D44C99 /* HotRecommendBtn.xib */,
+				260439191EBF4E6D00D44C99 /* MenRecommend(达人推荐) */,
+				260439321EBF4E6D00D44C99 /* Order(订单) */,
+				260439331EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.h */,
+				260439341EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m */,
+				260439351EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib */,
+				260439361EBF4E6D00D44C99 /* RecomendHeaderView.h */,
+				260439371EBF4E6D00D44C99 /* RecomendHeaderView.m */,
+				260439381EBF4E6D00D44C99 /* RecomendHeaderView.xib */,
+				260439391EBF4E6D00D44C99 /* RecomendMenBtn.h */,
+				2604393A1EBF4E6D00D44C99 /* RecomendMenBtn.m */,
+				2604393B1EBF4E6D00D44C99 /* RecomendMenBtn.xib */,
+				2604393C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.h */,
+				2604393D1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m */,
+				2604393E1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib */,
+				2604393F1EBF4E6D00D44C99 /* RecommendMain(推荐主页) */,
+				260439401EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.h */,
+				260439411EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m */,
+				260439421EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib */,
+				260439431EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.h */,
+				260439441EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m */,
+				260439451EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib */,
+				260439461EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.h */,
+				260439471EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m */,
+				260439481EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib */,
+				260439491EBF4E6D00D44C99 /* TLBookingTextTableViewCell.h */,
+				2604394A1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m */,
+				2604394B1EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib */,
+				2604394C1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.h */,
+				2604394D1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m */,
+				2604394E1EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib */,
+				2604394F1EBF4E6D00D44C99 /* TLCalendarTableViewCell.h */,
+				260439501EBF4E6D00D44C99 /* TLCalendarTableViewCell.m */,
+				260439511EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib */,
+				260439521EBF4E6D00D44C99 /* TLDescriptionTableViewCell.h */,
+				260439531EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m */,
+				260439541EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib */,
+				260439551EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.h */,
+				260439561EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m */,
+				260439571EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib */,
+				260439581EBF4E6D00D44C99 /* TopScrollView.h */,
+				260439591EBF4E6D00D44C99 /* TopScrollView.m */,
+				2604395A1EBF4E6D00D44C99 /* TravelLine(旅游路线推荐) */,
+				2604395B1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.h */,
+				2604395C1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m */,
+				2604395D1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib */,
+				2604395E1EBF4E6D00D44C99 /* TravelLineTableViewCell.h */,
+				2604395F1EBF4E6D00D44C99 /* TravelLineTableViewCell.m */,
+				260439601EBF4E6D00D44C99 /* TravelLineTableViewCell.xib */,
+				260439611EBF4E6D00D44C99 /* TravelTableViewCell.h */,
+				260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */,
+				260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		260439191EBF4E6D00D44C99 /* MenRecommend(达人推荐) */ = {
+			isa = PBXGroup;
+			children = (
+				2604391A1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.h */,
+				2604391B1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m */,
+				2604391C1EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib */,
+				2604391D1EBF4E6D00D44C99 /* ConsultiontextFeildCell.h */,
+				2604391E1EBF4E6D00D44C99 /* ConsultiontextFeildCell.m */,
+				2604391F1EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib */,
+				260439201EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.h */,
+				260439211EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m */,
+				260439221EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib */,
+				260439231EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.h */,
+				260439241EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m */,
+				260439251EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib */,
+				260439261EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.h */,
+				260439271EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m */,
+				260439281EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib */,
+				260439291EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.h */,
+				2604392A1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m */,
+				2604392B1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib */,
+				2604392C1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.h */,
+				2604392D1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m */,
+				2604392E1EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib */,
+				2604392F1EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.h */,
+				260439301EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m */,
+				260439311EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib */,
+			);
+			path = "MenRecommend(达人推荐)";
+			sourceTree = "<group>";
+		};
+		260439321EBF4E6D00D44C99 /* Order(订单) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Order(订单)";
+			sourceTree = "<group>";
+		};
+		2604393F1EBF4E6D00D44C99 /* RecommendMain(推荐主页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "RecommendMain(推荐主页)";
+			sourceTree = "<group>";
+		};
+		2604395A1EBF4E6D00D44C99 /* TravelLine(旅游路线推荐) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "TravelLine(旅游路线推荐)";
 			sourceTree = "<group>";
 		};
 		262426DB1EBA1F1B006FD687 /* View */ = {
@@ -842,30 +1031,11 @@
 		269CA8951EB6B8AF0096AF1E /* Recommend(推荐) */ = {
 			isa = PBXGroup;
 			children = (
-				269CA8961EB6B8AF0096AF1E /* Controller */,
+				260438FA1EBF4E6D00D44C99 /* Controller */,
+				260439091EBF4E6D00D44C99 /* View */,
 				269CA8991EB6B8AF0096AF1E /* Model */,
-				269CA89A1EB6B8AF0096AF1E /* View */,
 			);
 			path = "Recommend(推荐)";
-			sourceTree = "<group>";
-		};
-		269CA8961EB6B8AF0096AF1E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				269CA8971EB6B8AF0096AF1E /* RecommendViewController.h */,
-				269CA8981EB6B8AF0096AF1E /* RecommendViewController.m */,
-				B0436C231EB870780079730A /* TravelLineViewController.h */,
-				B0436C241EB870780079730A /* TravelLineViewController.m */,
-				B0436C261EB8748B0079730A /* MenRecommendViewController.h */,
-				B0436C271EB8748B0079730A /* MenRecommendViewController.m */,
-				B0436C3D1EB9B1040079730A /* BookingViewController.h */,
-				B0436C3E1EB9B1040079730A /* BookingViewController.m */,
-				B0436C861EBB1B7C0079730A /* BookingPriceDateViewController.h */,
-				B0436C871EBB1B7C0079730A /* BookingPriceDateViewController.m */,
-				B0436C981EBCC6970079730A /* BookingOrderViewController.h */,
-				B0436C991EBCC6980079730A /* BookingOrderViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		269CA8991EB6B8AF0096AF1E /* Model */ = {
@@ -873,75 +1043,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		269CA89A1EB6B8AF0096AF1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				269CA89B1EB6B8AF0096AF1E /* HotRecommendBtn.h */,
-				269CA89C1EB6B8AF0096AF1E /* HotRecommendBtn.m */,
-				269CA89D1EB6B8AF0096AF1E /* HotRecommendBtn.xib */,
-				269CA89E1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.h */,
-				269CA89F1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m */,
-				269CA8A01EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib */,
-				269CA8A11EB6B8AF0096AF1E /* RecomendHeaderView.h */,
-				269CA8A21EB6B8AF0096AF1E /* RecomendHeaderView.m */,
-				269CA8A31EB6B8AF0096AF1E /* RecomendHeaderView.xib */,
-				269CA8A41EB6B8AF0096AF1E /* RecomendMenBtn.h */,
-				269CA8A51EB6B8AF0096AF1E /* RecomendMenBtn.m */,
-				269CA8A61EB6B8AF0096AF1E /* RecomendMenBtn.xib */,
-				269CA8A71EB6B8AF0096AF1E /* RecomendScrollTableViewCell.h */,
-				269CA8A81EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m */,
-				269CA8A91EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib */,
-				269CA8AA1EB6B8AF0096AF1E /* TopScrollView.h */,
-				269CA8AB1EB6B8AF0096AF1E /* TopScrollView.m */,
-				269CA8AC1EB6B8AF0096AF1E /* TravelTableViewCell.h */,
-				269CA8AD1EB6B8AF0096AF1E /* TravelTableViewCell.m */,
-				269CA8AE1EB6B8AF0096AF1E /* TravelTableViewCell.xib */,
-				B0436C291EB884890079730A /* TravelLineTableViewCell.h */,
-				B0436C2A1EB884890079730A /* TravelLineTableViewCell.m */,
-				B0436C2B1EB884890079730A /* TravelLineTableViewCell.xib */,
-				B0436C2E1EB8CA250079730A /* TravelLineDetialTableViewCell.h */,
-				B0436C2F1EB8CA250079730A /* TravelLineDetialTableViewCell.m */,
-				B0436C301EB8CA250079730A /* TravelLineDetialTableViewCell.xib */,
-				B0436C331EB96FE10079730A /* TLDescriptionTableViewCell.h */,
-				B0436C341EB96FE10079730A /* TLDescriptionTableViewCell.m */,
-				B0436C351EB96FE10079730A /* TLDescriptionTableViewCell.xib */,
-				B0436C381EB971F60079730A /* TLGuangGaoTableViewCell.h */,
-				B0436C391EB971F60079730A /* TLGuangGaoTableViewCell.m */,
-				B0436C3A1EB971F60079730A /* TLGuangGaoTableViewCell.xib */,
-				B0436C401EB9B3280079730A /* TLBookingJieShaoTableViewCell.h */,
-				B0436C411EB9B3290079730A /* TLBookingJieShaoTableViewCell.m */,
-				B0436C421EB9B3290079730A /* TLBookingJieShaoTableViewCell.xib */,
-				B0436C451EB9BACE0079730A /* TLBookingSelectdateTableViewCell.h */,
-				B0436C461EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m */,
-				B0436C471EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib */,
-				B0436C4A1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.h */,
-				B0436C4B1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m */,
-				B0436C4C1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib */,
-				B0436C891EBB8B960079730A /* TLBookingTextTableViewCell.h */,
-				B0436C8A1EBB8B960079730A /* TLBookingTextTableViewCell.m */,
-				B0436C8B1EBB8B960079730A /* TLBookingTextTableViewCell.xib */,
-				B0436C8E1EBC12480079730A /* TLBookingTicketTypeTableViewCell.h */,
-				B0436C8F1EBC12480079730A /* TLBookingTicketTypeTableViewCell.m */,
-				B0436C901EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib */,
-				B0436C931EBC4DE50079730A /* TLCalendarTableViewCell.h */,
-				B0436C941EBC4DE50079730A /* TLCalendarTableViewCell.m */,
-				B0436C951EBC4DE50079730A /* TLCalendarTableViewCell.xib */,
-				B0436C9B1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.h */,
-				B0436C9C1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m */,
-				B0436C9D1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib */,
-				B0436CA01EBCCD130079730A /* BookingOrderDetialTableViewCell.h */,
-				B0436CA11EBCCD130079730A /* BookingOrderDetialTableViewCell.m */,
-				B0436CA21EBCCD130079730A /* BookingOrderDetialTableViewCell.xib */,
-				B0436CA51EBCD3350079730A /* BookingRemarkTableViewCell.h */,
-				B0436CA61EBCD3350079730A /* BookingRemarkTableViewCell.m */,
-				B0436CA71EBCD3350079730A /* BookingRemarkTableViewCell.xib */,
-				B0436CAA1EBCD8C80079730A /* BookingPayTypeTableViewCell.h */,
-				B0436CAB1EBCD8C80079730A /* BookingPayTypeTableViewCell.m */,
-				B0436CAC1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		269CA8AF1EB6B8AF0096AF1E /* Tribe(部落) */ = {
@@ -1121,52 +1222,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FC79411EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib in Resources */,
+				260439861EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib in Resources */,
 				26ECD9741EBDA7E7009AF788 /* GSTopTableViewCell.xib in Resources */,
+				260439801EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib in Resources */,
 				26BA3C0F1EBD05DE0048F72E /* GLMapCollectionViewCell.xib in Resources */,
 				26BA3C141EBD08F10048F72E /* GLRecommendCollectionViewCell.xib in Resources */,
-				B0436C9F1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.xib in Resources */,
-				B0436C4E1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
-				269CA8D91EB6B8AF0096AF1E /* HotRecommendBtn.xib in Resources */,
 				26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */,
-				269CA8E41EB6B8AF0096AF1E /* TravelTableViewCell.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
+				2604396C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib in Resources */,
 				B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */,
+				260439981EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib in Resources */,
+				2604398C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8BF1EB6B8AF0096AF1E /* DestinationCollectionViewCell.xib in Resources */,
-				B0436CA41EBCCD130079730A /* BookingOrderDetialTableViewCell.xib in Resources */,
-				B0436C2D1EB884890079730A /* TravelLineTableViewCell.xib in Resources */,
-				B0436C3C1EB971F60079730A /* TLGuangGaoTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
+				2604398A1EBF4E6D00D44C99 /* RecomendMenBtn.xib in Resources */,
 				26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */,
+				260439941EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib in Resources */,
+				2604399A1EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib in Resources */,
 				26ECD97E1EBDA802009AF788 /* GSTableViewCell.xib in Resources */,
+				260439741EBF4E6D00D44C99 /* HotRecommendBtn.xib in Resources */,
+				260439881EBF4E6D00D44C99 /* RecomendHeaderView.xib in Resources */,
+				2604397A1EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib in Resources */,
+				260439A11EBF4E6D00D44C99 /* TravelLineTableViewCell.xib in Resources */,
 				26BA3C1E1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib in Resources */,
+				260439821EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib in Resources */,
+				2604397E1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib in Resources */,
+				260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
-				B0436C321EB8CA250079730A /* TravelLineDetialTableViewCell.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
 				26FC792A1EBCC93600F66B69 /* GLDCheckCollectionViewCell.xib in Resources */,
-				B0436C441EB9B3290079730A /* TLBookingJieShaoTableViewCell.xib in Resources */,
-				269CA8DD1EB6B8AF0096AF1E /* RecomendHeaderView.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
-				B0436C371EB96FE10079730A /* TLDescriptionTableViewCell.xib in Resources */,
-				B0436CAE1EBCD8C80079730A /* BookingPayTypeTableViewCell.xib in Resources */,
 				26BA3C051EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib in Resources */,
-				B0436C8D1EBB8B960079730A /* TLBookingTextTableViewCell.xib in Resources */,
-				B0436C971EBC4DE50079730A /* TLCalendarTableViewCell.xib in Resources */,
+				260439961EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
-				269CA8E11EB6B8AF0096AF1E /* RecomendScrollTableViewCell.xib in Resources */,
 				26ECD9791EBDA7F5009AF788 /* GSPriceTableViewCell.xib in Resources */,
-				269CA8DF1EB6B8AF0096AF1E /* RecomendMenBtn.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
+				2604397C1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib in Resources */,
+				2604396E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib in Resources */,
+				260439921EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib in Resources */,
+				2604399C1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib in Resources */,
 				26FC792F1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.xib in Resources */,
-				269CA8DB1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib in Resources */,
+				2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */,
+				260439781EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib in Resources */,
+				260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */,
+				260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */,
 				26BA3C0A1EBCF5060048F72E /* GLDHeaderView.xib in Resources */,
-				B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */,
+				260439721EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib in Resources */,
+				260439A31EBF4E6D00D44C99 /* TravelTableViewCell.xib in Resources */,
+				260439761EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib in Resources */,
 				26FC79221EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.xib in Resources */,
-				B0436C921EBC12480079730A /* TLBookingTicketTypeTableViewCell.xib in Resources */,
-				269CA8DB1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.xib in Resources */,
-				B0436C491EB9BACE0079730A /* TLBookingSelectdateTableViewCell.xib in Resources */,
-				B0436CA91EBCD3350079730A /* BookingRemarkTableViewCell.xib in Resources */,
+				2604398E1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
 				269CA8D51EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib in Resources */,
 				26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */,
 			);
@@ -1242,52 +1349,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */,
-				269CA8E31EB6B8AF0096AF1E /* TravelTableViewCell.m in Sources */,
-				269CA8D81EB6B8AF0096AF1E /* HotRecommendBtn.m in Sources */,
-				B0436C9E1EBCC7FE0079730A /* BookingOrderHeaderTableViewCell.m in Sources */,
 				268BA8B11EB99A740002B3C3 /* TOTopTableViewCell.m in Sources */,
+				2604397D1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m in Sources */,
+				260439951EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m in Sources */,
+				260439811EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m in Sources */,
+				260439911EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m in Sources */,
+				260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */,
+				260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */,
+				260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */,
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
 				26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */,
+				2604398D1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
 				269CA8C71EB6B8AF0096AF1E /* DiscountCollectionViewCell.m in Sources */,
-				B0436C4D1EB9C3F10079730A /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
 				26ECD97D1EBDA802009AF788 /* GSTableViewCell.m in Sources */,
+				260439991EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m in Sources */,
+				260439931EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m in Sources */,
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
-				B0436C8C1EBB8B960079730A /* TLBookingTextTableViewCell.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				268BA8AF1EB99A740002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
 				B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */,
 				269CA8CE1EB6B8AF0096AF1E /* SeasonHotCollectionViewCell.m in Sources */,
-				B0436C3F1EB9B1040079730A /* BookingViewController.m in Sources */,
+				2604398B1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m in Sources */,
 				268BA8AD1EB99A740002B3C3 /* TRDetailViewController.m in Sources */,
+				260439651EBF4E6D00D44C99 /* BookingPriceDateViewController.m in Sources */,
+				2604399D1EBF4E6D00D44C99 /* TopScrollView.m in Sources */,
+				2604396B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m in Sources */,
 				26BA3C131EBD08F10048F72E /* GLRecommendCollectionViewCell.m in Sources */,
 				269CA8CF1EB6B8AF0096AF1E /* MemberMallViewController.m in Sources */,
+				2604397F1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m in Sources */,
 				268BA8B51EB99A740002B3C3 /* TRTopTableViewCell.m in Sources */,
 				269CA8BE1EB6B8AF0096AF1E /* DestinationCollectionViewCell.m in Sources */,
 				26FC79211EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.m in Sources */,
-				B0436CA31EBCCD130079730A /* BookingOrderDetialTableViewCell.m in Sources */,
+				260439661EBF4E6D00D44C99 /* BookingViewController.m in Sources */,
 				269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */,
+				2604399B1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m in Sources */,
 				26BA3C0E1EBD05DE0048F72E /* GLMapCollectionViewCell.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
-				269CA8DA1EB6B8AF0096AF1E /* RecomendGongGaoTableViewCell.m in Sources */,
-				B0436C361EB96FE10079730A /* TLDescriptionTableViewCell.m in Sources */,
 				26FC79381EBCC9D000F66B69 /* GLDInfoCollectionViewCell.m in Sources */,
-				B0436C2C1EB884890079730A /* TravelLineTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
-				269CA8D71EB6B8AF0096AF1E /* RecommendViewController.m in Sources */,
-				B0436C881EBB1B7C0079730A /* BookingPriceDateViewController.m in Sources */,
-				269CA8DE1EB6B8AF0096AF1E /* RecomendMenBtn.m in Sources */,
 				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
+				260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */,
 				268BA8B21EB99A740002B3C3 /* TribeDLView.m in Sources */,
-				B0436C3B1EB971F60079730A /* TLGuangGaoTableViewCell.m in Sources */,
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
-				B0436C281EB8748B0079730A /* MenRecommendViewController.m in Sources */,
-				B0436C9A1EBCC6980079730A /* BookingOrderViewController.m in Sources */,
-				269CA8E21EB6B8AF0096AF1E /* TopScrollView.m in Sources */,
+				260439971EBF4E6D00D44C99 /* TLCalendarTableViewCell.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
+				260439A21EBF4E6D00D44C99 /* TravelTableViewCell.m in Sources */,
+				260439831EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
 				26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */,
 				B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */,
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
+				2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				26BA3C1D1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
@@ -1295,41 +1407,45 @@
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
-				B0436C961EBC4DE50079730A /* TLCalendarTableViewCell.m in Sources */,
+				260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */,
 				26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */,
-				B0436C481EB9BACE0079730A /* TLBookingSelectdateTableViewCell.m in Sources */,
 				26ECD9781EBDA7F5009AF788 /* GSPriceTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
-				B0436C911EBC12480079730A /* TLBookingTicketTypeTableViewCell.m in Sources */,
 				269CA8C01EB6B8AF0096AF1E /* DestinationLeftSelectView.m in Sources */,
 				269CA8C91EB6B8AF0096AF1E /* HeaderCollectionReusableView.m in Sources */,
 				26FC79401EBCCA3000F66B69 /* GLDCommentCollectionViewCell.m in Sources */,
 				26FC79291EBCC93600F66B69 /* GLDCheckCollectionViewCell.m in Sources */,
-				B0436C431EB9B3290079730A /* TLBookingJieShaoTableViewCell.m in Sources */,
 				26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */,
 				269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */,
+				260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */,
+				260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */,
+				2604398F1EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m in Sources */,
 				269CA8C61EB6B8AF0096AF1E /* ChannelCollectionViewCell.m in Sources */,
+				2604396D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m in Sources */,
+				260439691EBF4E6D00D44C99 /* RecommendViewController.m in Sources */,
+				260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */,
+				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
 				268BA8B01EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
 				26BA3C091EBCF5060048F72E /* GLDHeaderView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
 				26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */,
 				26BA3C041EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m in Sources */,
+				260439751EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m in Sources */,
 				26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */,
 				268BA8AE1EB99A740002B3C3 /* TribeViewController.m in Sources */,
-				B0436C311EB8CA250079730A /* TravelLineDetialTableViewCell.m in Sources */,
-				B0436C251EB870780079730A /* TravelLineViewController.m in Sources */,
-				B0436CAD1EBCD8C80079730A /* BookingPayTypeTableViewCell.m in Sources */,
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
-				269CA8DC1EB6B8AF0096AF1E /* RecomendHeaderView.m in Sources */,
 				268BA8B31EB99A740002B3C3 /* TribeTableViewCell.m in Sources */,
 				269CA8D01EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.m in Sources */,
+				2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */,
+				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
-				269CA8E01EB6B8AF0096AF1E /* RecomendScrollTableViewCell.m in Sources */,
+				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
-				B0436CA81EBCD3350079730A /* BookingRemarkTableViewCell.m in Sources */,
+				260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
+				260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,
 				26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */,
 			);
