@@ -14,6 +14,7 @@
 #import "TravelTableViewCell.h"
 #import "TravelLineViewController.h"
 #import "MenRecommendViewController.h"
+#import "BookingViewController.h"
 
 @interface RecommendViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate , RecomendScrollTableViewCellDelegate>
 
@@ -62,7 +63,7 @@
 #pragma mark ---UITableViewDataSource
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -84,10 +85,16 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (indexPath.section == 2){
+        RecomendScrollTableViewCell *cell = [RecomendScrollTableViewCell initCustomScrollViwCellWithTableView:tableView WithStyle:3];
+        cell.delegate = self;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }else if (indexPath.section == 3) {
         RecomendGongGaoTableViewCell *cell = [RecomendGongGaoTableViewCell initCustomCellWithTableView:tableView];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
-    }else{
+    }
+    else{
         TravelTableViewCell *cell = [TravelTableViewCell initCustomCellViewTableView:tableView];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -106,7 +113,12 @@
         RecomendHeaderView *headerView = [RecomendHeaderView initCustomHeaderViewWithFrame:CGRectMake(0, 0, SCREEN_W, 30)];
         headerView.headerLabel.text = @"推荐达人";
         return headerView;
-    }else{
+    }else if(section == 2){
+        RecomendHeaderView *headerView = [RecomendHeaderView initCustomHeaderViewWithFrame:CGRectMake(0, 0, SCREEN_W, 30)];
+        headerView.headerLabel.text = @"玩法推荐";
+        return headerView;
+    }
+    else{
         UIView *view = [[UIView alloc] init];
         return view;
     }
@@ -114,7 +126,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    if (section == 0 || section == 1) {
+    if (section == 0 || section == 1 || section == 2) {
         return 40;
     }else{
         return 0;
@@ -130,8 +142,11 @@
     }else if (indexPath.section == 1){
         return 200;
     }else if (indexPath.section == 2){
+        return 300;
+    }else if (indexPath.section == 3){
         return 200;
-    }else{
+    }
+    else{
         return 300;
     }
 }
@@ -155,6 +170,12 @@
         MenRecommendViewController *vc = [[MenRecommendViewController alloc] init];
         [self.navigationController pushViewController:vc animated:true];
     }
+    if (sender.tag/100 == 3){
+        BookingViewController *vc = [[BookingViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+
+    }
+    
    
 
 }

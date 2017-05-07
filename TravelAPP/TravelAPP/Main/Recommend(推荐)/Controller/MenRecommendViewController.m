@@ -114,6 +114,8 @@
         label.text = @"提供玩法";
         label.layer.borderWidth = 0.5;
         label.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        label.backgroundColor = [UIColor whiteColor];
+        label.alpha = 0.7;
         label.textAlignment = NSTextAlignmentCenter;
         [label setFont:[UIFont systemFontOfSize:14]];
         return label;
@@ -147,14 +149,14 @@
     return 0;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat sectionHeaderHeight = 40;
-    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
-        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
-        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
-    }
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    CGFloat sectionHeaderHeight = 40;
+//    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+//        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+//    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+//        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+//    }
+//}
 
 #pragma mark ---method
 - (void)clickBtnAction:(UIButton *)sender {

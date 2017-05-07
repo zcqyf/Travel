@@ -166,6 +166,8 @@
 		B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */; };
 		B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */; };
 		B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C811EBB18CE0079730A /* GYCalendarView.m */; };
+		B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */; };
+		B0436CE71EBF74060079730A /* RecommendWanFaBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CE61EBF74060079730A /* RecommendWanFaBtn.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -456,6 +458,9 @@
 		B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCollectionViewCell.xib; path = ../CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 		B0436C801EBB18CE0079730A /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYCalendarView.h; path = ../GYCalendarView.h; sourceTree = "<group>"; };
 		B0436C811EBB18CE0079730A /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYCalendarView.m; path = ../GYCalendarView.m; sourceTree = "<group>"; };
+		B0436CE31EBF73FD0079730A /* RecommendWanFaBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendWanFaBtn.h; sourceTree = "<group>"; };
+		B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendWanFaBtn.m; sourceTree = "<group>"; };
+		B0436CE61EBF74060079730A /* RecommendWanFaBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendWanFaBtn.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -533,7 +538,6 @@
 				260439171EBF4E6D00D44C99 /* HotRecommendBtn.m */,
 				260439181EBF4E6D00D44C99 /* HotRecommendBtn.xib */,
 				260439191EBF4E6D00D44C99 /* MenRecommend(达人推荐) */,
-				260439321EBF4E6D00D44C99 /* Order(订单) */,
 				260439331EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.h */,
 				260439341EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m */,
 				260439351EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib */,
@@ -546,7 +550,6 @@
 				2604393C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.h */,
 				2604393D1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m */,
 				2604393E1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib */,
-				2604393F1EBF4E6D00D44C99 /* RecommendMain(推荐主页) */,
 				260439401EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.h */,
 				260439411EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m */,
 				260439421EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib */,
@@ -573,7 +576,6 @@
 				260439571EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib */,
 				260439581EBF4E6D00D44C99 /* TopScrollView.h */,
 				260439591EBF4E6D00D44C99 /* TopScrollView.m */,
-				2604395A1EBF4E6D00D44C99 /* TravelLine(旅游路线推荐) */,
 				2604395B1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.h */,
 				2604395C1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m */,
 				2604395D1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib */,
@@ -583,6 +585,9 @@
 				260439611EBF4E6D00D44C99 /* TravelTableViewCell.h */,
 				260439621EBF4E6D00D44C99 /* TravelTableViewCell.m */,
 				260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */,
+				B0436CE31EBF73FD0079730A /* RecommendWanFaBtn.h */,
+				B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */,
+				B0436CE61EBF74060079730A /* RecommendWanFaBtn.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -616,27 +621,6 @@
 				260439311EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib */,
 			);
 			path = "MenRecommend(达人推荐)";
-			sourceTree = "<group>";
-		};
-		260439321EBF4E6D00D44C99 /* Order(订单) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Order(订单)";
-			sourceTree = "<group>";
-		};
-		2604393F1EBF4E6D00D44C99 /* RecommendMain(推荐主页) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "RecommendMain(推荐主页)";
-			sourceTree = "<group>";
-		};
-		2604395A1EBF4E6D00D44C99 /* TravelLine(旅游路线推荐) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "TravelLine(旅游路线推荐)";
 			sourceTree = "<group>";
 		};
 		262426DB1EBA1F1B006FD687 /* View */ = {
@@ -1254,6 +1238,7 @@
 				2604397A1EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.xib in Resources */,
 				260439A11EBF4E6D00D44C99 /* TravelLineTableViewCell.xib in Resources */,
 				26BA3C1E1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.xib in Resources */,
+				B0436CE71EBF74060079730A /* RecommendWanFaBtn.xib in Resources */,
 				260439821EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.xib in Resources */,
 				2604397E1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib in Resources */,
 				260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */,
@@ -1383,6 +1368,7 @@
 				260439651EBF4E6D00D44C99 /* BookingPriceDateViewController.m in Sources */,
 				2604399D1EBF4E6D00D44C99 /* TopScrollView.m in Sources */,
 				2604396B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m in Sources */,
+				B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */,
 				26BA3C131EBD08F10048F72E /* GLRecommendCollectionViewCell.m in Sources */,
 				269CA8CF1EB6B8AF0096AF1E /* MemberMallViewController.m in Sources */,
 				2604397F1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m in Sources */,
