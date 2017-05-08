@@ -10,6 +10,8 @@
 #import "DestinationLeftSelectView.h"
 #import "DestinationSelectBtn.h"
 #import "DestinationCollectionViewCell.h"
+#import "DestinationDetialViewController.h"
+#import "DestinationDetialMainViewController.h"
 
 @interface DestinationViewController ()<DestinationLeftSelectViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -75,6 +77,11 @@
     DestinationCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CELL" forIndexPath:indexPath];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DestinationDetialMainViewController *vc = [[DestinationDetialMainViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 #pragma mark ---UICollectionViewFlowLayout

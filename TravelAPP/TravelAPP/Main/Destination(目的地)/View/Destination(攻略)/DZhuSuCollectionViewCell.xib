@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DZhuSuCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="324"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="324"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwg-j3-KzH">
+                        <rect key="frame" x="0.0" y="236" width="430" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Fdf-Ka-9X5"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香港住宿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-ex-c8q">
+                        <rect key="frame" x="0.0" y="5" width="430" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9aW-Bu-3IS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDw-xd-Abq">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="QXG-3H-DbF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-nB-rgW">
+                        <rect key="frame" x="8" y="45" width="414" height="183"/>
+                        <string key="text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1f2-ex-c8q" secondAttribute="trailing" id="7Hp-fY-Mpf"/>
+                <constraint firstItem="Hl1-nB-rgW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="IAf-Nl-A8q"/>
+                <constraint firstAttribute="trailing" secondItem="Qwg-j3-KzH" secondAttribute="trailing" id="Lg8-mE-JES"/>
+                <constraint firstAttribute="bottom" secondItem="Qwg-j3-KzH" secondAttribute="bottom" constant="8" id="MYm-Dg-dVS"/>
+                <constraint firstItem="CDw-xd-Abq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Mi8-Xf-ahj"/>
+                <constraint firstItem="CDw-xd-Abq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zxv-9a-4pf"/>
+                <constraint firstAttribute="trailing" secondItem="CDw-xd-Abq" secondAttribute="trailing" id="beO-O8-CUR"/>
+                <constraint firstItem="Hl1-nB-rgW" firstAttribute="top" secondItem="1f2-ex-c8q" secondAttribute="bottom" id="jcN-Gn-Dmd"/>
+                <constraint firstItem="Qwg-j3-KzH" firstAttribute="top" secondItem="Hl1-nB-rgW" secondAttribute="bottom" constant="8" id="lLZ-t9-45u"/>
+                <constraint firstItem="1f2-ex-c8q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pgL-Ge-fvC"/>
+                <constraint firstItem="Qwg-j3-KzH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="szC-t2-iWH"/>
+                <constraint firstAttribute="trailing" secondItem="Hl1-nB-rgW" secondAttribute="trailing" constant="8" id="xZW-Es-qvg"/>
+                <constraint firstItem="1f2-ex-c8q" firstAttribute="top" secondItem="CDw-xd-Abq" secondAttribute="bottom" id="zhb-ES-NdZ"/>
+            </constraints>
+            <size key="customSize" width="430" height="324"/>
+            <connections>
+                <outlet property="ScrollBackgoundView" destination="Qwg-j3-KzH" id="aJ4-Ex-TcB"/>
+                <outlet property="myTxtLabel" destination="Hl1-nB-rgW" id="2bx-jS-f1v"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>

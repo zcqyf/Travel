@@ -40,6 +40,7 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 49+64, SCREEN_W, SCREEN_H+8-64-49-49) style:UITableViewStylePlain];
+        
         _tableView.delegate = self;
         _tableView.dataSource = self;
         

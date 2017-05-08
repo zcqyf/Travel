@@ -34,7 +34,7 @@
     
     if (self = [super init]) {
       
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor whiteColor];
         self.frame = frame;
         self.typeStyle = typeStyle;
         CGFloat fontSize = 15.0;
@@ -74,7 +74,7 @@
             [_btnArray addObject:titleBtn];
             
             if (typeStyle == homeStyle) {
-                if (i == 1) {
+                if (i == 0) {
                     _previousBtn = _btnArray[0];
                     _currentBtn = titleBtn;
                     titleBtn.selected = YES;

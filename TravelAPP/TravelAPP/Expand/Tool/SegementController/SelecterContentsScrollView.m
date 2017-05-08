@@ -25,8 +25,8 @@
         _vcArray = [NSArray arrayWithArray:vcArray];
         
         if (typeStyle == homeStyle) {
-            [self lazyLoadVCFromIndex:1];
-            [self updateVCViewFromIndex:1];
+            [self lazyLoadVCFromIndex:0];
+            [self updateVCViewFromIndex:0];
         }
         else{
             [self lazyLoadVCFromIndex:0];
