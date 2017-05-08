@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TOTopSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-lV-w9s">
+                    <rect key="frame" x="1" y="1" width="186" height="38"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="出发时间">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf9-De-Sog">
+                    <rect key="frame" x="188" y="1" width="186" height="38"/>
+                    <color key="backgroundColor" red="1" green="0.55340115459999994" blue="0.52602971789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="目的地">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="o9Y-lV-w9s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="Dq1-tW-Had"/>
+                <constraint firstAttribute="bottom" secondItem="o9Y-lV-w9s" secondAttribute="bottom" constant="1" id="Lqy-XF-9TH"/>
+                <constraint firstItem="Uf9-De-Sog" firstAttribute="width" secondItem="o9Y-lV-w9s" secondAttribute="width" id="PbL-7M-Tqf"/>
+                <constraint firstAttribute="bottom" secondItem="Uf9-De-Sog" secondAttribute="bottom" constant="1" id="TOC-hA-9CK"/>
+                <constraint firstAttribute="trailing" secondItem="Uf9-De-Sog" secondAttribute="trailing" constant="1" id="cyv-iV-hr7"/>
+                <constraint firstItem="Uf9-De-Sog" firstAttribute="leading" secondItem="o9Y-lV-w9s" secondAttribute="trailing" constant="1" id="dHe-Uf-g4B"/>
+                <constraint firstItem="o9Y-lV-w9s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="dR7-3Z-Hae"/>
+                <constraint firstItem="Uf9-De-Sog" firstAttribute="height" secondItem="o9Y-lV-w9s" secondAttribute="height" id="dYc-J8-PfO"/>
+                <constraint firstItem="Uf9-De-Sog" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="kwQ-OX-pzA"/>
+                <constraint firstItem="Uf9-De-Sog" firstAttribute="leading" secondItem="o9Y-lV-w9s" secondAttribute="trailing" constant="1" id="rAa-6u-oDX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

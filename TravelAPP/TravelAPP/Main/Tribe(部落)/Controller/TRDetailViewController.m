@@ -10,6 +10,7 @@
 #import "TRTopTableViewCell.h"
 #import "TribeTableViewCell.h"
 #import <Masonry.h>
+#import "TRJourneyViewController.h"
 
 @interface TRDetailViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -43,8 +44,8 @@
         _tableView.backgroundColor = [[UIColor alloc] initWithRed:0.96 green:0.96 blue:0.96 alpha:1.0];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 8)];
-        _tableView.contentInset = UIEdgeInsetsMake(0, 0, -8, 0);
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 5)];
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, -5, 0);
         [_tableView registerClass:[TRTopTableViewCell class] forCellReuseIdentifier:@"TRTopTableViewCell"];
         [_tableView registerClass:[TribeTableViewCell class] forCellReuseIdentifier:@"TribeTableViewCell"];
     }
@@ -90,14 +91,6 @@
     }
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//    return <#expression#>
-//}
-//
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-//    return <#expression#>
-//}
-
 #pragma tableView delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
@@ -111,11 +104,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     if (section == 0) {
-        return 5;
+        return 2;
     } else if (section == 5) {
         return 0.001;
     } else {
-        return  10;
+        return  5;
     }
 }
 
@@ -124,7 +117,11 @@
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    if (indexPath.section > 1) {
+        TRJourneyViewController *vc = [TRJourneyViewController new];
+        vc.title = @"游记详情";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

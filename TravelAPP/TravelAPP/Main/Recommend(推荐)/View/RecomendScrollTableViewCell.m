@@ -33,7 +33,7 @@
             cellSize = CGSizeMake(200, 200);
         }else if (style == 2){
             cellSize = CGSizeMake(200, 200);
-        }else if (style == 3) {
+        }else {//if (style == 3) TODO 解决警告⚠️
             cellSize = CGSizeMake(300, 300);
         }
         

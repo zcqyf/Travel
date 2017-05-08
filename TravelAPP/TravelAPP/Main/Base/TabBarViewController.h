@@ -10,4 +10,6 @@
 
 @interface TabBarViewController : UITabBarController
 
+@property (nonatomic,strong)UIButton *mineBtn;
+
 @end

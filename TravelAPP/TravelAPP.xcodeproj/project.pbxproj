@@ -73,6 +73,32 @@
 		260439A31EBF4E6D00D44C99 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439631EBF4E6D00D44C99 /* TravelTableViewCell.xib */; };
 		260439A91EBF5D4300D44C99 /* GLBottomCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439A81EBF5D4300D44C99 /* GLBottomCommentView.m */; };
 		260439AB1EBF5D4E00D44C99 /* GLBottomCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439AA1EBF5D4E00D44C99 /* GLBottomCommentView.xib */; };
+		260439B31EC09DBD00D44C99 /* TRJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439B21EC09DBD00D44C99 /* TRJourneyViewController.m */; };
+		260439B61EC09DF600D44C99 /* TRJourneyPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439B51EC09DF600D44C99 /* TRJourneyPublishViewController.m */; };
+		260439B91EC09EC200D44C99 /* TOJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439B81EC09EC200D44C99 /* TOJourneyViewController.m */; };
+		260439BC1EC09EE500D44C99 /* TOJourneyReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439BB1EC09EE500D44C99 /* TOJourneyReplyViewController.m */; };
+		260439BF1EC09F1600D44C99 /* TOPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439BE1EC09F1600D44C99 /* TOPublishViewController.m */; };
+		260439C31EC0A05400D44C99 /* TRJourneyTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439C11EC0A05400D44C99 /* TRJourneyTopTableViewCell.m */; };
+		260439C41EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439C21EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib */; };
+		260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439C61EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m */; };
+		260439C91EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439C71EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib */; };
+		260439D21EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439D01EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m */; };
+		260439D31EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439D11EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.xib */; };
+		260439D71EC0A20B00D44C99 /* TOJourneyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439D51EC0A20B00D44C99 /* TOJourneyTableViewCell.m */; };
+		260439D81EC0A20B00D44C99 /* TOJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439D61EC0A20B00D44C99 /* TOJourneyTableViewCell.xib */; };
+		260439DC1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439DA1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.m */; };
+		260439DD1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439DB1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.xib */; };
+		260439E11EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439DF1EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m */; };
+		260439E21EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439E01EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib */; };
+		260439EA1EC0A3FE00D44C99 /* TOTopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439E91EC0A3FE00D44C99 /* TOTopSelectView.m */; };
+		260439EC1EC0A40700D44C99 /* TOTopSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439EB1EC0A40700D44C99 /* TOTopSelectView.xib */; };
+		260439EF1EC0A6D500D44C99 /* TRJourneyBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439EE1EC0A6D500D44C99 /* TRJourneyBottomView.m */; };
+		260439F11EC0A6E000D44C99 /* TRJourneyBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439F01EC0A6E000D44C99 /* TRJourneyBottomView.xib */; };
+		260439F71EC0C3FD00D44C99 /* TOPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260439F61EC0C3FD00D44C99 /* TOPublishView.m */; };
+		260439F91EC0C40500D44C99 /* TOPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260439F81EC0C40500D44C99 /* TOPublishView.xib */; };
+		26043A021EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26043A001EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m */; };
+		26043A031EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26043A011EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib */; };
+		26043A061EC0DDF800D44C99 /* TOBottomAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26043A051EC0DDF800D44C99 /* TOBottomAddView.m */; };
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
@@ -292,6 +318,48 @@
 		260439A71EBF5D4300D44C99 /* GLBottomCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBottomCommentView.h; sourceTree = "<group>"; };
 		260439A81EBF5D4300D44C99 /* GLBottomCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBottomCommentView.m; sourceTree = "<group>"; };
 		260439AA1EBF5D4E00D44C99 /* GLBottomCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBottomCommentView.xib; sourceTree = "<group>"; };
+		260439B11EC09DBD00D44C99 /* TRJourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyViewController.h; sourceTree = "<group>"; };
+		260439B21EC09DBD00D44C99 /* TRJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyViewController.m; sourceTree = "<group>"; };
+		260439B41EC09DF600D44C99 /* TRJourneyPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyPublishViewController.h; sourceTree = "<group>"; };
+		260439B51EC09DF600D44C99 /* TRJourneyPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyPublishViewController.m; sourceTree = "<group>"; };
+		260439B71EC09EC200D44C99 /* TOJourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyViewController.h; sourceTree = "<group>"; };
+		260439B81EC09EC200D44C99 /* TOJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyViewController.m; sourceTree = "<group>"; };
+		260439BA1EC09EE500D44C99 /* TOJourneyReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyReplyViewController.h; sourceTree = "<group>"; };
+		260439BB1EC09EE500D44C99 /* TOJourneyReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyReplyViewController.m; sourceTree = "<group>"; };
+		260439BD1EC09F1600D44C99 /* TOPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPublishViewController.h; sourceTree = "<group>"; };
+		260439BE1EC09F1600D44C99 /* TOPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPublishViewController.m; sourceTree = "<group>"; };
+		260439C01EC0A05400D44C99 /* TRJourneyTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyTopTableViewCell.h; sourceTree = "<group>"; };
+		260439C11EC0A05400D44C99 /* TRJourneyTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyTopTableViewCell.m; sourceTree = "<group>"; };
+		260439C21EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRJourneyTopTableViewCell.xib; sourceTree = "<group>"; };
+		260439C51EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		260439C61EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		260439C71EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRJourneyDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		260439CF1EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyTopTableViewCell.h; sourceTree = "<group>"; };
+		260439D01EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyTopTableViewCell.m; sourceTree = "<group>"; };
+		260439D11EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOJourneyTopTableViewCell.xib; sourceTree = "<group>"; };
+		260439D41EC0A20B00D44C99 /* TOJourneyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyTableViewCell.h; sourceTree = "<group>"; };
+		260439D51EC0A20B00D44C99 /* TOJourneyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyTableViewCell.m; sourceTree = "<group>"; };
+		260439D61EC0A20B00D44C99 /* TOJourneyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOJourneyTableViewCell.xib; sourceTree = "<group>"; };
+		260439D91EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyReplyTableViewCell.h; sourceTree = "<group>"; };
+		260439DA1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyReplyTableViewCell.m; sourceTree = "<group>"; };
+		260439DB1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOJourneyReplyTableViewCell.xib; sourceTree = "<group>"; };
+		260439DE1EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOJourneyBottomTableViewCell.h; sourceTree = "<group>"; };
+		260439DF1EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOJourneyBottomTableViewCell.m; sourceTree = "<group>"; };
+		260439E01EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOJourneyBottomTableViewCell.xib; sourceTree = "<group>"; };
+		260439E81EC0A3FE00D44C99 /* TOTopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTopSelectView.h; sourceTree = "<group>"; };
+		260439E91EC0A3FE00D44C99 /* TOTopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTopSelectView.m; sourceTree = "<group>"; };
+		260439EB1EC0A40700D44C99 /* TOTopSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOTopSelectView.xib; sourceTree = "<group>"; };
+		260439ED1EC0A6D500D44C99 /* TRJourneyBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyBottomView.h; sourceTree = "<group>"; };
+		260439EE1EC0A6D500D44C99 /* TRJourneyBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyBottomView.m; sourceTree = "<group>"; };
+		260439F01EC0A6E000D44C99 /* TRJourneyBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRJourneyBottomView.xib; sourceTree = "<group>"; };
+		260439F51EC0C3FD00D44C99 /* TOPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPublishView.h; sourceTree = "<group>"; };
+		260439F61EC0C3FD00D44C99 /* TOPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPublishView.m; sourceTree = "<group>"; };
+		260439F81EC0C40500D44C99 /* TOPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOPublishView.xib; sourceTree = "<group>"; };
+		260439FF1EC0D84500D44C99 /* TRJourneyPublishTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRJourneyPublishTableViewCell.h; sourceTree = "<group>"; };
+		26043A001EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRJourneyPublishTableViewCell.m; sourceTree = "<group>"; };
+		26043A011EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRJourneyPublishTableViewCell.xib; sourceTree = "<group>"; };
+		26043A041EC0DDF800D44C99 /* TOBottomAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOBottomAddView.h; sourceTree = "<group>"; };
+		26043A051EC0DDF800D44C99 /* TOBottomAddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOBottomAddView.m; sourceTree = "<group>"; };
 		262426DC1EBA1F7E006FD687 /* MineTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTopTableViewCell.h; sourceTree = "<group>"; };
 		262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTopTableViewCell.m; sourceTree = "<group>"; };
 		26277F681EBB74360049C5F7 /* ActivityPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseTableViewCell.h; sourceTree = "<group>"; };
@@ -707,6 +775,16 @@
 				268BA89A1EB99A740002B3C3 /* TRDetailViewController.m */,
 				268BA89B1EB99A740002B3C3 /* TribeViewController.h */,
 				268BA89C1EB99A740002B3C3 /* TribeViewController.m */,
+				260439B11EC09DBD00D44C99 /* TRJourneyViewController.h */,
+				260439B21EC09DBD00D44C99 /* TRJourneyViewController.m */,
+				260439B41EC09DF600D44C99 /* TRJourneyPublishViewController.h */,
+				260439B51EC09DF600D44C99 /* TRJourneyPublishViewController.m */,
+				260439B71EC09EC200D44C99 /* TOJourneyViewController.h */,
+				260439B81EC09EC200D44C99 /* TOJourneyViewController.m */,
+				260439BA1EC09EE500D44C99 /* TOJourneyReplyViewController.h */,
+				260439BB1EC09EE500D44C99 /* TOJourneyReplyViewController.m */,
+				260439BD1EC09F1600D44C99 /* TOPublishViewController.h */,
+				260439BE1EC09F1600D44C99 /* TOPublishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -720,6 +798,8 @@
 				268BA8A11EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m */,
 				268BA8A21EB99A740002B3C3 /* TOTopTableViewCell.h */,
 				268BA8A31EB99A740002B3C3 /* TOTopTableViewCell.m */,
+				26043A041EC0DDF800D44C99 /* TOBottomAddView.h */,
+				26043A051EC0DDF800D44C99 /* TOBottomAddView.m */,
 				268BA8A41EB99A740002B3C3 /* TribeDLView.h */,
 				268BA8A51EB99A740002B3C3 /* TribeDLView.m */,
 				268BA8A61EB99A740002B3C3 /* TribeTableViewCell.h */,
@@ -728,6 +808,36 @@
 				268BA8A91EB99A740002B3C3 /* TribeTitleSelectView.m */,
 				268BA8AA1EB99A740002B3C3 /* TRTopTableViewCell.h */,
 				268BA8AB1EB99A740002B3C3 /* TRTopTableViewCell.m */,
+				260439C01EC0A05400D44C99 /* TRJourneyTopTableViewCell.h */,
+				260439C11EC0A05400D44C99 /* TRJourneyTopTableViewCell.m */,
+				260439C21EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib */,
+				260439C51EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.h */,
+				260439C61EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m */,
+				260439C71EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib */,
+				260439FF1EC0D84500D44C99 /* TRJourneyPublishTableViewCell.h */,
+				26043A001EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m */,
+				26043A011EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib */,
+				260439ED1EC0A6D500D44C99 /* TRJourneyBottomView.h */,
+				260439EE1EC0A6D500D44C99 /* TRJourneyBottomView.m */,
+				260439F01EC0A6E000D44C99 /* TRJourneyBottomView.xib */,
+				260439CF1EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.h */,
+				260439D01EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m */,
+				260439D11EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.xib */,
+				260439D41EC0A20B00D44C99 /* TOJourneyTableViewCell.h */,
+				260439D51EC0A20B00D44C99 /* TOJourneyTableViewCell.m */,
+				260439D61EC0A20B00D44C99 /* TOJourneyTableViewCell.xib */,
+				260439D91EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.h */,
+				260439DA1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.m */,
+				260439DB1EC0A22A00D44C99 /* TOJourneyReplyTableViewCell.xib */,
+				260439DE1EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.h */,
+				260439DF1EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m */,
+				260439E01EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib */,
+				260439F51EC0C3FD00D44C99 /* TOPublishView.h */,
+				260439F61EC0C3FD00D44C99 /* TOPublishView.m */,
+				260439F81EC0C40500D44C99 /* TOPublishView.xib */,
+				260439E81EC0A3FE00D44C99 /* TOTopSelectView.h */,
+				260439E91EC0A3FE00D44C99 /* TOTopSelectView.m */,
+				260439EB1EC0A40700D44C99 /* TOTopSelectView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1214,12 +1324,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FC79411EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib in Resources */,
+				260439D81EC0A20B00D44C99 /* TOJourneyTableViewCell.xib in Resources */,
 				260439861EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib in Resources */,
 				26ECD9741EBDA7E7009AF788 /* GSTopTableViewCell.xib in Resources */,
 				260439801EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib in Resources */,
 				26BA3C0F1EBD05DE0048F72E /* GLMapCollectionViewCell.xib in Resources */,
 				26BA3C141EBD08F10048F72E /* GLRecommendCollectionViewCell.xib in Resources */,
 				26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */,
+				26043A031EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
 				2604396C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib in Resources */,
@@ -1227,6 +1339,8 @@
 				260439981EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib in Resources */,
 				2604398C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8BF1EB6B8AF0096AF1E /* DestinationCollectionViewCell.xib in Resources */,
+				260439EC1EC0A40700D44C99 /* TOTopSelectView.xib in Resources */,
+				260439DD1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				2604398A1EBF4E6D00D44C99 /* RecomendMenBtn.xib in Resources */,
 				26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */,
@@ -1244,24 +1358,30 @@
 				260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
+				260439F11EC0A6E000D44C99 /* TRJourneyBottomView.xib in Resources */,
 				260439AB1EBF5D4E00D44C99 /* GLBottomCommentView.xib in Resources */,
 				26FC792A1EBCC93600F66B69 /* GLDCheckCollectionViewCell.xib in Resources */,
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
 				26BA3C051EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib in Resources */,
+				260439F91EC0C40500D44C99 /* TOPublishView.xib in Resources */,
 				260439961EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
 				26ECD9791EBDA7F5009AF788 /* GSPriceTableViewCell.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
 				2604397C1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib in Resources */,
+				260439D31EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.xib in Resources */,
 				2604396E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib in Resources */,
 				260439921EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib in Resources */,
 				2604399C1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib in Resources */,
+				260439E21EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib in Resources */,
 				26FC792F1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.xib in Resources */,
 				2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */,
+				260439C41EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib in Resources */,
 				260439781EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib in Resources */,
 				260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */,
 				260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */,
+				260439C91EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib in Resources */,
 				26BA3C0A1EBCF5060048F72E /* GLDHeaderView.xib in Resources */,
 				260439721EBF4E6D00D44C99 /* BookingRemarkTableViewCell.xib in Resources */,
 				260439A31EBF4E6D00D44C99 /* TravelTableViewCell.xib in Resources */,
@@ -1342,6 +1462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260439DC1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.m in Sources */,
 				269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */,
 				268BA8B11EB99A740002B3C3 /* TOTopTableViewCell.m in Sources */,
 				2604397D1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m in Sources */,
@@ -1351,7 +1472,9 @@
 				260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */,
 				260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */,
 				260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */,
+				260439BC1EC09EE500D44C99 /* TOJourneyReplyViewController.m in Sources */,
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
+				26043A061EC0DDF800D44C99 /* TOBottomAddView.m in Sources */,
 				26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */,
 				2604398D1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
 				269CA8C71EB6B8AF0096AF1E /* DiscountCollectionViewCell.m in Sources */,
@@ -1366,12 +1489,14 @@
 				2604398B1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m in Sources */,
 				268BA8AD1EB99A740002B3C3 /* TRDetailViewController.m in Sources */,
 				260439651EBF4E6D00D44C99 /* BookingPriceDateViewController.m in Sources */,
+				260439EF1EC0A6D500D44C99 /* TRJourneyBottomView.m in Sources */,
 				2604399D1EBF4E6D00D44C99 /* TopScrollView.m in Sources */,
 				2604396B1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.m in Sources */,
 				B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */,
 				26BA3C131EBD08F10048F72E /* GLRecommendCollectionViewCell.m in Sources */,
 				269CA8CF1EB6B8AF0096AF1E /* MemberMallViewController.m in Sources */,
 				2604397F1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m in Sources */,
+				260439B61EC09DF600D44C99 /* TRJourneyPublishViewController.m in Sources */,
 				268BA8B51EB99A740002B3C3 /* TRTopTableViewCell.m in Sources */,
 				269CA8BE1EB6B8AF0096AF1E /* DestinationCollectionViewCell.m in Sources */,
 				26FC79211EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.m in Sources */,
@@ -1384,28 +1509,35 @@
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
 				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
 				260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */,
+				260439D21EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m in Sources */,
 				268BA8B21EB99A740002B3C3 /* TribeDLView.m in Sources */,
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
 				260439971EBF4E6D00D44C99 /* TLCalendarTableViewCell.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
+				260439BF1EC09F1600D44C99 /* TOPublishViewController.m in Sources */,
 				260439A21EBF4E6D00D44C99 /* TravelTableViewCell.m in Sources */,
 				260439831EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
 				26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */,
 				B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */,
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
+				260439F71EC0C3FD00D44C99 /* TOPublishView.m in Sources */,
+				260439E11EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m in Sources */,
 				2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				26BA3C1D1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m in Sources */,
+				260439C31EC0A05400D44C99 /* TRJourneyTopTableViewCell.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
 				268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */,
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */,
+				260439B91EC09EC200D44C99 /* TOJourneyViewController.m in Sources */,
 				26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */,
 				26ECD9781EBDA7F5009AF788 /* GSPriceTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
+				260439EA1EC0A3FE00D44C99 /* TOTopSelectView.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
 				269CA8C01EB6B8AF0096AF1E /* DestinationLeftSelectView.m in Sources */,
 				269CA8C91EB6B8AF0096AF1E /* HeaderCollectionReusableView.m in Sources */,
@@ -1418,7 +1550,10 @@
 				260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */,
 				2604398F1EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m in Sources */,
 				269CA8C61EB6B8AF0096AF1E /* ChannelCollectionViewCell.m in Sources */,
+				260439B31EC09DBD00D44C99 /* TRJourneyViewController.m in Sources */,
 				2604396D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m in Sources */,
+				260439D71EC0A20B00D44C99 /* TOJourneyTableViewCell.m in Sources */,
+				26043A021EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m in Sources */,
 				260439691EBF4E6D00D44C99 /* RecommendViewController.m in Sources */,
 				260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */,
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
@@ -1435,6 +1570,7 @@
 				268BA8B31EB99A740002B3C3 /* TribeTableViewCell.m in Sources */,
 				269CA8D01EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.m in Sources */,
 				2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */,
+				260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */,
 				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,

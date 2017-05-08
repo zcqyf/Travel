@@ -18,6 +18,12 @@
 #import "ActivityPurchaseViewController.h"
 #import "GLDetailViewController.h"
 
+
+
+#pragma // MARK: 地图与酒店排序(晚些时间再做)以及相应已经实现的点击跳转 TODO
+
+
+
 @interface MallViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -51,7 +57,6 @@
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-//        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
         [_collectionView registerClass:[InsideActivityCollectionViewCell class] forCellWithReuseIdentifier:@"InsideActivityCollectionViewCell"];
         [_collectionView registerClass:[ImageSliderCollectionViewCell class] forCellWithReuseIdentifier:@"ImageSliderCollectionViewCell"];
         [_collectionView registerClass:[ChannelCollectionViewCell class] forCellWithReuseIdentifier:@"ChannelCollectionViewCell"];
@@ -208,7 +213,7 @@
     if (section == 4) {
         return CGSizeZero;
     } else {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 8);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 5);
     }
 }
 
@@ -220,10 +225,7 @@
          return CGSizeMake([UIScreen mainScreen].bounds.size.width, 140);
         }
     } else if (indexPath.section == 1) {
-//        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 160);
-        
         return CGSizeMake((SCREEN_W-24)/2, (160-24)/2);
-        
     } else if (indexPath.section == 2) {
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 150);
     } else if (indexPath.section == 3) {
