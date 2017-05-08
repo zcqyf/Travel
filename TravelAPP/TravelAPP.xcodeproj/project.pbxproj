@@ -1642,7 +1642,6 @@
 				2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				26BA3C1D1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m in Sources */,
-<<<<<<< HEAD
 				260439C31EC0A05400D44C99 /* TRJourneyTopTableViewCell.m in Sources */,
 				B0436D041EC0A7FB0079730A /* DestinationShouCangViewController.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
