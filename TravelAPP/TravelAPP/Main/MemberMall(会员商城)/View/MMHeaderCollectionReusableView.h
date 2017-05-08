@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MMHeaderCollectionReusableView : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UILabel *myTitleLabel;
 
 @end

@@ -34,7 +34,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="一共六本 &gt;">
-                        <color key="titleColor" red="0.1416395399" green="0.03340386285" blue="0.046234809029999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="clickAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="PbY-Mj-Auv"/>

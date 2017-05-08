@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MMHeaderCollectionReusableView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -27,6 +27,9 @@
                 <constraint firstAttribute="bottom" secondItem="KeW-2I-hqU" secondAttribute="bottom" id="jzF-xb-CIJ"/>
                 <constraint firstItem="KeW-2I-hqU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="n3v-jF-Dda"/>
             </constraints>
+            <connections>
+                <outlet property="myTitleLabel" destination="KeW-2I-hqU" id="zKh-ql-FO7"/>
+            </connections>
         </collectionReusableView>
     </objects>
 </document>

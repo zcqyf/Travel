@@ -174,6 +174,22 @@
 		B0436CF31EC05D200079730A /* DestinationJinNangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CF11EC05D200079730A /* DestinationJinNangCell.xib */; };
 		B0436CF71EC061750079730A /* DJinNangCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CF51EC061750079730A /* DJinNangCollectionReusableView.m */; };
 		B0436CF81EC061750079730A /* DJinNangCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CF61EC061750079730A /* DJinNangCollectionReusableView.xib */; };
+		B0436CFB1EC0A1470079730A /* DImageViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CFA1EC0A1470079730A /* DImageViewCollectionViewCell.m */; };
+		B0436CFE1EC0A6810079730A /* DestinationDetialMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CFD1EC0A6810079730A /* DestinationDetialMainViewController.m */; };
+		B0436D011EC0A7E40079730A /* DestinationMallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D001EC0A7E40079730A /* DestinationMallViewController.m */; };
+		B0436D041EC0A7FB0079730A /* DestinationShouCangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D031EC0A7FB0079730A /* DestinationShouCangViewController.m */; };
+		B0436D081EC0AD970079730A /* DTopToGoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D061EC0AD970079730A /* DTopToGoCollectionViewCell.m */; };
+		B0436D091EC0AD970079730A /* DTopToGoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D071EC0AD970079730A /* DTopToGoCollectionViewCell.xib */; };
+		B0436D0D1EC0B3E20079730A /* DJingDianCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D0B1EC0B3E20079730A /* DJingDianCollectionViewCell.m */; };
+		B0436D0E1EC0B3E20079730A /* DJingDianCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D0C1EC0B3E20079730A /* DJingDianCollectionViewCell.xib */; };
+		B0436D121EC0B7B70079730A /* DfooterBtnCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D101EC0B7B70079730A /* DfooterBtnCollectionReusableView.m */; };
+		B0436D131EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D111EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib */; };
+		B0436D171EC0B97E0079730A /* DZhuSuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D151EC0B97E0079730A /* DZhuSuCollectionViewCell.m */; };
+		B0436D181EC0B97E0079730A /* DZhuSuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D161EC0B97E0079730A /* DZhuSuCollectionViewCell.xib */; };
+		B0436D1B1EC0BA750079730A /* DZhuSuBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D1A1EC0BA750079730A /* DZhuSuBtn.m */; };
+		B0436D1D1EC0BA7F0079730A /* DZhuSuBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D1C1EC0BA7F0079730A /* DZhuSuBtn.xib */; };
+		B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */; };
+		B0436D221EC0C28F0079730A /* DWanFaTuiJianCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -477,6 +493,32 @@
 		B0436CF41EC061750079730A /* DJinNangCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJinNangCollectionReusableView.h; sourceTree = "<group>"; };
 		B0436CF51EC061750079730A /* DJinNangCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJinNangCollectionReusableView.m; sourceTree = "<group>"; };
 		B0436CF61EC061750079730A /* DJinNangCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJinNangCollectionReusableView.xib; sourceTree = "<group>"; };
+		B0436CF91EC0A1470079730A /* DImageViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DImageViewCollectionViewCell.h; sourceTree = "<group>"; };
+		B0436CFA1EC0A1470079730A /* DImageViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DImageViewCollectionViewCell.m; sourceTree = "<group>"; };
+		B0436CFC1EC0A6810079730A /* DestinationDetialMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationDetialMainViewController.h; sourceTree = "<group>"; };
+		B0436CFD1EC0A6810079730A /* DestinationDetialMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationDetialMainViewController.m; sourceTree = "<group>"; };
+		B0436CFF1EC0A7E40079730A /* DestinationMallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationMallViewController.h; sourceTree = "<group>"; };
+		B0436D001EC0A7E40079730A /* DestinationMallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationMallViewController.m; sourceTree = "<group>"; };
+		B0436D021EC0A7FB0079730A /* DestinationShouCangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationShouCangViewController.h; sourceTree = "<group>"; };
+		B0436D031EC0A7FB0079730A /* DestinationShouCangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationShouCangViewController.m; sourceTree = "<group>"; };
+		B0436D051EC0AD970079730A /* DTopToGoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTopToGoCollectionViewCell.h; sourceTree = "<group>"; };
+		B0436D061EC0AD970079730A /* DTopToGoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTopToGoCollectionViewCell.m; sourceTree = "<group>"; };
+		B0436D071EC0AD970079730A /* DTopToGoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTopToGoCollectionViewCell.xib; sourceTree = "<group>"; };
+		B0436D0A1EC0B3E20079730A /* DJingDianCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJingDianCollectionViewCell.h; sourceTree = "<group>"; };
+		B0436D0B1EC0B3E20079730A /* DJingDianCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJingDianCollectionViewCell.m; sourceTree = "<group>"; };
+		B0436D0C1EC0B3E20079730A /* DJingDianCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJingDianCollectionViewCell.xib; sourceTree = "<group>"; };
+		B0436D0F1EC0B7B70079730A /* DfooterBtnCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DfooterBtnCollectionReusableView.h; sourceTree = "<group>"; };
+		B0436D101EC0B7B70079730A /* DfooterBtnCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DfooterBtnCollectionReusableView.m; sourceTree = "<group>"; };
+		B0436D111EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DfooterBtnCollectionReusableView.xib; sourceTree = "<group>"; };
+		B0436D141EC0B97E0079730A /* DZhuSuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZhuSuCollectionViewCell.h; sourceTree = "<group>"; };
+		B0436D151EC0B97E0079730A /* DZhuSuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZhuSuCollectionViewCell.m; sourceTree = "<group>"; };
+		B0436D161EC0B97E0079730A /* DZhuSuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZhuSuCollectionViewCell.xib; sourceTree = "<group>"; };
+		B0436D191EC0BA750079730A /* DZhuSuBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZhuSuBtn.h; sourceTree = "<group>"; };
+		B0436D1A1EC0BA750079730A /* DZhuSuBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZhuSuBtn.m; sourceTree = "<group>"; };
+		B0436D1C1EC0BA7F0079730A /* DZhuSuBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZhuSuBtn.xib; sourceTree = "<group>"; };
+		B0436D1E1EC0C28F0079730A /* DWanFaTuiJianCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWanFaTuiJianCell.h; sourceTree = "<group>"; };
+		B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWanFaTuiJianCell.m; sourceTree = "<group>"; };
+		B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DWanFaTuiJianCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -840,6 +882,12 @@
 				269CA85C1EB6B8AF0096AF1E /* DestinationViewController.m */,
 				B0436CE81EC0520D0079730A /* DestinationDetialViewController.h */,
 				B0436CE91EC0520D0079730A /* DestinationDetialViewController.m */,
+				B0436CFF1EC0A7E40079730A /* DestinationMallViewController.h */,
+				B0436D001EC0A7E40079730A /* DestinationMallViewController.m */,
+				B0436D021EC0A7FB0079730A /* DestinationShouCangViewController.h */,
+				B0436D031EC0A7FB0079730A /* DestinationShouCangViewController.m */,
+				B0436CFC1EC0A6810079730A /* DestinationDetialMainViewController.h */,
+				B0436CFD1EC0A6810079730A /* DestinationDetialMainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1125,6 +1173,26 @@
 				B0436CF41EC061750079730A /* DJinNangCollectionReusableView.h */,
 				B0436CF51EC061750079730A /* DJinNangCollectionReusableView.m */,
 				B0436CF61EC061750079730A /* DJinNangCollectionReusableView.xib */,
+				B0436CF91EC0A1470079730A /* DImageViewCollectionViewCell.h */,
+				B0436CFA1EC0A1470079730A /* DImageViewCollectionViewCell.m */,
+				B0436D051EC0AD970079730A /* DTopToGoCollectionViewCell.h */,
+				B0436D061EC0AD970079730A /* DTopToGoCollectionViewCell.m */,
+				B0436D071EC0AD970079730A /* DTopToGoCollectionViewCell.xib */,
+				B0436D0A1EC0B3E20079730A /* DJingDianCollectionViewCell.h */,
+				B0436D0B1EC0B3E20079730A /* DJingDianCollectionViewCell.m */,
+				B0436D0C1EC0B3E20079730A /* DJingDianCollectionViewCell.xib */,
+				B0436D0F1EC0B7B70079730A /* DfooterBtnCollectionReusableView.h */,
+				B0436D101EC0B7B70079730A /* DfooterBtnCollectionReusableView.m */,
+				B0436D111EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib */,
+				B0436D141EC0B97E0079730A /* DZhuSuCollectionViewCell.h */,
+				B0436D151EC0B97E0079730A /* DZhuSuCollectionViewCell.m */,
+				B0436D161EC0B97E0079730A /* DZhuSuCollectionViewCell.xib */,
+				B0436D191EC0BA750079730A /* DZhuSuBtn.h */,
+				B0436D1A1EC0BA750079730A /* DZhuSuBtn.m */,
+				B0436D1C1EC0BA7F0079730A /* DZhuSuBtn.xib */,
+				B0436D1E1EC0C28F0079730A /* DWanFaTuiJianCell.h */,
+				B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */,
+				B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */,
 			);
 			path = "Destination(攻略)";
 			sourceTree = "<group>";
@@ -1256,8 +1324,10 @@
 				26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
+				B0436D181EC0B97E0079730A /* DZhuSuCollectionViewCell.xib in Resources */,
 				2604396C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib in Resources */,
 				B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */,
+				B0436D221EC0C28F0079730A /* DWanFaTuiJianCell.xib in Resources */,
 				260439981EBF4E6D00D44C99 /* TLCalendarTableViewCell.xib in Resources */,
 				2604398C1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.xib in Resources */,
 				269CA8BF1EB6B8AF0096AF1E /* DestinationCollectionViewCell.xib in Resources */,
@@ -1283,6 +1353,7 @@
 				269CA8D31EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.xib in Resources */,
 				26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */,
 				26BA3C051EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib in Resources */,
+				B0436D1D1EC0BA7F0079730A /* DZhuSuBtn.xib in Resources */,
 				B0436CF31EC05D200079730A /* DestinationJinNangCell.xib in Resources */,
 				260439961EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib in Resources */,
 				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
@@ -1295,6 +1366,7 @@
 				26FC792F1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.xib in Resources */,
 				2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */,
 				260439781EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib in Resources */,
+				B0436D131EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib in Resources */,
 				260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */,
 				260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */,
 				26BA3C0A1EBCF5060048F72E /* GLDHeaderView.xib in Resources */,
@@ -1305,6 +1377,8 @@
 				26FC79221EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.xib in Resources */,
 				2604398E1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
 				269CA8D51EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib in Resources */,
+				B0436D091EC0AD970079730A /* DTopToGoCollectionViewCell.xib in Resources */,
+				B0436D0E1EC0B3E20079730A /* DJingDianCollectionViewCell.xib in Resources */,
 				26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1391,6 +1465,7 @@
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
 				26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */,
 				2604398D1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.m in Sources */,
+				B0436D171EC0B97E0079730A /* DZhuSuCollectionViewCell.m in Sources */,
 				269CA8C71EB6B8AF0096AF1E /* DiscountCollectionViewCell.m in Sources */,
 				26ECD97D1EBDA802009AF788 /* GSTableViewCell.m in Sources */,
 				260439991EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m in Sources */,
@@ -1420,6 +1495,7 @@
 				26BA3C0E1EBD05DE0048F72E /* GLMapCollectionViewCell.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
 				26FC79381EBCC9D000F66B69 /* GLDInfoCollectionViewCell.m in Sources */,
+				B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
 				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
 				260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */,
@@ -1427,6 +1503,7 @@
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
 				260439971EBF4E6D00D44C99 /* TLCalendarTableViewCell.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
+				B0436CFE1EC0A6810079730A /* DestinationDetialMainViewController.m in Sources */,
 				260439A21EBF4E6D00D44C99 /* TravelTableViewCell.m in Sources */,
 				260439831EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
@@ -1436,6 +1513,7 @@
 				2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */,
 				269CA8C51EB6B8AF0096AF1E /* BlankCollectionReusableView.m in Sources */,
 				26BA3C1D1EBD0FC50048F72E /* GLGrogShopCollectionViewCell.m in Sources */,
+				B0436D041EC0A7FB0079730A /* DestinationShouCangViewController.m in Sources */,
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
 				268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */,
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
@@ -1451,6 +1529,7 @@
 				26FC79401EBCCA3000F66B69 /* GLDCommentCollectionViewCell.m in Sources */,
 				26FC79291EBCC93600F66B69 /* GLDCheckCollectionViewCell.m in Sources */,
 				26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */,
+				B0436D1B1EC0BA750079730A /* DZhuSuBtn.m in Sources */,
 				269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */,
 				260439A91EBF5D4300D44C99 /* GLBottomCommentView.m in Sources */,
 				260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */,
@@ -1468,22 +1547,27 @@
 				26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */,
 				26BA3C041EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m in Sources */,
 				260439751EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m in Sources */,
+				B0436CFB1EC0A1470079730A /* DImageViewCollectionViewCell.m in Sources */,
 				26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */,
 				268BA8AE1EB99A740002B3C3 /* TribeViewController.m in Sources */,
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
 				268BA8B31EB99A740002B3C3 /* TribeTableViewCell.m in Sources */,
 				269CA8D01EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.m in Sources */,
+				B0436D011EC0A7E40079730A /* DestinationMallViewController.m in Sources */,
 				2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */,
 				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,
+				B0436D0D1EC0B3E20079730A /* DJingDianCollectionViewCell.m in Sources */,
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
+				B0436D121EC0B7B70079730A /* DfooterBtnCollectionReusableView.m in Sources */,
 				260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
 				260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */,
 				B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,
 				26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */,
+				B0436D081EC0AD970079730A /* DTopToGoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
