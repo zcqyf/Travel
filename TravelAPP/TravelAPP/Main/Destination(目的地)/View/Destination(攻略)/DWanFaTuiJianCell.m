@@ -13,18 +13,28 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    CGFloat btnW = 300;
-    CGFloat btnH = 300;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGFloat h = self.bgView.frame.size.height;
+    CGFloat w = self.bgView.frame.size.width;
     NSInteger count = 3;
     
-    self.backgoundScrollView.contentSize = CGSizeMake(btnW * count, 0);
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
+    scrollView.contentSize = CGSizeMake(300 * count, 0);
+
+    [self.bgView addSubview:scrollView];
     
-    for (int i = 0; i < count; i++) {
-        RecommendWanFaBtn *btn = [RecommendWanFaBtn initCustomBtnWithFrame:CGRectMake(btnW * i, 0, btnW, self.backgoundScrollView.frame.size.height)];
+    for (int i = 0; i < 3; i++) {
+        RecommendWanFaBtn *btn = [RecommendWanFaBtn initCustomBtnWithFrame:CGRectMake(300 * i, 0, 300, h)];
         btn.tag = 1000 + i;
-        [self.backgoundScrollView addSubview:btn];
+        [scrollView addSubview:btn];
         
     }
+
+    
 }
 
 @end

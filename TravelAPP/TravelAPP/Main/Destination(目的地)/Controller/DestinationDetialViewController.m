@@ -7,16 +7,20 @@
 //
 
 #import "DestinationDetialViewController.h"
+
 #import "DestinationHeaderCell.h"
 #import "DestinationJinNangCell.h"
-#import "DJinNangCollectionReusableView.h"
 #import "DImageViewCollectionViewCell.h"
 #import "DTopToGoCollectionViewCell.h"
-#import "MMHeaderCollectionReusableView.h"
 #import "DJingDianCollectionViewCell.h"
-#import "DfooterBtnCollectionReusableView.h"
 #import "DZhuSuCollectionViewCell.h"
 #import "DWanFaTuiJianCell.h"
+#import "MMGuangGaoCollectionViewCell.h"
+#import "DTeSeCollectionViewCell.h"
+
+#import "DJinNangCollectionReusableView.h"
+#import "DfooterBtnCollectionReusableView.h"
+#import "MMHeaderCollectionReusableView.h"
 
 #define DestinationHeaderCellIdentifier @"DestinationHeaderCellIdentifier"
 #define DestinationJinNangCellIdentifier @"DestinationJinNangCellIdentifier"
@@ -25,16 +29,20 @@
 #define DJingDianCollectionViewCellIdentifier @"DJingDianCollectionViewCellIdentifier"
 #define DZhuSuCollectionViewCellIdentifier @"DZhuSuCollectionViewCellIdentifier"
 #define DWanFaTuiJianCellIdentifier @"DWanFaTuiJianCellIdentifier"
+#define DTeSeCollectionViewCellIdentifier @"DTeSeCollectionViewCellIdentifier"
 
 #define DTopGoToReusableViewIdentifier @"DTopGoToReusableViewIdentifier"
 #define DJinNangCollectionReusableViewIdentifier @"DJinNangCollectionReusableViewIdentifier"
 #define DfooterBtnCollectionReusableViewIdentfier @"DfooterBtnCollectionReusableViewIdentfier"
+#define MMGuangGaoCollectionViewCellIdentifier @"MMGuangGaoCollectionViewCellIdentifier"
 
 @interface DestinationDetialViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong)UICollectionView *collectionView;
 
 @property (nonatomic, strong)NSArray *JinNangDataSource;
+
+@property (nonatomic, strong)NSArray *zhuSuTitle;
 
 @end
 
@@ -45,6 +53,13 @@
         _JinNangDataSource = @[@"城市概况", @"热门景点", @"当地美食", @"交通指南", @"特惠酒店", @"游记攻略", @"推荐路线", @"结伴出行"];
     }
     return _JinNangDataSource;
+}
+
+- (NSArray *)zhuSuTitle {
+    if (!_zhuSuTitle) {
+        _zhuSuTitle = @[@"景点", @"美食", @"购物"];
+    }
+    return _zhuSuTitle;
 }
 
 
@@ -65,6 +80,8 @@
         [_collectionView registerNib:[UINib nibWithNibName:@"DJingDianCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:DJingDianCollectionViewCellIdentifier];
         [_collectionView registerNib:[UINib nibWithNibName:@"DZhuSuCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:DZhuSuCollectionViewCellIdentifier];
         [_collectionView registerNib:[UINib nibWithNibName:@"DWanFaTuiJianCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:DWanFaTuiJianCellIdentifier];
+        [_collectionView registerNib:[UINib nibWithNibName:@"MMGuangGaoCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:MMGuangGaoCollectionViewCellIdentifier];
+        [_collectionView registerNib:[UINib nibWithNibName:@"DTeSeCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:DTeSeCollectionViewCellIdentifier];
         /*
          
          */
@@ -92,9 +109,8 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 
+    return 10;
     
-    
-    return 7;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -109,6 +125,15 @@
     if (section == 4) {
         return 6;
     }
+    if (section == 5) {
+        return 3;
+    }
+    if (section == 6) {
+        return 4;
+    }
+    if (section == 9) {
+        return 3;
+    }
 
     return 1;
 }
@@ -116,19 +141,19 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
             
-        if (indexPath.section == 0 ) {
-            DestinationHeaderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DestinationHeaderCellIdentifier forIndexPath:indexPath];
-            return cell;
-        }
-        if (indexPath.section == 1 ) {
-            DestinationJinNangCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DestinationJinNangCellIdentifier forIndexPath:indexPath];
-            cell.myTitleLabel.text = self.JinNangDataSource[indexPath.row];
-            return cell;
-        }
-        if (indexPath.section == 2) {
-            DImageViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DImageViewCollectionViewCellIdentifier forIndexPath:indexPath];
-            return cell;
-        }
+    if (indexPath.section == 0 ) {
+        DestinationHeaderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DestinationHeaderCellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    if (indexPath.section == 1 ) {
+        DestinationJinNangCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DestinationJinNangCellIdentifier forIndexPath:indexPath];
+        cell.myTitleLabel.text = self.JinNangDataSource[indexPath.row];
+        return cell;
+    }
+    if (indexPath.section == 2) {
+        DImageViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DImageViewCollectionViewCellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
     if (indexPath.section == 3) {
         DTopToGoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DTopToGoCollectionViewCellIdentifier forIndexPath:indexPath];
         return cell;
@@ -138,12 +163,25 @@
         return cell;
     }
     if (indexPath.section == 5) {
-        DZhuSuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DZhuSuCollectionViewCellIdentifier forIndexPath:indexPath];
+        DestinationJinNangCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DestinationJinNangCellIdentifier forIndexPath:indexPath];
+        cell.myTitleLabel.text = self.zhuSuTitle[indexPath.row];
         return cell;
     }
     if (indexPath.section == 6) {
+        DTeSeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DTeSeCollectionViewCellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    if (indexPath.section == 7) {
+        DZhuSuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DZhuSuCollectionViewCellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    if (indexPath.section == 8) {
         DWanFaTuiJianCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DWanFaTuiJianCellIdentifier forIndexPath:indexPath];
         return cell;
+    }
+    if (indexPath.section == 9) {
+        MMGuangGaoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MMGuangGaoCollectionViewCellIdentifier forIndexPath:indexPath];
+        return  cell;
     }
 
     
@@ -163,13 +201,28 @@
         
         return view;
     }
+    if (indexPath.section == 5 && kind == UICollectionElementKindSectionHeader) {
+        MMHeaderCollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DTopGoToReusableViewIdentifier forIndexPath:indexPath];
+        view.myTitleLabel.text = @"特色香港";
+        
+        return view;
+
+    }
+    
     if (indexPath.section == 4 && kind == UICollectionElementKindSectionFooter) {
         DfooterBtnCollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DfooterBtnCollectionReusableViewIdentfier forIndexPath:indexPath];
         return view;
     }
-    if (indexPath.section == 5 && kind == UICollectionElementKindSectionFooter ) {
+    
+    if (indexPath.section == 7 && kind == UICollectionElementKindSectionFooter ) {
         DfooterBtnCollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DfooterBtnCollectionReusableViewIdentfier forIndexPath:indexPath];
         [view.btn setTitle:@"查看全部" forState:UIWindowLevelNormal];
+        return view;
+    }
+    if (indexPath.section == 9 && kind == UICollectionElementKindSectionHeader) {
+        MMHeaderCollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DTopGoToReusableViewIdentifier forIndexPath:indexPath];
+        view.myTitleLabel.text = @"阅读更多";
+        
         return view;
     }
 
@@ -178,14 +231,14 @@
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
-    if (section == 4 || section == 5) {
+    if (section == 4 || section == 7) {
         return CGSizeMake(SCREEN_W, 49);
     }
     return CGSizeMake(0, 0);
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
 
-    if (section == 1 || section == 3) {
+    if (section == 1 || section == 3 || section == 9 || section == 5) {
         return CGSizeMake(SCREEN_W, 49);
     }
     
@@ -200,6 +253,12 @@
     }
     if (section == 4) {
         return UIEdgeInsetsMake(2, 5, 10, 5);
+    }
+    if (section == 5) {
+        return UIEdgeInsetsMake(0, (SCREEN_W-80)/4, 0, (SCREEN_W-80)/4);
+    }
+    if (section == 9) {
+        return UIEdgeInsetsMake(5, 5, 5, 5);
     }
 
     return UIEdgeInsetsMake(0, 0, 0, 0);
@@ -219,9 +278,15 @@
         case 4:
             return CGSizeMake((SCREEN_W-20)/3, 200);
         case 5:
-            return CGSizeMake(SCREEN_W, 170);
+            return CGSizeMake((SCREEN_W-80)/4, (SCREEN_W-80)/4);
         case 6:
+            return CGSizeMake(SCREEN_W/2, 150);
+        case 7:
+            return CGSizeMake(SCREEN_W, 170);
+        case 8:
             return CGSizeMake(SCREEN_W, 345);
+        case 9:
+            return CGSizeMake(SCREEN_W-10, 120);
         default:
             break;
     }
@@ -230,6 +295,12 @@
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    if (section == 5) {
+        return (SCREEN_W-80)/16;
+    }
+    if (section == 9) {
+        return 10;
+    }
     return 0;
 }
 

@@ -11,25 +11,36 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MMHeaderCollectionReusableView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="399" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当季热门" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeW-2I-hqU">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <rect key="frame" x="0.0" y="5" width="399" height="45"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAm-e8-ZMk">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="Pyw-dT-bPz"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="KeW-2I-hqU" secondAttribute="trailing" id="9Vb-V9-qLp"/>
+                <constraint firstItem="KeW-2I-hqU" firstAttribute="top" secondItem="eAm-e8-ZMk" secondAttribute="bottom" id="I8f-r6-gig"/>
+                <constraint firstAttribute="trailing" secondItem="eAm-e8-ZMk" secondAttribute="trailing" id="Mzq-cT-wZN"/>
                 <constraint firstItem="KeW-2I-hqU" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="iVb-OJ-y1a"/>
                 <constraint firstAttribute="bottom" secondItem="KeW-2I-hqU" secondAttribute="bottom" id="jzF-xb-CIJ"/>
-                <constraint firstItem="KeW-2I-hqU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="n3v-jF-Dda"/>
+                <constraint firstItem="eAm-e8-ZMk" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="phl-eD-8gq"/>
+                <constraint firstItem="eAm-e8-ZMk" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="rCU-Fu-GUA"/>
             </constraints>
             <connections>
                 <outlet property="myTitleLabel" destination="KeW-2I-hqU" id="zKh-ql-FO7"/>
             </connections>
+            <point key="canvasLocation" x="73.5" y="54"/>
         </collectionReusableView>
     </objects>
 </document>

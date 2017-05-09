@@ -216,6 +216,14 @@
 		B0436D1D1EC0BA7F0079730A /* DZhuSuBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D1C1EC0BA7F0079730A /* DZhuSuBtn.xib */; };
 		B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */; };
 		B0436D221EC0C28F0079730A /* DWanFaTuiJianCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */; };
+		B04790EB1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04790E91EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m */; };
+		B04790EC1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790EA1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.xib */; };
+		B04790F11EC208CA001D5B65 /* DMallSelectTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04790EF1EC208CA001D5B65 /* DMallSelectTypeCell.m */; };
+		B04790F21EC208CA001D5B65 /* DMallSelectTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790F01EC208CA001D5B65 /* DMallSelectTypeCell.xib */; };
+		B04790F61EC20F5F001D5B65 /* DMallSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04790F41EC20F5F001D5B65 /* DMallSearchCell.m */; };
+		B04790F71EC20F5F001D5B65 /* DMallSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790F51EC20F5F001D5B65 /* DMallSearchCell.xib */; };
+		B04790FB1EC21429001D5B65 /* DMallSearchReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04790F91EC21429001D5B65 /* DMallSearchReusableView.m */; };
+		B04790FC1EC21429001D5B65 /* DMallSearchReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -587,6 +595,18 @@
 		B0436D1E1EC0C28F0079730A /* DWanFaTuiJianCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWanFaTuiJianCell.h; sourceTree = "<group>"; };
 		B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWanFaTuiJianCell.m; sourceTree = "<group>"; };
 		B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DWanFaTuiJianCell.xib; sourceTree = "<group>"; };
+		B04790E81EC1FDBB001D5B65 /* DTeSeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTeSeCollectionViewCell.h; sourceTree = "<group>"; };
+		B04790E91EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTeSeCollectionViewCell.m; sourceTree = "<group>"; };
+		B04790EA1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTeSeCollectionViewCell.xib; sourceTree = "<group>"; };
+		B04790EE1EC208CA001D5B65 /* DMallSelectTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMallSelectTypeCell.h; sourceTree = "<group>"; };
+		B04790EF1EC208CA001D5B65 /* DMallSelectTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMallSelectTypeCell.m; sourceTree = "<group>"; };
+		B04790F01EC208CA001D5B65 /* DMallSelectTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMallSelectTypeCell.xib; sourceTree = "<group>"; };
+		B04790F31EC20F5F001D5B65 /* DMallSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMallSearchCell.h; sourceTree = "<group>"; };
+		B04790F41EC20F5F001D5B65 /* DMallSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMallSearchCell.m; sourceTree = "<group>"; };
+		B04790F51EC20F5F001D5B65 /* DMallSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMallSearchCell.xib; sourceTree = "<group>"; };
+		B04790F81EC21429001D5B65 /* DMallSearchReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMallSearchReusableView.h; sourceTree = "<group>"; };
+		B04790F91EC21429001D5B65 /* DMallSearchReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMallSearchReusableView.m; sourceTree = "<group>"; };
+		B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMallSearchReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1012,6 +1032,7 @@
 		269CA85E1EB6B8AF0096AF1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B04790ED1EC207A6001D5B65 /* Destination(商城) */,
 				B0436CEB1EC05A570079730A /* Destination(攻略) */,
 				269CA85F1EB6B8AF0096AF1E /* DestinationCollectionViewCell.h */,
 				269CA8601EB6B8AF0096AF1E /* DestinationCollectionViewCell.m */,
@@ -1303,8 +1324,27 @@
 				B0436D1E1EC0C28F0079730A /* DWanFaTuiJianCell.h */,
 				B0436D1F1EC0C28F0079730A /* DWanFaTuiJianCell.m */,
 				B0436D201EC0C28F0079730A /* DWanFaTuiJianCell.xib */,
+				B04790E81EC1FDBB001D5B65 /* DTeSeCollectionViewCell.h */,
+				B04790E91EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m */,
+				B04790EA1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.xib */,
 			);
 			path = "Destination(攻略)";
+			sourceTree = "<group>";
+		};
+		B04790ED1EC207A6001D5B65 /* Destination(商城) */ = {
+			isa = PBXGroup;
+			children = (
+				B04790EE1EC208CA001D5B65 /* DMallSelectTypeCell.h */,
+				B04790EF1EC208CA001D5B65 /* DMallSelectTypeCell.m */,
+				B04790F01EC208CA001D5B65 /* DMallSelectTypeCell.xib */,
+				B04790F31EC20F5F001D5B65 /* DMallSearchCell.h */,
+				B04790F41EC20F5F001D5B65 /* DMallSearchCell.m */,
+				B04790F51EC20F5F001D5B65 /* DMallSearchCell.xib */,
+				B04790F81EC21429001D5B65 /* DMallSearchReusableView.h */,
+				B04790F91EC21429001D5B65 /* DMallSearchReusableView.m */,
+				B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */,
+			);
+			path = "Destination(商城)";
 			sourceTree = "<group>";
 		};
 		FD9113399ED24EFF1DEC0A76 /* Frameworks */ = {
@@ -1429,10 +1469,12 @@
 				260439D81EC0A20B00D44C99 /* TOJourneyTableViewCell.xib in Resources */,
 				260439861EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.xib in Resources */,
 				26ECD9741EBDA7E7009AF788 /* GSTopTableViewCell.xib in Resources */,
+				B04790EC1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.xib in Resources */,
 				260439801EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.xib in Resources */,
 				26BA3C0F1EBD05DE0048F72E /* GLMapCollectionViewCell.xib in Resources */,
 				26BA3C141EBD08F10048F72E /* GLRecommendCollectionViewCell.xib in Resources */,
 				26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */,
+				B04790FC1EC21429001D5B65 /* DMallSearchReusableView.xib in Resources */,
 				26043A031EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
@@ -1480,6 +1522,7 @@
 				2604396E1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.xib in Resources */,
 				260439921EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.xib in Resources */,
 				2604399C1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.xib in Resources */,
+				B04790F71EC20F5F001D5B65 /* DMallSearchCell.xib in Resources */,
 				260439E21EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.xib in Resources */,
 				26FC792F1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.xib in Resources */,
 				2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */,
@@ -1496,6 +1539,7 @@
 				260439761EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.xib in Resources */,
 				26FC79221EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.xib in Resources */,
 				2604398E1EBF4E6D00D44C99 /* TLBookingDetialJieShaoTableViewCell.xib in Resources */,
+				B04790F21EC208CA001D5B65 /* DMallSelectTypeCell.xib in Resources */,
 				269CA8D51EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.xib in Resources */,
 				B0436D091EC0AD970079730A /* DTopToGoCollectionViewCell.xib in Resources */,
 				B0436D0E1EC0B3E20079730A /* DJingDianCollectionViewCell.xib in Resources */,
@@ -1574,6 +1618,7 @@
 			files = (
 				260439DC1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.m in Sources */,
 				269CA8D61EB6B8AF0096AF1E /* MineViewController.m in Sources */,
+				B04790FB1EC21429001D5B65 /* DMallSearchReusableView.m in Sources */,
 				268BA8B11EB99A740002B3C3 /* TOTopTableViewCell.m in Sources */,
 				2604397D1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m in Sources */,
 				260439951EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m in Sources */,
@@ -1583,6 +1628,7 @@
 				260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */,
 				260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */,
 				260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */,
+				B04790EB1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m in Sources */,
 				260439BC1EC09EE500D44C99 /* TOJourneyReplyViewController.m in Sources */,
 				269CA8C11EB6B8AF0096AF1E /* DestinationSelectBtn.m in Sources */,
 				26043A061EC0DDF800D44C99 /* TOBottomAddView.m in Sources */,
@@ -1677,6 +1723,7 @@
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
 				268BA8B01EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
+				B04790F11EC208CA001D5B65 /* DMallSelectTypeCell.m in Sources */,
 				26BA3C091EBCF5060048F72E /* GLDHeaderView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
 				26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */,
@@ -1702,6 +1749,7 @@
 				260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */,
 				B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,
+				B04790F61EC20F5F001D5B65 /* DMallSearchCell.m in Sources */,
 				26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */,
 				B0436D081EC0AD970079730A /* DTopToGoCollectionViewCell.m in Sources */,
 			);
