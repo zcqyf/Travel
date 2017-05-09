@@ -164,6 +164,9 @@
 		26C73BE71EC2013F00A049AC /* TOAnnounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BE61EC2013F00A049AC /* TOAnnounceViewController.m */; };
 		26C73BF01EC217C000A049AC /* TOPublishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BEE1EC217C000A049AC /* TOPublishTableViewCell.m */; };
 		26C73BF11EC217C000A049AC /* TOPublishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C73BEF1EC217C000A049AC /* TOPublishTableViewCell.xib */; };
+		26C73BF81EC2224100A049AC /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BF41EC2224100A049AC /* CalendarCollectionViewCell.m */; };
+		26C73BF91EC2224100A049AC /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C73BF51EC2224100A049AC /* CalendarCollectionViewCell.xib */; };
+		26C73BFA1EC2224100A049AC /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BF71EC2224100A049AC /* GYCalendarView.m */; };
 		26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9691EBDA071009AF788 /* GrogShopViewController.m */; };
 		26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */; };
 		26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */; };
@@ -191,9 +194,6 @@
 		26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC79441EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib */; };
 		B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */; };
 		B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */; };
-		B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */; };
-		B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */; };
-		B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C811EBB18CE0079730A /* GYCalendarView.m */; };
 		B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */; };
 		B0436CE71EBF74060079730A /* RecommendWanFaBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436CE61EBF74060079730A /* RecommendWanFaBtn.xib */; };
 		B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CE91EC0520D0079730A /* DestinationDetialViewController.m */; };
@@ -511,6 +511,11 @@
 		26C73BED1EC217C000A049AC /* TOPublishTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPublishTableViewCell.h; sourceTree = "<group>"; };
 		26C73BEE1EC217C000A049AC /* TOPublishTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPublishTableViewCell.m; sourceTree = "<group>"; };
 		26C73BEF1EC217C000A049AC /* TOPublishTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOPublishTableViewCell.xib; sourceTree = "<group>"; };
+		26C73BF31EC2224100A049AC /* CalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		26C73BF41EC2224100A049AC /* CalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		26C73BF51EC2224100A049AC /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
+		26C73BF61EC2224100A049AC /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCalendarView.h; sourceTree = "<group>"; };
+		26C73BF71EC2224100A049AC /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCalendarView.m; sourceTree = "<group>"; };
 		26ECD9681EBDA071009AF788 /* GrogShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogShopViewController.h; sourceTree = "<group>"; };
 		26ECD9691EBDA071009AF788 /* GrogShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogShopViewController.m; sourceTree = "<group>"; };
 		26ECD96B1EBDA0BD009AF788 /* ActivityPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseViewController.h; sourceTree = "<group>"; };
@@ -556,11 +561,6 @@
 		B0436C1E1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTopSrollViewCollectionViewCell.h; sourceTree = "<group>"; };
 		B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTopSrollViewCollectionViewCell.m; sourceTree = "<group>"; };
 		B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMTopSrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
-		B0436C7D1EBB18CE0079730A /* CalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarCollectionViewCell.h; path = ../CalendarCollectionViewCell.h; sourceTree = "<group>"; };
-		B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarCollectionViewCell.m; path = ../CalendarCollectionViewCell.m; sourceTree = "<group>"; };
-		B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCollectionViewCell.xib; path = ../CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
-		B0436C801EBB18CE0079730A /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYCalendarView.h; path = ../GYCalendarView.h; sourceTree = "<group>"; };
-		B0436C811EBB18CE0079730A /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYCalendarView.m; path = ../GYCalendarView.m; sourceTree = "<group>"; };
 		B0436CE31EBF73FD0079730A /* RecommendWanFaBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendWanFaBtn.h; sourceTree = "<group>"; };
 		B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendWanFaBtn.m; sourceTree = "<group>"; };
 		B0436CE61EBF74060079730A /* RecommendWanFaBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendWanFaBtn.xib; sourceTree = "<group>"; };
@@ -959,7 +959,7 @@
 		269CA84B1EB6B8AF0096AF1E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				B0436C851EBB18F20079730A /* CalendarView */,
+				26C73BF21EC2224100A049AC /* CalendarView */,
 				269CA84C1EB6B8AF0096AF1E /* RLScrollPic.h */,
 				269CA84D1EB6B8AF0096AF1E /* RLScrollPic.m */,
 				269CA84E1EB6B8AF0096AF1E /* SegementController */,
@@ -1289,14 +1289,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B0436C851EBB18F20079730A /* CalendarView */ = {
+		26C73BF21EC2224100A049AC /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
-				B0436C7D1EBB18CE0079730A /* CalendarCollectionViewCell.h */,
-				B0436C7E1EBB18CE0079730A /* CalendarCollectionViewCell.m */,
-				B0436C7F1EBB18CE0079730A /* CalendarCollectionViewCell.xib */,
-				B0436C801EBB18CE0079730A /* GYCalendarView.h */,
-				B0436C811EBB18CE0079730A /* GYCalendarView.m */,
+				26C73BF31EC2224100A049AC /* CalendarCollectionViewCell.h */,
+				26C73BF41EC2224100A049AC /* CalendarCollectionViewCell.m */,
+				26C73BF51EC2224100A049AC /* CalendarCollectionViewCell.xib */,
+				26C73BF61EC2224100A049AC /* GYCalendarView.h */,
+				26C73BF71EC2224100A049AC /* GYCalendarView.m */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
@@ -1521,9 +1521,9 @@
 				26BA3C051EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.xib in Resources */,
 				260439F91EC0C40500D44C99 /* TOPublishView.xib in Resources */,
 				B0436D1D1EC0BA7F0079730A /* DZhuSuBtn.xib in Resources */,
+				26C73BF91EC2224100A049AC /* CalendarCollectionViewCell.xib in Resources */,
 				B0436CF31EC05D200079730A /* DestinationJinNangCell.xib in Resources */,
 				260439961EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.xib in Resources */,
-				B0436C831EBB18CE0079730A /* CalendarCollectionViewCell.xib in Resources */,
 				26ECD9791EBDA7F5009AF788 /* GSPriceTableViewCell.xib in Resources */,
 				268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */,
 				2604397C1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.xib in Resources */,
@@ -1651,7 +1651,6 @@
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				268BA8AF1EB99A740002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
-				B0436C841EBB18CE0079730A /* GYCalendarView.m in Sources */,
 				269CA8CE1EB6B8AF0096AF1E /* SeasonHotCollectionViewCell.m in Sources */,
 				2604398B1EBF4E6D00D44C99 /* RecomendScrollTableViewCell.m in Sources */,
 				268BA8AD1EB99A740002B3C3 /* TRDetailViewController.m in Sources */,
@@ -1690,7 +1689,6 @@
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
 				26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */,
 				26C73BE71EC2013F00A049AC /* TOAnnounceViewController.m in Sources */,
-				B0436C821EBB18CE0079730A /* CalendarCollectionViewCell.m in Sources */,
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
 				260439F71EC0C3FD00D44C99 /* TOPublishView.m in Sources */,
 				260439E11EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m in Sources */,
@@ -1702,11 +1700,13 @@
 				269CA8C31EB6B8AF0096AF1E /* MallViewController.m in Sources */,
 				268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */,
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
+				26C73BFA1EC2224100A049AC /* GYCalendarView.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */,
 				260439B91EC09EC200D44C99 /* TOJourneyViewController.m in Sources */,
 				26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */,
+				26C73BF81EC2224100A049AC /* CalendarCollectionViewCell.m in Sources */,
 				26ECD9781EBDA7F5009AF788 /* GSPriceTableViewCell.m in Sources */,
 				269CA8C41EB6B8AF0096AF1E /* ActivityCollectionViewCell.m in Sources */,
 				260439EA1EC0A3FE00D44C99 /* TOTopSelectView.m in Sources */,
