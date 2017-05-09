@@ -68,7 +68,7 @@
     [_starImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_titleLabel.mas_bottom).offset(0);
         make.left.equalTo(_titleLabel.mas_left);
-        make.width.height.mas_equalTo(26);
+//        make.width.height.mas_equalTo(26);
     }];
     [_markLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_starImageView);
@@ -127,7 +127,7 @@
 - (UIImageView *)starImageView {
     if (!_starImageView) {
         _starImageView = [[UIImageView alloc] init];
-        _starImageView.image = [UIImage imageNamed:@"start1"];
+        _starImageView.image = [UIImage imageNamed:@"start"];
     }
     return _starImageView;
 }
@@ -156,7 +156,7 @@
 - (UIButton *)likeButton {
     if (!_likeButton) {
         _likeButton = [[UIButton alloc] init];
-        [_likeButton setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
+        [_likeButton setImage:[UIImage imageNamed:@"start"] forState:UIControlStateNormal];
     }
     return _likeButton;
 }

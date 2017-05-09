@@ -167,6 +167,20 @@
 		26C73BF81EC2224100A049AC /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BF41EC2224100A049AC /* CalendarCollectionViewCell.m */; };
 		26C73BF91EC2224100A049AC /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C73BF51EC2224100A049AC /* CalendarCollectionViewCell.xib */; };
 		26C73BFA1EC2224100A049AC /* GYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BF71EC2224100A049AC /* GYCalendarView.m */; };
+		26C73BFD1EC2246600A049AC /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BFC1EC2246600A049AC /* MineSettingViewController.m */; };
+		26C73C001EC224CD00A049AC /* MineSettingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73BFF1EC224CD00A049AC /* MineSettingDetailViewController.m */; };
+		26C73C031EC2252500A049AC /* MineCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C021EC2252500A049AC /* MineCollectionViewController.m */; };
+		26C73C061EC2256B00A049AC /* MinePackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C051EC2256B00A049AC /* MinePackageViewController.m */; };
+		26C73C091EC2259300A049AC /* MineJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C081EC2259300A049AC /* MineJourneyViewController.m */; };
+		26C73C0C1EC225AA00A049AC /* MineOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C0B1EC225AA00A049AC /* MineOrderViewController.m */; };
+		26C73C0F1EC225F400A049AC /* AfterSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C0E1EC225F400A049AC /* AfterSaleViewController.m */; };
+		26C73C121EC2263800A049AC /* MineDiscountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C111EC2263800A049AC /* MineDiscountViewController.m */; };
+		26C73C151EC2267B00A049AC /* MineTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C141EC2267B00A049AC /* MineTrackViewController.m */; };
+		26C73C181EC2269900A049AC /* MineQAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C171EC2269900A049AC /* MineQAViewController.m */; };
+		26C73C1B1EC226D800A049AC /* MinePartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C1A1EC226D800A049AC /* MinePartnerViewController.m */; };
+		26C73C1E1EC226F900A049AC /* MineRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C1D1EC226F900A049AC /* MineRechargeViewController.m */; };
+		26C73C211EC2273200A049AC /* MineTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C201EC2273200A049AC /* MineTeamViewController.m */; };
+		26C73C241EC2276300A049AC /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C231EC2276300A049AC /* AboutUsViewController.m */; };
 		26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9691EBDA071009AF788 /* GrogShopViewController.m */; };
 		26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */; };
 		26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */; };
@@ -516,6 +530,34 @@
 		26C73BF51EC2224100A049AC /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 		26C73BF61EC2224100A049AC /* GYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCalendarView.h; sourceTree = "<group>"; };
 		26C73BF71EC2224100A049AC /* GYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCalendarView.m; sourceTree = "<group>"; };
+		26C73BFB1EC2246600A049AC /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
+		26C73BFC1EC2246600A049AC /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
+		26C73BFE1EC224CD00A049AC /* MineSettingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingDetailViewController.h; sourceTree = "<group>"; };
+		26C73BFF1EC224CD00A049AC /* MineSettingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingDetailViewController.m; sourceTree = "<group>"; };
+		26C73C011EC2252500A049AC /* MineCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCollectionViewController.h; sourceTree = "<group>"; };
+		26C73C021EC2252500A049AC /* MineCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCollectionViewController.m; sourceTree = "<group>"; };
+		26C73C041EC2256B00A049AC /* MinePackageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePackageViewController.h; sourceTree = "<group>"; };
+		26C73C051EC2256B00A049AC /* MinePackageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePackageViewController.m; sourceTree = "<group>"; };
+		26C73C071EC2259300A049AC /* MineJourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineJourneyViewController.h; sourceTree = "<group>"; };
+		26C73C081EC2259300A049AC /* MineJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineJourneyViewController.m; sourceTree = "<group>"; };
+		26C73C0A1EC225AA00A049AC /* MineOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineOrderViewController.h; sourceTree = "<group>"; };
+		26C73C0B1EC225AA00A049AC /* MineOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineOrderViewController.m; sourceTree = "<group>"; };
+		26C73C0D1EC225F400A049AC /* AfterSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfterSaleViewController.h; sourceTree = "<group>"; };
+		26C73C0E1EC225F400A049AC /* AfterSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfterSaleViewController.m; sourceTree = "<group>"; };
+		26C73C101EC2263800A049AC /* MineDiscountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineDiscountViewController.h; sourceTree = "<group>"; };
+		26C73C111EC2263800A049AC /* MineDiscountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineDiscountViewController.m; sourceTree = "<group>"; };
+		26C73C131EC2267B00A049AC /* MineTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTrackViewController.h; sourceTree = "<group>"; };
+		26C73C141EC2267B00A049AC /* MineTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTrackViewController.m; sourceTree = "<group>"; };
+		26C73C161EC2269900A049AC /* MineQAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineQAViewController.h; sourceTree = "<group>"; };
+		26C73C171EC2269900A049AC /* MineQAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineQAViewController.m; sourceTree = "<group>"; };
+		26C73C191EC226D800A049AC /* MinePartnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePartnerViewController.h; sourceTree = "<group>"; };
+		26C73C1A1EC226D800A049AC /* MinePartnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePartnerViewController.m; sourceTree = "<group>"; };
+		26C73C1C1EC226F900A049AC /* MineRechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineRechargeViewController.h; sourceTree = "<group>"; };
+		26C73C1D1EC226F900A049AC /* MineRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineRechargeViewController.m; sourceTree = "<group>"; };
+		26C73C1F1EC2273200A049AC /* MineTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTeamViewController.h; sourceTree = "<group>"; };
+		26C73C201EC2273200A049AC /* MineTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTeamViewController.m; sourceTree = "<group>"; };
+		26C73C221EC2276200A049AC /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		26C73C231EC2276300A049AC /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		26ECD9681EBDA071009AF788 /* GrogShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogShopViewController.h; sourceTree = "<group>"; };
 		26ECD9691EBDA071009AF788 /* GrogShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogShopViewController.m; sourceTree = "<group>"; };
 		26ECD96B1EBDA0BD009AF788 /* ActivityPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseViewController.h; sourceTree = "<group>"; };
@@ -1222,6 +1264,34 @@
 			children = (
 				269CA8931EB6B8AF0096AF1E /* MineViewController.h */,
 				269CA8941EB6B8AF0096AF1E /* MineViewController.m */,
+				26C73BFB1EC2246600A049AC /* MineSettingViewController.h */,
+				26C73BFC1EC2246600A049AC /* MineSettingViewController.m */,
+				26C73BFE1EC224CD00A049AC /* MineSettingDetailViewController.h */,
+				26C73BFF1EC224CD00A049AC /* MineSettingDetailViewController.m */,
+				26C73C011EC2252500A049AC /* MineCollectionViewController.h */,
+				26C73C021EC2252500A049AC /* MineCollectionViewController.m */,
+				26C73C041EC2256B00A049AC /* MinePackageViewController.h */,
+				26C73C051EC2256B00A049AC /* MinePackageViewController.m */,
+				26C73C071EC2259300A049AC /* MineJourneyViewController.h */,
+				26C73C081EC2259300A049AC /* MineJourneyViewController.m */,
+				26C73C0A1EC225AA00A049AC /* MineOrderViewController.h */,
+				26C73C0B1EC225AA00A049AC /* MineOrderViewController.m */,
+				26C73C0D1EC225F400A049AC /* AfterSaleViewController.h */,
+				26C73C0E1EC225F400A049AC /* AfterSaleViewController.m */,
+				26C73C101EC2263800A049AC /* MineDiscountViewController.h */,
+				26C73C111EC2263800A049AC /* MineDiscountViewController.m */,
+				26C73C131EC2267B00A049AC /* MineTrackViewController.h */,
+				26C73C141EC2267B00A049AC /* MineTrackViewController.m */,
+				26C73C161EC2269900A049AC /* MineQAViewController.h */,
+				26C73C171EC2269900A049AC /* MineQAViewController.m */,
+				26C73C191EC226D800A049AC /* MinePartnerViewController.h */,
+				26C73C1A1EC226D800A049AC /* MinePartnerViewController.m */,
+				26C73C1C1EC226F900A049AC /* MineRechargeViewController.h */,
+				26C73C1D1EC226F900A049AC /* MineRechargeViewController.m */,
+				26C73C1F1EC2273200A049AC /* MineTeamViewController.h */,
+				26C73C201EC2273200A049AC /* MineTeamViewController.m */,
+				26C73C221EC2276200A049AC /* AboutUsViewController.h */,
+				26C73C231EC2276300A049AC /* AboutUsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1631,10 +1701,12 @@
 				268BA8B11EB99A740002B3C3 /* TOTopTableViewCell.m in Sources */,
 				2604397D1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.m in Sources */,
 				260439951EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m in Sources */,
+				26C73C181EC2269900A049AC /* MineQAViewController.m in Sources */,
 				260439811EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m in Sources */,
 				B0436CEE1EC05A910079730A /* DestinationHeaderCell.m in Sources */,
 				260439911EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m in Sources */,
 				260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */,
+				26C73C0F1EC225F400A049AC /* AfterSaleViewController.m in Sources */,
 				260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */,
 				260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */,
 				B04790EB1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m in Sources */,
@@ -1669,17 +1741,21 @@
 				B0436CF21EC05D200079730A /* DestinationJinNangCell.m in Sources */,
 				26FC79211EBCC8EE00F66B69 /* GLDPurchaseCollectionViewCell.m in Sources */,
 				260439661EBF4E6D00D44C99 /* BookingViewController.m in Sources */,
+				26C73C1B1EC226D800A049AC /* MinePartnerViewController.m in Sources */,
 				269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */,
 				2604399B1EBF4E6D00D44C99 /* TLGuangGaoTableViewCell.m in Sources */,
 				26BA3C0E1EBD05DE0048F72E /* GLMapCollectionViewCell.m in Sources */,
 				269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */,
 				26FC79381EBCC9D000F66B69 /* GLDInfoCollectionViewCell.m in Sources */,
+				26C73C0C1EC225AA00A049AC /* MineOrderViewController.m in Sources */,
+				26C73C031EC2252500A049AC /* MineCollectionViewController.m in Sources */,
 				B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
 				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
 				260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */,
 				260439D21EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m in Sources */,
 				268BA8B21EB99A740002B3C3 /* TribeDLView.m in Sources */,
+				26C73C211EC2273200A049AC /* MineTeamViewController.m in Sources */,
 				26FC792E1EBCC98300F66B69 /* GLDDescritionCollectionViewCell.m in Sources */,
 				260439971EBF4E6D00D44C99 /* TLCalendarTableViewCell.m in Sources */,
 				269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */,
@@ -1701,6 +1777,7 @@
 				268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */,
 				268BA8AC1EB99A740002B3C3 /* TODetailViewController.m in Sources */,
 				26C73BFA1EC2224100A049AC /* GYCalendarView.m in Sources */,
+				26C73C151EC2267B00A049AC /* MineTrackViewController.m in Sources */,
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */,
@@ -1728,6 +1805,7 @@
 				260439D71EC0A20B00D44C99 /* TOJourneyTableViewCell.m in Sources */,
 				26043A021EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m in Sources */,
 				260439691EBF4E6D00D44C99 /* RecommendViewController.m in Sources */,
+				26C73C091EC2259300A049AC /* MineJourneyViewController.m in Sources */,
 				260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */,
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
 				268BA8B01EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
@@ -1748,10 +1826,13 @@
 				2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */,
 				260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */,
 				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
+				26C73C241EC2276300A049AC /* AboutUsViewController.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,
 				B0436D0D1EC0B3E20079730A /* DJingDianCollectionViewCell.m in Sources */,
+				26C73C061EC2256B00A049AC /* MinePackageViewController.m in Sources */,
 				269CA8C81EB6B8AF0096AF1E /* GuessLikeCollectionViewCell.m in Sources */,
+				26C73C121EC2263800A049AC /* MineDiscountViewController.m in Sources */,
 				B0436D121EC0B7B70079730A /* DfooterBtnCollectionReusableView.m in Sources */,
 				260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
@@ -1759,9 +1840,12 @@
 				B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,
 				B04790F61EC20F5F001D5B65 /* DMallSearchCell.m in Sources */,
+				26C73BFD1EC2246600A049AC /* MineSettingViewController.m in Sources */,
 				26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */,
 				26C73BF01EC217C000A049AC /* TOPublishTableViewCell.m in Sources */,
 				B0436D081EC0AD970079730A /* DTopToGoCollectionViewCell.m in Sources */,
+				26C73C1E1EC226F900A049AC /* MineRechargeViewController.m in Sources */,
+				26C73C001EC224CD00A049AC /* MineSettingDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

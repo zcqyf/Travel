@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "TRTopTableViewCell.h"
 #import "MineTopTableViewCell.h"
+#import "MineSettingViewController.h"
 
 @interface MineViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -52,7 +53,7 @@
 
 - (NSArray *)channels {
     if (!_channels) {
-        _channels = @[@{@"text": @"机加酒", @"image": @"star"}, @{@"text": @"出境游", @"image": @"star"}, @{@"text": @"国内游", @"image": @"star"}];
+        _channels = @[@{@"text": @"机加酒", @"image": @"start"}, @{@"text": @"出境游", @"image": @"start"}, @{@"text": @"国内游", @"image": @"start"}];
     }
     return _channels;
 }
@@ -62,6 +63,14 @@
         _dataSource = @[@"我的订单", @"我的优惠券", @"我的足迹", @"我发布的帖子", @"我的问答", @"我的结伴", @"会员充值", @"会员商城", @"我的团队", @"联系我们"];
     }
     return _dataSource;
+}
+
+//设置按钮
+- (void)clickToSet:(UIButton *)sender {
+    MineSettingViewController *vc = [MineSettingViewController new];
+    vc.title = @"设置";
+    vc.data = @[@"账号密码", @"个人信息", @"推送设置", @"清除缓存", @"检测最新版本", @"意见反馈", @"联系我们"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma tableView dataSource
@@ -81,7 +90,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             MineTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MineTopTableViewCell" forIndexPath:indexPath];
-            
+            [cell.settingButton addTarget:self action:@selector(clickToSet:) forControlEvents:UIControlEventTouchUpInside];
             return cell;
         } else {
             TRTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRTopTableViewCell" forIndexPath:indexPath];
@@ -99,14 +108,6 @@
         return cell;
     }
 }
-
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//    return <#expression#>
-//}
-//
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-//    return <#expression#>
-//}
 
 #pragma tableView delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -130,7 +131,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    if (indexPath.section > 0) {
+        
+    }
 }
 
 

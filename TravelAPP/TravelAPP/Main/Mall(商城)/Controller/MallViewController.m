@@ -78,7 +78,7 @@
 
 - (NSArray *)channels {
     if (!_channels) {
-        _channels = @[@{@"text": @"机加酒", @"image": @"star"}, @{@"text": @"出境游", @"image": @"star"}, @{@"text": @"国内游", @"image": @"star"}, @{@"text": @"酒店", @"image": @"star"}, @{@"text": @"旅行周边", @"image": @"star"}, @{@"text": @"签证", @"image": @"star"}, @{@"text": @"自由行", @"image": @"star"}, @{@"text": @"旅游保险", @"image": @"star"}, @{@"text": @"接送包车", @"image": @"star"}, @{@"text": @"游轮", @"image": @"star"}];
+        _channels = @[@{@"text": @"机加酒", @"image": @"start"}, @{@"text": @"出境游", @"image": @"start"}, @{@"text": @"国内游", @"image": @"start"}, @{@"text": @"酒店", @"image": @"start"}, @{@"text": @"旅行周边", @"image": @"start"}, @{@"text": @"签证", @"image": @"start"}, @{@"text": @"自由行", @"image": @"start"}, @{@"text": @"旅游保险", @"image": @"start"}, @{@"text": @"接送包车", @"image": @"start"}, @{@"text": @"游轮", @"image": @"start"}];
     }
     return _channels;
 }
@@ -106,7 +106,7 @@
 
 - (NSArray<NSDictionary *> *)guessLikes {
     if (!_guessLikes) {
-        _guessLikes = [[NSArray alloc] initWithObjects:@{@"image": @"star", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, @{@"image": @"star", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, @{@"image": @"star", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, nil];
+        _guessLikes = [[NSArray alloc] initWithObjects:@{@"image": @"start", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, @{@"image": @"start", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, @{@"image": @"start", @"title": @"五星马尔代夫", @"content": @"如果你无法简介表达你的想法，那只能说明你还不够了解它"}, nil];
     }
     return _guessLikes;
 }
@@ -229,7 +229,7 @@
     } else if (indexPath.section == 2) {
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 150);
     } else if (indexPath.section == 3) {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 370);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 340);
     } else {
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 130);
     }

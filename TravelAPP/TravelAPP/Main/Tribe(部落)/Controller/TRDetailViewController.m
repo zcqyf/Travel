@@ -54,7 +54,7 @@
 
 - (NSArray *)channels {
     if (!_channels) {
-        _channels = @[@{@"text": @"机加酒", @"image": @"star"}, @{@"text": @"出境游", @"image": @"star"}, @{@"text": @"国内游", @"image": @"star"}, @{@"text": @"酒店", @"image": @"star"}, @{@"text": @"旅行周边", @"image": @"star"}];
+        _channels = @[@{@"text": @"机加酒", @"image": @"start"}, @{@"text": @"出境游", @"image": @"start"}, @{@"text": @"国内游", @"image": @"start"}, @{@"text": @"酒店", @"image": @"start"}, @{@"text": @"旅行周边", @"image": @"start"}];
     }
     return _channels;
 }

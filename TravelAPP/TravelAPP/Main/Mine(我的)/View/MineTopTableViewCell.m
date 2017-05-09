@@ -18,7 +18,7 @@
 @property (nonatomic,strong)UILabel *remainLabel;
 @property (nonatomic,strong)UILabel *creditLabel;
 @property (nonatomic,strong)UIButton *messageButton;
-@property (nonatomic,strong)UIButton *settingButton;
+
 @property (nonatomic,strong)UIButton *signinButton;
 
 @end

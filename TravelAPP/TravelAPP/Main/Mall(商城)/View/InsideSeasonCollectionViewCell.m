@@ -21,7 +21,7 @@
 @property (nonatomic,strong)UIImageView *starImageView;
 @property (nonatomic,strong)UILabel *commentLalbel;
 
-
+@property (nonatomic,strong)UIView *bottomLine;
 
 @end
 
@@ -47,11 +47,12 @@
     [self addSubview:self.locationLabel];
     [self addSubview:self.starImageView];
     [self addSubview:self.commentLalbel];
+    [self addSubview:self.bottomLine];
     
     [_topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(10);
-        make.left.equalTo(self).offset(15);
-        make.right.equalTo(self).offset(-15);
+        make.top.equalTo(self).offset(5);
+        make.left.equalTo(self).offset(8);
+        make.right.equalTo(self).offset(-8);
         make.height.mas_equalTo(150);
     }];
     [_priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,7 +69,7 @@
     [_guidIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_titleLabel.mas_bottom).offset(0);
         make.left.equalTo(_topImageView);
-        make.width.height.mas_equalTo(26);
+        make.width.height.mas_equalTo(13);
     }];
     [_guidLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_guidIcon);
@@ -79,7 +80,7 @@
     [_locationIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_guidIcon.mas_top);
         make.right.equalTo(_locationLabel.mas_left).offset(-5);
-        make.width.height.mas_equalTo(26);
+//        make.width.height.mas_equalTo(26);
     }];
     [_locationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_locationIcon);
@@ -89,12 +90,18 @@
     [_starImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_guidIcon.mas_bottom).offset(0);
         make.left.equalTo(_guidIcon.mas_left);
-        make.width.height.mas_equalTo(26);
+        make.width.height.mas_equalTo(13);
     }];
     [_commentLalbel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_starImageView);
         make.right.equalTo(_topImageView.mas_right);
         make.left.equalTo(_starImageView.mas_right);
+    }];
+    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(_commentLalbel.mas_bottom);
+        make.bottom.equalTo(self).offset(-5);
+        make.left.right.equalTo(self);
+        make.height.mas_equalTo(0.5);
     }];
 }
 
@@ -135,7 +142,7 @@
 - (UIImageView *)guidIcon {
     if (!_guidIcon) {
         _guidIcon = [[UIImageView alloc] init];
-        _guidIcon.image = [UIImage imageNamed:@"start1"];
+        _guidIcon.image = [UIImage imageNamed:@"start"];
     }
     return _guidIcon;
 }
@@ -153,7 +160,7 @@
 - (UIImageView *)locationIcon {
     if (!_locationIcon) {
         _locationIcon = [[UIImageView alloc] init];
-        _locationIcon.image = [UIImage imageNamed:@"start1"];
+        _locationIcon.image = [UIImage imageNamed:@"start"];
     }
     return _locationIcon;
 }
@@ -171,7 +178,7 @@
 - (UIImageView *)starImageView {
     if (!_starImageView) {
         _starImageView = [[UIImageView alloc] init];
-        _starImageView.image = [UIImage imageNamed:@"start1"];
+        _starImageView.image = [UIImage imageNamed:@"start"];
     }
     return _starImageView;
 }
@@ -187,6 +194,13 @@
     return _commentLalbel;
 }
 
+- (UIView *)bottomLine {
+    if (!_bottomLine) {
+        _bottomLine = [[UIView alloc] init];
+        _bottomLine.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _bottomLine;
+}
 
 @end
 

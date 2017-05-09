@@ -11,5 +11,6 @@
 @interface MineTopTableViewCell : UITableViewCell
 
 @property (nonatomic,strong)NSDictionary *data;
+@property (nonatomic,strong)UIButton *settingButton;
 
 @end

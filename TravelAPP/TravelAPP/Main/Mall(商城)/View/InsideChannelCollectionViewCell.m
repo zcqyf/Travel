@@ -31,6 +31,7 @@
 
 - (void)setData:(NSDictionary *)data {
     _data = data;
+    _imageView.image = [UIImage imageNamed:data[@"image"]];
     _label.text = _data[@"text"];
 }
 
