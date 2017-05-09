@@ -13,8 +13,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.backgroundColor = [UIColor cyanColor];
     
-    [self setupScrollView];
+//    [self setupScrollView];
 }
 
 

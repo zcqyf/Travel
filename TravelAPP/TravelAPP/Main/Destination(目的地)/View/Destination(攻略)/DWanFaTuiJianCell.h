@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DWanFaTuiJianCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIScrollView *backgoundScrollView;
 
+
+@property (weak, nonatomic) IBOutlet UIView *bgView;
 @end

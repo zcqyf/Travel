@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DTeSeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-ff-SCh">
+                        <rect key="frame" x="10" y="10" width="126" height="132"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香港亲自友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-2v-pjq">
+                        <rect key="frame" x="10" y="152" width="128" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Fgu-2v-pjq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="DqZ-oP-q2k"/>
+                <constraint firstAttribute="trailing" secondItem="Fgu-2v-pjq" secondAttribute="trailing" constant="8" id="Hz6-QR-YVN"/>
+                <constraint firstItem="8fP-ff-SCh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="SUF-Bc-iOd"/>
+                <constraint firstAttribute="bottom" secondItem="Fgu-2v-pjq" secondAttribute="bottom" constant="8" id="je4-QV-jaA"/>
+                <constraint firstAttribute="trailing" secondItem="8fP-ff-SCh" secondAttribute="trailing" constant="10" id="pg6-hb-Q3k"/>
+                <constraint firstItem="8fP-ff-SCh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="tWC-ha-iK8"/>
+                <constraint firstItem="Fgu-2v-pjq" firstAttribute="top" secondItem="8fP-ff-SCh" secondAttribute="bottom" constant="10" id="uwF-eO-2z0"/>
+            </constraints>
+            <size key="customSize" width="146" height="177"/>
+            <connections>
+                <outlet property="myImageView" destination="8fP-ff-SCh" id="13t-mP-62Y"/>
+                <outlet property="myTitleLabel" destination="Fgu-2v-pjq" id="bx2-a0-LHF"/>
+            </connections>
+            <point key="canvasLocation" x="82" y="186.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

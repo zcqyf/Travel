@@ -15,7 +15,10 @@
     
     self.headerImageView.layer.cornerRadius = 39.0;
     self.headerImageView.layer.masksToBounds = YES;
+    self.translatesAutoresizingMaskIntoConstraints = YES;
 }
+
+
 
 +(instancetype)initCustomBtnWithFrame:(CGRect)frame {
     RecommendWanFaBtn *btn = [[[NSBundle mainBundle] loadNibNamed:@"RecommendWanFaBtn" owner:nil options:nil] objectAtIndex:0];
