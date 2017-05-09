@@ -93,7 +93,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.textLabel.text = self.dataSource[indexPath.row];
         cell.textLabel.font = [UIFont systemFontOfSize:14];
-        cell.imageView.image = [UIImage imageNamed:@"star"];
+        cell.imageView.image = [UIImage imageNamed:@"start"];
         
         
         return cell;

@@ -10,4 +10,6 @@
 
 @interface TribeViewController : BaseViewController
 
+@property (nonatomic,assign)NSInteger currentIndex;
+
 @end

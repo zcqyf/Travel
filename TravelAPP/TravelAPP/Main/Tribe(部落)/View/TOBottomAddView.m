@@ -22,11 +22,6 @@
 - (void)setupUI {
     self.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:self.addBtn];
-//    [_addBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.equalTo(self);
-//        make.right.mas_equalTo(-10);
-//        make.width.height.mas_equalTo(self.RL_Height - 20);
-//    }];
 }
 
 - (void)layoutSubviews {
@@ -43,7 +38,8 @@
 - (UIButton *)addBtn {
     if (!_addBtn) {
         _addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _addBtn.backgroundColor = [UIColor orangeColor];
+//        _addBtn.backgroundColor = [UIColor orangeColor];
+        [_addBtn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
     }
     return _addBtn;
 }

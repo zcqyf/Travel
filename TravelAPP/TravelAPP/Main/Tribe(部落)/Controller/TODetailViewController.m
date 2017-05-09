@@ -12,9 +12,7 @@
 #import <Masonry.h>
 #import "TOJourneyViewController.h"
 #import "TOBottomAddView.h"
-#import "TOPublishViewController.h"
-
-#import "TOJourneyReplyViewController.h"
+#import "TOAnnounceViewController.h"
 
 @interface TODetailViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -78,8 +76,7 @@
 }
 
 - (void)clickToAdd:(UIButton *)sender {
-//    TOPublishViewController *vc = [TOPublishViewController new];
-    TOJourneyReplyViewController *vc = [TOJourneyReplyViewController new];
+    TOAnnounceViewController *vc = [TOAnnounceViewController new];
     vc.title = @"发布户外出行";
     [self.navigationController pushViewController:vc animated:YES];
 }

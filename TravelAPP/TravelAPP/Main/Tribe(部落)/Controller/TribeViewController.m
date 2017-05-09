@@ -20,6 +20,8 @@
 
 @property (nonatomic,strong)TabBarViewController *tab;
 
+
+
 @end
 
 @implementation TribeViewController
@@ -33,6 +35,9 @@
     [super viewWillAppear:animated];
     
     // TODO 有bug待修改
+    if (_currentIndex == 1) {
+        [self.tab.tabBar setHidden:YES];
+    }
 //    [self.tabBarController.tabBar setHidden:NO];
 //    TRDetailViewController *tr = _vcArray[0];
 //    TODetailViewController *to = _vcArray[1];
@@ -74,6 +79,7 @@
 
 #pragma TribeTitleSelectViewDelegate
 - (void)clickedAt:(NSInteger)Index {
+    _currentIndex = Index;
     switch (Index) {
         case 0: {
             [_tab.tabBar setHidden:NO];

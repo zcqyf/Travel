@@ -88,10 +88,18 @@
 
 #pragma navigation delegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
-    if ([viewController isKindOfClass:[MemberMallViewController class]] || [viewController isKindOfClass:[RecommendViewController class]] || [viewController isKindOfClass:[DestinationViewController class]] || [viewController isKindOfClass:[MallViewController class]] || [viewController isKindOfClass:[TribeViewController class]] || [viewController isKindOfClass:[MineViewController class]]) {// TODO 与 == 的区别
+    if ([viewController isKindOfClass:[MemberMallViewController class]] || [viewController isKindOfClass:[RecommendViewController class]] || [viewController isKindOfClass:[DestinationViewController class]] || [viewController isKindOfClass:[MallViewController class]] || [viewController isKindOfClass:[MineViewController class]]) {// TODO 与 == 的区别   || [viewController isKindOfClass:[TribeViewController class]]
         [self.tabBar setHidden:NO];
         [self.mineBtn setHidden:NO];
+    } else if ([viewController isKindOfClass:[TribeViewController class]]) {
+        TribeViewController *vc = (TribeViewController *)viewController;
+        if (vc.currentIndex == 1) {
+            [self.tabBar setHidden:YES];
+            [self.mineBtn setHidden:YES];
+        } else {
+            [self.tabBar setHidden:NO];
+            [self.mineBtn setHidden:NO];
+        }
     } else {
         [self.tabBar setHidden:YES];
         [self.mineBtn setHidden:YES];

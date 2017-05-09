@@ -68,7 +68,7 @@
             <connections>
                 <outlet property="textView" destination="mVQ-QD-50f" id="5cw-6D-4NZ"/>
             </connections>
-            <point key="canvasLocation" x="-93" y="-17"/>
+            <point key="canvasLocation" x="-164" y="-20"/>
         </tableViewCell>
     </objects>
 </document>

@@ -72,12 +72,12 @@
     [_messageButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(10);
         make.width.height.mas_equalTo(26);
-        make.right.equalTo(_settingButton.mas_left).offset(-5);
+        make.right.equalTo(_settingButton.mas_left).offset(-15);
     }];
     [_settingButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(10);
         make.width.height.mas_equalTo(20);
-        make.right.equalTo(self).offset(-10);
+        make.right.equalTo(self).offset(-20);
     }];
     [_signinButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self);
@@ -166,7 +166,7 @@
 - (UIButton *)signinButton {
     if (!_signinButton) {
         _signinButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_signinButton setImage:[UIImage imageNamed:@"signin"] forState:UIControlStateNormal];
+        [_signinButton setImage:[UIImage imageNamed:@"signin-1"] forState:UIControlStateNormal];
     }
     return _signinButton;
 }
