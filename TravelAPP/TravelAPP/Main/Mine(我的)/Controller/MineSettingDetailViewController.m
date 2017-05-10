@@ -56,7 +56,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.font = [UIFont systemFontOfSize:16];
-//    cell.textLabel.text = self.data[indexPath.row];
+    NSArray *array = self.data[@"data"];
+    cell.textLabel.text = array[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.imageView.image = [UIImage imageNamed:@"start"];
     return cell;
