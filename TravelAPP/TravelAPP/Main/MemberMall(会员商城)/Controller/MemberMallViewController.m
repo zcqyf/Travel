@@ -62,6 +62,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     [self.view addSubview:self.searchBar];
     [self.view addSubview:self.collectionView];
 }
