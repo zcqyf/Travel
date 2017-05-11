@@ -24,6 +24,7 @@
 #define GYCommonBgColor GYColor(255, 88, 51)
 
 #import "UIView+UIViewExtension.h"
+#import "CALayer+XibBorderColor.h"
 
 
 #endif /* PrefixHeader_pch */

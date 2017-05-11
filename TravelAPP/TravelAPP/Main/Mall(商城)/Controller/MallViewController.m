@@ -35,6 +35,9 @@
 @property (nonatomic,strong)NSArray<NSDictionary *> *currentHots;//当季热门数据源(section == 3)
 @property (nonatomic,strong)NSArray<NSDictionary *> *guessLikes;//猜你喜欢数据源(section == 4)
 
+
+
+
 @end
 
 @implementation MallViewController

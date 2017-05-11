@@ -101,6 +101,18 @@
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
+		262CA10D1EC4AF9800667A02 /* ChangePwdOldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA10B1EC4AF9800667A02 /* ChangePwdOldTableViewCell.m */; };
+		262CA10E1EC4AF9800667A02 /* ChangePwdOldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262CA10C1EC4AF9800667A02 /* ChangePwdOldTableViewCell.xib */; };
+		262CA1121EC4AFAA00667A02 /* ChangePwdNewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1101EC4AFAA00667A02 /* ChangePwdNewTableViewCell.m */; };
+		262CA1131EC4AFAA00667A02 /* ChangePwdNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262CA1111EC4AFAA00667A02 /* ChangePwdNewTableViewCell.xib */; };
+		262CA1171EC4B39100667A02 /* SettingInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1151EC4B39100667A02 /* SettingInfoTableViewCell.m */; };
+		262CA1181EC4B39100667A02 /* SettingInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262CA1161EC4B39100667A02 /* SettingInfoTableViewCell.xib */; };
+		262CA11C1EC4B4A700667A02 /* SettingPushTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA11A1EC4B4A700667A02 /* SettingPushTableViewCell.m */; };
+		262CA11D1EC4B4A700667A02 /* SettingPushTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262CA11B1EC4B4A700667A02 /* SettingPushTableViewCell.xib */; };
+		262CA1201EC4C24500667A02 /* ChangePwdOldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA11F1EC4C24500667A02 /* ChangePwdOldViewController.m */; };
+		262CA1231EC4C25A00667A02 /* ChangePwdNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1221EC4C25A00667A02 /* ChangePwdNewViewController.m */; };
+		262CA1271EC4CE2500667A02 /* CALayer+XibBorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */; };
+		262CA12A1EC4D5C500667A02 /* ChangeNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */; };
 		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
 		268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */; };
 		268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF31EB6B2BA00A659A1 /* Main.storyboard */; };
@@ -433,6 +445,26 @@
 		26277F681EBB74360049C5F7 /* ActivityPurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseTableViewCell.h; sourceTree = "<group>"; };
 		26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPurchaseTableViewCell.m; sourceTree = "<group>"; };
 		26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPurchaseTableViewCell.xib; sourceTree = "<group>"; };
+		262CA10A1EC4AF9800667A02 /* ChangePwdOldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdOldTableViewCell.h; sourceTree = "<group>"; };
+		262CA10B1EC4AF9800667A02 /* ChangePwdOldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdOldTableViewCell.m; sourceTree = "<group>"; };
+		262CA10C1EC4AF9800667A02 /* ChangePwdOldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePwdOldTableViewCell.xib; sourceTree = "<group>"; };
+		262CA10F1EC4AFAA00667A02 /* ChangePwdNewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdNewTableViewCell.h; sourceTree = "<group>"; };
+		262CA1101EC4AFAA00667A02 /* ChangePwdNewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdNewTableViewCell.m; sourceTree = "<group>"; };
+		262CA1111EC4AFAA00667A02 /* ChangePwdNewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePwdNewTableViewCell.xib; sourceTree = "<group>"; };
+		262CA1141EC4B39100667A02 /* SettingInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingInfoTableViewCell.h; sourceTree = "<group>"; };
+		262CA1151EC4B39100667A02 /* SettingInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingInfoTableViewCell.m; sourceTree = "<group>"; };
+		262CA1161EC4B39100667A02 /* SettingInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingInfoTableViewCell.xib; sourceTree = "<group>"; };
+		262CA1191EC4B4A700667A02 /* SettingPushTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingPushTableViewCell.h; sourceTree = "<group>"; };
+		262CA11A1EC4B4A700667A02 /* SettingPushTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingPushTableViewCell.m; sourceTree = "<group>"; };
+		262CA11B1EC4B4A700667A02 /* SettingPushTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingPushTableViewCell.xib; sourceTree = "<group>"; };
+		262CA11E1EC4C24500667A02 /* ChangePwdOldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdOldViewController.h; sourceTree = "<group>"; };
+		262CA11F1EC4C24500667A02 /* ChangePwdOldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdOldViewController.m; sourceTree = "<group>"; };
+		262CA1211EC4C25A00667A02 /* ChangePwdNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdNewViewController.h; sourceTree = "<group>"; };
+		262CA1221EC4C25A00667A02 /* ChangePwdNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdNewViewController.m; sourceTree = "<group>"; };
+		262CA1251EC4CE2500667A02 /* CALayer+XibBorderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibBorderColor.h"; sourceTree = "<group>"; };
+		262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibBorderColor.m"; sourceTree = "<group>"; };
+		262CA1281EC4D5C500667A02 /* ChangeNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNickNameViewController.h; sourceTree = "<group>"; };
+		262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNickNameViewController.m; sourceTree = "<group>"; };
 		268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AEAEB1EB6B2BA00A659A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -917,6 +949,18 @@
 				26B661681EC36CB000CFE996 /* AboutUsTableViewCell.h */,
 				26B661691EC36CB000CFE996 /* AboutUsTableViewCell.m */,
 				26B6616A1EC36CB000CFE996 /* AboutUsTableViewCell.xib */,
+				262CA10A1EC4AF9800667A02 /* ChangePwdOldTableViewCell.h */,
+				262CA10B1EC4AF9800667A02 /* ChangePwdOldTableViewCell.m */,
+				262CA10C1EC4AF9800667A02 /* ChangePwdOldTableViewCell.xib */,
+				262CA10F1EC4AFAA00667A02 /* ChangePwdNewTableViewCell.h */,
+				262CA1101EC4AFAA00667A02 /* ChangePwdNewTableViewCell.m */,
+				262CA1111EC4AFAA00667A02 /* ChangePwdNewTableViewCell.xib */,
+				262CA1141EC4B39100667A02 /* SettingInfoTableViewCell.h */,
+				262CA1151EC4B39100667A02 /* SettingInfoTableViewCell.m */,
+				262CA1161EC4B39100667A02 /* SettingInfoTableViewCell.xib */,
+				262CA1191EC4B4A700667A02 /* SettingPushTableViewCell.h */,
+				262CA11A1EC4B4A700667A02 /* SettingPushTableViewCell.m */,
+				262CA11B1EC4B4A700667A02 /* SettingPushTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1081,6 +1125,8 @@
 			children = (
 				269CA8461EB6B8AF0096AF1E /* UIView+UIViewExtension.h */,
 				269CA8471EB6B8AF0096AF1E /* UIView+UIViewExtension.m */,
+				262CA1251EC4CE2500667A02 /* CALayer+XibBorderColor.h */,
+				262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1364,6 +1410,12 @@
 				26C73BFC1EC2246600A049AC /* MineSettingViewController.m */,
 				26C73BFE1EC224CD00A049AC /* MineSettingDetailViewController.h */,
 				26C73BFF1EC224CD00A049AC /* MineSettingDetailViewController.m */,
+				262CA11E1EC4C24500667A02 /* ChangePwdOldViewController.h */,
+				262CA11F1EC4C24500667A02 /* ChangePwdOldViewController.m */,
+				262CA1211EC4C25A00667A02 /* ChangePwdNewViewController.h */,
+				262CA1221EC4C25A00667A02 /* ChangePwdNewViewController.m */,
+				262CA1281EC4D5C500667A02 /* ChangeNickNameViewController.h */,
+				262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */,
 				26C73C011EC2252500A049AC /* MineCollectionViewController.h */,
 				26C73C021EC2252500A049AC /* MineCollectionViewController.m */,
 				26C73C041EC2256B00A049AC /* MinePackageViewController.h */,
@@ -1653,6 +1705,7 @@
 				26043A031EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib in Resources */,
 				268AEAFA1EB6B2BA00A659A1 /* LaunchScreen.storyboard in Resources */,
 				26FC79391EBCC9D000F66B69 /* GLDInfoCollectionViewCell.xib in Resources */,
+				262CA11D1EC4B4A700667A02 /* SettingPushTableViewCell.xib in Resources */,
 				B0436D181EC0B97E0079730A /* DZhuSuCollectionViewCell.xib in Resources */,
 				2604396C1EBF4E6D00D44C99 /* BookingOrderDetialTableViewCell.xib in Resources */,
 				B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */,
@@ -1670,6 +1723,7 @@
 				26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */,
 				260439941EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib in Resources */,
 				26B661621EC36C3500CFE996 /* MTTopTableViewCell.xib in Resources */,
+				262CA10E1EC4AF9800667A02 /* ChangePwdOldTableViewCell.xib in Resources */,
 				2604399A1EBF4E6D00D44C99 /* TLDescriptionTableViewCell.xib in Resources */,
 				26ECD97E1EBDA802009AF788 /* GSTableViewCell.xib in Resources */,
 				260439741EBF4E6D00D44C99 /* HotRecommendBtn.xib in Resources */,
@@ -1684,6 +1738,7 @@
 				2604397E1EBF4E6D00D44C99 /* DaoYouTypeTableViewCell.xib in Resources */,
 				260439701EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.xib in Resources */,
 				269CA8C21EB6B8AF0096AF1E /* DestinationSelectBtn.xib in Resources */,
+				262CA1131EC4AFAA00667A02 /* ChangePwdNewTableViewCell.xib in Resources */,
 				269CA8D11EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.xib in Resources */,
 				260439F11EC0A6E000D44C99 /* TRJourneyBottomView.xib in Resources */,
 				260439AB1EBF5D4E00D44C99 /* GLBottomCommentView.xib in Resources */,
@@ -1711,6 +1766,7 @@
 				2604399F1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.xib in Resources */,
 				26B661351EC369FB00CFE996 /* MCCollectionViewCell.xib in Resources */,
 				260439C41EC0A05400D44C99 /* TRJourneyTopTableViewCell.xib in Resources */,
+				262CA1181EC4B39100667A02 /* SettingInfoTableViewCell.xib in Resources */,
 				260439781EBF4E6D00D44C99 /* ConsultiontextFeildCell.xib in Resources */,
 				B0436D131EC0B7B70079730A /* DfooterBtnCollectionReusableView.xib in Resources */,
 				26B661671EC36C6100CFE996 /* MTMoneyTableViewCell.xib in Resources */,
@@ -1817,6 +1873,7 @@
 				260439891EBF4E6D00D44C99 /* RecomendMenBtn.m in Sources */,
 				26C73C0F1EC225F400A049AC /* AfterSaleViewController.m in Sources */,
 				260439711EBF4E6D00D44C99 /* BookingRemarkTableViewCell.m in Sources */,
+				262CA1171EC4B39100667A02 /* SettingInfoTableViewCell.m in Sources */,
 				260439A01EBF4E6D00D44C99 /* TravelLineTableViewCell.m in Sources */,
 				B04790EB1EC1FDBB001D5B65 /* DTeSeCollectionViewCell.m in Sources */,
 				260439BC1EC09EE500D44C99 /* TOJourneyReplyViewController.m in Sources */,
@@ -1829,6 +1886,7 @@
 				26ECD97D1EBDA802009AF788 /* GSTableViewCell.m in Sources */,
 				260439991EBF4E6D00D44C99 /* TLDescriptionTableViewCell.m in Sources */,
 				260439931EBF4E6D00D44C99 /* TLBookingTextTableViewCell.m in Sources */,
+				262CA1271EC4CE2500667A02 /* CALayer+XibBorderColor.m in Sources */,
 				269CA8BB1EB6B8AF0096AF1E /* BaseViewController.m in Sources */,
 				269CA8D41EB6B8AF0096AF1E /* MMRecommendCollectionViewCell.m in Sources */,
 				268BA8AF1EB99A740002B3C3 /* InsideTribeImageCollectionViewCell.m in Sources */,
@@ -1864,6 +1922,7 @@
 				B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */,
 				26B661661EC36C6100CFE996 /* MTMoneyTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
+				262CA10D1EC4AF9800667A02 /* ChangePwdOldTableViewCell.m in Sources */,
 				26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */,
 				260439641EBF4E6D00D44C99 /* BookingOrderViewController.m in Sources */,
 				260439D21EC0A1EF00D44C99 /* TOJourneyTopTableViewCell.m in Sources */,
@@ -1895,6 +1954,7 @@
 				268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */,
 				262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */,
 				26B661431EC36AEA00CFE996 /* ASDateTableViewCell.m in Sources */,
+				262CA1201EC4C24500667A02 /* ChangePwdOldViewController.m in Sources */,
 				260439851EBF4E6D00D44C99 /* RecomendGongGaoTableViewCell.m in Sources */,
 				260439B91EC09EC200D44C99 /* TOJourneyViewController.m in Sources */,
 				26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */,
@@ -1905,6 +1965,7 @@
 				26B6616B1EC36CB000CFE996 /* AboutUsTableViewCell.m in Sources */,
 				269CA8CD1EB6B8AF0096AF1E /* InsideSeasonCollectionViewCell.m in Sources */,
 				269CA8C01EB6B8AF0096AF1E /* DestinationLeftSelectView.m in Sources */,
+				262CA11C1EC4B4A700667A02 /* SettingPushTableViewCell.m in Sources */,
 				269CA8C91EB6B8AF0096AF1E /* HeaderCollectionReusableView.m in Sources */,
 				26FC79401EBCCA3000F66B69 /* GLDCommentCollectionViewCell.m in Sources */,
 				26FC79291EBCC93600F66B69 /* GLDCheckCollectionViewCell.m in Sources */,
@@ -1926,6 +1987,7 @@
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
 				268BA8B01EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
+				262CA1231EC4C25A00667A02 /* ChangePwdNewViewController.m in Sources */,
 				B04790F11EC208CA001D5B65 /* DMallSelectTypeCell.m in Sources */,
 				26BA3C091EBCF5060048F72E /* GLDHeaderView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
@@ -1934,6 +1996,7 @@
 				260439751EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m in Sources */,
 				26B661481EC36AFC00CFE996 /* ASGoodsTableViewCell.m in Sources */,
 				B0436CFB1EC0A1470079730A /* DImageViewCollectionViewCell.m in Sources */,
+				262CA1121EC4AFAA00667A02 /* ChangePwdNewTableViewCell.m in Sources */,
 				26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */,
 				268BA8AE1EB99A740002B3C3 /* TribeViewController.m in Sources */,
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
@@ -1955,6 +2018,7 @@
 				B0436D121EC0B7B70079730A /* DfooterBtnCollectionReusableView.m in Sources */,
 				260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
+				262CA12A1EC4D5C500667A02 /* ChangeNickNameViewController.m in Sources */,
 				260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */,
 				B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */,
 				269CA8CB1EB6B8AF0096AF1E /* InsideActivityCollectionViewCell.m in Sources */,

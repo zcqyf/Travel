@@ -1,22 +1,25 @@
 //
-//  MRTableViewCell.m
+//  SettingInfoTableViewCell.m
 //  TravelAPP
 //
-//  Created by qing on 2017/5/10.
+//  Created by qing on 2017/5/11.
 //  Copyright © 2017年 qing. All rights reserved.
 //
 
-#import "MRTableViewCell.h"
+#import "SettingInfoTableViewCell.h"
 
-@implementation MRTableViewCell
+@interface SettingInfoTableViewCell()
+
+
+
+
+@end
+
+@implementation SettingInfoTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
-//    self.layer.cornerRadius = 5;
-//    self.layer.masksToBounds = YES;
-//    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-//    self.layer.borderWidth = 0.5;
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

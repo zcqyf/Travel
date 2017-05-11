@@ -10,4 +10,5 @@
 
 @interface ActivityPurchaseViewController : BaseViewController
 
+
 @end

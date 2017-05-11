@@ -16,8 +16,9 @@
 #import <Masonry.h>
 //#import "BaseNavigationController.h"
 
-@interface TabBarViewController ()<UITabBarDelegate, UINavigationControllerDelegate>
+typedef void(^sendAddressDic)(NSDictionary *dic);
 
+@interface TabBarViewController ()<UITabBarDelegate, UINavigationControllerDelegate>
 
 
 @end

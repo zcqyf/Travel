@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong)UITableView *tableView;
 
+
 @end
 
 @implementation ActivityPurchaseViewController

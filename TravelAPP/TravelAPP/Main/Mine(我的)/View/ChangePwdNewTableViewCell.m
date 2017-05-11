@@ -1,22 +1,21 @@
 //
-//  MRTableViewCell.m
+//  ChangePwdNewTableViewCell.m
 //  TravelAPP
 //
-//  Created by qing on 2017/5/10.
+//  Created by qing on 2017/5/11.
 //  Copyright © 2017年 qing. All rights reserved.
 //
 
-#import "MRTableViewCell.h"
+#import "ChangePwdNewTableViewCell.h"
 
-@implementation MRTableViewCell
+@implementation ChangePwdNewTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
-//    self.layer.cornerRadius = 5;
-//    self.layer.masksToBounds = YES;
-//    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    self.layer.borderColor = [UIColor redColor].CGColor;
 //    self.layer.borderWidth = 0.5;
+//    self.layer.cornerRadius = 5.0;
+//    self.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
