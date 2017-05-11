@@ -25,6 +25,7 @@
 
 #import "UIView+UIViewExtension.h"
 #import "CALayer+XibBorderColor.h"
+#import "NSString+NSStringExtension.h"
 
 
 #endif /* PrefixHeader_pch */

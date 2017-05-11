@@ -70,7 +70,7 @@
         [self addSubview:label];
     }
     
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_W-self.frame.size.width)/2, titleViewHeight-1, self.frame.size.width, 0.5)];
+    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_W-self.frame.size.width+5)/2, titleViewHeight-1, self.frame.size.width-10, 0.5)];
     colorView.backgroundColor = [UIColor redColor];
     [self addSubview:colorView];
 }
@@ -134,9 +134,13 @@
     
     cell.myTitleLabel.backgroundColor = [UIColor redColor];
     
-    NSLog(@"%@",cell.myTitleLabel.text);
+    if ([self.delegate respondsToSelector:@selector(GYCalendarViewDidSelectDate:IndexPath:)]) {
+        [self.delegate GYCalendarViewDidSelectDate:collectionView IndexPath:indexPath];
+    }
     
 }
+
+
 
 /*
  当前 日 所在的月 有多少天

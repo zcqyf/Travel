@@ -11,6 +11,8 @@
 #import "MMHeaderCollectionReusableView.h"
 #import "MMRecommendCollectionViewCell.h"
 #import "MMTopSrollViewCollectionViewCell.h"
+#import "GLDetailViewController.h"
+#import "BookingViewController.h"
 
 
 #define MMGangGaoCell @"MMGangGaoCell"
@@ -60,6 +62,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view addSubview:self.searchBar];
     [self.view addSubview:self.collectionView];
 }
@@ -208,20 +211,23 @@
     return [[UICollectionReusableView alloc] init];
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 3) {
+        BookingViewController *vc = [[BookingViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (indexPath.section == 4) {
+        GLDetailViewController *vc = [[GLDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
