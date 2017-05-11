@@ -11,6 +11,8 @@
 #import "MMHeaderCollectionReusableView.h"
 #import "MMRecommendCollectionViewCell.h"
 #import "MMTopSrollViewCollectionViewCell.h"
+#import "GLDetailViewController.h"
+#import "BookingViewController.h"
 
 
 #define MMGangGaoCell @"MMGangGaoCell"
@@ -206,6 +208,18 @@
     }
     
     return [[UICollectionReusableView alloc] init];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 3) {
+        BookingViewController *vc = [[BookingViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (indexPath.section == 4) {
+        GLDetailViewController *vc = [[GLDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
 }
 
 
