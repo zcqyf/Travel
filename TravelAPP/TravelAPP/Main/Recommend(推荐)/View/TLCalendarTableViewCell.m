@@ -7,16 +7,28 @@
 //
 
 #import "TLCalendarTableViewCell.h"
-#import "GYCalendarView.h"
+
 
 @implementation TLCalendarTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    GYCalendarView *view = [[GYCalendarView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-    [self addSubview:view];
     
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, 30) collectionViewLayout:flowLayout];
+    [self addSubview:collectionView];
+    collectionView.backgroundColor = [UIColor redColor];
+    GYCalendarView *view = [[GYCalendarView alloc] initWithFrame:CGRectMake(0, 30, SCREEN_W-50, self.frame.size.height)];
+    view.delegate = self;
+    view.tag = 1000;
+    [self addSubview:view];
 }
 
 + (instancetype)initCustomCellWithTableView:(UITableView *)tableView {
@@ -26,6 +38,10 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"TLCalendarTableViewCell" owner:nil options:nil] objectAtIndex:0];
     }
     return cell;
+}
+
+- (void)GYCalendarViewDidSelectDate:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"11111");
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

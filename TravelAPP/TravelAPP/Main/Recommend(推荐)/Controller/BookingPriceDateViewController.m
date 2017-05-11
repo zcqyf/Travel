@@ -11,6 +11,8 @@
 #import "TLBookingTicketTypeTableViewCell.h"
 #import "TLCalendarTableViewCell.h"
 #import "BookingOrderViewController.h"
+#import "GYCalendarView.h"
+#import "CalendarCollectionViewCell.h"
 
 @interface BookingPriceDateViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -91,6 +93,7 @@
     }
     if (indexPath.section == 2) {
         TLCalendarTableViewCell *cell = [TLCalendarTableViewCell initCustomCellWithTableView:tableView];
+        
         return cell;
     }
     return [[UITableViewCell alloc] init];
@@ -137,6 +140,12 @@
     [self.navigationController pushViewController:vc animated:true];
 }
 
+#pragma mark ---GYCalendarViewDelegate
+
+//- (void)GYCalendarViewDidSelectDate:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath {
+//    CalendarCollectionViewCell *cell = (CalendarCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+//    NSLog(@"%@",cell.myTitleLabel.text);
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
