@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TRTopTableViewCellDelegate <NSObject>
+
+- (void)didSelectAt:(NSIndexPath *)indexPath;
+
+@end
+
 @interface TRTopTableViewCell : UITableViewCell
 
 @property (nonatomic,strong)NSDictionary *data;
+
+@property (nonatomic,weak)id<TRTopTableViewCellDelegate> delegate;
 
 @end

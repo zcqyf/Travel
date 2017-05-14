@@ -19,6 +19,7 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-Vo-c33">
                         <rect key="frame" x="0.0" y="0.0" width="129" height="120"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="120" id="11O-i4-zgh"/>
                         </constraints>
@@ -40,7 +41,7 @@
                 <constraint firstItem="6eO-cJ-35h" firstAttribute="top" secondItem="dgJ-Vo-c33" secondAttribute="bottom" constant="5" id="wZS-8g-Rvb"/>
             </constraints>
             <size key="customSize" width="129" height="151"/>
-            <point key="canvasLocation" x="108.5" y="104.5"/>
+            <point key="canvasLocation" x="-89" y="18"/>
         </collectionViewCell>
     </objects>
 </document>

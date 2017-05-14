@@ -1,23 +1,23 @@
 //
-//  MinePackageViewController.m
+//  MCDetailViewController.m
 //  TravelAPP
 //
-//  Created by qing on 2017/5/10.
+//  Created by qing on 2017/5/13.
 //  Copyright © 2017年 qing. All rights reserved.
 //
 
-#import "MinePackageViewController.h"
+#import "MCDetailViewController.h"
 #import "MCCollectionViewCell.h"
 #import "MCCReusableView.h"
 #import "BlankCollectionReusableView.h"
 
-@interface MinePackageViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface MCDetailViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong)UICollectionView *collectionView;
 
 @end
 
-@implementation MinePackageViewController
+@implementation MCDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -107,20 +107,11 @@
     }
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

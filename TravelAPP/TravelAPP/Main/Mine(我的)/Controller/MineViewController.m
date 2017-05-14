@@ -10,8 +10,19 @@
 #import "TRTopTableViewCell.h"
 #import "MineTopTableViewCell.h"
 #import "MineSettingViewController.h"
+#import "MineCollectionViewController.h"
+#import "MinePackageViewController.h"
+#import "MineJourneyViewController.h"
+#import "MineOrderViewController.h"
+#import "MineDiscountViewController.h"
+#import "MineQAViewController.h"
+#import "MinePartnerViewController.h"
+#import "MineTrackViewController.h"
+#import "MineRechargeViewController.h"
+#import "MineTeamViewController.h"
+#import "AboutUsViewController.h"
 
-@interface MineViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MineViewController ()<UITableViewDelegate, UITableViewDataSource, TRTopTableViewCellDelegate>
 
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *channels;
@@ -53,7 +64,7 @@
 
 - (NSArray *)channels {
     if (!_channels) {
-        _channels = @[@{@"text": @"机加酒", @"image": @"start"}, @{@"text": @"出境游", @"image": @"start"}, @{@"text": @"国内游", @"image": @"start"}];
+        _channels = @[@{@"text": @"我的收藏", @"image": @"start"}, @{@"text": @"我的锦囊", @"image": @"start"}, @{@"text": @"我的行程", @"image": @"start"}];
     }
     return _channels;
 }
@@ -71,6 +82,24 @@
     vc.title = @"设置";
     vc.data = @[@"账号密码", @"个人信息", @"推送设置", @"清除缓存", @"检测最新版本", @"意见反馈", @"联系我们"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+#pragma TRTopTableViewCellDelegate
+- (void)didSelectAt:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        MineCollectionViewController *vc = [MineCollectionViewController new];
+        vc.title = @"我的收藏";
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 1) {
+        MinePackageViewController *vc = [MinePackageViewController new];
+        vc.title = @"我的锦囊";
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        MineJourneyViewController *vc = [MineJourneyViewController new];
+        vc.title = @"我的行程";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma tableView dataSource
@@ -95,6 +124,8 @@
         } else {
             TRTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRTopTableViewCell" forIndexPath:indexPath];
             cell.data = self.dict;
+            // TODO 公用cell问题：另外遵循此代理的是否会一同触发
+            cell.delegate = self;
             return cell;
         }
     } else {
@@ -132,6 +163,78 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section > 0) {
+        switch (indexPath.row) {
+            case 0://我的订单
+            {
+                MineOrderViewController *vc = [MineOrderViewController new];
+                vc.title = @"我的订单";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 1://我的优惠券
+            {
+                MineDiscountViewController *vc = [MineDiscountViewController new];
+                vc.title = @"我的优惠券";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 2://我的足迹
+            {
+                MineTrackViewController *vc = [MineTrackViewController new];
+                vc.title = @"我的足迹";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 3://我发布的帖子
+            {
+                //TODO 帖子
+                
+            }
+                break;
+            case 4://我的问答
+            {
+                MineQAViewController *vc = [MineQAViewController new];
+                vc.title = @"我的问答";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 5://我的结伴
+            {
+                MinePartnerViewController *vc = [MinePartnerViewController new];
+                vc.title = @"我的结伴";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 6://会员充值
+            {
+                MineRechargeViewController *vc = [MineRechargeViewController new];
+                vc.title = @"会员充值";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 7://会员商城
+            {
+                MineTeamViewController *vc = [MineTeamViewController new];
+                vc.title = @"我的团队";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 8://我的团队
+            {
+                MineTeamViewController *vc = [MineTeamViewController new];
+                vc.title = @"我的团队";
+                [self.navigationController pushViewController:vc animated:YES];}
+                break;
+            case 9://联系我们
+            {
+                AboutUsViewController *vc = [AboutUsViewController new];
+                vc.title = @"联系我们";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            default:
+                break;
+        }
         
     }
 }

@@ -39,12 +39,14 @@
         self.typeStyle = typeStyle;
         CGFloat fontSize = 15.0;
         
-        if (typeStyle == homeStyle) {
-            self.titleBtnWidth = frame.size.width/3;
-        }
-        else{
-            self.titleBtnWidth = frame.size.width/5;
-        }
+//        if (typeStyle == homeStyle) {
+//            self.titleBtnWidth = frame.size.width/3;
+//        }
+//        else{
+//            self.titleBtnWidth = frame.size.width/5;
+//        }
+        
+        self.titleBtnWidth = frame.size.width/titleArray.count;
         
         _btnArray = [NSMutableArray array];
         

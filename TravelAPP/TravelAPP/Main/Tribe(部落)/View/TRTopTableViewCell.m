@@ -11,6 +11,9 @@
 #import "InsideChannelCollectionViewCell.h"
 #import <Masonry.h>
 
+
+
+
 @interface TRTopTableViewCell()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -91,7 +94,9 @@
 //}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    if ([self.delegate respondsToSelector:@selector(didSelectAt:)]) {
+        [self.delegate didSelectAt:indexPath];
+    }
 }
 
 #pragma collectionView layout

@@ -217,6 +217,8 @@
 		26C73C1E1EC226F900A049AC /* MineRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C1D1EC226F900A049AC /* MineRechargeViewController.m */; };
 		26C73C211EC2273200A049AC /* MineTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C201EC2273200A049AC /* MineTeamViewController.m */; };
 		26C73C241EC2276300A049AC /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C73C231EC2276300A049AC /* AboutUsViewController.m */; };
+		26D463DC1EC8AAFA00349E51 /* MCCReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D463DA1EC8AAFA00349E51 /* MCCReusableView.m */; };
+		26D463DD1EC8AAFA00349E51 /* MCCReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D463DB1EC8AAFA00349E51 /* MCCReusableView.xib */; };
 		26ECD96A1EBDA071009AF788 /* GrogShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9691EBDA071009AF788 /* GrogShopViewController.m */; };
 		26ECD96F1EBDA0DE009AF788 /* ActivityPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD96E1EBDA0DE009AF788 /* ActivityPurchaseViewController.m */; };
 		26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9711EBDA7E7009AF788 /* GSTopTableViewCell.m */; };
@@ -227,6 +229,7 @@
 		26ECD97E1EBDA802009AF788 /* GSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD97C1EBDA802009AF788 /* GSTableViewCell.xib */; };
 		26ECD9811EBDA826009AF788 /* GSBottomSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ECD9801EBDA826009AF788 /* GSBottomSelectView.m */; };
 		26ECD9831EBDA84A009AF788 /* GSBottomSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ECD9821EBDA84A009AF788 /* GSBottomSelectView.xib */; };
+		26FA82C71EC6A77E0056C327 /* MCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA82C61EC6A77E0056C327 /* MCDetailViewController.m */; };
 		26FC79181EBCC46900F66B69 /* GLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC79171EBCC46900F66B69 /* GLDetailViewController.m */; };
 		26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC791A1EBCC88200F66B69 /* GLDTopCollectionViewCell.m */; };
 		26FC791D1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC791B1EBCC88200F66B69 /* GLDTopCollectionViewCell.xib */; };
@@ -651,6 +654,9 @@
 		26C73C201EC2273200A049AC /* MineTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTeamViewController.m; sourceTree = "<group>"; };
 		26C73C221EC2276200A049AC /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		26C73C231EC2276300A049AC /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		26D463D91EC8AAFA00349E51 /* MCCReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCReusableView.h; sourceTree = "<group>"; };
+		26D463DA1EC8AAFA00349E51 /* MCCReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCReusableView.m; sourceTree = "<group>"; };
+		26D463DB1EC8AAFA00349E51 /* MCCReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCCReusableView.xib; sourceTree = "<group>"; };
 		26ECD9681EBDA071009AF788 /* GrogShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogShopViewController.h; sourceTree = "<group>"; };
 		26ECD9691EBDA071009AF788 /* GrogShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogShopViewController.m; sourceTree = "<group>"; };
 		26ECD96B1EBDA0BD009AF788 /* ActivityPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPurchaseViewController.h; sourceTree = "<group>"; };
@@ -667,6 +673,8 @@
 		26ECD97F1EBDA826009AF788 /* GSBottomSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBottomSelectView.h; sourceTree = "<group>"; };
 		26ECD9801EBDA826009AF788 /* GSBottomSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBottomSelectView.m; sourceTree = "<group>"; };
 		26ECD9821EBDA84A009AF788 /* GSBottomSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSBottomSelectView.xib; sourceTree = "<group>"; };
+		26FA82C51EC6A77E0056C327 /* MCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDetailViewController.h; sourceTree = "<group>"; };
+		26FA82C61EC6A77E0056C327 /* MCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDetailViewController.m; sourceTree = "<group>"; };
 		26FC79161EBCC46900F66B69 /* GLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDetailViewController.h; sourceTree = "<group>"; };
 		26FC79171EBCC46900F66B69 /* GLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDetailViewController.m; sourceTree = "<group>"; };
 		26FC79191EBCC88200F66B69 /* GLDTopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDTopCollectionViewCell.h; sourceTree = "<group>"; };
@@ -919,6 +927,9 @@
 				26B661311EC369FB00CFE996 /* MCCollectionViewCell.h */,
 				26B661321EC369FB00CFE996 /* MCCollectionViewCell.m */,
 				26B661331EC369FB00CFE996 /* MCCollectionViewCell.xib */,
+				26D463D91EC8AAFA00349E51 /* MCCReusableView.h */,
+				26D463DA1EC8AAFA00349E51 /* MCCReusableView.m */,
+				26D463DB1EC8AAFA00349E51 /* MCCReusableView.xib */,
 				26B661361EC36A4B00CFE996 /* MJTableViewCell.h */,
 				26B661371EC36A4B00CFE996 /* MJTableViewCell.m */,
 				26B661381EC36A4B00CFE996 /* MJTableViewCell.xib */,
@@ -1423,6 +1434,8 @@
 				262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */,
 				26C73C011EC2252500A049AC /* MineCollectionViewController.h */,
 				26C73C021EC2252500A049AC /* MineCollectionViewController.m */,
+				26FA82C51EC6A77E0056C327 /* MCDetailViewController.h */,
+				26FA82C61EC6A77E0056C327 /* MCDetailViewController.m */,
 				26C73C041EC2256B00A049AC /* MinePackageViewController.h */,
 				26C73C051EC2256B00A049AC /* MinePackageViewController.m */,
 				26C73C071EC2259300A049AC /* MineJourneyViewController.h */,
@@ -1722,6 +1735,7 @@
 				260439EC1EC0A40700D44C99 /* TOTopSelectView.xib in Resources */,
 				26B661441EC36AEA00CFE996 /* ASDateTableViewCell.xib in Resources */,
 				260439DD1EC0A22B00D44C99 /* TOJourneyReplyTableViewCell.xib in Resources */,
+				26D463DD1EC8AAFA00349E51 /* MCCReusableView.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				2604398A1EBF4E6D00D44C99 /* RecomendMenBtn.xib in Resources */,
 				26B6613A1EC36A4B00CFE996 /* MJTableViewCell.xib in Resources */,
@@ -1941,6 +1955,7 @@
 				260439831EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.m in Sources */,
 				269CA8D21EB6B8AF0096AF1E /* MMHeaderCollectionReusableView.m in Sources */,
 				26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */,
+				26FA82C71EC6A77E0056C327 /* MCDetailViewController.m in Sources */,
 				26C73BE71EC2013F00A049AC /* TOAnnounceViewController.m in Sources */,
 				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
 				260439F71EC0C3FD00D44C99 /* TOPublishView.m in Sources */,
@@ -1978,6 +1993,7 @@
 				26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */,
 				B0436D1B1EC0BA750079730A /* DZhuSuBtn.m in Sources */,
 				269CA8E81EB6BE2F0096AF1E /* TabBarViewController.m in Sources */,
+				26D463DC1EC8AAFA00349E51 /* MCCReusableView.m in Sources */,
 				260439A91EBF5D4300D44C99 /* GLBottomCommentView.m in Sources */,
 				260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */,
 				260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */,
