@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
+#import "GuidanceViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +18,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [_window makeKeyAndVisible];
-    _window.rootViewController = [[TabBarViewController alloc] init];
-    //设置tabBarItem样式
-    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
-    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+//    if ([[userDefaults objectForKey:@"FirstTimeEnter"] intValue] == 1) {
+    
+    
+        _window.rootViewController = [[TabBarViewController alloc] init];
+        //设置tabBarItem样式
+        
+        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
+        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    
+    
+    GuidanceViewController *guidanceVC = [[GuidanceViewController alloc] init];
+    [_window.rootViewController.view addSubview:guidanceVC.view];
+//    }else{
+//        _window.rootViewController = [[GuidanceViewController alloc] init];
+//        [userDefaults setObject:@1 forKey:@"FirstTimeEnter"];
+//        
+//    }
+
     return YES;
 }
 

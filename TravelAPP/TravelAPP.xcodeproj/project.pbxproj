@@ -280,6 +280,7 @@
 		B04790FB1EC21429001D5B65 /* DMallSearchReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04790F91EC21429001D5B65 /* DMallSearchReusableView.m */; };
 		B04790FC1EC21429001D5B65 /* DMallSearchReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */; };
 		B07C5A5E1EC402CD00D3DF81 /* NSString+NSStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */; };
+		B0AADFBF1EC99DF8001EF3AC /* GuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -757,6 +758,8 @@
 		B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMallSearchReusableView.xib; sourceTree = "<group>"; };
 		B07C5A5C1EC402CD00D3DF81 /* NSString+NSStringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringExtension.h"; sourceTree = "<group>"; };
 		B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtension.m"; sourceTree = "<group>"; };
+		B0AADFBD1EC99DF8001EF3AC /* GuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceViewController.h; sourceTree = "<group>"; };
+		B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1199,6 +1202,8 @@
 				269CA8E71EB6BE2F0096AF1E /* TabBarViewController.m */,
 				269CA8551EB6B8AF0096AF1E /* BaseViewController.h */,
 				269CA8561EB6B8AF0096AF1E /* BaseViewController.m */,
+				B0AADFBD1EC99DF8001EF3AC /* GuidanceViewController.h */,
+				B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1998,6 +2003,7 @@
 				260439771EBF4E6D00D44C99 /* ConsultiontextFeildCell.m in Sources */,
 				260439731EBF4E6D00D44C99 /* HotRecommendBtn.m in Sources */,
 				2604398F1EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.m in Sources */,
+				B0AADFBF1EC99DF8001EF3AC /* GuidanceViewController.m in Sources */,
 				269CA8C61EB6B8AF0096AF1E /* ChannelCollectionViewCell.m in Sources */,
 				260439B31EC09DBD00D44C99 /* TRJourneyViewController.m in Sources */,
 				2604396D1EBF4E6D00D44C99 /* BookingOrderHeaderTableViewCell.m in Sources */,
