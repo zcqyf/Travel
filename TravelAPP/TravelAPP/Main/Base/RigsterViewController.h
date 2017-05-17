@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  RigsterViewController.h
 //  TravelAPP
 //
 //  Created by Gene_Ye on 2017/5/17.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface LoginViewController : BaseViewController
+@interface RigsterViewController : UIViewController
 
 @end
