@@ -60,7 +60,7 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 - (void)setupMineViewController {
     [self.view addSubview:self.mineBtn];
     [_mineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(40);
+//        make.width.height.mas_equalTo(40);
         make.right.equalTo(self.view).offset(-10);
         make.bottom.equalTo(self.view).offset(-59);
     }];
