@@ -7,18 +7,67 @@
 //
 
 #import "LoginViewController.h"
+#import "TabBarViewController.h"
+#import "RigsterViewController.h"
 
 @interface LoginViewController ()
+    @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
+    @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
+    @property (weak, nonatomic) IBOutlet UISegmentedControl *topSegementControl;
 @end
 
 @implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
+}
+/*
+ 选择：付费会员／普通会员
+ */
+- (IBAction)selectMemberTypeAction:(id)sender {
+    
 }
 
+/*
+ 注册
+ */
+- (IBAction)registerAction:(UIButton *)sender {
+    NSLog(@"1111");
+    RigsterViewController *vc = [[RigsterViewController alloc] initWithNibName:@"RigsterViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:vc animated:true];
+}
+    
+- (IBAction)forgetPasswordAction:(id)sender {
+    
+}
+    
+/*
+ 登录按钮
+ */
+- (IBAction)loginAction:(id)sender {
+    TabBarViewController *vc = [[TabBarViewController alloc] init];
+    
+    [self presentViewController:vc animated:true completion:^{
+        
+    }];
+}
+    
+    
+/*
+ tag：
+ 101: 微信登录
+ 102: QQ
+ 103: 新浪微博
+ */
+- (IBAction)thirdLoginAction:(UIButton *)sender {
+    
+}
+    
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

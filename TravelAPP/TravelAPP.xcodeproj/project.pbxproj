@@ -281,8 +281,10 @@
 		B07C5A5E1EC402CD00D3DF81 /* NSString+NSStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */; };
 		B0AADFBF1EC99DF8001EF3AC /* GuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */; };
 		B0AAE21A1ECB30C8001EF3AC /* AFNetWorking_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2191ECB30C8001EF3AC /* AFNetWorking_Request.m */; };
-		B0AAE2B11ECC3BF5001EF3AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */; };
-		B0AAE2B21ECC3BF5001EF3AC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */; };
+		B0AAE2B61ECC8B9B001EF3AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2B41ECC8B9B001EF3AC /* LoginViewController.m */; };
+		B0AAE2B71ECC8B9B001EF3AC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2B51ECC8B9B001EF3AC /* LoginViewController.xib */; };
+		B0AAE2BB1ECC9A1A001EF3AC /* RigsterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */; };
+		B0AAE2BC1ECC9A1A001EF3AC /* RigsterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -762,9 +764,12 @@
 		B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceViewController.m; sourceTree = "<group>"; };
 		B0AAE2181ECB30C8001EF3AC /* AFNetWorking_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetWorking_Request.h; sourceTree = "<group>"; };
 		B0AAE2191ECB30C8001EF3AC /* AFNetWorking_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetWorking_Request.m; sourceTree = "<group>"; };
-		B0AAE2AE1ECC3BF5001EF3AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B0AAE2B31ECC8B9B001EF3AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B0AAE2B41ECC8B9B001EF3AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B0AAE2B51ECC8B9B001EF3AC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B0AAE2B81ECC9A1A001EF3AC /* RigsterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigsterViewController.h; sourceTree = "<group>"; };
+		B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigsterViewController.m; sourceTree = "<group>"; };
+		B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RigsterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1200,9 +1205,12 @@
 				269CA8561EB6B8AF0096AF1E /* BaseViewController.m */,
 				B0AADFBD1EC99DF8001EF3AC /* GuidanceViewController.h */,
 				B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */,
-				B0AAE2AE1ECC3BF5001EF3AC /* LoginViewController.h */,
-				B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */,
-				B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */,
+				B0AAE2B31ECC8B9B001EF3AC /* LoginViewController.h */,
+				B0AAE2B41ECC8B9B001EF3AC /* LoginViewController.m */,
+				B0AAE2B51ECC8B9B001EF3AC /* LoginViewController.xib */,
+				B0AAE2B81ECC9A1A001EF3AC /* RigsterViewController.h */,
+				B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */,
+				B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1751,6 +1759,7 @@
 				26D463DD1EC8AAFA00349E51 /* MCCReusableView.xib in Resources */,
 				268AEAF71EB6B2BA00A659A1 /* Assets.xcassets in Resources */,
 				2604398A1EBF4E6D00D44C99 /* RecomendMenBtn.xib in Resources */,
+				B0AAE2BC1ECC9A1A001EF3AC /* RigsterViewController.xib in Resources */,
 				26B6613A1EC36A4B00CFE996 /* MJTableViewCell.xib in Resources */,
 				26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */,
 				260439941EBF4E6D00D44C99 /* TLBookingTextTableViewCell.xib in Resources */,
@@ -1804,7 +1813,7 @@
 				26B661671EC36C6100CFE996 /* MTMoneyTableViewCell.xib in Resources */,
 				260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */,
 				260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */,
-				B0AAE2B21ECC3BF5001EF3AC /* LoginViewController.xib in Resources */,
+				B0AAE2B71ECC8B9B001EF3AC /* LoginViewController.xib in Resources */,
 				26B6613F1EC36A7800CFE996 /* MOTableViewCell.xib in Resources */,
 				260439C91EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib in Resources */,
 				26BA3C0A1EBCF5060048F72E /* GLDHeaderView.xib in Resources */,
@@ -2019,6 +2028,7 @@
 				260439D71EC0A20B00D44C99 /* TOJourneyTableViewCell.m in Sources */,
 				26043A021EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m in Sources */,
 				260439691EBF4E6D00D44C99 /* RecommendViewController.m in Sources */,
+				B0AAE2BB1ECC9A1A001EF3AC /* RigsterViewController.m in Sources */,
 				26C73C091EC2259300A049AC /* MineJourneyViewController.m in Sources */,
 				260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */,
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
@@ -2044,7 +2054,7 @@
 				260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */,
 				26B6614D1EC36B1A00CFE996 /* ASFeedbackTableViewCell.m in Sources */,
 				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
-				B0AAE2B11ECC3BF5001EF3AC /* LoginViewController.m in Sources */,
+				B0AAE2B61ECC8B9B001EF3AC /* LoginViewController.m in Sources */,
 				26C73C241EC2276300A049AC /* AboutUsViewController.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,

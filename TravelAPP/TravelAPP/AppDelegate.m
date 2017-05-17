@@ -22,12 +22,11 @@
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [_window makeKeyAndVisible];
     
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
     
-//    if ([[userDefaults objectForKey:@"FirstTimeEnter"] intValue] == 1) {
+    TabBarViewController *tabBarVC = [[TabBarViewController alloc] init];
     
     
-        _window.rootViewController = [[TabBarViewController alloc] init];
         //设置tabBarItem样式
         
         [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
@@ -35,12 +34,8 @@
     
     
     GuidanceViewController *guidanceVC = [[GuidanceViewController alloc] init];
-    [_window.rootViewController.view addSubview:guidanceVC.view];
-//    }else{
-//        _window.rootViewController = [[GuidanceViewController alloc] init];
-//        [userDefaults setObject:@1 forKey:@"FirstTimeEnter"];
-//        
-//    }
+    
+    _window.rootViewController = guidanceVC;
 
     return YES;
 }

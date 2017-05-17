@@ -7,7 +7,7 @@
 //
 
 #import "GuidanceViewController.h"
-#import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface GuidanceViewController ()
     
@@ -72,7 +72,13 @@
 //        
 //        [self.imageView.layer addAnimation:animation forKey:nil];
         
-        [self.view removeFromSuperview];
+//        [self.view removeFromSuperview];
+        
+        LoginViewController *vc = [[LoginViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self presentViewController:nav animated:true completion:^{
+            
+        }];
        
     }
     
