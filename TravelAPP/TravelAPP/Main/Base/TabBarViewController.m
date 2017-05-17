@@ -37,19 +37,20 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 }
 
 - (void)setupViewControllers {
-    [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"start1"];
-    [self addChildViewControllerWithName:[RecommendViewController new] title:@"推荐" imageName:@"start1"];
-    [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"start1"];
-    [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"start1"];
-    [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"start1"];
-    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"start1"];
+    [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[RecommendViewController new] title:@"推荐" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+
 }
 
-- (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName {
+- (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedIamgeName: (NSString *)selectedImageName{
     
 //    vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
-//    vc.tabBarItem.selectedImage = [UIImage imageNamed:imageName];//待改进
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//待改进
     vc.title = title;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.delegate = self;
@@ -69,7 +70,7 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
     if (!_mineBtn) {
         _mineBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _mineBtn.tag = 5;
-        [_mineBtn setImage:[UIImage imageNamed:@"mine"] forState:UIControlStateNormal];
+        [_mineBtn setImage:[UIImage imageNamed:@"btn_me"] forState:UIControlStateNormal];
         [_mineBtn addTarget:self action:@selector(clickMineBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _mineBtn;

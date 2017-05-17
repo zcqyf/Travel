@@ -131,7 +131,6 @@
 		268BA8B41EB99A740002B3C3 /* TribeTitleSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA8A91EB99A740002B3C3 /* TribeTitleSelectView.m */; };
 		268BA8B51EB99A740002B3C3 /* TRTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BA8AB1EB99A740002B3C3 /* TRTopTableViewCell.m */; };
 		269CA8B61EB6B8AF0096AF1E /* UIView+UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8471EB6B8AF0096AF1E /* UIView+UIViewExtension.m */; };
-		269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA84A1EB6B8AF0096AF1E /* AFNetWorking_Request.m */; };
 		269CA8B81EB6B8AF0096AF1E /* RLScrollPic.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA84D1EB6B8AF0096AF1E /* RLScrollPic.m */; };
 		269CA8B91EB6B8AF0096AF1E /* SelecterContentsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8501EB6B8AF0096AF1E /* SelecterContentsScrollView.m */; };
 		269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CA8521EB6B8AF0096AF1E /* SelecterToolsScrollView.m */; };
@@ -281,6 +280,9 @@
 		B04790FC1EC21429001D5B65 /* DMallSearchReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04790FA1EC21429001D5B65 /* DMallSearchReusableView.xib */; };
 		B07C5A5E1EC402CD00D3DF81 /* NSString+NSStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */; };
 		B0AADFBF1EC99DF8001EF3AC /* GuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */; };
+		B0AAE21A1ECB30C8001EF3AC /* AFNetWorking_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2191ECB30C8001EF3AC /* AFNetWorking_Request.m */; };
+		B0AAE2B11ECC3BF5001EF3AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */; };
+		B0AAE2B21ECC3BF5001EF3AC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -506,8 +508,6 @@
 		268BA8AB1EB99A740002B3C3 /* TRTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTopTableViewCell.m; sourceTree = "<group>"; };
 		269CA8461EB6B8AF0096AF1E /* UIView+UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewExtension.h"; sourceTree = "<group>"; };
 		269CA8471EB6B8AF0096AF1E /* UIView+UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewExtension.m"; sourceTree = "<group>"; };
-		269CA8491EB6B8AF0096AF1E /* AFNetWorking_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetWorking_Request.h; sourceTree = "<group>"; };
-		269CA84A1EB6B8AF0096AF1E /* AFNetWorking_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetWorking_Request.m; sourceTree = "<group>"; };
 		269CA84C1EB6B8AF0096AF1E /* RLScrollPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLScrollPic.h; sourceTree = "<group>"; };
 		269CA84D1EB6B8AF0096AF1E /* RLScrollPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLScrollPic.m; sourceTree = "<group>"; };
 		269CA84F1EB6B8AF0096AF1E /* SelecterContentsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelecterContentsScrollView.h; sourceTree = "<group>"; };
@@ -760,6 +760,11 @@
 		B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtension.m"; sourceTree = "<group>"; };
 		B0AADFBD1EC99DF8001EF3AC /* GuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceViewController.h; sourceTree = "<group>"; };
 		B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceViewController.m; sourceTree = "<group>"; };
+		B0AAE2181ECB30C8001EF3AC /* AFNetWorking_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetWorking_Request.h; sourceTree = "<group>"; };
+		B0AAE2191ECB30C8001EF3AC /* AFNetWorking_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetWorking_Request.m; sourceTree = "<group>"; };
+		B0AAE2AE1ECC3BF5001EF3AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1130,8 +1135,8 @@
 		269CA8441EB6B8AF0096AF1E /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				B0AAE2171ECB30BE001EF3AC /* Network */,
 				269CA8451EB6B8AF0096AF1E /* Category */,
-				269CA8481EB6B8AF0096AF1E /* Network */,
 				269CA84B1EB6B8AF0096AF1E /* Tool */,
 			);
 			path = Expand;
@@ -1148,15 +1153,6 @@
 				B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		269CA8481EB6B8AF0096AF1E /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				269CA8491EB6B8AF0096AF1E /* AFNetWorking_Request.h */,
-				269CA84A1EB6B8AF0096AF1E /* AFNetWorking_Request.m */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		269CA84B1EB6B8AF0096AF1E /* Tool */ = {
@@ -1204,6 +1200,9 @@
 				269CA8561EB6B8AF0096AF1E /* BaseViewController.m */,
 				B0AADFBD1EC99DF8001EF3AC /* GuidanceViewController.h */,
 				B0AADFBE1EC99DF8001EF3AC /* GuidanceViewController.m */,
+				B0AAE2AE1ECC3BF5001EF3AC /* LoginViewController.h */,
+				B0AAE2AF1ECC3BF5001EF3AC /* LoginViewController.m */,
+				B0AAE2B01ECC3BF5001EF3AC /* LoginViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1596,6 +1595,15 @@
 			path = "Destination(商城)";
 			sourceTree = "<group>";
 		};
+		B0AAE2171ECB30BE001EF3AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B0AAE2181ECB30C8001EF3AC /* AFNetWorking_Request.h */,
+				B0AAE2191ECB30C8001EF3AC /* AFNetWorking_Request.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FD9113399ED24EFF1DEC0A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1796,6 +1804,7 @@
 				26B661671EC36C6100CFE996 /* MTMoneyTableViewCell.xib in Resources */,
 				260439901EBF4E6D00D44C99 /* TLBookingJieShaoTableViewCell.xib in Resources */,
 				260439841EBF4E6D00D44C99 /* MenRecommendWanFaTableViewCell.xib in Resources */,
+				B0AAE2B21ECC3BF5001EF3AC /* LoginViewController.xib in Resources */,
 				26B6613F1EC36A7800CFE996 /* MOTableViewCell.xib in Resources */,
 				260439C91EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.xib in Resources */,
 				26BA3C0A1EBCF5060048F72E /* GLDHeaderView.xib in Resources */,
@@ -1891,6 +1900,7 @@
 				260439951EBF4E6D00D44C99 /* TLBookingTicketTypeTableViewCell.m in Sources */,
 				26B661571EC36B9500CFE996 /* MineQATableViewCell.m in Sources */,
 				26C73C181EC2269900A049AC /* MineQAViewController.m in Sources */,
+				B0AAE21A1ECB30C8001EF3AC /* AFNetWorking_Request.m in Sources */,
 				260439811EBF4E6D00D44C99 /* MenRecommendHeaderTableViewCell.m in Sources */,
 				B0436CEE1EC05A910079730A /* DestinationHeaderCell.m in Sources */,
 				260439911EBF4E6D00D44C99 /* TLBookingSelectdateTableViewCell.m in Sources */,
@@ -1962,7 +1972,6 @@
 				26FC791C1EBCC88200F66B69 /* GLDTopCollectionViewCell.m in Sources */,
 				26FA82C71EC6A77E0056C327 /* MCDetailViewController.m in Sources */,
 				26C73BE71EC2013F00A049AC /* TOAnnounceViewController.m in Sources */,
-				269CA8B71EB6B8AF0096AF1E /* AFNetWorking_Request.m in Sources */,
 				260439F71EC0C3FD00D44C99 /* TOPublishView.m in Sources */,
 				260439E11EC0A2A500D44C99 /* TOJourneyBottomTableViewCell.m in Sources */,
 				2604396F1EBF4E6D00D44C99 /* BookingPayTypeTableViewCell.m in Sources */,
@@ -2035,6 +2044,7 @@
 				260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */,
 				26B6614D1EC36B1A00CFE996 /* ASFeedbackTableViewCell.m in Sources */,
 				2604397B1EBF4E6D00D44C99 /* ConsultionWanFaTableViewCell.m in Sources */,
+				B0AAE2B11ECC3BF5001EF3AC /* LoginViewController.m in Sources */,
 				26C73C241EC2276300A049AC /* AboutUsViewController.m in Sources */,
 				269CA8BD1EB6B8AF0096AF1E /* DestinationViewController.m in Sources */,
 				2604396A1EBF4E6D00D44C99 /* TravelLineViewController.m in Sources */,

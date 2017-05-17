@@ -16,11 +16,20 @@
 @property (nonatomic, assign)int timeCount;
 
 @property (nonatomic, strong)UILabel *countDownLabel;
+    
+@property (nonatomic, strong)UIImageView *imageView;
 
 @end
 
 @implementation GuidanceViewController
-    
+
+- (UIImageView *)imageView{
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H)];
+        _imageView.backgroundColor = [UIColor blackColor];
+    }
+    return _imageView;
+}
 - (UILabel *)countDownLabel {
     if (!_countDownLabel) {
         _countDownLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_W/2 -50, SCREEN_H/2 - 50, 100, 100)];
@@ -35,7 +44,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor lightGrayColor];
-    
+    [self.view addSubview:self.imageView];
     [self.view addSubview:self.countDownLabel];
 
     _timeCount = 4;
@@ -51,10 +60,17 @@
     if (_timeCount < 0) {
         [_timer invalidate];
         
-//        [UIView animateWithDuration:10 animations:^{
-//            self.view.alpha = 0.5;
-//            
-//        }];
+//        CATransition *animation = [CATransition animation];
+//        
+//        animation.subtype = kCATransitionFromRight;
+//        
+//        animation.duration = 1;
+//        
+//        
+//        
+//        animation.type = @"camer_typeaIrisHollowClose";
+//        
+//        [self.imageView.layer addAnimation:animation forKey:nil];
         
         [self.view removeFromSuperview];
        
