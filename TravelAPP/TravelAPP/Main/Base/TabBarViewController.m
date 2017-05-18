@@ -14,6 +14,7 @@
 #import "TribeViewController.h"
 #import "MineViewController.h"
 #import <Masonry.h>
+#import "LoginViewController.h"
 //#import "BaseNavigationController.h"
 
 typedef void(^sendAddressDic)(NSDictionary *dic);
@@ -28,7 +29,10 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    
+
 }
+
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];

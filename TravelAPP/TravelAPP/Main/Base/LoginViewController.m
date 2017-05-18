@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "TabBarViewController.h"
 #import "RigsterViewController.h"
 
 @interface LoginViewController ()
@@ -25,6 +24,7 @@
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
 }
+
 /*
  选择：付费会员／普通会员
  */
@@ -49,11 +49,7 @@
  登录按钮
  */
 - (IBAction)loginAction:(id)sender {
-    TabBarViewController *vc = [[TabBarViewController alloc] init];
-    
-    [self presentViewController:vc animated:true completion:^{
-        
-    }];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
 }
     
     

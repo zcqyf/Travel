@@ -7,7 +7,6 @@
 //
 
 #import "GuidanceViewController.h"
-#import "LoginViewController.h"
 
 @interface GuidanceViewController ()
     
@@ -74,12 +73,8 @@
         
 //        [self.view removeFromSuperview];
         
-        LoginViewController *vc = [[LoginViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-        [self presentViewController:nav animated:true completion:^{
-            
-        }];
-       
+        [self.view removeFromSuperview];
+        
     }
     
     

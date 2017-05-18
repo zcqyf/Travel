@@ -9,8 +9,11 @@
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
 #import "GuidanceViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong)TabBarViewController *tabBarVC;
 
 @end
 
@@ -22,22 +25,29 @@
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [_window makeKeyAndVisible];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
 
     
-    TabBarViewController *tabBarVC = [[TabBarViewController alloc] init];
-    
+    _tabBarVC = [[TabBarViewController alloc] init];
+    _window.rootViewController = [LoginViewController new];
     
         //设置tabBarItem样式
         
-        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
-        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
-    
-    
-    GuidanceViewController *guidanceVC = [[GuidanceViewController alloc] init];
-    
-    _window.rootViewController = guidanceVC;
+        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
+        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    [_window.rootViewController.view addSubview:[GuidanceViewController new].view];
 
     return YES;
+}
+
+- (void)isLogin:(NSNotification *)notification {
+    
+    NSDictionary *dic = notification.userInfo;
+    NSNumber *num = [dic objectForKey:@"isLoginSuccess"];
+    if (num.intValue == 1) {
+       _window.rootViewController = _tabBarVC;
+    }
+    
 }
 
 
