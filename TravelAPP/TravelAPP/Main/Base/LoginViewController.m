@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RigsterViewController.h"
+#import "UserLogin.h"
 
 @interface LoginViewController ()
     @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
@@ -49,6 +50,9 @@
  登录按钮
  */
 - (IBAction)loginAction:(id)sender {
+    
+//    [[UserLogin shareUserLogin] getLoginData:<#(NSDictionary *)#> WithDataBlock:<#^(id data)dataBLock#> useridBlock:<#^(id userid)userBlock#>];
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
 }
     

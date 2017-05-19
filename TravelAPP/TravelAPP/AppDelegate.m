@@ -29,7 +29,7 @@
 
     
     _tabBarVC = [[TabBarViewController alloc] init];
-    _window.rootViewController = [LoginViewController new];
+    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
     
         //设置tabBarItem样式
         

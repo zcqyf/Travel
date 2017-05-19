@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface UserRegister : NSObject
+
 +(instancetype)shareUserRegister;
+
 - (void)getRegisterData:(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBLock;
 
 @end

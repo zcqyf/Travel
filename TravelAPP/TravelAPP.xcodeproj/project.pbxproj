@@ -244,6 +244,7 @@
 		26FC79411EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC793F1EBCCA3000F66B69 /* GLDCommentCollectionViewCell.xib */; };
 		26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC79431EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m */; };
 		26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC79441EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib */; };
+		B0007BCF1ECE9D00006860AE /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B0007BCE1ECE9D00006860AE /* GCDAsyncUdpSocket.m */; };
 		B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */; };
 		B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */; };
 		B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */; };
@@ -786,6 +787,8 @@
 		455157458777861E2F425C3E /* Pods-TravelAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPP/Pods-TravelAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		6796B65DD1EBC4C79BAF2EDC /* Pods-TravelAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPP/Pods-TravelAPP.release.xcconfig"; sourceTree = "<group>"; };
 		9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0007BCD1ECE9D00006860AE /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		B0007BCE1ECE9D00006860AE /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		B0436C1E1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTopSrollViewCollectionViewCell.h; sourceTree = "<group>"; };
 		B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTopSrollViewCollectionViewCell.m; sourceTree = "<group>"; };
 		B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMTopSrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1690,6 +1693,8 @@
 			children = (
 				26C936171ECDDAC10014CB1B /* Tcp */,
 				26C9361A1ECDDAC10014CB1B /* Udp */,
+				B0007BCD1ECE9D00006860AE /* GCDAsyncUdpSocket.h */,
+				B0007BCE1ECE9D00006860AE /* GCDAsyncUdpSocket.m */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -2382,6 +2387,7 @@
 				B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */,
 				268BA8B31EB99A740002B3C3 /* TribeTableViewCell.m in Sources */,
 				269CA8D01EB6B8AF0096AF1E /* MMGuangGaoCollectionViewCell.m in Sources */,
+				B0007BCF1ECE9D00006860AE /* GCDAsyncUdpSocket.m in Sources */,
 				B0436D011EC0A7E40079730A /* DestinationMallViewController.m in Sources */,
 				2604399E1EBF4E6D00D44C99 /* TravelLineDetialTableViewCell.m in Sources */,
 				260439C81EC0A0B400D44C99 /* TRJourneyDescriptionTableViewCell.m in Sources */,
