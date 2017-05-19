@@ -26,7 +26,7 @@
     
 }
 - (IBAction)nextAction:(id)sender {
-//    UserRegister *userRegister = [UserRegister shareUserRegister];
+    UserRegister *userRegister = [UserRegister shareUserRegister];
 }
 
 - (void)didReceiveMemoryWarning {
