@@ -98,6 +98,8 @@
 		26043A021EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26043A001EC0D84500D44C99 /* TRJourneyPublishTableViewCell.m */; };
 		26043A031EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26043A011EC0D84500D44C99 /* TRJourneyPublishTableViewCell.xib */; };
 		26043A061EC0DDF800D44C99 /* TOBottomAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26043A051EC0DDF800D44C99 /* TOBottomAddView.m */; };
+		262108601ECEC4970013268A /* UserRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C936611ECDDAC10014CB1B /* UserRegister.m */; };
+		262108611ECEC49C0013268A /* UserLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9365E1ECDDAC10014CB1B /* UserLogin.m */; };
 		262426DE1EBA1F7E006FD687 /* MineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262426DD1EBA1F7E006FD687 /* MineTopTableViewCell.m */; };
 		26277F6B1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26277F691EBB74360049C5F7 /* ActivityPurchaseTableViewCell.m */; };
 		26277F6C1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26277F6A1EBB74360049C5F7 /* ActivityPurchaseTableViewCell.xib */; };
@@ -2289,6 +2291,7 @@
 				B0436CF71EC061750079730A /* DJinNangCollectionReusableView.m in Sources */,
 				2604397F1EBF4E6D00D44C99 /* MenRecommendDetialTableViewCell.m in Sources */,
 				260439B61EC09DF600D44C99 /* TRJourneyPublishViewController.m in Sources */,
+				262108601ECEC4970013268A /* UserRegister.m in Sources */,
 				268BA8B51EB99A740002B3C3 /* TRTopTableViewCell.m in Sources */,
 				269CA8BE1EB6B8AF0096AF1E /* DestinationCollectionViewCell.m in Sources */,
 				B0436CF21EC05D200079730A /* DestinationJinNangCell.m in Sources */,
@@ -2305,6 +2308,7 @@
 				26B661391EC36A4B00CFE996 /* MJTableViewCell.m in Sources */,
 				26C73C0C1EC225AA00A049AC /* MineOrderViewController.m in Sources */,
 				26C73C031EC2252500A049AC /* MineCollectionViewController.m in Sources */,
+				262108611ECEC49C0013268A /* UserLogin.m in Sources */,
 				B0436D211EC0C28F0079730A /* DWanFaTuiJianCell.m in Sources */,
 				26B661661EC36C6100CFE996 /* MTMoneyTableViewCell.m in Sources */,
 				269CA8CC1EB6B8AF0096AF1E /* InsideChannelCollectionViewCell.m in Sources */,
