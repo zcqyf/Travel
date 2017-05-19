@@ -245,6 +245,7 @@
 		26FC79451EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FC79431EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.m */; };
 		26FC79461EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FC79441EBCCA6B00F66B69 /* GLDGrogshopCollectionViewCell.xib */; };
 		B0007BCF1ECE9D00006860AE /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B0007BCE1ECE9D00006860AE /* GCDAsyncUdpSocket.m */; };
+		B0007BD21ECEC48D006860AE /* MyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B0007BD11ECEC48D006860AE /* MyInfo.m */; };
 		B0436C211EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */; };
 		B0436C221EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */; };
 		B0436CE51EBF73FD0079730A /* RecommendWanFaBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B0436CE41EBF73FD0079730A /* RecommendWanFaBtn.m */; };
@@ -789,6 +790,8 @@
 		9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0007BCD1ECE9D00006860AE /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		B0007BCE1ECE9D00006860AE /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		B0007BD01ECEC48D006860AE /* MyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfo.h; sourceTree = "<group>"; };
+		B0007BD11ECEC48D006860AE /* MyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfo.m; sourceTree = "<group>"; };
 		B0436C1E1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTopSrollViewCollectionViewCell.h; sourceTree = "<group>"; };
 		B0436C1F1EB868BC0079730A /* MMTopSrollViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTopSrollViewCollectionViewCell.m; sourceTree = "<group>"; };
 		B0436C201EB868BC0079730A /* MMTopSrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMTopSrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1242,6 +1245,8 @@
 				262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */,
 				B07C5A5C1EC402CD00D3DF81 /* NSString+NSStringExtension.h */,
 				B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */,
+				B0007BD01ECEC48D006860AE /* MyInfo.h */,
+				B0007BD11ECEC48D006860AE /* MyInfo.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2405,6 +2410,7 @@
 				B0436D121EC0B7B70079730A /* DfooterBtnCollectionReusableView.m in Sources */,
 				260439681EBF4E6D00D44C99 /* MenRecommendViewController.m in Sources */,
 				269CA8CA1EB6B8AF0096AF1E /* ImageSliderCollectionViewCell.m in Sources */,
+				B0007BD21ECEC48D006860AE /* MyInfo.m in Sources */,
 				262CA12A1EC4D5C500667A02 /* ChangeNickNameViewController.m in Sources */,
 				260439671EBF4E6D00D44C99 /* ConsultationViewController.m in Sources */,
 				B0436CEA1EC0520D0079730A /* DestinationDetialViewController.m in Sources */,
