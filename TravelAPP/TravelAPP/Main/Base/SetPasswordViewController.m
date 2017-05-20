@@ -31,18 +31,7 @@
 - (IBAction)clickToFinish:(UIButton *)sender {
     [self getPassword];
     [UserRegister.shareUserRegister getRegisterData:self.params WithDataBlock:^(id data) {
-        if ([data isEqualToString:@"0"]) {
-            [SVProgressHUD showInfoWithStatus:@"账号已存在"];
-        } else if ([data isEqualToString:@"1"]) {
-            [SVProgressHUD showInfoWithStatus:@"注册成功"];
-            [self popToViewController];
-        } else if ([data isEqualToString:@"2"]) {
-            [SVProgressHUD showInfoWithStatus:@"网络访问失败"];
-        } else if ([data isEqualToString:@"3"]) {
-            [SVProgressHUD showInfoWithStatus:@"账号或密码错误"];
-        } else if ([data isEqualToString:@"4"]) {
-            [SVProgressHUD showInfoWithStatus:@"请把信息填完整"];
-        }
+        [self dealwithResult:data];
     }];
 }
 
@@ -57,8 +46,8 @@
 
 // 需要调整 - TODO
 - (void)dealwithResult:(id)data {
-    NSString *back = (NSString *)data;
-    switch ([back intValue]) {
+    int value = [data intValue];
+    switch (value) {
         case 0://账号已存在
         {
             [SVProgressHUD showInfoWithStatus:@"账号已存在"];
@@ -68,12 +57,7 @@
         case 1://注册成功
         {
             [SVProgressHUD showInfoWithStatus:@"注册成功"];
-            for (UIViewController *vc in self.navigationController.viewControllers) {
-                if ([vc isKindOfClass:[LoginViewController class]]) {
-                    [self.navigationController popToViewController:vc animated:YES];
-                    return;
-                }
-            }
+            [self popToViewController];
         }
             break;
             
