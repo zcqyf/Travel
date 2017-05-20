@@ -29,8 +29,6 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    
-
 }
 
 

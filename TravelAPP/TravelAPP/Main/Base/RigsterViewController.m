@@ -7,12 +7,17 @@
 //
 
 #import "RigsterViewController.h"
-//#import "UserRegister.h"
+#import "VerCode.h"
+#import <SVProgressHUD.h>
+#import "SetPasswordViewController.h"
+#import "RegularExpression.h"
 
 @interface RigsterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *tuijianrenTextField;
+
+@property (nonatomic,strong)NSMutableDictionary *params;
 
 @end
 
@@ -22,11 +27,57 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-- (IBAction)getCodeAction:(id)sender {
-    
+
+- (NSMutableDictionary *)params {
+    if (!_params) {
+        _params = [[NSMutableDictionary alloc] init];
+        _params[@"type"] = @"reg";
+    }
+    return _params;
 }
+
+
+- (IBAction)getCodeAction:(id)sender {
+    [self checkTelNumber];
+    [self getVerifyCode];
+}
+
+- (void)checkTelNumber {
+    if (self.accountTextField.text.length == 0) {
+        [SVProgressHUD showInfoWithStatus:@"手机号码为空"];
+    } else {
+        if (![RegularExpression checkTelNumber:self.accountTextField.text]) {
+            [SVProgressHUD showInfoWithStatus:@"手机号不合法"];
+        } else {
+            self.params[@"phone"] = self.accountTextField.text;
+        }
+    }
+}
+
+- (void)getVerifyCode {
+    [VerCode.shareVerCode getVerCodeData:self.params WithDataBlock:^(id data) {
+        if ([data isEqualToString:@"0"]) {//网络请求失败
+            [SVProgressHUD showInfoWithStatus:@"网络请求失败"];
+        } else if ([data isEqualToString:@"1"]) {//账号已存在
+            [SVProgressHUD showInfoWithStatus:@"账号已存在"];
+        } else {//成功获取验证码
+            [SVProgressHUD showInfoWithStatus:@"验证码获取成功"];
+        }
+    }];
+}
+
 - (IBAction)nextAction:(id)sender {
-//    UserRegister *userRegister = [UserRegister shareUserRegister];
+    [self checkTelNumber];
+    [self navigateToViewController];
+}
+
+- (void)navigateToViewController {
+    SetPasswordViewController *vc = [SetPasswordViewController new];
+    vc.title = @"设置密码";
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"phone"] = self.accountTextField.text;
+    vc.params = dict;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

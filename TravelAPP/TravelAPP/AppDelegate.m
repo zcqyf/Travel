@@ -26,17 +26,15 @@
     [_window makeKeyAndVisible];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
-
     
     _tabBarVC = [[TabBarViewController alloc] init];
     _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
     
-        //设置tabBarItem样式
-        
-        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
-        [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    //设置tabBarItem样式
+    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
+    [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     [_window.rootViewController.view addSubview:[GuidanceViewController new].view];
-
+    
     return YES;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import <SVProgressHUD.h>
 
 @interface BaseViewController ()
 
@@ -18,6 +19,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setForegroundColor:[UIColor blackColor]]; //字体颜色
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:230/255.0 green:231/255.0 blue:238/255.0 alpha:1.0]];   //背景颜色 RGB(230, 231, 238)
 }
 
 - (void)setTopView {
