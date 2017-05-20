@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RigsterViewController.h"
-#import "UserLogin.h"
+//#import "UserLogin.h"
 
 @interface LoginViewController ()
     @property (weak, nonatomic) IBOutlet UITextField *accountTextField;

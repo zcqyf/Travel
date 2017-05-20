@@ -7,7 +7,7 @@
 //
 
 #import "RigsterViewController.h"
-#import "UserRegister.h"
+//#import "UserRegister.h"
 
 @interface RigsterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
@@ -26,7 +26,7 @@
     
 }
 - (IBAction)nextAction:(id)sender {
-    UserRegister *userRegister = [UserRegister shareUserRegister];
+//    UserRegister *userRegister = [UserRegister shareUserRegister];
 }
 
 - (void)didReceiveMemoryWarning {
