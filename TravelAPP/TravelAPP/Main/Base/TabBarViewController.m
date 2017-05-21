@@ -40,6 +40,7 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 }
 
 - (void)setupViewControllers {
+    
     if ([MyInfo shareInstance].MemberType == 1) {
         [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     }
@@ -47,11 +48,8 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
     [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-
-    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-
     
-
+    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
 }
 
 - (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedIamgeName: (NSString *)selectedImageName{
