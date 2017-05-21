@@ -10,6 +10,7 @@
 #import "TabBarViewController.h"
 #import "GuidanceViewController.h"
 #import "LoginViewController.h"
+#import "MyInfo.h"
 
 @interface AppDelegate ()
 
@@ -25,10 +26,11 @@
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [_window makeKeyAndVisible];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
     
-    _tabBarVC = [[TabBarViewController alloc] init];
-    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
+
+    _window.rootViewController = [GuidanceViewController new];
     
     //设置tabBarItem样式
     [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
@@ -42,8 +44,16 @@
     
     NSDictionary *dic = notification.userInfo;
     NSNumber *num = [dic objectForKey:@"isLoginSuccess"];
+    
     if (num.intValue == 1) {
-       _window.rootViewController = _tabBarVC;
+        _tabBarVC = [[TabBarViewController alloc] init];
+        if ([MyInfo shareInstance].MemberType == 1) {
+            _tabBarVC.selectedIndex = 1;
+        }else{
+           _tabBarVC.selectedIndex = 0;
+        }
+       _window.rootViewController = _tabBarVC ;
+        
     }
     
 }

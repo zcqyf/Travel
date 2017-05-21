@@ -11,6 +11,8 @@
 @interface MyInfo : NSObject
 
 //1: 付费会员  2: 普通会员
-@property (nonatomic, assign)NSInteger *MemberType;
+@property (nonatomic, assign)NSInteger MemberType;
+
++(MyInfo *)shareInstance;
 
 @end

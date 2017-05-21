@@ -12,6 +12,7 @@
 #import "SetPasswordViewController.h"
 #import "RegularExpression.h"
 
+
 @interface RigsterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
@@ -25,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
 }
 
 - (NSMutableDictionary *)params {

@@ -23,6 +23,8 @@
 #define GYGrayColor(v) GYColor((v),(v),(v))
 #define GYCommonBgColor GYColor(255, 88, 51)
 
+#define LoginSegementColor GYColor(245, 188, 35)
+
 #import "UIView+UIViewExtension.h"
 #import "CALayer+XibBorderColor.h"
 #import "NSString+NSStringExtension.h"

@@ -7,6 +7,7 @@
 //
 
 #import "GuidanceViewController.h"
+#import "LoginViewController.h"
 
 @interface GuidanceViewController ()
     
@@ -46,7 +47,7 @@
     [self.view addSubview:self.imageView];
     [self.view addSubview:self.countDownLabel];
 
-    _timeCount = 4;
+    _timeCount = 2;
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange:) userInfo:nil repeats:YES];
 
@@ -73,7 +74,9 @@
         
 //        [self.view removeFromSuperview];
         
-        [self.view removeFromSuperview];
+        [self presentViewController:[[UINavigationController alloc] initWithRootViewController:[LoginViewController new]] animated:true completion:^{
+            
+        }];
         
     }
     
