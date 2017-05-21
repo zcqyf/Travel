@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "RigsterViewController.h"
 #import "MyInfo.h"
-//#import "UserLogin.h"
+#import "UserLogin.h"
 #import "NavBarView.h"
 
 @interface LoginViewController ()
@@ -21,6 +21,8 @@
 @property (nonatomic, strong)MyInfo *myInfo;
 
 @property (weak, nonatomic) IBOutlet UIView *navBarView;
+
+@property (nonatomic,strong)NSMutableDictionary *params;
 
 /*
  选择付费／普通会员
@@ -39,6 +41,13 @@
 
 @implementation LoginViewController
 
+- (NSMutableDictionary *)params {
+    if (!_params) {
+        _params = [[NSMutableDictionary alloc] init];
+        _params[@"type"] = @"login";
+    }
+    return _params;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,9 +58,20 @@
     
     [self setUpView];
     
-    
-    
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:true];
+}
+
 - (void)setUpView {
     self.segementBgView.layer.borderWidth = 1;
     self.segementBgView.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -60,6 +80,11 @@
     
     _PayMemberBtn.tag = 101;
     _ordinaryMemberBtn.tag = 102;
+    
+    _accountTextField.tag = 201;
+    _passwordTextField.tag = 202;
+//    [_accountTextField addTarget:self action:@selector(myTextFieldvalueChange:) forControlEvents:UIControlEventValueChanged];
+//    [_passwordTextField addTarget:self action:@selector(myTextFieldvalueChange:) forControlEvents:UIControlEventValueChanged];
     
     [MyInfo shareInstance].MemberType = _PayMemberBtn.tag-100;
     
@@ -89,12 +114,6 @@
     
 }
 
-
-
-
-
-
-
 /*
  注册
  */
@@ -113,9 +132,17 @@
  */
 - (IBAction)loginAction:(id)sender {
     
-//    [[UserLogin shareUserLogin] getLoginData:<#(NSDictionary *)#> WithDataBlock:<#^(id data)dataBLock#> useridBlock:<#^(id userid)userBlock#>];
+    self.params[@"username"] = _accountTextField.text;
+    self.params[@"password"] = _passwordTextField.text;
+    NSLog(@"%@",self.params);
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+    [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
+        NSLog(@"%@",data);
+    } useridBlock:^(id userid) {
+        
+    }];
+    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
 }
     
     
@@ -128,7 +155,9 @@
 - (IBAction)thirdLoginAction:(UIButton *)sender {
     
 }
-    
+
+
+
     
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
