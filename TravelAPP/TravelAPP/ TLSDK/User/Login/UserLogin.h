@@ -10,6 +10,7 @@
 
 @interface UserLogin : NSObject
 +(instancetype)shareUserLogin;
+
 - (void)getLoginData:(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBLock useridBlock:(void(^)(id userid))userBlock;
 
 @end

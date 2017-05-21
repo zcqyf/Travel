@@ -75,7 +75,7 @@
 //        [self.view removeFromSuperview];
         
         [self presentViewController:[[UINavigationController alloc] initWithRootViewController:[LoginViewController new]] animated:true completion:^{
-            
+        
         }];
         
     }
