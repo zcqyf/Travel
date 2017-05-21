@@ -44,9 +44,9 @@
     
     if (self = [super initWithFrame:frame]) {
         // 设置初始值
-        self.startP    = CGPointMake(0, 200);
-        self.endP      = CGPointMake(screenWidth, 200);
-        self.controlP  = CGPointMake(screenWidth/2, 250);
+        self.startP    = CGPointMake(0, 78 + 30);
+        self.endP      = CGPointMake(screenWidth, 78 + 30);
+        self.controlP  = CGPointMake(screenWidth/2, 128 + 30 - 10);
         
         self.pathColor = [UIColor whiteColor];
         self.pathWidth = 0.5;
@@ -71,7 +71,7 @@
     [self.pathColor setStroke];
     [self.path stroke];
     
-    UIColor *fillColor = [UIColor greenColor];          //设置颜色
+    UIColor *fillColor = [UIColor colorWithRed:251/255.0 green:103/255.0 blue:57/255.0 alpha:1.0];          //设置颜色
     [fillColor set];                                    //填充颜色
     [self.path fill];
 }

@@ -10,6 +10,7 @@
 #import "RigsterViewController.h"
 #import "MyInfo.h"
 //#import "UserLogin.h"
+#import "NavBarView.h"
 
 @interface LoginViewController ()
 //账号
@@ -19,6 +20,7 @@
 
 @property (nonatomic, strong)MyInfo *myInfo;
 
+@property (weak, nonatomic) IBOutlet UIView *navBarView;
 
 /*
  选择付费／普通会员
@@ -59,8 +61,11 @@
     _PayMemberBtn.tag = 101;
     _ordinaryMemberBtn.tag = 102;
     
-      [MyInfo shareInstance].MemberType = _PayMemberBtn.tag-100;
-
+    [MyInfo shareInstance].MemberType = _PayMemberBtn.tag-100;
+    
+    NavBarView *pathView = [[NavBarView alloc] initWithFrame:self.navBarView.bounds];
+    pathView.backgroundColor = [UIColor whiteColor];
+    [self.navBarView insertSubview:pathView atIndex:0];
 }
 
 /*

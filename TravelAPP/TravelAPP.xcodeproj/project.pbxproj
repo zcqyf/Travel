@@ -113,7 +113,7 @@
 		262CA1231EC4C25A00667A02 /* ChangePwdNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1221EC4C25A00667A02 /* ChangePwdNewViewController.m */; };
 		262CA1271EC4CE2500667A02 /* CALayer+XibBorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */; };
 		262CA12A1EC4D5C500667A02 /* ChangeNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */; };
-		264406BB1ED1D162008C079A /* NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264406BA1ED1D162008C079A /* NavBarView.m */; };
+		264406BE1ED1D516008C079A /* NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264406BD1ED1D516008C079A /* NavBarView.m */; };
 		268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEB1EB6B2BA00A659A1 /* main.m */; };
 		268AEAEF1EB6B2BA00A659A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268AEAEE1EB6B2BA00A659A1 /* AppDelegate.m */; };
 		268AEAF51EB6B2BA00A659A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268AEAF31EB6B2BA00A659A1 /* Main.storyboard */; };
@@ -482,8 +482,8 @@
 		262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibBorderColor.m"; sourceTree = "<group>"; };
 		262CA1281EC4D5C500667A02 /* ChangeNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNickNameViewController.h; sourceTree = "<group>"; };
 		262CA1291EC4D5C500667A02 /* ChangeNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNickNameViewController.m; sourceTree = "<group>"; };
-		264406B91ED1D162008C079A /* NavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarView.h; sourceTree = "<group>"; };
-		264406BA1ED1D162008C079A /* NavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarView.m; sourceTree = "<group>"; };
+		264406BC1ED1D516008C079A /* NavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarView.h; sourceTree = "<group>"; };
+		264406BD1ED1D516008C079A /* NavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarView.m; sourceTree = "<group>"; };
 		268AEAE71EB6B2BA00A659A1 /* TravelAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AEAEB1EB6B2BA00A659A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		268AEAED1EB6B2BA00A659A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1323,10 +1323,10 @@
 				B0AAE2B31ECC8B9B001EF3AC /* LoginViewController.h */,
 				B0AAE2B41ECC8B9B001EF3AC /* LoginViewController.m */,
 				B0AAE2B51ECC8B9B001EF3AC /* LoginViewController.xib */,
+				264406BC1ED1D516008C079A /* NavBarView.h */,
+				264406BD1ED1D516008C079A /* NavBarView.m */,
 				B0AAE2B81ECC9A1A001EF3AC /* RigsterViewController.h */,
 				B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */,
-				264406B91ED1D162008C079A /* NavBarView.h */,
-				264406BA1ED1D162008C079A /* NavBarView.m */,
 				B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */,
 				26C549721ECFFF4B005A7199 /* SetPasswordViewController.h */,
 				26C549731ECFFF4B005A7199 /* SetPasswordViewController.m */,
@@ -2447,7 +2447,7 @@
 				B04790F11EC208CA001D5B65 /* DMallSelectTypeCell.m in Sources */,
 				26BA3C091EBCF5060048F72E /* GLDHeaderView.m in Sources */,
 				268AEAEC1EB6B2BA00A659A1 /* main.m in Sources */,
-				264406BB1ED1D162008C079A /* NavBarView.m in Sources */,
+				264406BE1ED1D516008C079A /* NavBarView.m in Sources */,
 				26ECD9731EBDA7E7009AF788 /* GSTopTableViewCell.m in Sources */,
 				26BA3C041EBCEE9A0048F72E /* GLDRecommendCollectionViewCell.m in Sources */,
 				260439751EBF4E6D00D44C99 /* ConsultionHeaderTableViewCell.m in Sources */,
