@@ -44,7 +44,6 @@
     }
 }
 
-// 需要调整 - TODO
 - (void)dealwithResult:(id)data {
     int value = [data intValue];
     switch (value) {

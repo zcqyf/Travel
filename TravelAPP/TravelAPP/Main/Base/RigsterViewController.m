@@ -59,6 +59,7 @@
         if ([data isEqualToString:@"0"]) {//网络请求失败
             [SVProgressHUD showInfoWithStatus:@"网络请求失败"];
         } else if ([data isEqualToString:@"1"]) {//账号已存在
+            #pragma 存在问题：账号已存在也会发送验证码 TODO
             [SVProgressHUD showInfoWithStatus:@"账号已存在"];
         } else {//成功获取验证码
             [SVProgressHUD showInfoWithStatus:@"验证码获取成功"];
