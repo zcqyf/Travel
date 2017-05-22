@@ -56,7 +56,8 @@
             
         case 1://注册成功
         {
-            [SVProgressHUD showInfoWithStatus:@"注册成功"];
+//            [SVProgressHUD showInfoWithStatus:@"注册成功"];
+            [SVProgressHUD showSuccessWithStatus:@"注册成功"];
             [self popToViewController];
         }
             break;
