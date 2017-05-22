@@ -73,8 +73,9 @@
 //        [self.imageView.layer addAnimation:animation forKey:nil];
         
 //        [self.view removeFromSuperview];
-        
-        [self presentViewController:[[UINavigationController alloc] initWithRootViewController:[LoginViewController new]] animated:true completion:^{
+        LoginViewController *vc = [LoginViewController new];
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:^{
         
         }];
         

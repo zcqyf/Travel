@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="accountTextField" destination="gd9-MA-maP" id="g7i-xj-HVb"/>
                 <outlet property="codeTextField" destination="K1N-dg-LFM" id="RhP-Wk-5Tk"/>
+                <outlet property="navBarView" destination="Ndl-Ry-zfY" id="ETK-Gv-Rho"/>
                 <outlet property="tuijianrenTextField" destination="wl6-bq-Tfz" id="tEW-kG-jV7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -72,7 +73,7 @@
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXU-JJ-wen">
                     <rect key="frame" x="30" y="256" width="315" height="1"/>
@@ -88,17 +89,26 @@
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndl-Ry-zfY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="VBP-3m-BwK"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gd9-MA-maP" firstAttribute="trailing" secondItem="vXU-JJ-wen" secondAttribute="trailing" id="2lw-WR-tHr"/>
                 <constraint firstItem="aEw-fv-8t4" firstAttribute="top" secondItem="vXU-JJ-wen" secondAttribute="bottom" constant="4" id="5sW-4F-7aZ"/>
                 <constraint firstAttribute="bottom" secondItem="1aE-Ew-gE8" secondAttribute="bottom" constant="60" id="7xb-N9-auI"/>
+                <constraint firstItem="Ndl-Ry-zfY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="85h-DD-7S0"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="top" secondItem="mQs-gy-DlO" secondAttribute="bottom" constant="8" id="B0C-4M-M53"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="trailing" secondItem="P3e-Gh-BVv" secondAttribute="trailing" id="Epl-Nx-ges"/>
                 <constraint firstItem="1aE-Ew-gE8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="GVK-Q6-S0R"/>
+                <constraint firstItem="Ndl-Ry-zfY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HIT-vY-Ytp"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="leading" secondItem="P3e-Gh-BVv" secondAttribute="leading" id="Jmu-6N-NeI"/>
                 <constraint firstItem="K1N-dg-LFM" firstAttribute="leading" secondItem="mQs-gy-DlO" secondAttribute="leading" id="JxC-3T-hHW"/>
                 <constraint firstItem="mQs-gy-DlO" firstAttribute="top" secondItem="K1N-dg-LFM" secondAttribute="bottom" id="Kon-5C-jdf"/>
@@ -107,6 +117,7 @@
                 <constraint firstItem="vXU-JJ-wen" firstAttribute="top" secondItem="gd9-MA-maP" secondAttribute="bottom" id="RcU-lb-TiW"/>
                 <constraint firstItem="aEw-fv-8t4" firstAttribute="leading" secondItem="mQs-gy-DlO" secondAttribute="trailing" constant="20" id="Rgk-Xb-CAz"/>
                 <constraint firstItem="K1N-dg-LFM" firstAttribute="trailing" secondItem="mQs-gy-DlO" secondAttribute="trailing" id="RhO-5v-XFn"/>
+                <constraint firstAttribute="trailing" secondItem="Ndl-Ry-zfY" secondAttribute="trailing" id="RmB-Cp-AK2"/>
                 <constraint firstItem="P3e-Gh-BVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="TTF-Zk-oUD"/>
                 <constraint firstItem="aEw-fv-8t4" firstAttribute="trailing" secondItem="wl6-bq-Tfz" secondAttribute="trailing" id="YeN-Gk-8Lm"/>
                 <constraint firstAttribute="trailing" secondItem="P3e-Gh-BVv" secondAttribute="trailing" constant="30" id="ZeL-Zz-Mfr"/>
@@ -118,7 +129,7 @@
                 <constraint firstItem="gd9-MA-maP" firstAttribute="leading" secondItem="vXU-JJ-wen" secondAttribute="leading" id="lb8-pc-tbl"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="top" secondItem="aEw-fv-8t4" secondAttribute="bottom" constant="8" id="uAc-So-B4G"/>
             </constraints>
-            <point key="canvasLocation" x="48.5" y="107.5"/>
+            <point key="canvasLocation" x="-81" y="63"/>
         </view>
     </objects>
     <resources>

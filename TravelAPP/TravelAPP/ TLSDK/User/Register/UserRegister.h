@@ -10,6 +10,6 @@
 
 @interface UserRegister : NSObject
 +(instancetype)shareUserRegister;
-- (void)getRegisterData:(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBLock;
-
+//- (void)getRegisterData:(NSDictionary*)param Recommender:(NSString*)Recommend WithDataBlock:(void(^)(id data))dataBLock;
+- (void)getRegisterData:(NSMutableDictionary *)param Recommender:(NSString*)Recommend WithDataBlock:(void (^)(id data))dataBLock;
 @end

@@ -55,7 +55,8 @@
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes: @{NSForegroundColorAttributeName:[UIColor whiteColor]}];//设置title颜色
     [self setUpView];
     
 }
@@ -120,6 +121,7 @@
 - (IBAction)registerAction:(UIButton *)sender {
     NSLog(@"1111");
     RigsterViewController *vc = [[RigsterViewController alloc] initWithNibName:@"RigsterViewController" bundle:[NSBundle mainBundle]];
+    vc.title = @"会员注册";
     [self.navigationController pushViewController:vc animated:true];
 }
     

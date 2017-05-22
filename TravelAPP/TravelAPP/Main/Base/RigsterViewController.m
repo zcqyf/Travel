@@ -11,7 +11,7 @@
 #import <SVProgressHUD.h>
 #import "SetPasswordViewController.h"
 #import "RegularExpression.h"
-
+#import "NavBarView.h"
 
 @interface RigsterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *tuijianrenTextField;
 
 @property (nonatomic,strong)NSMutableDictionary *params;
+@property (nonatomic,strong)NSMutableDictionary *passDict;
+@property (weak, nonatomic) IBOutlet UIView *navBarView;
 
 @end
 
@@ -26,7 +28,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    NavBarView *pathView = [[NavBarView alloc] initWithFrame:self.navBarView.bounds];
+    pathView.backgroundColor = [UIColor whiteColor];
+    [self.navBarView insertSubview:pathView atIndex:0];
 }
 
 - (NSMutableDictionary *)params {
@@ -37,13 +42,24 @@
     return _params;
 }
 
-
-- (IBAction)getCodeAction:(id)sender {
-    [self checkTelNumber];
-    [self getVerifyCode];
+- (NSMutableDictionary *)passDict {
+    if (!_passDict) {
+        _passDict = [[NSMutableDictionary alloc] init];
+    }
+    return _passDict;
 }
 
-- (void)checkTelNumber {
+
+- (IBAction)getCodeAction:(id)sender {
+    if (![self checkTelNumber]) {
+        return;
+    } else {
+        [self getVerifyCode];
+    }
+}
+
+- (BOOL)checkTelNumber {
+    BOOL flag = NO;
     if (self.accountTextField.text.length == 0) {
         [SVProgressHUD showInfoWithStatus:@"手机号码为空"];
     } else {
@@ -51,8 +67,10 @@
             [SVProgressHUD showInfoWithStatus:@"手机号不合法"];
         } else {
             self.params[@"phone"] = self.accountTextField.text;
+            flag = YES;
         }
     }
+    return flag;
 }
 
 - (void)getVerifyCode {
@@ -69,16 +87,32 @@
 }
 
 - (IBAction)nextAction:(id)sender {
-    [self checkTelNumber];
-    [self navigateToViewController];
+    if (![self checkTelNumber] || ![self checkVerifyCode]) {//缺验证码
+        return;
+    } else {
+        [self navigateToViewController];
+    }
+}
+
+- (BOOL)checkVerifyCode {
+    BOOL flag = NO;
+    
+    if (self.codeTextField.text.length == 0) {
+        [SVProgressHUD showInfoWithStatus:@"请输入验证码"];
+    } else {
+        self.params[@"code"] = self.codeTextField.text;
+//        param :phone,password,loginname ，code
+        flag = YES;
+    }
+    
+    return flag;
 }
 
 - (void)navigateToViewController {
     SetPasswordViewController *vc = [SetPasswordViewController new];
     vc.title = @"设置密码";
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[@"phone"] = self.accountTextField.text;
-    vc.params = dict;
+    self.passDict[@"phone"] = self.accountTextField.text;
+    vc.params = self.passDict;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

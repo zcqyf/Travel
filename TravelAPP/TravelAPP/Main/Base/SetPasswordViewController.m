@@ -11,12 +11,14 @@
 #import "RegularExpression.h"
 #import <SVProgressHUD.h>
 #import "LoginViewController.h"
+#import "NavBarView.h"
 
 @interface SetPasswordViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *password;
 
 @property (weak, nonatomic) IBOutlet UITextField *confirmPassword;
+@property (weak, nonatomic) IBOutlet UIView *navBarView;
 
 @end
 
@@ -24,15 +26,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NavBarView *pathView = [[NavBarView alloc] initWithFrame:self.navBarView.bounds];
+    pathView.backgroundColor = [UIColor whiteColor];
+    [self.navBarView insertSubview:pathView atIndex:0];
 }
 
 
 - (IBAction)clickToFinish:(UIButton *)sender {
     [self getPassword];
-    [UserRegister.shareUserRegister getRegisterData:self.params WithDataBlock:^(id data) {
-        [self dealwithResult:data];
-    }];
 }
 
 - (void)popToViewController {
@@ -86,6 +87,7 @@
 - (void)getPassword {
     if (self.password.text.length == 0 || self.confirmPassword.text.length == 0) {
         [SVProgressHUD showInfoWithStatus:@"密码不能为空"];
+        
     } else {
         [self checkPassword];
     }
@@ -106,6 +108,12 @@
     } else {
         //        phone password username  缺少username 设置密码界面
         self.params[@"password"] = self.password.text;
+        [UserRegister.shareUserRegister getRegisterData:self.params Recommender:@"" WithDataBlock:^(id data) {
+            [self dealwithResult:data];
+        }];
+//        [UserRegister.shareUserRegister getRegisterData:self.params WithDataBlock:^(id data) {
+//            [self dealwithResult:data];
+//        }];
     }
 }
 

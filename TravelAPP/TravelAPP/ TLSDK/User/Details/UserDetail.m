@@ -25,20 +25,40 @@
     AFHTTPSessionManager*manager = [AFHTTPSessionManager manager];
     
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/json",@"application/json",@"text/javascript",@"text/html", @"application/javascript", @"text/js",@"application/x-javascript", nil];
+    [manager GET:KTLSDKDetailUrl parameters:@{@"user_id":@"16"} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        dataBLock(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+//    [manager POST:KTLSDKDetailUrl parameters:@{@"user_id":user_id} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSMutableArray*detail = [NSMutableArray array];
+//        
+//        detail = responseObject[@"detail"];
+//        
+//        dataBLock(detail);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"请求失败");
+//        
+//        dataBLock(@"0");
+//        
+//    }];
+  
+}
+- (void)getmodifyDetail:(NSDictionary *)param WithDataBlock:(void (^)(id))modifyBLock
+{
+    AFHTTPSessionManager*manager = [AFHTTPSessionManager manager];
     
-    [manager POST:KTLSDKDetailUrl parameters:@{@"user_id":user_id} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSMutableArray*detail = [NSMutableArray array];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/json",@"application/json",@"text/javascript",@"text/html", @"application/javascript", @"text/js",@"application/x-javascript", nil];
+    
+    [manager POST:KTLSDKDetailUrl parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        detail = responseObject[@"detail"];
-        
-        dataBLock(detail);
-        
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败");
         
-        dataBLock(@"0");
-        
+    
     }];
-  
+
 }
 @end

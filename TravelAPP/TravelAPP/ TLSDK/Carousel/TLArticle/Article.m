@@ -42,7 +42,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
     }];
- 
+   
 }
 
 - (void)getArtDetailData:(NSDictionary *)param WithDataBlock:(void (^)(id data))dataBLock

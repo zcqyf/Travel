@@ -11,5 +11,5 @@
 @interface UserDetail : NSObject
 +(instancetype)shareUserDetail;
 - (void)getDetailData:(NSString*)user_id  WithDataBlock:(void(^)(id data))dataBLock;
-
+- (void)getmodifyDetail:(NSDictionary*)param  WithDataBlock:(void(^)(id data))modifyBLock;
 @end
