@@ -11,6 +11,7 @@
 #import "MyInfo.h"
 #import "UserLogin.h"
 #import "NavBarView.h"
+#import <SVProgressHUD.h>
 
 @interface LoginViewController ()
 //账号
@@ -139,12 +140,18 @@
     NSLog(@"%@",self.params);
     
     [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
-        NSLog(@"%@",data);
+        if ([self dealWithResult:data]) {
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+        }else{
+            return;
+        }
     } useridBlock:^(id userid) {
         
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
     }];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+    
 }
     
     
@@ -158,7 +165,25 @@
     
 }
 
+- (Boolean)dealWithResult:(id)data{
+    int value = [data intValue];
 
+    switch (value) {
+        
+        case 0: //登录失败返回 0 （用户名密码错误)
+            [SVProgressHUD showInfoWithStatus:@"用户名密码错误"];
+            return  NO;
+            break;
+        case 1: //请求失败返回 1
+            [SVProgressHUD showInfoWithStatus:@"请求失败返回"];
+            return  NO;
+            break;
+        default:
+            [SVProgressHUD showInfoWithStatus:@"登录成功"];
+            return YES;
+            break;
+    }
+}
 
     
 - (void)didReceiveMemoryWarning {
