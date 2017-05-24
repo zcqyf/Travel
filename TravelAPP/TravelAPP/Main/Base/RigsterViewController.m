@@ -10,7 +10,6 @@
 #import "VerCode.h"
 #import <SVProgressHUD.h>
 #import "SetPasswordViewController.h"
-#import "RegularExpression.h"
 #import "NavBarView.h"
 
 @interface RigsterViewController ()
@@ -81,7 +80,7 @@
             #pragma 存在问题：账号已存在也会发送验证码 TODO
             [SVProgressHUD showInfoWithStatus:@"账号已存在"];
         } else {//成功获取验证码
-            [SVProgressHUD showInfoWithStatus:@"验证码获取成功"];
+            [SVProgressHUD showSuccessWithStatus:@"验证码获取成功"];
         }
     }];
 }
@@ -112,6 +111,8 @@
     SetPasswordViewController *vc = [SetPasswordViewController new];
     vc.title = @"设置密码";
     self.passDict[@"phone"] = self.accountTextField.text;
+    self.passDict[@"loginname"] = @"";
+    self.passDict[@"code"] = self.codeTextField.text;
     vc.params = self.passDict;
     [self.navigationController pushViewController:vc animated:YES];
 }

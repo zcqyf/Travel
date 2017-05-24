@@ -135,29 +135,60 @@
  */
 - (IBAction)loginAction:(id)sender {
     
-//    self.params[@"username"] = _accountTextField.text;
-    self.params[@"phone"] = _accountTextField.text;
-    self.params[@"password"] = _passwordTextField.text;
-    NSLog(@"%@",self.params);
-    
-    [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
-        NSLog(@"%@",data);
-        if ([self dealWithResult:data]) {
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
-        }else{
-            return;
+    if (![self checkTelNumber]) {
+        return;
+    } else {
+        [self getPassword];
+    }
+}
+
+- (BOOL)checkTelNumber {
+    BOOL flag = NO;
+    if (self.accountTextField.text.length == 0) {
+        [SVProgressHUD showInfoWithStatus:@"手机号码为空"];
+    } else {
+        if (![RegularExpression checkTelNumber:self.accountTextField.text]) {
+            [SVProgressHUD showInfoWithStatus:@"手机号不合法"];
+        } else {
+            self.params[@"username"] = _accountTextField.text;
+            flag = YES;
         }
-    } useridBlock:^(id userid) {
-        NSLog(@"%@",userid);
-    }];
-    
-    //        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
-    
+    }
+    return flag;
+}
+
+- (void)getPassword {
+    if (self.passwordTextField.text.length == 0) {
+        [SVProgressHUD showInfoWithStatus:@"密码不能为空"];
+    } else {
+        [self checkPassword];
+    }
     
 }
-    
-    
+
+- (void)checkPassword {
+    if (![RegularExpression checkPassword:self.passwordTextField.text]) {
+        [SVProgressHUD showInfoWithStatus:@"密码格式不正确"];
+    } else {
+        self.params[@"password"] = _passwordTextField.text;
+        NSLog(@"login === %@",self.params);
+        [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
+            NSLog(@"%@",data);
+            if ([self dealWithResult:data]) {
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+            }else{
+                return;
+            }
+        } useridBlock:^(id userid) {
+            NSLog(@"%@",userid);
+        }];
+        
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+    }
+}
+
+
 /*
  tag：
  101: 微信登录

@@ -116,14 +116,14 @@
                         <constraint firstAttribute="height" constant="1" id="U9d-OH-Nn7"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NV1-at-QdT">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NV1-at-QdT">
                     <rect key="frame" x="42" y="309" width="291" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="qq2-1L-sqL"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgn-75-Uyg">
                     <rect key="frame" x="45" y="481" width="285" height="35"/>
@@ -219,7 +219,7 @@
                 <constraint firstItem="hga-Fs-o0R" firstAttribute="leading" secondItem="Xnj-Si-a65" secondAttribute="trailing" id="wmf-Az-eID"/>
                 <constraint firstItem="Ygi-CU-ewa" firstAttribute="leading" secondItem="hga-Fs-o0R" secondAttribute="trailing" id="xkI-s1-0L4"/>
             </constraints>
-            <point key="canvasLocation" x="-164" y="-9"/>
+            <point key="canvasLocation" x="-267" y="-118"/>
         </view>
     </objects>
     <resources>

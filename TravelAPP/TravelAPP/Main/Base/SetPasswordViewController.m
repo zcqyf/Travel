@@ -56,7 +56,6 @@
             
         case 1://注册成功
         {
-//            [SVProgressHUD showInfoWithStatus:@"注册成功"];
             [SVProgressHUD showSuccessWithStatus:@"注册成功"];
             [self popToViewController];
         }
@@ -109,6 +108,7 @@
     } else {
         //        phone password username  缺少username 设置密码界面
         self.params[@"password"] = self.password.text;
+        NSLog(@"==========%@============", self.params);
         [UserRegister.shareUserRegister getRegisterData:self.params Recommender:@"" WithDataBlock:^(id data) {
             [self dealwithResult:data];
         }];

@@ -2127,6 +2127,7 @@
 				TargetAttributes = {
 					268AEAE61EB6B2BA00A659A1 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = GVY5LY9NZL;
 						ProvisioningStyle = Automatic;
 					};
 					268AEAFF1EB6B2BA00A659A1 = {
@@ -2674,7 +2675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GVY5LY9NZL;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2692,7 +2693,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GVY5LY9NZL;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
