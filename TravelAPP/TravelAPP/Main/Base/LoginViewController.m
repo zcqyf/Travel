@@ -140,6 +140,7 @@
     NSLog(@"%@",self.params);
     
     [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
+        NSLog(@"%@",data);
         if ([self dealWithResult:data]) {
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
@@ -147,9 +148,10 @@
             return;
         }
     } useridBlock:^(id userid) {
-        
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
+        NSLog(@"%@",userid);
     }];
+    
+    //        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
     
     
 }
