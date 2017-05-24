@@ -135,7 +135,8 @@
  */
 - (IBAction)loginAction:(id)sender {
     
-    self.params[@"username"] = _accountTextField.text;
+//    self.params[@"username"] = _accountTextField.text;
+    self.params[@"phone"] = _accountTextField.text;
     self.params[@"password"] = _passwordTextField.text;
     NSLog(@"%@",self.params);
     
