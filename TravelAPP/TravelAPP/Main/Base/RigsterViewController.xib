@@ -14,6 +14,7 @@
                 <outlet property="codeTextField" destination="K1N-dg-LFM" id="RhP-Wk-5Tk"/>
                 <outlet property="navBarView" destination="Ndl-Ry-zfY" id="ETK-Gv-Rho"/>
                 <outlet property="tuijianrenTextField" destination="wl6-bq-Tfz" id="tEW-kG-jV7"/>
+                <outlet property="verifyCodeBtn" destination="aEw-fv-8t4" id="bDQ-mb-1lA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -63,7 +64,7 @@
                     </constraints>
                     <state key="normal" image="Verification-Code_btn"/>
                     <connections>
-                        <action selector="getCodeAction:" destination="-1" eventType="touchUpInside" id="MUa-97-dhb"/>
+                        <action selector="getCodeAction:" destination="-1" eventType="touchUpInside" id="CGn-Bt-EfK"/>
                     </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1N-dg-LFM">
@@ -129,7 +130,7 @@
                 <constraint firstItem="gd9-MA-maP" firstAttribute="leading" secondItem="vXU-JJ-wen" secondAttribute="leading" id="lb8-pc-tbl"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="top" secondItem="aEw-fv-8t4" secondAttribute="bottom" constant="8" id="uAc-So-B4G"/>
             </constraints>
-            <point key="canvasLocation" x="-81" y="63"/>
+            <point key="canvasLocation" x="-331" y="-52"/>
         </view>
     </objects>
     <resources>

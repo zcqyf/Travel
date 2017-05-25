@@ -20,6 +20,9 @@
 @property (nonatomic,strong)NSMutableDictionary *params;
 @property (nonatomic,strong)NSMutableDictionary *passDict;
 @property (weak, nonatomic) IBOutlet UIView *navBarView;
+@property (weak, nonatomic) IBOutlet UIButton *verifyCodeBtn;
+
+@property (nonatomic,strong)NSTimer *timer;
 
 @end
 
@@ -49,11 +52,13 @@
 }
 
 
-- (IBAction)getCodeAction:(id)sender {
+- (IBAction)getCodeAction:(UIButton *)sender {
+    [sender setEnabled:NO];
     if (![self checkTelNumber]) {
+        [sender setEnabled:YES];
         return;
     } else {
-        [self getVerifyCode];
+        [self getVerifyCode:sender];
     }
 }
 
@@ -72,18 +77,41 @@
     return flag;
 }
 
-- (void)getVerifyCode {
+- (void)getVerifyCode:(UIButton *)sender {
     [VerCode.shareVerCode getVerCodeData:self.params WithDataBlock:^(id data) {
         if ([data isEqualToString:@"0"]) {//网络请求失败
             [SVProgressHUD showInfoWithStatus:@"网络请求失败"];
+//            [sender setEnabled:YES];
         } else if ([data isEqualToString:@"1"]) {//账号已存在
             #pragma 存在问题：账号已存在也会发送验证码 TODO
             [SVProgressHUD showInfoWithStatus:@"账号已存在"];
+//            [sender setEnabled:YES];
         } else {//成功获取验证码
             [SVProgressHUD showSuccessWithStatus:@"验证码获取成功"];
+            //倒计时
+//            _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDownToGetVerifyCode:) userInfo:nil repeats:YES];
         }
+        [sender setEnabled:YES];
     }];
 }
+
+//- (void)countDownToGetVerifyCode:(NSTimer *)sender {
+//    static int i = 60;
+//    self.verifyCodeBtn.backgroundColor = [UIColor lightGrayColor];
+//    [self.verifyCodeBtn setImage:[UIImage new] forState:UIControlStateNormal];
+//    [self.verifyCodeBtn setTitle:[NSString stringWithFormat:@"%d秒后重新获取", i] forState:UIControlStateNormal];
+//    self.verifyCodeBtn.titleLabel.textColor = [UIColor whiteColor];
+//    self.verifyCodeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+//    if (i <= 0) {
+//        [self.verifyCodeBtn setTitle:@"" forState:UIControlStateNormal];
+//        [self.verifyCodeBtn setImage:[UIImage imageNamed:@"Verification-Code_btn"] forState:UIControlStateNormal];
+//        [self.verifyCodeBtn setEnabled:YES];
+//        [_timer invalidate];
+//        _timer = nil;
+//    }
+//    i --;
+//}
+
 
 - (IBAction)nextAction:(id)sender {
     if (![self checkTelNumber] || ![self checkVerifyCode]) {//缺验证码
@@ -100,7 +128,6 @@
         [SVProgressHUD showInfoWithStatus:@"请输入验证码"];
     } else {
         self.params[@"code"] = self.codeTextField.text;
-//        param :phone,password,loginname ，code
         flag = YES;
     }
     
