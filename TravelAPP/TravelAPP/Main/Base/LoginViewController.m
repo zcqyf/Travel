@@ -172,19 +172,15 @@
     } else {
         self.params[@"password"] = _passwordTextField.text;
         NSLog(@"login === %@",self.params);
-        [[UserLogin shareUserLogin] getLoginData:self.params WithDataBlock:^(id data) {
-            NSLog(@"%@",data);
+        [UserLogin.shareUserLogin getLoginData:self.params WithDataBlock:^(id data) {
             if ([self dealWithResult:data]) {
-                
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
-            }else{
+            } else {
                 return;
             }
-        } useridBlock:^(id userid) {
-            NSLog(@"%@",userid);
+        } useridBlock:^(id userdata) {
+            NSLog(@"%@",userdata);
         }];
-        
-        //        [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
     }
 }
 
@@ -209,11 +205,11 @@
             return  NO;
             break;
         case 1: //请求失败返回 1
-            [SVProgressHUD showInfoWithStatus:@"请求失败返回"];
+            [SVProgressHUD showInfoWithStatus:@"登录成功"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
             return  NO;
             break;
         default:
-            [SVProgressHUD showInfoWithStatus:@"登录成功"];
             return YES;
             break;
     }

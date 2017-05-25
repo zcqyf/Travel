@@ -13,7 +13,7 @@
 #define KTLSDKLoginUrl         @"http://www.szzhongyuanda.com/api/web/api.php?c=Login&a=login"
 
 //轮播图
-#define KTLSDKCarousel         @"http://www.szzhongyuanda.com/api/web/api.php?c=Ad&a=lists"
+#define KTLSDKCarousel         @"http://192.168.1.215/lvyou/web/api.php?c=ad&a=ad_lists"
 
 //TLSDK注册
 #define KTLSDKRegisterUrl      @"http://www.szzhongyuanda.com/api/web/api.php?c=Reg&a=reg"
@@ -30,9 +30,6 @@
 //验证码
 #define KTLSDKVerCode          @"http://www.szzhongyuanda.com/api/web/api.php?c=Code&a=get_code"
 
-//TLSDK
-#endif /* HttpConstant_h */
-
 //文章分类列表
 #define KTLSDKArticleclass     @"http://www.szzhongyuanda.com/api/web/api.php?c=CmsCategory&a=lists"
 
@@ -48,3 +45,12 @@
 //设备列表
 
 #define KTLSDKEquipList        @"http://www.szzhongyuanda.com/api/web/api.php?c=Device&a=lists"
+
+//记录列表
+#define KTLSDKDeviceLog        @"http://www.szzhongyuanda.com/api/web/api.php?c=DeviceLog&a=lists"
+
+// 添加分享者
+#define KTKSDKAddShare         @"http://www.szzhongyuanda.com/api/web/api.php?c=Device&a=add_share_user"
+//TLSDK
+#endif /* HttpConstant_h */
+

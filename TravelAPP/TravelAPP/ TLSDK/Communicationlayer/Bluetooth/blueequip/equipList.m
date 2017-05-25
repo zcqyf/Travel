@@ -23,7 +23,7 @@
     AFHTTPSessionManager*manager = [AFHTTPSessionManager manager];
     
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/json",@"application/json",@"text/javascript",@"text/html", @"application/javascript", @"text/js",@"application/x-javascript", nil];
-    [manager GET:KTLSDKVerCode parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:KTLSDKEquipList parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
 //        if ([[NSString stringWithFormat:@"%@",responseObject[@"status"]]isEqualToString:@"10001"]) {
 //            dataBLock(responseObject[@"regcode"]);
@@ -34,6 +34,45 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
         dataBLock(@"0");//网络请求失败
+    }];
+  
+}
+
+-(void)getDeviceLog:(NSDictionary *)param WithDataBlock:(void (^)(id data))dataBLock
+{
+    AFHTTPSessionManager*manager = [AFHTTPSessionManager manager];
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/json",@"application/json",@"text/javascript",@"text/html", @"application/javascript", @"text/js",@"application/x-javascript", nil];
+    [manager GET:KTLSDKDeviceLog parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        //        if ([[NSString stringWithFormat:@"%@",responseObject[@"status"]]isEqualToString:@"10001"]) {
+        //            dataBLock(responseObject[@"regcode"]);
+        //        }else {
+        //            dataBLock(@"1");//账号已存在
+        //        }
+        dataBLock(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+        dataBLock(@"0");//网络请求失败
+    }];
+    
+}
+
+- (void)getAddshare :(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBlock{
+    AFHTTPSessionManager*manager = [AFHTTPSessionManager manager];
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/json",@"application/json",@"text/javascript",@"text/html", @"application/javascript", @"text/js",@"application/x-javascript", nil];
+    [manager GET:KTLSDKDeviceLog parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        //        if ([[NSString stringWithFormat:@"%@",responseObject[@"status"]]isEqualToString:@"10001"]) {
+        //            dataBLock(responseObject[@"regcode"]);
+        //        }else {
+        //            dataBLock(@"1");//账号已存在
+        //        }
+        //dataBLock(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+        dataBlock(@"0");//网络请求失败
     }];
   
 }

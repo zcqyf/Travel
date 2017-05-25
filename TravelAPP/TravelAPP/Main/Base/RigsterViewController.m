@@ -113,6 +113,7 @@
     self.passDict[@"phone"] = self.accountTextField.text;
     self.passDict[@"loginname"] = @"";
     self.passDict[@"code"] = self.codeTextField.text;
+    self.passDict[@"recommender"] = @"";
     vc.params = self.passDict;
     [self.navigationController pushViewController:vc animated:YES];
 }

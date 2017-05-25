@@ -11,4 +11,6 @@
 @interface equipList : NSObject
 +(instancetype)shareequipList;
 - (void)getequipList:(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBLock ;
+- (void)getDeviceLog:(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBLock ;
+- (void)getAddshare :(NSDictionary*)param  WithDataBlock:(void(^)(id data))dataBlock ;
 @end
