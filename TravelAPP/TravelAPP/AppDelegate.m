@@ -29,12 +29,21 @@
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isNotFirstLogin:) name:@"isNotFirstLaunch" object:nil];
+    
 
     _window.rootViewController = [GuidanceViewController new];
-    
+    _tabBarVC = [[TabBarViewController alloc] init];
     //设置tabBarItem样式
     [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
     [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    
+    //是否第一次启动app 1:为是第一次登录
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    
+    if (![[user objectForKey:@"isFirstLaunch"]  isEqual: @"1"]) {
+        [user setObject:@"1" forKey:@"isFirstLaunch"];
+    }
     
     return YES;
 }
@@ -45,7 +54,7 @@
     NSNumber *num = [dic objectForKey:@"isLoginSuccess"];
     
     if (num.intValue == 1) {
-        _tabBarVC = [[TabBarViewController alloc] init];
+        
         if ([MyInfo shareInstance].MemberType == 1) {
             _tabBarVC.selectedIndex = 1;
         }else{
@@ -55,6 +64,11 @@
         
     }
     
+}
+
+- (void)isNotFirstLogin:(NSNotification *)notification {
+
+    _window.rootViewController = _tabBarVC ;
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "GuidanceViewController.h"
 #import "LoginViewController.h"
+#import "TabBarViewController.h"
 
 @interface GuidanceViewController ()
     
@@ -60,24 +61,21 @@
     if (_timeCount < 0) {
         [_timer invalidate];
         
-//        CATransition *animation = [CATransition animation];
-//        
-//        animation.subtype = kCATransitionFromRight;
-//        
-//        animation.duration = 1;
-//        
-//        
-//        
-//        animation.type = @"camer_typeaIrisHollowClose";
-//        
-//        [self.imageView.layer addAnimation:animation forKey:nil];
+        NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
         
-//        [self.view removeFromSuperview];
-        LoginViewController *vc = [LoginViewController new];
-        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:^{
         
-        }];
+        
+        if ([[user objectForKey:@"isFirstLaunch"] isEqualToString:@"1"]) {
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"isNotFirstLaunch" object:nil];
+            
+        }else{
+            LoginViewController *vc = [LoginViewController new];
+            vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:^{
+                
+            }];
+        }
         
     }
     
