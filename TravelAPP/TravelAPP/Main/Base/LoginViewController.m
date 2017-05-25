@@ -12,6 +12,7 @@
 #import "UserLogin.h"
 #import "NavBarView.h"
 #import <SVProgressHUD.h>
+#import "TabBarViewController.h"
 
 @interface LoginViewController ()
 //账号
@@ -99,13 +100,13 @@
  选择：付费会员／普通会员
  */
 - (IBAction)selectMemberType:(UIButton *)sender {
-    if (sender.tag == _PayMemberBtn.tag) {
+    if (sender.tag == _PayMemberBtn.tag) {//付费会员
         _PayMemberBtn.backgroundColor = [UIColor whiteColor];
         [_PayMemberBtn setTitleColor:LoginSegementColor forState:UIControlStateNormal];
         
         _ordinaryMemberBtn.backgroundColor = [UIColor clearColor];
         [_ordinaryMemberBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    }else if (sender.tag == _ordinaryMemberBtn.tag) {
+    }else if (sender.tag == _ordinaryMemberBtn.tag) {//普通会员
         _PayMemberBtn.backgroundColor = [UIColor clearColor];
         [_PayMemberBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         
@@ -120,7 +121,6 @@
  注册
  */
 - (IBAction)registerAction:(UIButton *)sender {
-    NSLog(@"1111");
     RigsterViewController *vc = [[RigsterViewController alloc] initWithNibName:@"RigsterViewController" bundle:[NSBundle mainBundle]];
     vc.title = @"会员注册";
     [self.navigationController pushViewController:vc animated:true];
@@ -173,11 +173,7 @@
         self.params[@"password"] = _passwordTextField.text;
         NSLog(@"login === %@",self.params);
         [UserLogin.shareUserLogin getLoginData:self.params WithDataBlock:^(id data) {
-            if ([self dealWithResult:data]) {
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
-            } else {
-                return;
-            }
+            [self dealWithResult:data];
         } useridBlock:^(id userdata) {
             NSLog(@"%@",userdata);
         }];
@@ -195,25 +191,19 @@
     
 }
 
-- (Boolean)dealWithResult:(id)data{
+- (void)dealWithResult:(id)data{
     int value = [data intValue];
-
     switch (value) {
-        
         case 0: //登录失败返回 0 （用户名密码错误)
             [SVProgressHUD showInfoWithStatus:@"用户名密码错误"];
-            return  NO;
             break;
         case 1: //请求失败返回 1
-            [SVProgressHUD showInfoWithStatus:@"登录成功"];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"isLoginSuccess" object:nil userInfo:@{@"isLoginSuccess":@1}];
-            return  NO;
+            [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+            [NSUserDefaults.standardUserDefaults setObject:@"success" forKey:@"isLoginSuccess"];
+            [NSUserDefaults.standardUserDefaults setObject:[NSString stringWithFormat:@"%ld", [MyInfo shareInstance].MemberType] forKey:@"MemberType"];
+            UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
             break;
         default:
-            
-           
-            
-            return YES;
             break;
     }
 }

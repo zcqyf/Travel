@@ -137,12 +137,16 @@
 - (void)navigateToViewController {
     SetPasswordViewController *vc = [SetPasswordViewController new];
     vc.title = @"设置密码";
+    [self assignValueToPassDict];
+    vc.params = self.passDict;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)assignValueToPassDict {
     self.passDict[@"phone"] = self.accountTextField.text;
     self.passDict[@"loginname"] = @"";
     self.passDict[@"code"] = self.codeTextField.text;
     self.passDict[@"recommender"] = @"";
-    vc.params = self.passDict;
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

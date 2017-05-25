@@ -19,6 +19,7 @@ static MyInfo *myInfo = nil;
     return myInfo;
 }
 
+
 //为了防止alloc或者new创建新的实例变量
 
 +(id)allocWithZone:(struct _NSZone *)zone{
@@ -34,5 +35,40 @@ static MyInfo *myInfo = nil;
     return myInfo;
 }
 
+
+/*static HLTestObject *instance = nil;
+ + (instancetype)sharedInstance
+ {
+ return [[self alloc] init];
+ }
+ - (instancetype)init
+ {
+ static dispatch_once_t onceToken;
+ dispatch_once(&onceToken, ^{
+ instance = [super init];
+ instance.height = 10;
+ instance.object = [[NSObject alloc] init];
+ instance.arrayM = [[NSMutableArray alloc] init];
+ });
+ return instance;
+ }
+ + (instancetype)allocWithZone:(struct _NSZone *)zone
+ {
+ static dispatch_once_t onceToken;
+ dispatch_once(&onceToken, ^{
+ instance = [super allocWithZone:zone];
+ });
+ return instance;
+ }
+ - (NSString *)description
+ {
+ NSString *result = @"";
+ result = [result stringByAppendingFormat:@"<%@: %p>",[self class], self];
+ result = [result stringByAppendingFormat:@" height = %d,",self.height];
+ result = [result stringByAppendingFormat:@" arrayM = %p,",self.arrayM];
+ result = [result stringByAppendingFormat:@" object = %p,",self.object];
+ return result;
+ }
+*/
 
 @end

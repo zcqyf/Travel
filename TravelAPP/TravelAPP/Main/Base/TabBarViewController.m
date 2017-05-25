@@ -15,13 +15,15 @@
 #import "MineViewController.h"
 #import <Masonry.h>
 #import "LoginViewController.h"
-//#import "BaseNavigationController.h"
 #import "MyInfo.h"
+#import <SVProgressHUD.h>
 
 typedef void(^sendAddressDic)(NSDictionary *dic);
 
 @interface TabBarViewController ()<UITabBarDelegate, UINavigationControllerDelegate>
 
+
+@property (nonatomic,strong)UINavigationController *mineNav;
 
 @end
 
@@ -41,15 +43,30 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 
 - (void)setupViewControllers {
     
-    if ([MyInfo shareInstance].MemberType == 1) {
-        [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    if ([NSUserDefaults.standardUserDefaults objectForKey:@"MemberType"]) {
+        NSString *memberType = [NSUserDefaults.standardUserDefaults objectForKey:@"MemberType"];
+        switch ([memberType intValue]) {
+            case 1://付费会员
+                [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+                [self commonViewControllers];
+                break;
+            case 2://普通用户
+                [self commonViewControllers];
+                break;
+            default:
+                break;
+        }
+    } else {
+        //需要改进
+        [SVProgressHUD showInfoWithStatus:@"游客登录"];
     }
+}
+
+- (void)commonViewControllers {
     [self addChildViewControllerWithName:[RecommendViewController new] title:@"推荐" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
     [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-    
-    [self addChildViewControllerWithName:[MineViewController new] title:@"我的" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
 }
 
 - (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedIamgeName: (NSString *)selectedImageName{
@@ -82,15 +99,31 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
     return _mineBtn;
 }
 
+
+- (UINavigationController *)mineNav {
+    if (!_mineNav) {
+        MineViewController *vc = [MineViewController new];
+        vc.title = @"我的";
+        _mineNav = [[UINavigationController alloc] initWithRootViewController:vc];
+        _mineNav.view.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H - 49);
+    }
+    return _mineNav;
+}
+
+
 - (void)clickMineBtn:(UIButton *)sender {
-    [self setSelectedIndex:sender.tag];
+//    [self setSelectedIndex:sender.tag];
+    
+    
+    [self.view addSubview:self.mineNav.view];
+    
 }
 
 #pragma tabBar delegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     
     
-    
+    [self.mineNav.view removeFromSuperview];
     
 }
 

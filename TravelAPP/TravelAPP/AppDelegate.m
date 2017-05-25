@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
 #import "GuidanceViewController.h"
-#import "LoginViewController.h"
-#import "MyInfo.h"
 
 @interface AppDelegate ()
 
@@ -25,52 +23,13 @@
     
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [_window makeKeyAndVisible];
-    
-    
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isLogin:) name:@"isLoginSuccess" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isNotFirstLogin:) name:@"isNotFirstLaunch" object:nil];
-    
-
     _window.rootViewController = [GuidanceViewController new];
-    _tabBarVC = [[TabBarViewController alloc] init];
-    //设置tabBarItem样式
+    
     [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]}   forState:UIControlStateNormal];
     [[UITabBarItem appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
-    
-    //是否第一次启动app 1:为是第一次登录
-    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
-    
-    if (![[user objectForKey:@"isFirstLaunch"]  isEqual: @"1"]) {
-        [user setObject:@"1" forKey:@"isFirstLaunch"];
-    }
-    
+
     return YES;
 }
-
-- (void)isLogin:(NSNotification *)notification {
-    
-    NSDictionary *dic = notification.userInfo;
-    NSNumber *num = [dic objectForKey:@"isLoginSuccess"];
-    
-    if (num.intValue == 1) {
-        
-        if ([MyInfo shareInstance].MemberType == 1) {
-            _tabBarVC.selectedIndex = 1;
-        }else{
-           _tabBarVC.selectedIndex = 0;
-        }
-       _window.rootViewController = _tabBarVC ;
-        
-    }
-    
-}
-
-- (void)isNotFirstLogin:(NSNotification *)notification {
-
-    _window.rootViewController = _tabBarVC ;
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
