@@ -20,7 +20,7 @@
     });
     return share;
 }
-- (void)getLoginData:(NSDictionary*)param WithDataBlock:(void (^)(id data))dataBLock useridBlock:(void (^)(id userdata))userBlock
+- (void)getLoginData:(NSDictionary*)param WithDataBlock:(void (^)(id data))dataBLock useridBlock:(void (^)(id userdata))userBlock usertypeBlock:(void (^)(id typedata))typeBlock
 {
     NSLog(@"%@",param);
     if (![param[@"loginname"]isEqualToString:@""]||![param[@"password"]isEqualToString:@""]) {
@@ -33,6 +33,11 @@
         //dataBLock(responseObject);
         if ([[NSString stringWithFormat:@"%@",responseObject[@"status"]]isEqualToString:@"10001"]) {
             dataBLock(@"1");
+            if ([[NSString stringWithFormat:@"%@",responseObject[@"user_type"]]isEqualToString:@"0"]) {
+            userBlock(@"0");
+            }else if ([[NSString stringWithFormat:@"%@",responseObject[@"user_type"]]isEqualToString:@"1"]){
+            userBlock(@"1");
+            }
             NSMutableArray * loginArray = [NSMutableArray array];
             loginArray=responseObject;
             userBlock(responseObject[@"admin_user"]);
@@ -43,12 +48,11 @@
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败");
-        
-        dataBLock(@"2");
+        dataBLock(@"0");
         
     }];
     }else{
-        dataBLock(@"3");
+        dataBLock(@"0");
     }
 }
 
