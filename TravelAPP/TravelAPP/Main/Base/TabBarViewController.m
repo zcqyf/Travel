@@ -56,9 +56,8 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
             default:
                 break;
         }
-    } else {
-        //需要改进
-        [SVProgressHUD showInfoWithStatus:@"游客登录"];
+    } else {//未登录
+        [self commonViewControllers];
     }
 }
 
@@ -112,19 +111,12 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 
 
 - (void)clickMineBtn:(UIButton *)sender {
-//    [self setSelectedIndex:sender.tag];
-    
-    
     [self.view addSubview:self.mineNav.view];
-    
 }
 
 #pragma tabBar delegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    
-    
     [self.mineNav.view removeFromSuperview];
-    
 }
 
 #pragma navigation delegate

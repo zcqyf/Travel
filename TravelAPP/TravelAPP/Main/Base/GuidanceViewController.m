@@ -76,24 +76,12 @@
         vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:nil];
     } else {
-        #pragma MARK: 没有登录第二次进入APP就会有问题
-        //暂时加一个是否登录成功的判断
-        if ([userDefaults objectForKey:@"isLoginSuccess"] && [[userDefaults objectForKey:@"isLoginSuccess"]  isEqual: @"success"]) {//存在且登录成功
-            UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
-        } else {
-//            LoginViewController *vc = [LoginViewController new];
-            
-            TabBarViewController *vc = [TabBarViewController new];
-            
-            vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            
-//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:nil];
-            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:^{
-                
-                UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
-                
-            }];
-        }
+        #pragma MARK: 改成rootViewController还是直接present?
+        //            UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
+        TabBarViewController *vc = [TabBarViewController new];
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:vc animated:true completion:nil];
+        
     }
 }
 

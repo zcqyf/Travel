@@ -172,11 +172,6 @@
     } else {
         self.params[@"password"] = _passwordTextField.text;
         NSLog(@"login === %@",self.params);
-//        [UserLogin.shareUserLogin getLoginData:self.params WithDataBlock:^(id data) {
-//            [self dealWithResult:data];
-//        } useridBlock:^(id userdata) {
-//            NSLog(@"%@",userdata);
-//        }];
         [UserLogin.shareUserLogin getLoginData:self.params WithDataBlock:^(id data) {//登录结果
             [self dealWithResult:data];
         } useridBlock:^(id userdata) {//用户信息
@@ -207,7 +202,6 @@
             break;
         case 1: //登录成功返回 1
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-            [NSUserDefaults.standardUserDefaults setObject:@"success" forKey:@"isLoginSuccess"];
             [NSUserDefaults.standardUserDefaults setObject:[NSString stringWithFormat:@"%ld", [MyInfo shareInstance].MemberType] forKey:@"MemberType"];
             UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
             break;
@@ -216,6 +210,7 @@
     }
 }
 
+//会员类型
 - (void)userType:(id)typedata {
     if (!typedata) {
         NSLog(@"未登录状态");
@@ -224,16 +219,17 @@
         switch (value) {
             case 0://普通会员
                 [SVProgressHUD showInfoWithStatus:@"普通会员"];
+                NSLog(@"普通会员");
                 break;
                 
             case 1://付费会员
                 [SVProgressHUD showInfoWithStatus:@"付费会员"];
+                NSLog(@"付费会员");
                 break;
                 
             default:
                 break;
         }
-        
     }
     
 }
