@@ -200,11 +200,12 @@
 
 - (void)dealWithResult:(id)data{
     int value = [data intValue];
+    NSLog(@"%d",value);
     switch (value) {
         case 0: //登录失败返回 0 （用户名密码错误)
             [SVProgressHUD showInfoWithStatus:@"用户名密码错误"];
             break;
-        case 1: //请求失败返回 1
+        case 1: //登录成功返回 1
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
             [NSUserDefaults.standardUserDefaults setObject:@"success" forKey:@"isLoginSuccess"];
             [NSUserDefaults.standardUserDefaults setObject:[NSString stringWithFormat:@"%ld", [MyInfo shareInstance].MemberType] forKey:@"MemberType"];

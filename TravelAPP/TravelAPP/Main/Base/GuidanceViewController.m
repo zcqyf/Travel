@@ -81,9 +81,18 @@
         if ([userDefaults objectForKey:@"isLoginSuccess"] && [[userDefaults objectForKey:@"isLoginSuccess"]  isEqual: @"success"]) {//存在且登录成功
             UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
         } else {
-            LoginViewController *vc = [LoginViewController new];
+//            LoginViewController *vc = [LoginViewController new];
+            
+            TabBarViewController *vc = [TabBarViewController new];
+            
             vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:nil];
+            
+//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:nil];
+            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:true completion:^{
+                
+                UIApplication.sharedApplication.keyWindow.rootViewController = [TabBarViewController new];
+                
+            }];
         }
     }
 }
