@@ -293,6 +293,7 @@
 		B0AAE2B71ECC8B9B001EF3AC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2B51ECC8B9B001EF3AC /* LoginViewController.xib */; };
 		B0AAE2BB1ECC9A1A001EF3AC /* RigsterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */; };
 		B0AAE2BC1ECC9A1A001EF3AC /* RigsterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */; };
+		B0B52C6A1EDEB90C00042693 /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B52C691EDEB90C00042693 /* UIImage+UIColor.m */; };
 		D6D5BEFE0D732563CFC26BC0 /* libPods-TravelAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5738D4498B44367ACAA7A2 /* libPods-TravelAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -886,6 +887,8 @@
 		B0AAE2B81ECC9A1A001EF3AC /* RigsterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigsterViewController.h; sourceTree = "<group>"; };
 		B0AAE2B91ECC9A1A001EF3AC /* RigsterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigsterViewController.m; sourceTree = "<group>"; };
 		B0AAE2BA1ECC9A1A001EF3AC /* RigsterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RigsterViewController.xib; sourceTree = "<group>"; };
+		B0B52C681EDEB90C00042693 /* UIImage+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIColor.h"; sourceTree = "<group>"; };
+		B0B52C691EDEB90C00042693 /* UIImage+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1596,6 +1599,8 @@
 				262CA1261EC4CE2500667A02 /* CALayer+XibBorderColor.m */,
 				B07C5A5C1EC402CD00D3DF81 /* NSString+NSStringExtension.h */,
 				B07C5A5D1EC402CD00D3DF81 /* NSString+NSStringExtension.m */,
+				B0B52C681EDEB90C00042693 /* UIImage+UIColor.h */,
+				B0B52C691EDEB90C00042693 /* UIImage+UIColor.m */,
 				B0007BD01ECEC48D006860AE /* MyInfo.h */,
 				B0007BD11ECEC48D006860AE /* MyInfo.m */,
 			);
@@ -2477,6 +2482,7 @@
 				260439791EBF4E6D00D44C99 /* ConsultionTitleTableViewCell.m in Sources */,
 				260439871EBF4E6D00D44C99 /* RecomendHeaderView.m in Sources */,
 				268BA8B01EB99A740002B3C3 /* InsideTRTopCollectionViewCell.m in Sources */,
+				B0B52C6A1EDEB90C00042693 /* UIImage+UIColor.m in Sources */,
 				269CA8BA1EB6B8AF0096AF1E /* SelecterToolsScrollView.m in Sources */,
 				26C549751ECFFF4B005A7199 /* SetPasswordViewController.m in Sources */,
 				262CA1231EC4C25A00667A02 /* ChangePwdNewViewController.m in Sources */,

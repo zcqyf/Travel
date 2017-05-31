@@ -60,6 +60,10 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self setupNavigationBar];
+}
+
 
 #pragma mark ---UITableViewDataSource
 

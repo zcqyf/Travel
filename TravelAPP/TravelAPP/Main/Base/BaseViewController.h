@@ -10,6 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
-- (void)setTopView;
+- (void)setupNavigationBar;
+
 
 @end

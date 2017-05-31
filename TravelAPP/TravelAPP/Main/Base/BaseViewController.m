@@ -25,12 +25,29 @@
     
 }
 
-
-
-- (void)setTopView {
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+- (void)setupNavigationBar {
+//    self.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+//    self.navigationBar.shadowImage = UIImage()
+//    self.navigationBar.translucent = true
+    
+    //设置背景
+    UIColor *bgColor = [UIColor colorWithRed:251/255.0 green:103/255.0 blue:57/255.0 alpha:1.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:bgColor] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.translucent = YES;
+    
+    //naviggationBarTitle样式
+    UIColor *textColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:textColor}];
+    
 }
+
+
+
+//- (void)setTopView {
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
