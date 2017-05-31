@@ -22,7 +22,10 @@
     [SVProgressHUD setMinimumDismissTimeInterval:1.0];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]]; //字体颜色
     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5]]; //背景颜色
+    
 }
+
+
 
 - (void)setTopView {
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];

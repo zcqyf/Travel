@@ -47,7 +47,7 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
         NSString *memberType = [NSUserDefaults.standardUserDefaults objectForKey:@"MemberType"];
         switch ([memberType intValue]) {
             case 1://付费会员
-                [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+                [self addChildViewControllerWithName:[MemberMallViewController new] title:@"会员商城" imageName:@"tba_vip_default" selectedIamgeName:@"tba_vip_press"];
                 [self commonViewControllers];
                 break;
             case 2://普通用户
@@ -62,10 +62,10 @@ typedef void(^sendAddressDic)(NSDictionary *dic);
 }
 
 - (void)commonViewControllers {
-    [self addChildViewControllerWithName:[RecommendViewController new] title:@"推荐" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-    [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-    [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
-    [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"icon_star_Default" selectedIamgeName:@"icon_star_highlight"];
+    [self addChildViewControllerWithName:[RecommendViewController new] title:@"推荐" imageName:@"tab_Recommend_default" selectedIamgeName:@"tab_Recommend_press"];
+    [self addChildViewControllerWithName:[DestinationViewController new] title:@"目的地" imageName:@"tab_Destination_-default" selectedIamgeName:@"tab_Destination_press"];
+    [self addChildViewControllerWithName:[MallViewController new] title:@"商城" imageName:@"tab_shop_default" selectedIamgeName:@"tab_shop_press"];
+    [self addChildViewControllerWithName:[TribeViewController new] title:@"部落" imageName:@"tab_Tribe_default" selectedIamgeName:@"tab_tribe_press"];
 }
 
 - (void)addChildViewControllerWithName:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedIamgeName: (NSString *)selectedImageName{
