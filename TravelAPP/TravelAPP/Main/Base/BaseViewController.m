@@ -45,9 +45,18 @@
     
 }
 
+- (void)setNavigationBarHidden {
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.translucent = YES;
+    //naviggationBarTitle样式
+    UIColor *textColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:textColor}];
+}
+
 - (void)setNavigationBarBackItem{
 
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleBordered target:nil action:nil];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
         [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
         self.navigationItem.backBarButtonItem = backItem;
 

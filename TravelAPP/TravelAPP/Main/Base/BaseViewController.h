@@ -12,5 +12,6 @@
 
 - (void)setupNavigationBar;
 
+- (void)setNavigationBarHidden;
 
 @end
