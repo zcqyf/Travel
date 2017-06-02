@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GYCalendarView.h"
+#import "FSCalendar.h"
 
 @protocol TLCalendarTableViewCellDelegate <NSObject>
 
@@ -15,7 +15,7 @@
 
 @end
 
-@interface TLCalendarTableViewCell : UITableViewCell <GYCalendarViewDelegate>
+@interface TLCalendarTableViewCell : UITableViewCell
 
 + (instancetype)initCustomCellWithTableView: (UITableView *)tableView;
 
