@@ -175,7 +175,7 @@
         [UserLogin.shareUserLogin getLoginData:self.params WithDataBlock:^(id data) {//登录结果
             [self dealWithResult:data];
         } useridBlock:^(id userdata) {//用户信息
-            NSLog(@"%@",userdata);
+            NSLog(@"====userdata======%@",userdata);
         } usertypeBlock:^(id typedata) {//用户类型
             [self userType:typedata];
         }];
@@ -195,7 +195,7 @@
 
 - (void)dealWithResult:(id)data{
     int value = [data intValue];
-    NSLog(@"%d",value);
+   
     switch (value) {
         case 0: //登录失败返回 0 （用户名密码错误)
             [SVProgressHUD showInfoWithStatus:@"用户名密码错误"];
@@ -265,7 +265,7 @@
 //             \  \ `-.   \_ __\ /__ _/   .-` /  /                //
 //      ========`-.____`-.___\_____/___.-`____.-'========         //
 //                           `=---='                              //
-//        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
 //             佛祖保佑         永无BUG        永不修改               //
 ////////////////////////////////////////////////////////////////////
 

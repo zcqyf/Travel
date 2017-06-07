@@ -22,12 +22,46 @@
     [SVProgressHUD setMinimumDismissTimeInterval:1.0];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]]; //字体颜色
     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5]]; //背景颜色
+    
+    //隐藏系统back按钮
+    self.navigationController.navigationItem.hidesBackButton = true;
+    [self setNavigationBarBackItem];
 }
 
-- (void)setTopView {
+- (void)setupNavigationBar {
+//    self.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+//    self.navigationBar.shadowImage = UIImage()
+//    self.navigationBar.translucent = true
+    
+    //设置背景
+    UIColor *bgColor = [UIColor colorWithRed:251/255.0 green:103/255.0 blue:57/255.0 alpha:1.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:bgColor] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.translucent = YES;
+    
+    //naviggationBarTitle样式
+    UIColor *textColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:textColor}];
+    
+}
+
+- (void)setNavigationBarHidden {
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.translucent = YES;
+    //naviggationBarTitle样式
+    UIColor *textColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:textColor}];
 }
+
+- (void)setNavigationBarBackItem{
+
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+        [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+        self.navigationItem.backBarButtonItem = backItem;
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

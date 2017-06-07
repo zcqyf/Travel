@@ -29,5 +29,6 @@
 #import "CALayer+XibBorderColor.h"
 #import "NSString+NSStringExtension.h"
 #import "RegularExpression.h"
+#import "UIImage+UIColor.h"
 
 #endif /* PrefixHeader_pch */
