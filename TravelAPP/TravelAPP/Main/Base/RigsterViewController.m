@@ -31,9 +31,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self verifyCodeBtnStateNormal];
+    
     NavBarView *pathView = [[NavBarView alloc] initWithFrame:self.navBarView.bounds];
     pathView.backgroundColor = [UIColor whiteColor];
     [self.navBarView insertSubview:pathView atIndex:0];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
+
+- (void)verifyCodeBtnStateNormal {
+    self.verifyCodeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    self.verifyCodeBtn.layer.borderWidth = 1.0;
+    self.verifyCodeBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.verifyCodeBtn.layer.cornerRadius = 5.0;
+    self.verifyCodeBtn.layer.masksToBounds = YES;
+    self.verifyCodeBtn.backgroundColor = [UIColor colorWithRed:254/255.0 green:202/255.0 blue:66/255.0 alpha:1.0];
+    [self.verifyCodeBtn setTitle:@"发送验证码" forState:UIControlStateNormal];
+}
+
+- (void)verifyCodeBtnStatePressDown:(int)i {
+    self.verifyCodeBtn.backgroundColor = [UIColor lightGrayColor];
+    [self.verifyCodeBtn setTitle:[NSString stringWithFormat:@"%d秒后重新获取", i] forState:UIControlStateNormal];
+    self.verifyCodeBtn.titleLabel.textColor = [UIColor whiteColor];
+    self.verifyCodeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
 }
 
 - (NSMutableDictionary *)params {
@@ -78,39 +105,37 @@
 }
 
 - (void)getVerifyCode:(UIButton *)sender {
+    //倒计时
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDownToGetVerifyCode:) userInfo:nil repeats:YES];
+    
     [VerCode.shareVerCode getVerCodeData:self.params WithDataBlock:^(id data) {
         if ([data isEqualToString:@"0"]) {//网络请求失败
             [SVProgressHUD showInfoWithStatus:@"网络请求失败"];
-//            [sender setEnabled:YES];
+            [sender setEnabled:YES];
+            [self verifyCodeBtnStateNormal];
         } else if ([data isEqualToString:@"1"]) {//账号已存在
             #pragma 存在问题：账号已存在也会发送验证码 TODO
             [SVProgressHUD showInfoWithStatus:@"账号已存在"];
-//            [sender setEnabled:YES];
+            [sender setEnabled:YES];
+            [self verifyCodeBtnStateNormal];
         } else {//成功获取验证码
             [SVProgressHUD showSuccessWithStatus:@"验证码获取成功"];
-            //倒计时
-//            _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDownToGetVerifyCode:) userInfo:nil repeats:YES];
         }
-        [sender setEnabled:YES];
     }];
 }
 
-//- (void)countDownToGetVerifyCode:(NSTimer *)sender {
-//    static int i = 60;
-//    self.verifyCodeBtn.backgroundColor = [UIColor lightGrayColor];
-//    [self.verifyCodeBtn setImage:[UIImage new] forState:UIControlStateNormal];
-//    [self.verifyCodeBtn setTitle:[NSString stringWithFormat:@"%d秒后重新获取", i] forState:UIControlStateNormal];
-//    self.verifyCodeBtn.titleLabel.textColor = [UIColor whiteColor];
-//    self.verifyCodeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-//    if (i <= 0) {
-//        [self.verifyCodeBtn setTitle:@"" forState:UIControlStateNormal];
-//        [self.verifyCodeBtn setImage:[UIImage imageNamed:@"Verification-Code_btn"] forState:UIControlStateNormal];
-//        [self.verifyCodeBtn setEnabled:YES];
-//        [_timer invalidate];
-//        _timer = nil;
-//    }
-//    i --;
-//}
+- (void)countDownToGetVerifyCode:(NSTimer *)sender {
+    static int i = 60;
+    [self verifyCodeBtnStatePressDown:i];
+    if (i <= 0) {
+        [self.verifyCodeBtn setEnabled:YES];
+        [self verifyCodeBtnStateNormal];
+        i = 60;
+        [_timer invalidate];
+        _timer = nil;
+    }
+    i --;
+}
 
 
 - (IBAction)nextAction:(id)sender {

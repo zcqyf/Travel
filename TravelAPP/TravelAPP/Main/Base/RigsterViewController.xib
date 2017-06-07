@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -58,11 +58,12 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-fv-8t4">
                     <rect key="frame" x="225" y="261" width="120" height="34"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.792156862745098" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="LOe-Gy-m9H"/>
                         <constraint firstAttribute="height" constant="34" id="yVD-Hp-0rh"/>
                     </constraints>
-                    <state key="normal" image="Verification-Code_btn"/>
+                    <state key="normal" title="发送验证码"/>
                     <connections>
                         <action selector="getCodeAction:" destination="-1" eventType="touchUpInside" id="CGn-Bt-EfK"/>
                     </connections>
@@ -130,11 +131,10 @@
                 <constraint firstItem="gd9-MA-maP" firstAttribute="leading" secondItem="vXU-JJ-wen" secondAttribute="leading" id="lb8-pc-tbl"/>
                 <constraint firstItem="wl6-bq-Tfz" firstAttribute="top" secondItem="aEw-fv-8t4" secondAttribute="bottom" constant="8" id="uAc-So-B4G"/>
             </constraints>
-            <point key="canvasLocation" x="-331" y="-52"/>
+            <point key="canvasLocation" x="-402" y="-54"/>
         </view>
     </objects>
     <resources>
-        <image name="Verification-Code_btn" width="120" height="34"/>
         <image name="next_btn" width="290" height="40"/>
     </resources>
 </document>
